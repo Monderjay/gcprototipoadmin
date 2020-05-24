@@ -51,10 +51,8 @@
     <meta property="og:type" content="article" />
 
 </head>
+
 <body class="p-0 m-0">
-
-
-
 
 <script>
     window.fbAsyncInit = function() {

@@ -22,7 +22,7 @@
                 @endif
                 <div class="carousel-item carousel-item-principal {{$active}}">
                     <a href="{{url('/news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->id)}}">
-                        <img class="d-block w-100" src="{{$item->news_image_featured}}" alt="First slide">
+                        <img class="d-block " src="{{$item->news_image_featured}}" alt="First slide">
                         <div class="description-slider">
                             <div class="carousel-caption">
                                 <div class="title">{{$item->title}}</div>
