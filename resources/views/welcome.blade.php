@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Bienvenido a '.config('app.name'))
 
+
 @section('content')
     <!--Slider-->
     <div id="carousel1" class="carousel slide zindex" data-ride="carousel">

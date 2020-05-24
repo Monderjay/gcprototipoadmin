@@ -47,7 +47,7 @@
         ¡Solo en Game-Core!')" />
     <meta property="og:image" content="@yield('page-image','http://www.gamecore.com.mx/img/coreblack.png')" />
     <meta property="og:url" content="@yield('url','https://www.gamecore.com.mx/')" />
-    <meta property="fb:app_id" content="260127125344466" />
+    <meta property="fb:app_id" content="278534710203686" />
     <meta property="og:type" content="article" />
 
 </head>
@@ -59,7 +59,7 @@
 <script>
     window.fbAsyncInit = function() {
         FB.init({
-            appId      : '260127125344466',
+            appId      : '278534710203686',
             xfbml      : true,
             version    : 'v7.0'
         });
@@ -79,8 +79,8 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark position-fixed menu-container" id="menu">
         <a class="navbar-brand" href="{{url('/')}}">
-            <img id="logo" src="{{asset('img/corewhite.png')}}" height="40" alt="Game Core">
-            <b>Game Core</b>
+            <img id="logo" src="{{asset('img/corewhite.png')}}" height="40" alt="GameCore">
+            <b>GameCore</b>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

@@ -66,7 +66,7 @@
 
                     <ul class="list-unstyled components p-2 mb-5">
                         <li>
-                            <a href="#"><i class="fas fa-home"></i> Inicio</a>
+                            <a href="/home"><i class="fas fa-home"></i> Inicio</a>
                         </li>
                         @if(auth()->user()->role->name == "Fundador")
                             <li>
@@ -151,8 +151,7 @@
                             <i class="fa fa-bars"></i>
                             <span class="sr-only">Toggle Menu</span>
                         </button>
-                        <a class="navbar-brand" href="https://demos.creative-tim.com/material-kit/index.html">
-                            Material Kit </a>
+                        <a class="navbar-brand" href="{{url('/')}}"> GameCore </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="navbar-toggler-icon"></span>
