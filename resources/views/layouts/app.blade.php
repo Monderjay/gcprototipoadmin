@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="{{asset('img/coreblack.png')}}">
 
     <!-- google -->
-    <script data-ad-client="ca-pub-5455720448748407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+    <script data-ad-client="ca-pub-5455720448748407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script type="javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <!-- Facebook -->
@@ -154,7 +154,6 @@
 <script type="text/javascript" src="{{ asset('js/styles.js') }}" ></script>
 <script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}" ></script>
 <script type="text/javascript" src="{{ asset('js/Knob/config.js')}}"></script>
-
 
 </body>
 </html>
