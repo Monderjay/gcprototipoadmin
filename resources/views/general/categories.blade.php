@@ -89,9 +89,7 @@
                         </div>
                     </div>
             @endforeach
-
             </div>
-
 
             @include('includes.aside')
 
@@ -101,4 +99,6 @@
                 </ul>
             </nav>
         </div>
+    </div>
+    @include('includes.footer')
 @endsection

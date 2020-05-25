@@ -45,11 +45,8 @@
 
     <!--section-->
     <div class="row principal-container p-0">
-
             <div class="mt-5 col-12 col-xl-9 p-0">
-
             <div class="row justify-content-center mr-xl-0 ml-xl-0 mb-5 principal-sections">
-
                 <div class="col-12 col-xl-5 m-auto p-0">
                     <div class="card card-border">
                         <div class="card-header text-center">
@@ -188,7 +185,6 @@
                      data-ad-format="auto"
                      data-full-width-responsive="true"></ins>
             </div>
-
 
         @include('includes.aside')
 
