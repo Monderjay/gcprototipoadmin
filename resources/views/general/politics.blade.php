@@ -18,12 +18,11 @@
             </p>
             <br>
 
-            <h5><b>Contacto</b></h5>
-            <p>
-                Nezahualcóyotl Estado de México
-                <br>game.core2020@gmail.com
-            </p>
-            <br>
+            <small>
+                Gamecore no se responsabiliza por las opiniones de nuestros redactores en cuanto al tópico de los videojuegos, ya que cada artículo puede contener en mayor o menor medida una crítica personal hacia determinado producto de software o hardware, sin embargo emitir una opinión por parte de los redactores que pueda herir la sensibilidad del público, por tocar un tema que esté fuera de contexto o no aluda al mundo de los videojuegos, puede ser informado para corresponder con las medidas o sanciones necesarias.
+            </small>
+            <br><br>
+
             <b>Todos los derechos reservados &copy; Game-Core 2020</b>
         </div>
     </div>

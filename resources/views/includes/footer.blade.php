@@ -2,30 +2,27 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <h2 class="logo"><a href="#"> <img id="footer-logo" src="{{asset('img/LogoClaro.png')}}" alt=""> </a></h2>
+                <h2 class="logo"><a href="/"> <img id="footer-logo" src="{{asset('img/LogoClaro.png')}}" alt=""> </a></h2>
             </div>
 
             <div class="col-sm-2">
-                <h5>Get started</h5>
+                <h5>Contacto</h5>
                 <ul>
-                    <li><a href="#">Misión</a></li>
-                    <li><a href="#">Visión</a></li>
-
+                    <li><a href="/contacto">Contactanos</a></li>
                 </ul>
             </div>
 
             <div class="col-sm-2">
-                <h5>About us</h5>
+                <h5>Nosotros</h5>
                 <ul>
-                    <li><a href="#">Company Information</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="/informacion">Información</a></li>
                 </ul>
             </div>
 
             <div class="col-sm-2">
                 <h5>Support</h5>
                 <ul>
-                    <li><a href="{{url('/politicas')}}">Politicas de Privacidad</a></li>
+                    <li><a href="{{url('/politicas')}}">Legal</a></li>
                 </ul>
             </div>
 

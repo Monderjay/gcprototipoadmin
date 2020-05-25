@@ -19,6 +19,8 @@ Route::get('/', 'WelcomeController@index');
 Route::get('/news', 'WelcomeController@index');
 
 Route::get('/politicas', 'WelcomeController@showPolitics');
+Route::get('/informacion', 'WelcomeController@showInformation');
+Route::get('/contacto', 'WelcomeController@showContact');
 
 Auth::routes();
 
