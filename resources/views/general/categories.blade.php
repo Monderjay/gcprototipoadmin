@@ -10,8 +10,7 @@
 
             <div class="mt-5 col-12 col-xl-9 p-0">
 
-
-                <div class="principal-sections">
+                <div class="principal-sections text-center">
                     <div id="carousel2" class="carousel slide slider-border" data-ride="carousel">
                         <div id="carousel1" class="carousel slide" data-ride="carousel2">
                             <ol class="carousel-indicators my-0">
@@ -93,7 +92,7 @@
 
             @include('includes.aside')
 
-            <nav class="mt-4 col-12" aria-label="Page navigation example">
+            <nav class="mt-4 mb-4 col-12" aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
                     {{$news->links()}}
                 </ul>

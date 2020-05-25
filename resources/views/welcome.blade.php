@@ -176,19 +176,11 @@
                         </div>
                     @endforeach
 
-
-                <!-- Baner -->
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="8013864695"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
             </div>
 
         @include('includes.aside')
 
-        <nav class="mt-4 col-12" aria-label="Page navigation example">
+        <nav class="mt-4 mb-4 col-12" aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
                 {{$news->links()}}
             </ul>
