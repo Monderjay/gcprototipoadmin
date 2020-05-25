@@ -15,10 +15,11 @@ class StaffMiddleware
      */
     public function handle($request, Closure $next)
     {
-        if (auth()->user()->role->name != "Fundador" || auth()->user()->role->name != "Administrador"){
+        if (auth()->user()->role->name == "Fundador" || auth()->user()->role->name == "Administrador"){
+            return $next($request);
+        }else{
             return back();
         }
 
-        return $next($request);
     }
 }
