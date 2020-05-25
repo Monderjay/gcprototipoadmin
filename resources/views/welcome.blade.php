@@ -43,7 +43,7 @@
         </a>
     </div>
 
-    <!--section y aside-->
+    <!--section-->
     <div class="row principal-container p-0">
 
             <div class="mt-5 col-12 col-xl-9 p-0">
@@ -143,12 +143,6 @@
                 </div>
             </div>
 
-                <ins class="adsbygoogle"
-                     style="display:block"
-                     data-ad-format="fluid"
-                     data-ad-layout-key="-fb+5u+4n-dg+7q"
-                     data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="4435767676"></ins>
 
                     @foreach($news as $item)
                         <div class="row news-container mt-5">

@@ -6,22 +6,23 @@ $(function() {
         'width':150,
         'fgColor':'#28a745',
     });
-    showCalificarionFeatured();
+    showCalificationFeatured();
 });
-
-
 
 
 
 clasification.change(function () {
-    showCalificarionFeatured();
+    showCalificationFeatured();
 });
 
-function showCalificarionFeatured() {
+function showCalificationFeatured() {
     if (clasification.val() == "Reseñas"){
         $(".calification-content").removeClass('d-none');
         $(".featured-content").removeClass('d-none');
     }else if(clasification.val() == "Noticias"){
+        $(".featured-content").removeClass('d-none');
+        $(".calification-content").addClass('d-none');
+    }else if(clasification.val() == "Retro") {
         $(".featured-content").removeClass('d-none');
         $(".calification-content").addClass('d-none');
     }else{

@@ -108,23 +108,34 @@ class WelcomeController extends Controller
 
     public function showCategories($section)
     {
+
         //
         $news = null;
-        $newsCategory=News::with('category')
+        $newsCategory = News::with('category')
             ->whereHas('category', function ($query) use ($section) {
                 $query->where('categories.name', '=', $section);
-            })
-            ->paginate(10);
+            })->orderBy('created_at', 'desc')->paginate(10);
 
-        $newsClasification=News::with('clasification')
+
+        $newsClasification = News::with('clasification')
             ->whereHas('clasification', function ($query) use ($section) {
                 $query->where('clasifications.name', '=', $section);
-            })
-            ->paginate(10);
+            })->orderBy('created_at', 'desc')->paginate(10);
 
+
+
+
+        $sectionFeatured = collect();
         if (count($newsCategory)>0){
             $news = $newsCategory;
-            return view('general.categories')->with(compact('news'));
+            foreach ($newsCategory as $featured){
+                if($featured->featured == true && $featured->category->name == $section){
+                    $sectionFeatured->push($featured);
+                }
+            }
+            $sectionFeatured = $sectionFeatured->forPage(0,8);
+            return view('general.categories')->with(compact('news','sectionFeatured'));
+
         }elseif (count($newsClasification)>0) {
             $podcast=false;
             foreach ($newsClasification as $item){
@@ -132,12 +143,19 @@ class WelcomeController extends Controller
                     $podcast = true;
                 }
             }
+
             if ($podcast){
                 $podcast =Podcast::all();
                 return view('general.podcast')->with(compact('podcast'));
             }else{
                 $news = $newsClasification;
-                return view('general.categories')->with(compact('news'));
+                foreach ($newsClasification as $featured){
+                    if($featured->featured == true && $featured->clasification->name == $section){
+                        $sectionFeatured->push($featured);
+                    }
+                }
+                $sectionFeatured = $sectionFeatured->forPage(0,8);
+                return view('general.categories')->with(compact('news','sectionFeatured'));
             }
 
         }else{

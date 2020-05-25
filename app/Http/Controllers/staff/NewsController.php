@@ -81,7 +81,7 @@ class NewsController extends Controller
         $category = Category::where('name',$request->input('category'))->first();
         $clasification = Clasification::where('name',$request->input('clasification'))->first();
 
-        if ($request->input('clasification') == "Noticias" ){
+        if ($request->input('clasification') == "Noticias" || $request->input('clasification') == "Retro"){
             $news->calification = null;
             $news->about = $request->input('about');
             if ($request->input('featured')!=null){
@@ -201,7 +201,7 @@ class NewsController extends Controller
         $category = Category::where('name', $request->input('category'))->first();
         $clasification = Clasification::where('name', $request->input('clasification'))->first();
 
-        if ($request->input('clasification') == "Noticias") {
+        if ($request->input('clasification') == "Noticias" || $request->input('clasification') == "Retro") {
             $news->calification = null;
             $news->about = $request->input('about');
             if ($request->input('featured') != null) {

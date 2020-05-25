@@ -36,7 +36,7 @@ Route::middleware(['auth','staff','username'])->prefix('staff/founder')->group(f
     Route::delete('/{id}/delete','Staff\FoundersController@destroy'); //Eliminar Fundador
 });
 
-Route::middleware(['auth','staff','editor','username'])->prefix('staff')->group(function (){
+Route::middleware(['auth','editor','username'])->prefix('staff')->group(function (){
 
     Route::get('/news', 'Staff\NewsController@index');
     Route::get('/news/create', 'Staff\NewsController@create');
@@ -57,7 +57,6 @@ Route::middleware(['auth','staff','editor','username'])->prefix('staff')->group(
 
 Route::middleware(['auth','staff','username'])->prefix('staff/editor')->group(function (){
     Route::get('/', 'Staff\EditorController@index');
-
     Route::post('/create','Staff\EditorController@store'); //Registro de Editor
     Route::get('/edit/{id}','Staff\EditorsController@edit'); //Formulario de Edicion de Editor
     Route::post('/edit/{id}','Staff\EditorController@update'); //Editar Editor
