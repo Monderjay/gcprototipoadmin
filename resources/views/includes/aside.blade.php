@@ -4,10 +4,11 @@
         <div class="col-12 items justify-content-center text-center align-items-center p-0">
             <div class="fb-page items text-center p-0 mr-auto ml-auto"
                  data-href="https://www.facebook.com/GameCore-101570291364601/?modal=admin_todo_tour"
-                 data-tabs="small_header"
+                 data-tabs="timeline"
                  data-small-header="false"
                  data-adapt-container-width="true"
                  data-width="500"
+                 data-height="450"
                  data-hide-cover="false" data-show-facepile="true">
                 <blockquote cite="https://www.facebook.com/GameCore-101570291364601/?modal=admin_todo_tour" class="fb-xfbml-parse-ignore">
                     <a href="https://www.facebook.com/GameCore-101570291364601/?modal=admin_todo_tour">GameCore</a></blockquote>
@@ -26,7 +27,7 @@
             </div>
 
         @endfor--}}
-        <div class="col-12 items"><a class="twitter-timeline" data-width="100%" data-height="350px" data-theme="light" href="https://twitter.com/GameCor16434918?ref_src=twsrc%5Etfw">Tweets by GameCor16434918</a></div>
+        <div class="col-12 items"><a class="twitter-timeline" data-width="100%" data-height="450px" data-chrome="nofooter" data-theme="light" href="https://twitter.com/GameCor16434918?ref_src=twsrc%5Etfw">Tweets by GameCor16434918</a></div>
 
     </div>
 </div>

@@ -8,7 +8,7 @@
             <div class="col-sm-2">
                 <h5>Contacto</h5>
                 <ul>
-                    <li><a href="/contacto">Contactanos</a></li>
+                    <li><a href="/contacto">Contáctanos</a></li>
                 </ul>
             </div>
 
@@ -22,7 +22,7 @@
             <div class="col-sm-2">
                 <h5>Legal</h5>
                 <ul>
-                    <li><a href="{{url('/politicas')}}">Politicas de Privacidad</a></li>
+                    <li><a href="{{url('/politicas')}}">Políticas de Privacidad</a></li>
                 </ul>
             </div>
 
@@ -37,6 +37,6 @@
         </div>
     </div>
     <div class="footer-copyright">
-        <p>© 2020 Game Core </p>
+        <p>Todos los derechor reservados © 2020 GameCore </p>
     </div>
 </footer>
