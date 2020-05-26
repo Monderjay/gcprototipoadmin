@@ -7,16 +7,16 @@
 
 @section('content')
     <div class="float-left col-12 news-item-container">
-        <div class="blog-header">
-            <div class="container">
-                <h1 class="blog-title">{{$news->title}}</h1>
-                {{--<p class="lead blog-description">Subtitulo o frase</p>--}}
-            </div>
-        </div>
 
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 blog-main">
+                    <div class="blog-header">
+
+                            <h1 class="blog-title">{{$news->title}}</h1>
+                            {{--<p class="lead blog-description">Subtitulo o frase</p>--}}
+
+                    </div>
 
                     <div class="blog-post">
                         <p class="blog-post-meta">{{$news->date}} por {{$news->user->username}} </p>
