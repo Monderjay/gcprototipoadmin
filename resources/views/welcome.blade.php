@@ -142,7 +142,7 @@
 
 
                     @foreach($news as $item)
-                        <div class="row news-container mt-5">
+                        <div class="row news-container mt-4">
                             <div class="col-xl-5 align-self-center p-0">
                                 <img src="{{$item->news_image_featured}}">
                             </div>
