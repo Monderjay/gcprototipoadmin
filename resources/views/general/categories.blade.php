@@ -11,7 +11,7 @@
         <div class="mt-5 col-12 col-xl-9 p-0">
 
             <div class="carousel-container">
-                <div id="carousel2" class="carousel slide slider-border carousel-width" data-ride="carousel">
+                <div id="carousel2" class="carousel slide slider-border carousel-width ml-auto mr-auto ml-xl-0 mr-xl-0" data-ride="carousel">
                     <div id="carousel2" class="carousel slide" data-ride="carousel2">
                         <ol class="carousel-indicators my-0">
                             @for($i=0; $i < $sectionFeatured->count(); $i++)
