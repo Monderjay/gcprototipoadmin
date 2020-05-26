@@ -138,7 +138,7 @@
     letter-spacing: 1px;
 }
 
-.principal-sections{
+.carousel-width{
     width: 95%;
 }
 
@@ -364,7 +364,7 @@
     width: 130%;
 }
 
-.zindex{
+.carousel1{
     z-index: 999;
 }
 
@@ -429,6 +429,3 @@
     }
 
 }
-
-
-

@@ -4,7 +4,7 @@
 
 @section('content')
     <!--Slider-->
-    <div id="carousel1" class="carousel slide zindex" data-ride="carousel">
+    <div id="carousel1" class="carousel slide carousel1" data-ride="carousel">
         <ol class="carousel-indicators my-0">
             @for($i=0; $i < $featuredNews->count(); $i++)
                 @if($i==0)
@@ -33,7 +33,7 @@
                 </div>
             @endforeach
         </div>
-        <a class="carousel-control-prev zindex" href="#carousel1" role="button" data-slide="prev">
+        <a class="carousel-control-prev carousel1" href="#carousel1" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
         </a>
@@ -45,7 +45,9 @@
 
     <!--section-->
     <div class="row principal-container p-0">
-            <div class="mt-5 col-12 col-xl-9 p-0">
+
+        <div class="mt-5 col-12 col-xl-9 p-0">
+
             <div class="row justify-content-center mr-xl-0 ml-xl-0 mb-5 principal-sections">
                 <div class="col-12 col-xl-5 m-auto p-0">
                     <div class="card card-border">
@@ -97,9 +99,9 @@
                 </div>
             </div>
 
-            <div class="principal-sections">
-                <div id="carousel2" class="carousel slide slider-border" data-ride="carousel">
-                    <div id="carousel1" class="carousel slide" data-ride="carousel2">
+            <div class="carousel2-section">
+                <div id="carousel2" class="carousel slide slider-border carousel-width mr-auto ml-auto mr-xl-0 ml-xl-0" data-ride="carousel">
+                    <div id="carousel2" class="carousel slide" data-ride="carousel2">
                         <ol class="carousel-indicators my-0">
                             @for($i=0; $i < $featuredPcMovil->count(); $i++)
                                 @if($i==0)
@@ -140,43 +142,45 @@
                 </div>
             </div>
 
-
-                    @foreach($news as $item)
-                        <div class="row news-container mt-4">
-                            <div class="col-xl-5 align-self-center p-0">
-                                <img src="{{$item->news_image_featured}}">
+            <div class="carousel-container mt-5">
+                @foreach($news as $item)
+                    <div class="row news-container mt-4">
+                        <div class="col-xl-5 align-self-center p-0">
+                            <img src="{{$item->news_image_featured}}">
+                        </div>
+                        <div class="col-xl-7 justify-content-center">
+                            <div class="news-title text-center mt-3 mt-xl-2">
+                                {{$item->title}}
                             </div>
-                            <div class="col-xl-7 justify-content-center">
-                                <div class="news-title text-center mt-3 mt-xl-2">
-                                    {{$item->title}}
-                                </div>
-                                <hr>
-                                <div class="news-description text-justify">
-                                    {!!$item->news_introduction!!}
-                                </div>
+                            <hr>
+                            <div class="news-description text-justify">
+                                {!!$item->news_introduction!!}
+                            </div>
 
-                                <div class="justify-content-center col-xl-12 row p-0 m-0 mt-3 mb-0">
-                                    <div class="col-6 news-date p-0">
-                                        <ul>
-                                            <li class="author">
-                                                <small>{{--<a href="{{url('/author/'.$item->user->id)}}">{{$item->user->username}} </a>--}}{{$item->user->username}} <i class="fas fa-user-tie"></i></small>
-                                            </li>
-                                            <li>
-                                                <small>{{substr($item->date,0,10)}} <i class="fas fa-calendar-alt"></i></small> |  <small>
-                                                    {{substr($item->date,11,8)}} <i class="fas fa-clock"></i>
-                                                </small>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="col-6 text-center align-self-center">
-                                        <a href="{{url('/news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->id)}}" class="btn btn-primary col-12 col-xl-8 readnews">Leer <i class="fas fa-plus"></i></a>
-                                    </div>
+                            <div class="justify-content-center col-xl-12 row p-0 m-0 mt-3 mb-0">
+                                <div class="col-6 news-date p-0">
+                                    <ul>
+                                        <li class="author">
+                                            <small>{{--<a href="{{url('/author/'.$item->user->id)}}">{{$item->user->username}} </a>--}}{{$item->user->username}} <i class="fas fa-user-tie"></i></small>
+                                        </li>
+                                        <li>
+                                            <small>{{substr($item->date,0,10)}} <i class="fas fa-calendar-alt"></i></small> |  <small>
+                                                {{substr($item->date,11,8)}} <i class="fas fa-clock"></i>
+                                            </small>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 text-center align-self-center">
+                                    <a href="{{url('/news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->id)}}" class="btn btn-primary col-12 col-xl-8 readnews">Leer <i class="fas fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>
-                    @endforeach
-
+                    </div>
+                @endforeach
             </div>
+
+
+        </div>
 
         @include('includes.aside')
 
