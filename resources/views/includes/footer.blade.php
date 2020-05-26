@@ -20,9 +20,9 @@
             </div>
 
             <div class="col-sm-2">
-                <h5>Support</h5>
+                <h5>Legal</h5>
                 <ul>
-                    <li><a href="{{url('/politicas')}}">Legal</a></li>
+                    <li><a href="{{url('/politicas')}}">Politicas de Privacidad</a></li>
                 </ul>
             </div>
 
