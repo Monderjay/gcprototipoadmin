@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            <div class="carousel-container mt-xl-5 mt-4">
+            <div class="news-container-general mt-xl-5 mt-4">
                 @foreach($news as $item)
                     <div class="row news-container mt-4">
                         <div class="col-xl-5 align-self-center p-0">

@@ -22,6 +22,8 @@ Route::get('/politicas', 'WelcomeController@showPolitics');
 Route::get('/informacion', 'WelcomeController@showInformation');
 Route::get('/contacto', 'WelcomeController@showContact');
 
+Route::post('/news/search', 'WelcomeController@search');
+
 Auth::routes();
 
 Route::middleware(['auth','staff','username'])->prefix('staff/founder')->group(function (){

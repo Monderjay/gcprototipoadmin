@@ -73,7 +73,7 @@
 
 <div id="app">
 
-    <nav class="navbar navbar-expand-lg navbar-dark position-fixed menu-container" id="menu">
+    <nav class="navbar navbar-expand-xl navbar-dark position-fixed menu-container" id="menu">
         <a class="navbar-brand" href="{{url('/')}}">
             <img id="logo" src="{{asset('img/corewhite.png')}}" height="40" alt="GameCore">
             <b>GameCore</b>
@@ -103,7 +103,18 @@
                     </li>
                 @endforeach
             </ul>
+            <form method="POST" action="{{url('/news/search')}}" class="d-block d-xl-none form-inline has-search">
+                @csrf
+                <span class="fa fa-search form-control-feedback"></span>
+                <input type="text" class="form-control" name="search" placeholder="Buscar...">
+            </form>
         </div>
+
+        <form method="POST" action="{{url('/news/search')}}" class="d-none d-xl-block ml-3 form-inline has-search">
+            @csrf
+            <span class="fa fa-search form-control-feedback"></span>
+            <input type="text" class="form-control" name="search" placeholder="Buscar...">
+        </form>
     </nav>
 
 

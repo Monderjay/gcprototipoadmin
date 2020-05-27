@@ -169,9 +169,16 @@ class WelcomeController extends Controller
     }
 
 
-    public function destroy($id)
+    public function search(Request $request)
     {
         //
+        if ($request->input('search')!=null){
+            $search = $request->input('search');
+            $news = News::where('title','like',"%$search%")->paginate(10);
+            return view('general.search')->with(compact('news'));
+        }else{
+            return back();
+        }
     }
 
     public function showPolitics(){
