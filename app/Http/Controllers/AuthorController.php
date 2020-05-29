@@ -16,7 +16,7 @@ class AuthorController extends Controller
             $news=News::with('user')
                 ->whereHas('user', function ($query) use ($username) {
                     $query->where('users.username', '=', $username);
-                })->paginate(10);
+                })->orderBy('updated_at','desc')->paginate(10);
 
             $collection1 = collect();
             $collection2 = collect();
