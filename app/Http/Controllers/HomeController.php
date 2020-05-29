@@ -62,7 +62,7 @@ class HomeController extends Controller
         if ($request->input('password') != null){
             $user->password = bcrypt($request->input('password')) ;
         }
-
+        $user->description = $request->input('description');
 
         $user->address->street = $request->input('street');
         $user->address->outdoor_number = $request->input('outdoor_number');

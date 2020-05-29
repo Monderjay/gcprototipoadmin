@@ -19,7 +19,7 @@
                     </div>
 
                     <div class="blog-post">
-                        <p class="blog-post-meta">{{$news->date}} por {{$news->user->username}} </p>
+                        <p class="blog-post-meta">{{$news->date}} por<a href="{{url('/author/'.$news->user->username)}}"> {{$news->user->username}} </p>
 
                         <div class="col-12 mb-2 p-0 text-left align-self-center row">
                             {{--<div class="fb-share-button" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}"
@@ -75,21 +75,6 @@
                             </ol>
                         </div>
                     @endif
-                    {{--<div class="sidebar-module">
-
-                        <h4>Elsewhere</h4>
-                        <ol class="list-unstyled">
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Facebook</a></li>
-                        </ol>
-                    </div>--}}
-                    <!-- Aside Large -->
-                    {{--<ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-client="ca-pub-5455720448748407"
-                         data-ad-slot="6357647029"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>--}}
                 </div><!-- /.blog-sidebar -->
 
 

@@ -73,7 +73,7 @@ Route::post('/porfile/{id}/edit/','HomeController@update'); //Editar Perfil
 Route::get('/news/{category}/{clasification}/{id}','WelcomeController@show'); //Noticia
 Route::get('/news/{category}','WelcomeController@showCategories'); //Noticia por Categoria
 
-Route::get('/author/{id}','AuthorController@show'); //Perfil del Autor
+Route::get('/author/{username}','AuthorController@show'); //Perfil del Autor
 
 
 Route::get('/porfile',function (){

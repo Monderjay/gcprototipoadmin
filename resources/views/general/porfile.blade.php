@@ -274,6 +274,10 @@
                                 </div>
                             </div>
 
+                            <div class="col-md-12">
+                                <textarea class="col-12" name="description" id="" cols="5" rows="5">{{$user->description}}</textarea>
+                            </div>
+
                         </div>
 
                     </div>
@@ -286,5 +290,6 @@
             </div>
         </div>
     </div>
+
 
 @endsection
