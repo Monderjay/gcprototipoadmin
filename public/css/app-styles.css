@@ -110,14 +110,20 @@
     height: 300px;
 }
 
+.list-related{
+    font-size: 11px;
+    height: 200px;
+    overflow-y: scroll;
+}
 
-.list a, .list-news-author a{
+
+.list a, .list-news-author a, .list-related a{
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
 
-.list a:hover, .list-news-author a:hover{
+.list a:hover, .list-news-author a:hover, .list-related a:hover{
     cursor: pointer;
     color: #00a5bb;
 }
@@ -130,14 +136,14 @@
     margin-right: 0px !important;
 }
 
-.list img, .list-news-author img{
+.list img, .list-news-author img, .list-related img{
     width: 35px;
     height: 35px !important;
     margin-right: 15px;
 }
 
 @supports(object-fit: cover){
-    .list img, .list-news-author img{
+    .list img, .list-news-author img, .list-related img{
         height: 100%;
         object-fit: cover;
         object-position: center center;

@@ -25,7 +25,7 @@
                             {{--<div class="fb-share-button" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}"
                                  data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a>
                             </div>--}}
-                            <div class="col-auto pr-0"><a href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
+                            <div class="col-auto pr-0 pl-1"><a href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
                             <div class="col-auto fb-like pl-1" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
                         </div>
 
@@ -68,11 +68,16 @@
                     @if(count($related) > 0)
                         <div class="sidebar-module">
                             <h4>Relacionados</h4>
-                            <ol class="list-unstyled">
+                            <ul class="list-group list-related mb-3">
                                 @foreach($related as $item)
-                                    <li><a href="{{url('news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->id)}}">{{$item->title}}</a></li>
+                                    <li class="list-group-item d-flex justify-content-start align-items-center ">
+                                        <img src="{{$item->news_image_featured}}" class="img-fluid" alt="{{$item->title}}">
+                                        <a class="text-justify" href="{{url('/news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->id)}}">
+                                            {{$item->mobile_introduction}}
+                                        </a>
+                                    </li>
                                 @endforeach
-                            </ol>
+                            </ul>
                         </div>
                     @endif
                 </div><!-- /.blog-sidebar -->

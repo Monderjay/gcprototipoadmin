@@ -90,14 +90,14 @@ class WelcomeController extends Controller
         if ($news!=null) {
             $title = explode(' ', $news->title);
             $firstWord = $title[0];
-            $archives = News::where('title', 'like', '%' . $firstWord . '%')->get();
+            $archives = News::where('title', 'like', '%' . $firstWord . '%')->orderBy('updated_at','desc')->get();
             $related = collect();
             foreach ($archives as $archive) {
                 if ($archive->title != $news->title && $archive->category->name == $category) {
                     $related->push($archive);
                 }
             }
-            $related = $related->forPage(0,8);
+            $related = $related;
             return view('general.news')->with(compact('news', 'related'));
         }else{
             return back();
