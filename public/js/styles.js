@@ -13,9 +13,16 @@ function menuResize(){
         $("#carousel1").css('margin-top','0px');
         $("#carousel1").css('float','none');
 
+        $(".cover-author-content").css('margin-top','0px');
+        $(".cover-author-content").css('float','none');
+
     } else if(width < 1200){
         $("#carousel1").css('margin-top','74px');
         $("#carousel1").css('float','left');
+
+        $(".cover-author-content").css('margin-top','74px');
+        $(".cover-author-content").css('float','left');
+
         $("#menu").css('background','#000000');
         //scrollSm();
     }
@@ -56,6 +63,8 @@ $(window).scroll(function() {
 
             $("#carousel1").css('margin-top','60px');
             $("#carousel1").css('float','left');
+            $(".cover-author-content").css('float','left');
+            $(".cover-author-content").css('margin-top','60px');
         }else {
 
 
@@ -71,6 +80,13 @@ $(window).scroll(function() {
                 float:"none"
 
         },{
+                queue: false,
+            });
+
+            $(".cover-author-content").animate({
+                marginTop: "74px",
+                float:"none"
+            }, {
                 queue: false,
             });
         }

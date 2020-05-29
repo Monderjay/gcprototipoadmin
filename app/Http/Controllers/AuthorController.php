@@ -13,6 +13,11 @@ class AuthorController extends Controller
         $author = User::where('username',$username)->first();
 
         if ($author){
+            $totalNews = News::with('user')
+                ->whereHas('user', function ($query) use ($username) {
+                    $query->where('users.username', '=', $username);
+                })->count();
+
             $news=News::with('user')
                 ->whereHas('user', function ($query) use ($username) {
                     $query->where('users.username', '=', $username);
@@ -29,7 +34,7 @@ class AuthorController extends Controller
                 }
             }
 
-            return view('general.author')->with(compact('author', 'news','collection1', 'collection2'));
+            return view('general.author')->with(compact('author', 'news','totalNews','collection1', 'collection2'));
         }else{
             return back();
         }

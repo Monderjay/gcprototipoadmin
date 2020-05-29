@@ -48,8 +48,11 @@
 }
 
 
-.card-info{
-    margin-top: -80px;
+.card-info-container{
+    margin-top: -100px;
+    float: left;
+    background-color: transparent;
+    border: none;
 }
 
 .principal-container{
