@@ -68,7 +68,7 @@ class News extends Model
     }
 
     public function getDateAttribute(){
-        return date("d-m-Y H:i:s a",strtotime($this->updated_at));
+        return date("d-m-Y H:i:s a",strtotime($this->created_ad));
         //return date("d-m-Y H:i",strtotime($this->publish_date));
     }
 
