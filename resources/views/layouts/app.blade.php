@@ -13,7 +13,7 @@
     <!-- General Tags -->
     <title>@yield('title',config('app.name'))</title>
     <meta name="tittle" content="@yield('page-title','GameCore')">
-    <meta name="description" content="@yield('page-description','Entérate de las más recientes novedades sobre el mundo de los Videojuegos con nuestras noticias, reseñas, podcast, unboxings, especiales y mucho más. ¡Solo en Game-Core!')"/>
+    <meta name="description" content="@yield('page-description','Entérate de las más recientes novedades sobre el mundo de los Videojuegos con nuestras noticias, reseñas, podcast, unboxings, especiales y mucho más. ¡Solo en GameCore!')"/>
     <meta name="keywords" content="game, core, gamers, playstation, xbox, nintendo,
     pc, móvil, videojuegos, noticas, reseñas, podcast, pank9605, unboxings"/>
     <meta name="author" content="@yield('page-author','Eduardo Chávez Zúñiga')" />

@@ -12,8 +12,8 @@ class WelcomeController extends Controller
     public function index()
     {
         //
-        $newsFeatured = News::where('featured',true)->orderBy('updated_at','desc')->get();
-        $news = News::with('user')->orderBy('updated_at','desc')->get();
+        $newsFeatured = News::where('featured',true)->orderBy('created_at','desc')->get();
+        $news = News::with('user')->orderBy('created_at','desc')->get();
         $featuredNews = collect();
         foreach ($newsFeatured as $item) {
             if ($item->category->name == "Playstation" && $item->clasification->name == "Noticias" ||
@@ -90,7 +90,7 @@ class WelcomeController extends Controller
         if ($news!=null) {
             $title = explode(' ', $news->title);
             $firstWord = $title[0];
-            $archives = News::where('title', 'like', '%' . $firstWord . '%')->orderBy('updated_at','desc')->get();
+            $archives = News::where('title', 'like', '%' . $firstWord . '%')->orderBy('created_at','desc')->get();
             $related = collect();
             foreach ($archives as $archive) {
                 if ($archive->title != $news->title && $archive->category->name == $category) {
