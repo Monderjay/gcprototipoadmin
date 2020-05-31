@@ -88,9 +88,10 @@ class WelcomeController extends Controller
             })->where('id',$id)
             ->first();
         if ($news!=null) {
+            //$related = News::where('title','like',"%$news->title%")->paginate(10);
             $title = explode(' ', $news->title);
             $firstWord = $title[0];
-            $archives = News::where('title', 'like', '%' . $firstWord . '%')->orderBy('created_at','desc')->get();
+            $archives = News::where('title', 'like', "%$firstWord%")->orderBy('created_at','desc')->get();
             $related = collect();
             foreach ($archives as $archive) {
                 if ($archive->title != $news->title && $archive->category->name == $category) {
