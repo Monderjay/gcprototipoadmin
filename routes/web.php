@@ -30,6 +30,8 @@ Route::middleware(['auth','staff','username'])->prefix('staff/founder')->group(f
     Route::get('/logs/users','Staff\LogsController@index'); //Table de Logs
     Route::get('/logs/news','Staff\LogsController@showNews'); //Table de Logs de noticias
     Route::post('/logs/news/{id}/restore','Staff\LogsController@restoreNews'); //Restaurar Noticia
+    Route::post('/logs/user/{id}/restore','Staff\LogsController@restoreUser'); //Restaurar Usuario
+
     Route::delete('/logs/news/{id}/delete','Staff\LogsController@deleteNews'); //Eliminar Noticia Definitivamente
 
     Route::get('', 'Staff\FoundersController@index'); //Tabla de Fundadores

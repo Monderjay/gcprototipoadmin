@@ -64,7 +64,7 @@
                                 <br><b>Telefono 2:</b> {{$user->address->cellphone}}
                             </td>
                             <td>
-                                <form method="GET" action="{{url('/admin/founder/edit/'.$user->id)}}">
+                                <form method="POST" action="{{url('staff/founder/logs/user/'.$user->id.'/restore')}}">
                                     {{csrf_field()}}
                                     <button class="btn btn-secondary"><i class="fas fa-undo-alt"></i></button>
                                 </form>

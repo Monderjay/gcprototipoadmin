@@ -73,7 +73,7 @@
                                     <li class="list-group-item d-flex justify-content-start align-items-center ">
                                         <img src="{{$item->news_image_featured}}" class="img-fluid" alt="{{$item->title}}">
                                         <a class="text-justify" href="{{url('/news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->id)}}">
-                                            {{$item->mobile_introduction}}
+                                            {{$item->title}}
                                         </a>
                                     </li>
                                 @endforeach

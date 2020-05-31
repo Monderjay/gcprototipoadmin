@@ -44,6 +44,21 @@ class LogsController extends Controller
         }
     }
 
+    public function restoreUser($id){
+        $restore= User::withTrashed()
+            ->where('id', $id)
+            ->restore();
+        if ($restore){
+            $notification = "Usuario Restaurado Correctamente :D";
+            return back()->with(compact('notification'));
+        }else {
+            $notificationFaill = "El Usuario no se pudo Restaurar :(";
+            return back()->with(compact('notificationFaill'));
+        }
+    }
+
+
+
     public function deleteNews($id){
         $news = News::withTrashed()->where('id', $id);
         $newsImages = NewsImage::where('news_id',$id);
