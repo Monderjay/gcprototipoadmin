@@ -48,8 +48,9 @@
 
         <div class="mt-5 col-12 col-xl-9 p-0">
 
-            <div class="row justify-content-center mr-xl-0 ml-xl-0 mb-5 principal-sections">
-                <div class="col-12 col-xl-5 m-auto p-0">
+            <div class="row justify-content-center mr-xl-0 ml-xl-0 mb-5 text-center principal-sections">
+
+                <div class="col-12 col-xl-5 mr-xl-auto ml-xl-auto  p-0 m-xl-0">
                     <div class="card card-border">
                         <div class="card-header text-center">
                             <h5><i class="fas fa-newspaper"></i> Ultimas Reseñas</h5>
@@ -78,7 +79,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 col-xl-5  m-xl-auto p-0 mt-5 mt-xl-0">
+                <div class="col-12 col-xl-5 ml-xl-auto mr-xl-auto p-0 mt-5 mt-xl-0">
                     <div class="card card-border">
                         <div class="card-header text-center">
                             <h5><i class="fas fa-mobile"></i> PC | Movil</h5>

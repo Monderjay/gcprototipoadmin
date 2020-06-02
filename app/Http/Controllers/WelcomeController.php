@@ -193,4 +193,8 @@ class WelcomeController extends Controller
     public function showContact(){
         return view('general.contact');
     }
+
+    public function showVisits(){
+
+    }
 }

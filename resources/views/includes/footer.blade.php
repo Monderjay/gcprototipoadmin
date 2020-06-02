@@ -23,6 +23,7 @@
                 <h5>Legal</h5>
                 <ul>
                     <li><a href="{{url('/politicas')}}">Políticas de Privacidad</a></li>
+                    <li></li>
                 </ul>
             </div>
 

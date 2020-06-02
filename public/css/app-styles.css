@@ -412,6 +412,11 @@
 
 }
 
+.principal-sections{
+    margin: auto;
+    width: 95%;
+}
+
 
 @media only screen and (max-width: 1200px) {
     .carousel-caption {
