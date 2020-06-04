@@ -37,6 +37,13 @@
     <!-- CSS Files -->
     <link href="{{asset('material-kit/css/material-kit.css')}}?v=2.0.7" rel="stylesheet" />
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <script src="{{asset('vendors/sweetalert2/dist/sweetalert2.all.min.js')}}"></script>
+
+    <link rel="stylesheet" href="{{asset('vendors/sweetalert2/dist/sweetalert2.min.css')}}">
+
+
 </head>
 <body class="profile-page sidebar-collapse">
 
@@ -206,6 +213,9 @@
 
 <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
 <script src="{{asset('material-kit/js/material-kit.js')}}?v=2.0.7" type="text/javascript"></script>
+
+
+
 
 </body>
 </html>

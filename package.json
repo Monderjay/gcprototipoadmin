@@ -26,6 +26,6 @@
     "dependencies": {
         "@fortawesome/fontawesome-free": "^5.13.0",
         "jquery": "^3.4.1",
-        "knob": "^1.1.0"
+        "knob": "^1.1.0",
     }
 }

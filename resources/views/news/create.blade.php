@@ -12,26 +12,26 @@
                 </div>
             </div>
             <div class="card-body">
-                <form method="POST" action="{{url('/staff/news/create')}}" enctype="multipart/form-data">
+                <form method="POST" action="{{url('/staff/news/create')}}" enctype="multipart/form-data" onsubmit="return validateNews(this)">
                     @csrf
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12 col-xl-9 form-group">
-                                <textarea required name="description"></textarea>
+                                <textarea  name="description" id="description"></textarea>
                             </div>
                             <div class="form-row col-12 col-xl-3">
                                 <div class="form-group mt-4 col-12">
-                                    <input required type="text" class="form-control" name="title" id="exampleFormControlInput1" placeholder="Titulo de la Noticia">
+                                    <input type="text" class="form-control" name="title" id="title" placeholder="Titulo de la Noticia">
                                 </div>
 
                                 <div class="form-group mt-2 col-12">
                                     <label for="exampleFormControlTextarea1">Introducción de la noticia</label>
-                                    <textarea required class="form-control" name="introduction" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <textarea  class="form-control" name="introduction" id="introduction" rows="3"></textarea>
                                 </div>
 
                                 <div class="form-group mt-2 col-12">
                                     <label for="exampleFormControlTextarea1">Acerca de...</label>
-                                    <textarea required class="form-control" name="about" id="exampleFormControlTextarea2" rows="3"></textarea>
+                                    <textarea  class="form-control" name="about" id="about" rows="3"></textarea>
                                 </div>
 
                                 <div class="col-12">
@@ -43,12 +43,12 @@
                                           </span>
 
                                         </div>
-                                        <input required type="file" class="inputFileHidden form-control" name="featured_image">
+                                        <input type="file" class="inputFileHidden form-control" name="featured_image" id="featured_image">
                                     </div>
                                 </div>
 
                                 <div class="col-12 mt-4 form-group">
-                                    <select required class="form-control selectpicker" name="category">
+                                    <select class="form-control selectpicker" id="category" name="category">
                                         <option>Seleccione una Categoría</option>
                                         @foreach($categories as $category)
                                             <option>{{$category->name}}</option>
@@ -57,7 +57,7 @@
                                 </div>
 
                                 <div class="col-12 mt-4 form-group">
-                                    <select required class="form-control selectpicker" name="clasification" id="clasification">
+                                    <select class="form-control selectpicker" name="clasification" id="clasification">
                                         <option>Seleccione una Clasificación</option>
                                         @foreach($clasifications as $clasification)
                                             <option>{{$clasification->name}}</option>
@@ -85,7 +85,7 @@
                     </div>
             </div>
             <div class="footer text-center">
-                <button type="submit" class="btn btn-primary">Agregar</button>
+                <button type="submit" class="btn btn-primary" id="agregar">Agregar</button>
             </div>
             </form>
         </div>

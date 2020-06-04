@@ -12,21 +12,16 @@
             <div class="row">
                 <div class="col-lg-8 blog-main">
                     <div class="blog-header">
-
                             <h1 class="blog-title">{{$news->title}}</h1>
                             {{--<p class="lead blog-description">Subtitulo o frase</p>--}}
-
                     </div>
 
                     <div class="blog-post">
                         <p class="blog-post-meta">{{$news->date}} por<a href="{{url('/author/'.$news->user->username)}}"> {{$news->user->username}} </p>
 
                         <div class="col-12 mb-2 p-0 text-left align-self-center row">
-                            {{--<div class="fb-share-button" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}"
-                                 data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a>
-                            </div>--}}
-                            <div class="col-auto pr-0 pl-1"><a href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
-                            <div class="col-auto fb-like pl-1" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+                            <div class="col-auto pr-0 "><a href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
+                            <div class="col-auto fb-like pl-1 pl-sm-1 " data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
                         </div>
 
                         <p class="text-justify">{{$news->introduction}}</p>
@@ -39,8 +34,9 @@
                         <hr>
                         <img src="{{$news->news_image_featured}}" class="img-thumbnail" alt="Responsive image">
                         <hr>
-
-                        {!!$news->description!!}
+                        <span class="text-justify">
+                            {!!$news->description!!}
+                        </span>
                         <hr>
 
                         @if($news->calification != null)

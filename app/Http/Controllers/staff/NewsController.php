@@ -126,20 +126,40 @@ class NewsController extends Controller
             $image = new NewsImage();
             $file = $request->file('featured_image');
             $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
-            $path = public_path('images/news_images/'. $fileName);
 
-            $imageSave = Image::make($file->getRealPath())
-                ->resize(1280, 720)->sharpen();
 
-            //Crear 1 registro en la tabla de users
-            if ($imageSave->save($path,72)) {
-                $image->image = $fileName;
-                $image->news_id = $id;
-                NewsImage::where('news_id',$id)->update([
-                    'featured' => false
-                ]);
-                $image->featured = true;
+
+            //dd($file->getClientOriginalExtension());
+            if ($file->getClientOriginalExtension() != "gif"){
+                $path = public_path('images/news_images/'. $fileName);
+                $imageSave = Image::make($file->getRealPath())
+                    ->resize(1280, 720)->sharpen();
+                //Crear 1 registro en la tabla de users
+                if ($imageSave->save($path,72)) {
+                    $image->image = $fileName;
+                    $image->news_id = $id;
+                    NewsImage::where('news_id',$id)->update([
+                        'featured' => false
+                    ]);
+                    $image->featured = true;
+                }
+            }else{
+                $path = public_path().'/images/news_images';
+
+                $moved = $file->move($path,$fileName);
+                //dd($moved);
+                //Crear 1 registro en la tabla de product_images
+                if ($moved){
+                    $image -> image = $fileName;
+                    $image->news_id = $id;
+                    NewsImage::where('news_id',$id)->update([
+                        'featured' => false
+                    ]);
+                    $image->featured = true;
+                }
             }
+
+
         }
 
         $emailAuthor = auth()->user()->email;
