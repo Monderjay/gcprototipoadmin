@@ -68,7 +68,7 @@
                             <td><a href="{{url('staff/news/'.$note->id.'/edit')}}" class="btn btn-info"><i class="fas fa-pencil-alt"></i></a></td>
                             <td>
 
-                                <form method="POST" action="{{url('/staff/news/delete/'.$note->id)}}">
+                                <form method="POST" action="{{url('/staff/news/delete/'.$note->id)}}" onsubmit="return validateDelete(this)">
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>

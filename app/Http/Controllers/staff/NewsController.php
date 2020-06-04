@@ -30,28 +30,64 @@ class NewsController extends Controller
             $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
             $path = public_path('images/news_images/'. $fileName);
 
-            $imageSave = Image::make($file->getRealPath())
-                ->resize(1280, null, function ($constraint) {
-                    $constraint->aspectRatio();
-                })->sharpen();
+            $ext = explode('.',$file->getClientOriginalName());
+            $ext=$ext[count($ext)-1];
 
-            //Crear 1 registro en la tabla de users
-            if ($imageSave->save($path,72)) {
-                $image->image = $fileName;
-                $image->news_id = null;
-                $image->save();
-                $name = auth()->user()->email;
-                //session($name)->push($image);
-                session()->push($name, $image);
-                $CKEditorFuncNum = $request->input('CKEditorFuncNum');
-                $url = '/images/news_images/'.$fileName;
-                $msg = 'Image cargada correctamente'.$fileName;
-                $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
 
-                // Render HTML output
-                @header('Content-type: text/html; charset=utf-8');
-                echo $re;
+
+            if ($ext == "jpg" || $ext == "png" || $ext == "jpeg"){
+                $imageSave = Image::make($file->getRealPath())
+                    ->resize(1280, null, function ($constraint) {
+                        $constraint->aspectRatio();
+                    })->sharpen();
+
+                //Crear 1 registro en la tabla de users
+                if ($imageSave->save($path,72)) {
+                    $image->image = $fileName;
+                    $image->news_id = null;
+                    $image->save();
+                    $name = auth()->user()->email;
+                    session()->push($name, $image);
+                    $CKEditorFuncNum = $request->input('CKEditorFuncNum');
+                    $url = '/images/news_images/'.$fileName;
+                    $msg = 'Image cargada correctamente'.$fileName;
+                    $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url', '$msg')</script>";
+
+                    // Render HTML output
+                    @header('Content-type: text/html; charset=utf-8');
+                    echo $re;
+                }
+            }elseif ($ext == "gif"){
+                $path = public_path().'/images/news_images';
+
+                $moved = $file->move($path,$fileName);
+                //dd($moved);
+                //Crear 1 registro en la tabla de product_images
+                if ($moved){
+                    $image->image = $fileName;
+                    $image->news_id = null;
+                    $image->save();
+                    $name = auth()->user()->email;
+                    session()->push($name, $image);
+                    $CKEditorFuncNum = $request->input('CKEditorFuncNum');
+                    $url = '/images/news_images/'.$fileName;
+                    $msg = 'Image cargada correctamente';
+                    $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '$url')</script>";
+
+                    // Render HTML output
+                    @header('Content-type: text/html; charset=utf-8');
+                    echo $re;
+                }
+            }else{
+                    $CKEditorFuncNum = $request->input('CKEditorFuncNum');
+                    $msg = 'Formato no valido';
+                    $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '', '$msg')</script>";
+                    // Render HTML output
+                    @header('Content-type: text/html; charset=utf-8');
+                    echo $re;
             }
+
+
 
         }
     }
@@ -114,6 +150,7 @@ class NewsController extends Controller
 
         $news->introduction = $request->input('introduction');
 
+        $news->font = $request->input('font');
 
         $news->user_id = auth()->user()->id;
 
@@ -155,6 +192,8 @@ class NewsController extends Controller
                     $image->featured = true;
                 }*/
             }
+
+
 
 
         $emailAuthor = auth()->user()->email;
@@ -249,6 +288,7 @@ class NewsController extends Controller
         $news->category_id = $category->id;
         $news->clasification_id = $clasification->id;
         $news->description = $request->input('description');
+        $news->font  = $request->input('font');
 
         if($request->hasFile('featured_image')) {
 

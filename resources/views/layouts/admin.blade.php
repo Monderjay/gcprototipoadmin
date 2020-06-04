@@ -191,7 +191,7 @@
                         @yield('porfile-data')
                         @yield('page-description')
                         <div class="tab-content tab-space">
-                            <div class="tab-pane active text-center gallery" id="studio">
+                            <div class="tab-pane active text-center" id="studio">
                                 @yield('content')
                             </div>
                         </div>

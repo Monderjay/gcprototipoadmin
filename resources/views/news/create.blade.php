@@ -80,16 +80,21 @@
                                 <div class="col-12 mt-4  calification-content">
                                     <input type="text" name="calification" class="calification" id="calification">
                                 </div>
+
+
+                                <div class="form-group col-12">
+                                    <input type="text" class="form-control" name="font" id="font" placeholder="Fuente de la Noticia">
+                                </div>
+
                             </div>
                         </div>
+                        <div class="footer text-center">
+                            <button type="submit" class="btn btn-primary" id="agregar">Agregar</button>
+                        </div>
                     </div>
+                </form>
             </div>
-            <div class="footer text-center">
-                <button type="submit" class="btn btn-primary" id="agregar">Agregar</button>
-            </div>
-            </form>
         </div>
-    </div>
     </div>
 
     <script type="text/javascript" defer>
@@ -100,7 +105,6 @@
             });
         };
     </script>
-
 
 @endsection
 

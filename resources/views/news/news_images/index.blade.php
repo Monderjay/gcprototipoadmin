@@ -21,7 +21,7 @@
             @endif
 
                 <div class="col-md-12 mt-4">
-                    <form method="POST" action="{{url('/staff/news/'.$id.'/images/create')}}" enctype="multipart/form-data">
+                    <form method="POST" action="{{url('/staff/news/'.$id.'/images/create')}}" enctype="multipart/form-data" onsubmit="return validateImageFeatured(this)">
                         @csrf
                         <label for="exampleInputEmail1">Imagen destacada</label>
                         <div class="input-group">
@@ -30,7 +30,7 @@
                                     <i class="fas fa-image"></i>
                                 </span>
                             </div>
-                            <input type="file" class="inputFileHidden form-control" name="featured-image">
+                            <input type="file" class="inputFileHidden form-control" name="featured-image" id="featured_image">
 
                             <button type="submit" class="btn btn-primary ml-4">Subir</button>
                         </div>
@@ -45,7 +45,7 @@
 
                             <div class="card-body">
                                     <img class="news-image mt-2" src="{{$image->news_image}}">
-                                <form method="POST" action="{{url('staff/news/images/'.$image->id.'/delete')}}" onsubmit="return deleteImage(this)";>
+                                <form method="POST" action="{{url('staff/news/images/'.$image->id.'/delete')}}" onsubmit="return validateDelete(this)";>
                                     @csrf
                                     {{method_field('DELETE')}}
                                     <button class="btn rounded-pill btn-danger" type="submit"><i class="fas fa-trash-alt"></i> Eliminar Imagen</button>

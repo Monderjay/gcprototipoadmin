@@ -19,9 +19,9 @@
                     <div class="blog-post">
                         <p class="blog-post-meta">{{$news->date}} por<a href="{{url('/author/'.$news->user->username)}}"> {{$news->user->username}} </p>
 
-                        <div class="col-12 mb-2 p-0 text-left align-self-center row">
-                            <div class="col-auto pr-0 "><a href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
-                            <div class="col-auto fb-like pl-1 pl-sm-1 " data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+                        <div class="col-12 mb-2 text-left align-self-center row">
+                            <div class="col-auto pr-0 pl-1"><a href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
+                            <div class="col-auto fb-like pl-1" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
                         </div>
 
                         <p class="text-justify">{{$news->introduction}}</p>
@@ -47,6 +47,9 @@
                                 </li>
                             </div>
                         @endif
+
+                        <p><h5>Fuente: <b>{{$news->font}}</b></h5></p>
+                        <br>
                     </div><!-- /.blog-post -->
 
                 </div><!-- /.blog-main -->
@@ -80,15 +83,12 @@
 
 
             </div><!-- /.row -->
-            <div class="col-12 mb-2 p-0 text-left align-self-center row">
-                {{--<div class="fb-share-button" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}"
-                     data-layout="button" data-size="large"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a>
-                </div>--}}
+            <div class="col-12 mb-2 text-left align-self-center row">
                 <div class="col-auto pr-0 pl-1"><a href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
                 <div class="col-auto fb-like pl-1" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
             </div>
 
-            <div class="fb-comments mb-2" data-mobile="Auto-detected" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" data-numposts="10" data-width="100%"></div>
+            <div class="fb-comments mb-2" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->id)}}" data-numposts="10" data-width="100%"></div>
 
         </div><!-- /.container -->
 
