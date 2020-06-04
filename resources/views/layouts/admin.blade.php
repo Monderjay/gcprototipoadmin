@@ -12,10 +12,11 @@
 
     <!-- Scripts -->
 
-    <script src="{{ asset('js/adminFunctions.js') }}" defer></script>
+
     <script src="{{ asset('/vendors/ckeditor/ckeditor.js') }}" defer></script>
     <script src="{{ asset('/js/Knob/js/jquery.knob.js') }}" defer></script>
     <script src="{{ asset('/js/Knob/configStaff.js') }}" defer></script>
+    <script src="{{ asset('js/adminFunctions.js') }}" defer></script>
 
 
 

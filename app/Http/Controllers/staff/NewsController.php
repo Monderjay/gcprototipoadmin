@@ -128,9 +128,6 @@ class NewsController extends Controller
             $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
 
 
-
-            //dd($file->getClientOriginalExtension());
-            if ($file->getClientOriginalExtension() != "gif"){
                 $path = public_path('images/news_images/'. $fileName);
                 $imageSave = Image::make($file->getRealPath())
                     ->resize(1280, 720)->sharpen();
@@ -143,8 +140,8 @@ class NewsController extends Controller
                     ]);
                     $image->featured = true;
                 }
-            }else{
-                $path = public_path().'/images/news_images';
+
+                /*$path = public_path().'/images/news_images';
 
                 $moved = $file->move($path,$fileName);
                 //dd($moved);
@@ -156,11 +153,9 @@ class NewsController extends Controller
                         'featured' => false
                     ]);
                     $image->featured = true;
-                }
+                }*/
             }
 
-
-        }
 
         $emailAuthor = auth()->user()->email;
         if (session($emailAuthor)){

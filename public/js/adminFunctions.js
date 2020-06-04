@@ -47,7 +47,7 @@ featured_image.change(function(e) {
 
 function validateNews(form) {
     var title = $('#title').val();
-    var description = $('#description').val();
+    var description = CKEDITOR.instances['description'].getData();
     var introduction = $('#introduction').val();
     var category = $('#category').val();
     var clasification = $('#clasification').val();
@@ -65,60 +65,6 @@ function validateNews(form) {
         return false;
     }
 
-    if (featured_image.val() == ""){
-
-        Swal.fire({
-            icon: 'error',
-            title: 'No hay Imagen',
-            text: 'Debe Proporcionar una Imagen Destacada a la Noticia',
-        });
-        return false;
-    }else{
-        var _URL = window.URL || window.webkitURL;
-        var featured_image = $('#featured_image');
-
-            var file, img;
-
-            //console.log(this.files[0]);
-            //console.log(featured_image[0].files[0])
-
-            if ((file = featured_image[0].files[0])) {
-                img = new Image();
-                img.onload = function() {
-                    if (img.width > 1920 && img.height > 1080){
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Imagen demasiado Grande',
-                            text: 'La Imagen Destacada no debe de ser mayor a  1920 x 1080px',
-                        });
-                        return false;
-                    }
-                    var fileName = file.name;
-                    var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
-                    console.log(ext);
-                    if( ext != 'jpeg' && ext != 'png' && ext != 'jpg' && ext != 'gif'){
-                        console.log(file.type);
-                        Swal.fire({
-                            icon: 'error',
-                            title: 'Formato no valido',
-                            text: 'La Imagen Destacada debe de tener un formato (jpg, jpeg, gif)',
-                        });
-                        return false;
-                    }
-                };
-                img.onerror = function() {
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Formato no valido',
-                        text: 'Solo se admiten Imagenes (jpg, jpeg, gif)',
-                    });
-                    return false;
-                };
-                img.src = _URL.createObjectURL(file);
-
-            }
-    }
-
     if (introduction == ""){
 
         Swal.fire({
@@ -133,11 +79,66 @@ function validateNews(form) {
 
         Swal.fire({
             icon: 'error',
-            title: 'No hay Descripción',
+            title: 'No hay Descripción' + description,
             text: 'Debe Proporcionar una Descripción a la Noticia',
         });
         return false;
     }
+
+    if (featured_image.val() == ""){
+
+        Swal.fire({
+            icon: 'error',
+            title: 'No hay Imagen',
+            text: 'Debe Proporcionar una Imagen Destacada a la Noticia',
+        });
+        return false;
+    }else{
+        var _URL = window.URL || window.webkitURL;
+        var featured_image = $('#featured_image');
+
+        var file, img;
+
+        //console.log(this.files[0]);
+        //console.log(featured_image[0].files[0])
+
+        if ((file = featured_image[0].files[0])) {
+            img = new Image();
+            img.onload = function() {
+                if (img.width > 1920 && img.height > 1080){
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Imagen demasiado Grande',
+                        text: 'La Imagen Destacada no debe de ser mayor a  1920 x 1080px',
+                    });
+                    return false;
+                }
+                var fileName = file.name;
+                var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+                console.log(ext);
+                if( ext != 'jpeg' && ext != 'png' && ext != 'jpg'){
+                    console.log(file.type);
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Formato no valido',
+                        text: 'La Imagen Destacada debe de tener un formato (jpg, jpeg, png)',
+                    });
+                    return false;
+                }
+            };
+            img.onerror = function() {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Formato no valido',
+                    text: 'Solo se admiten Imagenes (jpg, jpeg, gif)',
+                });
+                return false;
+            };
+            img.src = _URL.createObjectURL(file);
+
+        }
+    }
+
 
     if (category == "" || category == "Seleccione una Categoría"){
 
@@ -192,8 +193,3 @@ function validateNews(form) {
     });
 
 })(jQuery);
-
-
-
-
-

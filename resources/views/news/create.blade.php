@@ -92,7 +92,7 @@
     </div>
     </div>
 
-    <script defer>
+    <script type="text/javascript" defer>
         window.onload = function() {
             CKEDITOR.replace('description', {
                 filebrowserUploadUrl: "{{route('ckeditor.upload', ['_token' => csrf_token() ])}}",
