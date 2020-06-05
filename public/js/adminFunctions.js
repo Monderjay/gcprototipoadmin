@@ -256,6 +256,9 @@ function validateImageFeatured(form){
     }
 }
 
+function validatePorfile(form){
+
+}
 (function($) {
 
     "use strict";

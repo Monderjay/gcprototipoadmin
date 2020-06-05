@@ -50,6 +50,70 @@ class HomeController extends Controller
 
     public function update(Request $request, $id)
     {
+        $rules = [
+            'username' => 'required|unique:users',
+
+            'name' => 'required|regex:/^[a-zA-ZÁ-ÿ]+$/',
+            'first_name' => 'required|regex:/^[a-zA-ZÁá-ÿ]+$/',
+            'last_name' => 'required|regex:/^[a-zA-ZÁá-ÿ]+$/',
+            'birthdate' => 'required',
+            'gender' => 'required',
+            'email' => 'required|email|unique:users,email,$this->id,id',
+            'password' => 'required|confirmed|min:8',
+            'city' => 'required|regex:/^[a-zA-Z]+$/',
+            'zip' => 'required|numeric',
+            'cellphone' => 'required|numeric',
+
+            'street' => 'regex:/^[a-zA-Z]+$/|nullable',
+            'outdoor_number' => 'numeric|nullable',
+            'interior_number' => 'numeric|nullable',
+            'colony' => 'regex:/^[a-zA-Z]+$/|nullable',
+            'phone' => 'numeric|nullable',
+        ];
+
+        $messages = [
+            'name.required' => 'Debe agregar su nombre.',
+            'first_name.required' => 'Debe agregar su Apellido Paterno.',
+            'last_name.required' => 'Debe agregar su Apellido Materno.',
+            'birthdate.required' => 'Debe agregar su Fecha de Nacimiento.',
+            'gender.required' => 'Debe agregar su Genero.',
+            'email.required' => 'Debe agregar su Correo.',
+            'password.required' => 'Debe agregar su Contraseña.',
+            'city.required' => 'Debe agregar su Ciudad.',
+            'zip.required' => 'Debe agregar su Código Postal.',
+            'cellphone.required' => 'Debe agregar su Número de Celular.',
+
+            'street.regex' => 'La calle debe de ser Texto.',
+            'outdoor_number.numeric' => 'El número exterior debe de ser numerico.',
+            'interior_number.numeric' => 'El número interior debe de ser numerico.',
+            'colony.regex' => 'La colonia debe de ser un Texto.',
+            'phone.numeric' => 'El numero celular debe ser numerico.',
+
+            'name.regex' => 'El nombre debe de ser un texto.',
+            'first_name.regex' => 'El Apellido Paterno debe de ser un texto.',
+            'last_name.regex' => 'El Apellido Materno debe de ser un texto.',
+            'email.unique' => 'EL correo ingresado ya existe.',
+            'password.confirmed' => 'Las contraseñas no coincide.',
+            'city.regex' => 'La ciudade debe ser un texto.',
+            'zip.numeric' => 'EL Código Postal debe de ser numerico.',
+            'cellphone.numeric' => 'EL Número celular debe de ser numerico.',
+
+            'email.email' => 'El correo electronico ddebe tener un formato valido.',
+            'password.min:8' => 'La contraseña debe tener almenos 8 caracteres.',
+
+            'username.required' => 'Debe Proporcionar un nombre de Usuario.',
+            'username.unique' => 'El nombre de usuario ya existe.',
+
+        ];
+
+        $this->validate($request, $rules, $messages);
+
+        if ($validator->fails()) {
+            return back()
+                ->withErrors($validator)
+                ->withInput();
+        }
+
         //
         $user = User::find($id);
         $user->username = $request->input('username');

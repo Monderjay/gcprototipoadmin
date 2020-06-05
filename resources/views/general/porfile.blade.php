@@ -31,6 +31,14 @@
                 </div>
             </div>
             <div class="card-body">
+                @if(count($errors)>0)
+                    <ul class="">
+                        @foreach($errors->all() as $error)
+                            <li class="text-left text-danger">{{$error}}</li>
+                        @endforeach
+                    </ul>
+                @endif
+
                 @if (session('notification'))
                     <div class="alert alert-success" role="alert">
                         {{ session('notification') }}
@@ -40,7 +48,7 @@
                         {{ session('notificationUsername') }}
                     </div>
                 @endif
-                <form method="POST" action="{{url('/porfile/'.$user->id.'/edit')}}" enctype="multipart/form-data">
+                <form method="POST" action="{{url('/porfile/'.$user->id.'/edit')}}" enctype="multipart/form-data" onsubmit="return validatePorfile(this)">
                     <div class="card-body">
                         @csrf
                         <div class="form-row">
