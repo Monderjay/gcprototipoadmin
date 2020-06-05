@@ -81,7 +81,7 @@ function validateNews(form) {
                 Swal.fire({
                     icon: 'error',
                     title: 'Imagen demasiado Grande',
-                    text: 'La Imagen Destacada debe de tener un meso maximo de 2MB',
+                    text: 'La Imagen Destacada debe de tener un peso maximo de 2MB',
                 });
                 return false;
             }
@@ -179,7 +179,7 @@ function validateNewsEdit(form) {
                 Swal.fire({
                     icon: 'error',
                     title: 'Imagen demasiado Grande',
-                    text: 'La Imagen Destacada debe de tener un meso maximo de 2MB',
+                    text: 'La Imagen Destacada debe de tener un peso maximo de 2MB',
                 });
                 return false;
             }
@@ -247,7 +247,7 @@ function validateImageFeatured(form){
                 Swal.fire({
                     icon: 'error',
                     title: 'Imagen demasiado Grande',
-                    text: 'La Imagen Destacada debe de tener un meso maximo de 2MB',
+                    text: 'La Imagen Destacada debe de tener un peso maximo de 2MB',
                 });
                 return false;
             }
@@ -256,8 +256,80 @@ function validateImageFeatured(form){
     }
 }
 
-function validatePorfile(form){
+function validatePorfileImages(form){
+    var porfileImage = $('#porfile_image');
+    var coverImage = $('#cover_image');
 
+    if (porfileImage.val() != ""){
+        var _URL = window.URL || window.webkitURL;
+        var file, img;
+
+        if ((file = porfileImage[0].files[0])) {
+            img = new Image();
+
+            var fileName = file.name;
+            var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+            var size = file.size;
+            console.log(ext);
+            console.log(size);
+            if( ext != 'jpeg' && ext != 'png' && ext != 'jpg' && ext != 'JPG'){
+                console.log(file.type);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Formato no valido',
+                    text: 'La Imagen de Perfil debe de tener un formato (jpg, jpeg, png)',
+                });
+                return false;
+            }
+
+            if( size > 2097152){
+                console.log(file.type);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Imagen demasiado Grande',
+                    text: 'La Imagen de Perfil debe de tener un peso maximo de 2MB',
+                });
+                return false;
+            }
+            img.src = _URL.createObjectURL(file);
+        }
+    }
+
+
+    if (coverImage.val() != ""){
+        var _URL = window.URL || window.webkitURL;
+        var file, img;
+
+        if ((file = coverImage[0].files[0])) {
+            img = new Image();
+
+            var fileName = file.name;
+            var ext = fileName.substring(fileName.lastIndexOf('.') + 1);
+            var size = file.size;
+            console.log(ext);
+            console.log(size);
+            if( ext != 'jpeg' && ext != 'png' && ext != 'jpg' && ext != 'JPG'){
+                console.log(file.type);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Formato no valido',
+                    text: 'La Imagen de Portada debe de tener un formato (jpg, jpeg, png)',
+                });
+                return false;
+            }
+
+            if( size > 2097152){
+                console.log(file.type);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Imagen demasiado Grande',
+                    text: 'La Imagen de Portada debe de tener un peso maximo de 2MB',
+                });
+                return false;
+            }
+            img.src = _URL.createObjectURL(file);
+        }
+    }
 }
 (function($) {
 

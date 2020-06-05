@@ -48,7 +48,7 @@
                         {{ session('notificationUsername') }}
                     </div>
                 @endif
-                <form method="POST" action="{{url('/porfile/'.$user->id.'/edit')}}" enctype="multipart/form-data" onsubmit="return validatePorfile(this)">
+                <form method="POST" action="{{url('/porfile/'.$user->id.'/edit')}}" enctype="multipart/form-data" onsubmit="return validatePorfileImages(this)">
                     <div class="card-body">
                         @csrf
                         <div class="form-row">
@@ -103,7 +103,7 @@
                                           </span>
 
                                     </div>
-                                    <input type="date" class="form-control" name="birthdate" value="{{old('birthdate',$user->birthdate_date)}}">
+                                    <input type="date" class="form-control" name="birthdate" value="{{old('birthdate',$user->birthdate_date)}}" max="2006-12-31">
                                 </div>
                             </div>
 
@@ -266,7 +266,7 @@
                                               <i class="fas fa-user-circle"></i>
                                           </span>
                                     </div>
-                                    <input type="file" class="inputFileHidden form-control" name="porfile_image">
+                                    <input type="file" class="inputFileHidden form-control" name="porfile_image" id="porfile_image">
                                 </div>
                             </div>
 
@@ -278,7 +278,7 @@
                                               <i class="fas fa-image"></i>
                                           </span>
                                     </div>
-                                    <input type="file" class="inputFileHidden form-control" name="cover_image">
+                                    <input type="file" class="inputFileHidden form-control" name="cover_image" id="cover_image">
                                 </div>
                             </div>
 
