@@ -38,21 +38,21 @@ class FoundersController extends Controller
     {
 
         $rules = [
-            'name' => 'required|regex:/^[a-zA-ZÁ-ÿ]+$/',
-            'first_name' => 'required|regex:/^[a-zA-ZÁ-ÿ]+$/',
-            'last_name' => 'required|regex:/^[a-zA-ZÁ-ÿ]+$/',
+            'name' => 'required|regex:/^[a-zA-ZÁ-ÿ ]+$/',
+            'first_name' => 'required|regex:/^[a-zA-ZÁ-ÿ ]+$/',
+            'last_name' => 'required|regex:/^[a-zA-ZÁ-ÿ ]+$/',
             'birthdate' => 'required',
             'gender' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|confirmed|min:8',
-            'city' => 'required|regex:/^[a-zA-ZÁ-ÿ]+$/',
+            'city' => 'required|regex:/^[a-zA-ZÁ-ÿ ]+$/',
             'zip' => 'required|numeric',
             'cellphone' => 'required|numeric',
 
-            'street' => 'regex:/^[a-zA-ZÁ-ÿ]+$/|nullable',
+            'street' => 'regex:/^[a-zA-ZÁ-ÿ ]+$/|nullable',
             'outdoor_number' => 'numeric|nullable',
             'interior_number' => 'numeric|nullable',
-            'colony' => 'regex:/^[a-zA-ZÁ-ÿ]+$/|nullable',
+            'colony' => 'regex:/^[a-zA-ZÁ-ÿ ]+$/|nullable',
             'phone' => 'numeric|nullable',
         ];
 
