@@ -51,23 +51,23 @@ class HomeController extends Controller
     public function update(Request $request, $id)
     {
         $rules = [
-            'username' => 'required|unique:users',
+            'username' => 'required|unique:users,username,'.$id,
 
-            'name' => 'required|regex:/^[a-zA-ZÁ-ÿ]+$/',
-            'first_name' => 'required|regex:/^[a-zA-ZÁá-ÿ]+$/',
-            'last_name' => 'required|regex:/^[a-zA-ZÁá-ÿ]+$/',
+            'name' => 'required|regex:/^[a-zA-ZÁ-ÿ ]+$/',
+            'first_name' => 'required|regex:/^[a-zA-ZÁá-ÿ ]+$/',
+            'last_name' => 'required|regex:/^[a-zA-ZÁá-ÿ ]+$/',
             'birthdate' => 'required',
             'gender' => 'required',
-            'email' => 'required|email|unique:users,email,$this->id,id',
-            'password' => 'required|confirmed|min:8',
-            'city' => 'required|regex:/^[a-zA-Z]+$/',
+            'email' => 'required|email|unique:users,email,'.$id,
+            'password' => 'nullable|confirmed|min:8',
+            'city' => 'required|regex:/^[a-zA-ZÁá-ÿ ]+$/',
             'zip' => 'required|numeric',
             'cellphone' => 'required|numeric',
 
-            'street' => 'regex:/^[a-zA-Z]+$/|nullable',
+            'street' => 'regex:/^[a-zA-ZÁá-ÿ ]+$/|nullable',
             'outdoor_number' => 'numeric|nullable',
             'interior_number' => 'numeric|nullable',
-            'colony' => 'regex:/^[a-zA-Z]+$/|nullable',
+            'colony' => 'regex:/^[a-zA-ZÁá-ÿ ]+$/|nullable',
             'phone' => 'numeric|nullable',
         ];
 
@@ -107,12 +107,6 @@ class HomeController extends Controller
         ];
 
         $this->validate($request, $rules, $messages);
-
-        if ($validator->fails()) {
-            return back()
-                ->withErrors($validator)
-                ->withInput();
-        }
 
         //
         $user = User::find($id);
