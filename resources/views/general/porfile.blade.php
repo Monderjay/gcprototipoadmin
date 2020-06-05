@@ -59,7 +59,7 @@
                                               <i class="fas fa-user"></i>
                                           </span>
                                     </div>
-                                    <input type="text" class="form-control" name="username" value="{{old('username',$user->username)}}" placeholder="Usuario">
+                                    <input type="text" class="form-control" name="username" value="{{old('username',$user->username)}}" placeholder="Usuario" autocomplete="off">
                                 </div>
                             </div>
                             <div class="form-group col-md-3">
@@ -149,7 +149,7 @@
                                               <i class="fas fa-lock"></i>
                                           </span>
                                     </div>
-                                    <input type="password" name="password" class="form-control" placeholder="Contraseña">
+                                    <input type="password" name="password" class="form-control" placeholder="Contraseña" autocomplete="off">
                                 </div>
                             </div>
                             <div class="form-group col-md-3">
@@ -159,7 +159,7 @@
                                               <i class="fas fa-lock"></i>
                                           </span>
                                     </div>
-                                    <input type="password" name="password_confirmation" class="form-control" placeholder="Confirmar Contraseña">
+                                    <input type="password" name="password_confirmation" class="form-control" placeholder="Confirmar Contraseña" autocomplete="off">
                                 </div>
                             </div>
 
