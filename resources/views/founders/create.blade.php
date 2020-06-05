@@ -112,7 +112,7 @@
                                               <i class="fas fa-lock"></i>
                                           </span>
                                     </div>
-                                    <input type="text" name="password_confirmation" class="form-control" placeholder="Confirmar Contraseña">
+                                    <input type="password" name="password_confirmation" class="form-control" placeholder="Confirmar Contraseña">
                                 </div>
                             </div>
 

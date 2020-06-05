@@ -90,12 +90,6 @@ class FoundersController extends Controller
 
         $this->validate($request, $rules, $messages);
 
-        if ($validator->fails()) {
-            return back()
-                ->withErrors($validator)
-                ->withInput();
-        }
-
 
         //
         $founder = new User();
