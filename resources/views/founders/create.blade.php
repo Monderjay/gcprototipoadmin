@@ -64,7 +64,7 @@
                                           </span>
 
                                     </div>
-                                        <input type="date" class="inputFileHidden form-control" name="birthdate" value="{{old('birthdate')}}">
+                                        <input type="date" class="inputFileHidden form-control" name="birthdate" value="{{old('birthdate')}}" max="2006-12-31">
                                 </div>
                             </div>
 

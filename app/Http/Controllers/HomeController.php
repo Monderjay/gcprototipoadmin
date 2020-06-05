@@ -29,7 +29,30 @@ class HomeController extends Controller
     public function index()
     {
         $news = News::all();
-        return view('home');
+        $user = auth()->user();
+
+        $totalNews = News::with('user')
+            ->whereHas('user', function ($query) use ($user) {
+                $query->where('users.username', '=', $user->username);
+            })->count();
+
+        $news=News::with('user')
+            ->whereHas('user', function ($query) use ($user) {
+                $query->where('users.username', '=', $user->username);
+            })->orderBy('created_at','desc')->paginate(10);
+
+        $collection1 = collect();
+        $collection2 = collect();
+
+        for ($i=0; $i<$news->count(); $i++) {
+            if ($i <= 4) {
+                $collection1->push($news[$i]);
+            } else {
+                $collection2->push($news[$i]);
+            }
+        }
+
+        return view('home')->with(compact('user','totalNews','collection1','collection2','news'));
     }
 
     public function show($id){
