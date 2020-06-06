@@ -19,7 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('first_name');
             $table->string('last_name');
-            $table->date('birthdate');
+            $table->date('birthdate')->nullable();
             $table->string('gender')->nullable();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
@@ -29,6 +29,8 @@ class CreateUsersTable extends Migration
             $table->string('description')->nullable();
             $table->rememberToken();
             $table->timestamps();
+
+            $table->date('birthdate')->nullable()->change();
 
         });
     }

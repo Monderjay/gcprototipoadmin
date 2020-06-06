@@ -2,8 +2,8 @@ $(function() {
     $(".dial").knob({
         'min':0,
         'max':100,
-        'width':45,
-        'height':45,
+        'width':43,
+        'height':43,
         'readOnly':true
     });
 
@@ -18,8 +18,8 @@ $(function() {
     }
 
     $(".show-calification").knob({
-        'width':150,
-        'height':150,
+        'width':180,
+        'height':180,
         'readOnly':true,
         'fgColor':color
     });

@@ -29,10 +29,10 @@
             <h3><b>Articulos Publicados <i class="fas fa-newspaper"></i></b></b></h3>
         </div>
         <div class="row mt-1">
-            <div class="col-sm text-center">
+            <div class="col-12 col-md-6 text-center">
                 <ul class="list-group list-news-author m-auto">
                     @foreach($collection1 as $article)
-                        <li class="list-group-item d-flex justify-content-start align-items-center">
+                        <li class="list-group-items d-flex justify-content-start align-items-center">
                             <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
                             <a class="text-justify" href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
                                 {{$article->title}}<br>
@@ -53,11 +53,12 @@
                     @endforeach
                 </ul>
             </div>
+
             @if($collection2->count() > 0)
-                <div class="col-sm mt-3 mt-xl-0 text-center">
+                <div class="col-12 col-md-6 mt-3 mt-xl-0 text-center">
                     <ul class="list-group list-news-author m-auto">
                         @foreach($collection2 as $article)
-                            <li class="list-group-item d-flex justify-content-start align-items-center">
+                            <li class="list-group-items d-flex justify-content-start align-items-center">
                                 <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
                                 <a class="text-justify" href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
                                     {{$article->title}}<br>

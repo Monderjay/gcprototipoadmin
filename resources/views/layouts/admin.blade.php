@@ -11,14 +11,10 @@
     <title>@yield('title',config('app.name'))</title>
 
     <!-- Scripts -->
-
-
     <script src="{{ asset('/vendors/ckeditor/ckeditor.js') }}" defer></script>
     <script src="{{ asset('/js/Knob/js/jquery.knob.js') }}" defer></script>
     <script src="{{ asset('/js/Knob/configStaff.js') }}" defer></script>
     <script src="{{ asset('js/adminFunctions.js') }}" defer></script>
-
-
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -216,6 +212,8 @@
 <script src="{{asset('material-kit/js/material-kit.js')}}?v=2.0.7" type="text/javascript"></script>
 
 
+<script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}" ></script>
+<script type="text/javascript" src="{{ asset('js/Knob/config.js')}}"></script>
 
 
 </body>
