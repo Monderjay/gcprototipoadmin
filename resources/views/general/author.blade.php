@@ -29,7 +29,7 @@
             <h3><b>Articulos Publicados <i class="fas fa-newspaper"></i></b></b></h3>
         </div>
         <div class="row mt-1">
-            <div class="col-12 col-md-6 text-center">
+            <div class="col-12 col-xl-6 text-center">
                 <ul class="list-group list-news-author m-auto">
                     @foreach($collection1 as $article)
                         <li class="list-group-items d-flex justify-content-start align-items-center">
@@ -41,11 +41,11 @@
                             @if($article->calification > 0)
                                 <div class="col text-right p-0">
                                     @if($article->calification < 50)
-                                        <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#ed4757"></div>
+                                        <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#ed4757"></div>
                                     @elseif($article->calification < 80)
-                                        <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#fdc51b"></div>
+                                        <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#fdc51b"></div>
                                     @else
-                                        <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#87ceeb"></div>
+                                        <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#87ceeb"></div>
                                     @endif
                                 </div>
                             @endif
@@ -55,7 +55,7 @@
             </div>
 
             @if($collection2->count() > 0)
-                <div class="col-12 col-md-6 mt-3 mt-xl-0 text-center">
+                <div class="col-12 col-xl-6 mt-3 mt-xl-0 text-center">
                     <ul class="list-group list-news-author m-auto">
                         @foreach($collection2 as $article)
                             <li class="list-group-items d-flex justify-content-start align-items-center">
@@ -67,11 +67,11 @@
                                 @if($article->calification > 0)
                                     <div class="col text-right p-0">
                                         @if($article->calification < 50)
-                                            <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#ed4757"></div>
+                                            <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#ed4757"></div>
                                         @elseif($article->calification < 80)
-                                            <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#fdc51b"></div>
+                                            <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#fdc51b"></div>
                                         @else
-                                            <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#87ceeb"></div>
+                                            <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#87ceeb"></div>
                                         @endif
                                     </div>
                                 @endif

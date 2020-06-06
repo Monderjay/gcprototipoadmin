@@ -4,7 +4,7 @@ $(function() {
         'max':100,
         'width':43,
         'height':43,
-        'readOnly':true
+        'readOnly':true,
     });
 
     var showCalification = $(".show-calification").val();
