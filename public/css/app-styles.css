@@ -141,9 +141,10 @@
 }
 
 .calification-author{
-    margin-right: 0px !important;
-    padding: 0px;
-    background-color: red;
+    float: right;
+    padding: 0px !important;;
+    margin: 0px !important;
+    border: none;
 }
 
 .list img, .list-news-author img, .list-related img{

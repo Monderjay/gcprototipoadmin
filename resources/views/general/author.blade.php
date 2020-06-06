@@ -36,16 +36,17 @@
                             <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
                             <a class="text-justify" href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
                                 {{$article->title}}<br>
+                                <small>{{$article->category->name}} / {{$article->clasification->name}}</small><br>
                                 <small>{{$article->date}}</small>
                             </a>
                             @if($article->calification > 0)
                                 <div class="col text-right p-0">
                                     @if($article->calification < 50)
-                                        <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#ed4757"></div>
+                                        <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#ed4757"></div>
                                     @elseif($article->calification < 80)
-                                        <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#fdc51b"></div>
+                                        <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#fdc51b"></div>
                                     @else
-                                        <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#87ceeb"></div>
+                                        <div class="calification-author ml-2 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#87ceeb"></div>
                                     @endif
                                 </div>
                             @endif
@@ -62,16 +63,17 @@
                                 <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
                                 <a class="text-justify" href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
                                     {{$article->title}}<br>
+                                    <small>{{$article->category->name}} / {{$article->clasification->name}}</small><br>
                                     <small>{{$article->date}}</small>
                                 </a>
                                 @if($article->calification > 0)
                                     <div class="col text-right p-0">
                                         @if($article->calification < 50)
-                                            <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#ed4757"></div>
+                                            <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#ed4757"></div>
                                         @elseif($article->calification < 80)
-                                            <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#fdc51b"></div>
+                                            <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#fdc51b"></div>
                                         @else
-                                            <div class="calification-author m-0 p-0"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#87ceeb"></div>
+                                            <div class="calification-author ml-2"><input type="text" value="{{$article->calification}}" class="dial" data-fgColor="#87ceeb"></div>
                                         @endif
                                     </div>
                                 @endif
