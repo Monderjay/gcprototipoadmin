@@ -36,6 +36,7 @@
                                     <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
                                     <a class="text-justify" href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
                                         {{$article->title}}<br>
+                                        <small>{{$article->category->name}} / {{$article->clasification->name}}</small><br>
                                         <small>{{$article->date}}</small>
                                     </a>
                                     @if($article->calification > 0)
@@ -64,6 +65,7 @@
                                             <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
                                             <a class="text-justify" href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
                                                 {{$article->title}}<br>
+                                                <small>{{$article->category->name}} / {{$article->clasification->name}}</small><br>
                                                 <small>{{$article->date}}</small>
                                             </a>
                                             @if($article->calification > 0)
