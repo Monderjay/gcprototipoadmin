@@ -41,7 +41,6 @@ class FoundersController extends Controller
             'name' => 'required|regex:/^[a-zA-ZÁ-ÿ ]+$/',
             'first_name' => 'required|regex:/^[a-zA-ZÁ-ÿ ]+$/',
             'last_name' => 'required|regex:/^[a-zA-ZÁ-ÿ ]+$/',
-            'birthdate' => 'required',
             'gender' => 'required',
             'email' => 'required|email|unique:users',
             'password' => 'required|confirmed|min:8',
@@ -60,7 +59,6 @@ class FoundersController extends Controller
             'name.required' => 'Debe agregar su nombre.',
             'first_name.required' => 'Debe agregar su Apellido Paterno.',
             'last_name.required' => 'Debe agregar su Apellido Materno.',
-            'birthdate.required' => 'Debe agregar su Fecha de Nacimiento.',
             'gender.required' => 'Debe agregar su Genero.',
             'email.required' => 'Debe agregar su Correo.',
             'password.required' => 'Debe agregar su Contraseña.',
@@ -84,7 +82,7 @@ class FoundersController extends Controller
             'cellphone.numeric' => 'EL Número celular debe de ser numerico.',
 
             'email.email' => 'El correo electronico ddebe tener un formato valido.',
-            'password.min:8' => 'La contraseña debe tener almenos 8 caracteres.',
+            'password.min' => 'La contraseña debe tener almenos 8 caracteres.',
 
         ];
 
@@ -103,10 +101,8 @@ class FoundersController extends Controller
         $founder->email = $request->input('email');
         $founder->password = bcrypt($request->input('password'));
 
-        $roles = Role::all();
-        $role = $roles->where('name','Fundador');
-        $id=$role[0]->id;
-        $founder->role_id = $id;
+        $role = Role::where('name','Editor')->first();
+        $founder->role_id =$role->id;
 
         $address->street = $request->input('street');
         $address->outdoor_number = $request->input('outdoor_numer');
