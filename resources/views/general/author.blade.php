@@ -34,11 +34,14 @@
                     @foreach($collection1 as $article)
                         <li class="list-group-items d-flex justify-content-start align-items-center">
                             <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
-                            <a class="text-justify" href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
+                            <div class="text-justify">
+                                <a href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
                                 {{$article->title}}<br>
-                                <small>{{$article->category->name}} / {{$article->clasification->name}}</small><br>
+                                </a>
+                                <a href="{{url('/news/'.$article->category->name)}}"><small>{{$article->category->name}}</small></a> /
+                                <a href="{{url('/news/'.$article->clasification->name)}}"><small>{{$article->clasification->name}}</small></a><br>
                                 <small>{{$article->date}}</small>
-                            </a>
+                            </div>
                             @if($article->calification > 0)
                                 <div class="col text-right p-0">
                                     @if($article->calification < 50)
@@ -61,11 +64,15 @@
                         @foreach($collection2 as $article)
                             <li class="list-group-items d-flex justify-content-start align-items-center">
                                 <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
-                                <a class="text-justify" href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
-                                    {{$article->title}}<br>
-                                    <small>{{$article->category->name}} / {{$article->clasification->name}}</small><br>
+                                <div class="text-justify">
+                                    <a href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
+                                        {{$article->title}}<br>
+                                    </a>
+                                    <a href="{{url('/news/'.$article->category->name)}}"><small>{{$article->category->name}}</small></a> /
+                                    <a href="{{url('/news/'.$article->clasification->name)}}"><small>{{$article->clasification->name}}</small></a><br>
+
                                     <small>{{$article->date}}</small>
-                                </a>
+                                </div>
                                 @if($article->calification > 0)
                                     <div class="col text-right p-0">
                                         @if($article->calification < 50)
