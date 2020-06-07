@@ -1,14 +1,31 @@
-.list a, .list-news-author a, .list-related a{
+.list-group-items {
+    position: relative;
+    display: block;
+    padding: 0.75rem 1.25rem;
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+
+
+
+.list-news-author-title{
     color: black;
     font-weight: bold;
     text-decoration: none;
 }
 
-.list-group-item{
-    text-align:center !important;
+.list-news-author-title:hover{
+    cursor: pointer;
+    color: #00a5bb;
 }
 
-.list a:hover, .list-news-author a:hover, .list-related a:hover{
+.link-sections a{
+    color: black;
+    text-decoration: none
+}
+
+.link-sections a:hover{
     cursor: pointer;
     color: #00a5bb;
 }
@@ -18,7 +35,10 @@
 }
 
 .calification-author{
-    margin-right: 0px !important;
+    float: right;
+    padding: 0px !important;;
+    margin: 0px !important;
+    border: none;
 }
 
 .list img, .list-news-author img, .list-related img{
@@ -33,28 +53,6 @@
         object-fit: cover;
         object-position: center center;
     }
-}
-
-
-.img-author-info img{
-    max-height: 300px;
-    width: 100%;
-}
-
-
-.list a, .list-news-author a, .list-related a{
-    color: black;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-
-.list-group-items {
-    position: relative;
-    display: block;
-    padding: 0.75rem 1.25rem;
-    background-color: #fff;
-    border-top: 1px solid rgba(0, 0, 0, 0.125);
 }
 
 .navbar {

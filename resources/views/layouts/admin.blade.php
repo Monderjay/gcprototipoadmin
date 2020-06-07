@@ -25,6 +25,9 @@
     <link href="{{ asset('vendors/fontawesome/css/all.css') }}" rel="stylesheet">
     <link href="{{ asset('css/prueba.css') }}" rel="stylesheet">
 
+
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
     <!--Material Kit by Creative Tim-->
 
     <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
