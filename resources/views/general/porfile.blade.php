@@ -283,7 +283,7 @@
                             </div>
 
                             <div class="col-md-12">
-                                <textarea class="col-12" name="description" id="" cols="5" rows="5">{{$user->description}}</textarea>
+                                <textarea class="col-12" name="description" cols="5" rows="3" placeholder="Ingresa una descripción breve sobre ti">{{old('description',$user->description)}}</textarea>
                             </div>
 
                         </div>
@@ -291,7 +291,6 @@
                     </div>
 
                     <div class="footer text-center">
-                        <input type="hidden" name="author" value="{{auth()->id()}}">
                         <button type="submit" class="btn btn-primary col-3">Guardar Cambios</button>
                     </div>
                 </form>
