@@ -28,7 +28,7 @@
                 <h3><b>Articulos Publicados <i class="fas fa-newspaper"></i></b></h3>
             </div>
             <div class="row mt-1">
-                <div class="col-12 col-xl-6 text-center">
+                <div class="col text-center">
                     <div class="card-nav-tabs m-0">
                         <ul class="list-group list-group-flush list-news-author">
                             @foreach($collection1 as $article)
