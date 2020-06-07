@@ -47,8 +47,9 @@
                                 </li>
                             </div>
                         @endif
-
-                        <p><h5>Fuente: <b>{{$news->font}}</b></h5></p>
+                        @if($news->font != null)
+                            <p><h5>Fuente: <b>{{$news->font}}</b></h5></p>
+                        @endif
                         <br>
                     </div><!-- /.blog-post -->
 

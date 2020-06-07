@@ -16,7 +16,7 @@
                     <i class="fas fa-user"></i> Bienvenido: {{$user->name}} {{$user->first_name}} {{$user->last_name}}<br>
                     <i class="fas fa-user-circle"></i> Usuario: {{$user->username}}<br>
                     <i class="fas fa-mail-bulk"></i> Correo: {{$user->email}}<br>
-                    <i class="fas fa-address-card"></i> Puesto: {{$user->role->name}}<br>
+                    <i class="fas fa-address-card"></i> Cargo: {{$user->role->name}}<br>
                     @if($user->description)
                         <i class="fas fa-pen"></i> Descripción: {{ $user->description }}<br>
                     @endif

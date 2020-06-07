@@ -46,7 +46,7 @@ class EditorController extends Controller
             'email' => 'required|email|unique:users',
             'password' => 'required|confirmed|min:8',
             'city' => 'required|regex:/^[a-zA-ZÁ-ÿ ]+$/',
-            'zip' => 'required|numeric',
+            'zip' => 'numeric',
             'cellphone' => 'required|numeric',
 
             'street' => 'regex:/^[a-zA-ZÁ-ÿ ]+$/|nullable',
@@ -64,7 +64,6 @@ class EditorController extends Controller
             'email.required' => 'Debe agregar su Correo.',
             'password.required' => 'Debe agregar su Contraseña.',
             'city.required' => 'Debe agregar su Ciudad.',
-            'zip.required' => 'Debe agregar su Código Postal.',
             'cellphone.required' => 'Debe agregar su Número de Celular.',
 
             'street.regex' => 'La calle debe de ser Texto.',

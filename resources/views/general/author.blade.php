@@ -17,7 +17,7 @@
 
             <div class="col-10 mt-2 mt-xl-0 text-justify text-secondary ml-auto mr-auto p-2">
                 <i class="fas fa-user"></i> Autor: {{$author->username}}<br>
-                <i class="fas fa-address-card"></i> Puesto: {{$author->role->name}}<br>
+                <i class="fas fa-address-card"></i> Cargo: {{$author->role->name}}<br>
                 @if($author->description)
                     <i class="fas fa-pen"></i> Descripción:{{ $author->description }}<br>
                 @endif
