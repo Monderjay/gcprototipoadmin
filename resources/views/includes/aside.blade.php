@@ -15,8 +15,6 @@
             </div>
         </div>
 
-        <a target="_blank" href="https://www.amazon.com.mx/gp/product/B07D55QKKN/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07D55QKKN&linkCode=as2&tag=gamecore05-20&linkId=c70c23f168e0671ecb003aac8bb31f41">The Last of Us Part II - PlayStation 4 - Standard Edition</a><img src="//ir-mx.amazon-adsystem.com/e/ir?t=gamecore05-20&l=am2&o=34&a=B07D55QKKN" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-
         <script type="javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
