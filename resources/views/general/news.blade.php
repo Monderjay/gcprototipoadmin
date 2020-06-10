@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('title',$news->title)
 @section('page-title',$news->title)
 @section('page-author',$news->user->username)
 @section('page-description',$news->introduction)
