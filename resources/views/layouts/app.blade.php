@@ -43,7 +43,7 @@
     <!-- Facebook -->
     <meta property="og:title" content="@yield('page-title','GameCore')" />
     <meta property="og:description" content="@yield('page-description','Entérate de las más recientes novedades sobre el mundo de los Videojuegos con nuestras noticias, reseñas, podcast, unboxings, especiales y mucho más. ¡Solo en Game-Core!')" />
-    <meta property="og:image" content="@yield('page-image','https://www.gamecore.com.mx/img/coreblack.png')" />
+    <meta property="og:image" content="@yield('page-image','https://www.gamecore.com.mx/img/core.jpg')" />
     <meta property="og:url" content="@yield('url','https://www.gamecore.com.mx/')" />
     <meta property="fb:app_id" content="278534710203686" />
     <meta property="og:type" content="article" />
