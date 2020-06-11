@@ -21,14 +21,16 @@ class NewsController extends Controller
         $news = News::where('slug','')->get();
 
         foreach ($news as $new) {
-            if (strpos($new->title,' ')){
-                $new->slug = str_replace(' ','-',$new->title);
-            }else{
-                $new->slug = $new->title;
-            }
+
+            $new->slug = preg_replace("/[^a-z0-9]+/i",'-', trim(strtolower($new->title)));
 
             $new->save();
         }
+
+    }
+
+
+    public function eliminar_tildes($cadena){
 
     }
 
@@ -184,11 +186,9 @@ class NewsController extends Controller
 
         $news->font = $request->input('font');
 
-        if (strpos($news->title,' ')){
-            $news->slug = str_replace(' ','-',$news->title);
-        }else{
-            $news->slug = $news->title;
-        }
+
+            $news->slug = $this->eliminar_tildes($news->title);
+
 
 
         $news->user_id = auth()->user()->id;
@@ -345,11 +345,7 @@ class NewsController extends Controller
         $news->description = $request->input('description');
         $news->font  = $request->input('font');
 
-        if (strpos($news->title,' ')){
-            $news->slug = str_replace(' ','-',$news->title);
-        }else{
-            $news->slug = $news->title;
-        }
+        $news->slug = $this->eliminar_tildes($news->title);
 
         if($request->hasFile('featured_image')) {
 
