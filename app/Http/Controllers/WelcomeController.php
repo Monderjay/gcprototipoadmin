@@ -76,7 +76,7 @@ class WelcomeController extends Controller
     }
 
 
-    public function show($category,$clasification,$id)
+    public function show($category,$clasification,$slug)
     {
         //
         $news=News::with('category')
@@ -85,8 +85,9 @@ class WelcomeController extends Controller
             })
             ->whereHas('clasification', function ($query) use ($clasification) {
                 $query->where('clasifications.name', '=', $clasification);
-            })->where('id',$id)
+            })->where('slug',$slug)
             ->first();
+
         if ($news!=null) {
             //$related = News::where('title','like',"%$news->title%")->paginate(10);
             $title = explode(' ', $news->title);
@@ -105,6 +106,7 @@ class WelcomeController extends Controller
         }
 
     }
+
 
 
     public function showCategories($section)
@@ -164,9 +166,35 @@ class WelcomeController extends Controller
         }
     }
 
-    public function update(Request $request, $id)
+
+    public function showCategoryClasification($category, $clasification)
     {
+
         //
+        $news=News::with('category')
+            ->whereHas('category', function ($query) use ($category) {
+                $query->where('categories.name', '=', $category);
+            })
+            ->whereHas('clasification', function ($query) use ($clasification) {
+                $query->where('clasifications.name', '=', $clasification);
+            })->paginate(10);
+        //dd($news);
+
+
+        $sectionFeatured = collect();
+        if (count($news)>0){
+            $news = $news;
+            foreach ($news as $featured){
+                if($featured->featured == true && $featured->category->name == $category){
+                    $sectionFeatured->push($featured);
+                }
+            }
+            $sectionFeatured = $sectionFeatured->forPage(0,8);
+            return view('general.categories')->with(compact('news','sectionFeatured'));
+
+        }else{
+            return back();
+        }
     }
 
 
@@ -175,7 +203,7 @@ class WelcomeController extends Controller
         //
         if ($request->input('search')!=null){
             $search = $request->input('search');
-            $news = News::where('title','like',"%$search%")->paginate(10);
+            $news = News::where('title','like',"%$search%")->orderBy('created_at','desc')->paginate(10);
             return view('general.search')->with(compact('news'));
         }else{
             return back();

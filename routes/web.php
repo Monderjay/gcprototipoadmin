@@ -16,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', 'WelcomeController@index');
-Route::get('/news', 'WelcomeController@index');
+//Route::get('/news', 'WelcomeController@index');
 
 Route::get('/politicas', 'WelcomeController@showPolitics');
 Route::get('/informacion', 'WelcomeController@showInformation');
 Route::get('/contacto', 'WelcomeController@showContact');
 
-Route::post('/news/search', 'WelcomeController@search');
+Route::post('/search', 'WelcomeController@search');
 
 Auth::routes();
 
@@ -70,13 +70,15 @@ Route::middleware(['auth','staff','username'])->prefix('staff/editor')->group(fu
     Route::delete('/{id}/delete','Staff\EditorController@destroy'); //Eliminar Editor
 });
 
+Route::get('/author/{username}','AuthorController@show'); //Perfil del Autor
 Route::get('/porfile/{id}','HomeController@show'); //Formulario para Perfil
 Route::post('/porfile/{id}/edit/','HomeController@update'); //Editar Perfil
 
-Route::get('/news/{category}/{clasification}/{id}','WelcomeController@show'); //Noticia
-Route::get('/news/{category}','WelcomeController@showCategories'); //Noticia por Categoria
+Route::get('/{category}/{clasification}/{slug}','WelcomeController@show'); //Noticia
+Route::get('/{category}/{clasification}','WelcomeController@showCategoryClasification'); //Noticia
+Route::get('/{category}','WelcomeController@showCategories'); //Noticia por Categoria
 
-Route::get('/author/{username}','AuthorController@show'); //Perfil del Autor
+
 
 
 Route::get('/porfile',function (){

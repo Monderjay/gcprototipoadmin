@@ -35,11 +35,11 @@
                         <li class="list-group-items d-flex justify-content-start align-items-center">
                             <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
                             <div class="text-justify">
-                                <a href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
+                                <a href="{{url($article->category->name.'/'.$article->clasification->name.'/'.$article->slug)}}">
                                 {{$article->title}}<br>
                                 </a>
-                                <a href="{{url('/news/'.$article->category->name)}}"><small>{{$article->category->name}}</small></a> /
-                                <a href="{{url('/news/'.$article->clasification->name)}}"><small>{{$article->clasification->name}}</small></a><br>
+                                <a href="{{url($article->category->name)}}"><small>{{$article->category->name}}</small></a> /
+                                <a href="{{url($article->clasification->name)}}"><small>{{$article->clasification->name}}</small></a><br>
                                 <small>{{$article->date}}</small>
                             </div>
                             @if($article->calification > 0)
@@ -65,11 +65,11 @@
                             <li class="list-group-items d-flex justify-content-start align-items-center">
                                 <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
                                 <div class="text-justify">
-                                    <a href="{{url('/news/'.$article->category->name.'/'.$article->clasification->name.'/'.$article->id)}}">
+                                    <a href="{{url($article->category->name.'/'.$article->clasification->name.'/'.$article->slug)}}">
                                         {{$article->title}}<br>
                                     </a>
-                                    <a href="{{url('/news/'.$article->category->name)}}"><small>{{$article->category->name}}</small></a> /
-                                    <a href="{{url('/news/'.$article->clasification->name)}}"><small>{{$article->clasification->name}}</small></a><br>
+                                    <a href="{{url($article->category->name)}}"><small>{{$article->category->name}}</small></a> /
+                                    <a href="{{url($article->clasification->name)}}"><small>{{$article->clasification->name}}</small></a><br>
 
                                     <small>{{$article->date}}</small>
                                 </div>

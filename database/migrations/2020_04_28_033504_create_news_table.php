@@ -21,6 +21,7 @@ class CreateNewsTable extends Migration
             $table->longText('description');
             $table->integer('calification')->nullable();
             $table->boolean('featured')->default(false);
+            $table->String('slug')->unique();
             $table->softDeletes();
 
             //FK

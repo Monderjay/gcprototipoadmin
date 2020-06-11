@@ -14,6 +14,24 @@ use Intervention\Image\ImageManagerStatic as Image;
 use File;
 class NewsController extends Controller
 {
+
+    public function __construct()
+    {
+
+        $news = News::where('slug','')->get();
+
+        foreach ($news as $new) {
+            if (strpos($new->title,' ')){
+                $new->slug = str_replace(' ','-',$new->title);
+            }else{
+                $new->slug = $new->title;
+            }
+
+            $new->save();
+        }
+
+    }
+
     public function upload(Request $request)
     {
         if($request->hasFile('upload')) {
@@ -112,6 +130,20 @@ class NewsController extends Controller
 
     public function store(Request $request)
     {
+
+        $rules = [
+            'title' => 'unique:news',
+
+        ];
+
+        $messages = [
+            'title.unique' => 'El título ingresado ya existe.',
+
+        ];
+
+        $this->validate($request, $rules, $messages);
+
+
         //
         $news = new News();
         $category = Category::where('name',$request->input('category'))->first();
@@ -151,6 +183,13 @@ class NewsController extends Controller
         $news->introduction = $request->input('introduction');
 
         $news->font = $request->input('font');
+
+        if (strpos($news->title,' ')){
+            $news->slug = str_replace(' ','-',$news->title);
+        }else{
+            $news->slug = $news->title;
+        }
+
 
         $news->user_id = auth()->user()->id;
 
@@ -237,6 +276,7 @@ class NewsController extends Controller
                 $clasificationSelected->push($clasification->name);
             }
         }
+        //dd($clasificationSelected);
 
         foreach ($categories as $category){
             if ($category->name != $news->category->name){
@@ -244,12 +284,27 @@ class NewsController extends Controller
             }
         }
 
+        //dd($news->calification);
+
         return view('news.edit')->with(compact('news','categories','clasifications','date','clasificationSelected','categorySelected'));
     }
 
 
     public function update(Request $request, $id)
     {
+        $rules = [
+            'title' => 'unique:news,title,'.$id,
+        ];
+
+        $messages = [
+            'title.unique' => 'El título ingresado ya existe.',
+        ];
+
+
+
+
+
+        $this->validate($request, $rules, $messages);
         //
         $news = News::find($id);
         $category = Category::where('name', $request->input('category'))->first();
@@ -289,6 +344,12 @@ class NewsController extends Controller
         $news->clasification_id = $clasification->id;
         $news->description = $request->input('description');
         $news->font  = $request->input('font');
+
+        if (strpos($news->title,' ')){
+            $news->slug = str_replace(' ','-',$news->title);
+        }else{
+            $news->slug = $news->title;
+        }
 
         if($request->hasFile('featured_image')) {
 

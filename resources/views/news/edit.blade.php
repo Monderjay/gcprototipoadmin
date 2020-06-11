@@ -13,6 +13,13 @@
                 </div>
             </div>
             <div class="card-body">
+                @if(count($errors)>0)
+                    <ul class="">
+                        @foreach($errors->all() as $error)
+                            <li class="text-left text-danger">{{$error}}</li>
+                        @endforeach
+                    </ul>
+                @endif
                 <form method="POST" action="{{url('/staff/news/'.$news->id.'/update')}}" enctype="multipart/form-data" onsubmit="return validateNewsEdit(this)">
                     @csrf
                     <div class="card-body">
@@ -22,17 +29,17 @@
                             </div>
                             <div class="form-row col-12 col-xl-3">
                                 <div class="form-group mt-4 col-12">
-                                    <input type="text" class="form-control" name="title" id="title" placeholder="Titulo de la Noticia" value="{{$news->title}}">
+                                    <input type="text" class="form-control" name="title"  id="title" placeholder="Titulo de la Noticia" value="{{old('title',$news->title)}}">
                                 </div>
 
                                 <div class="form-group mt-2 col-12">
                                     <label for="exampleFormControlTextarea1">Introducción de la noticia</label>
-                                    <textarea  class="form-control" name="introduction" id="introduction" rows="3">{{$news->introduction}}</textarea>
+                                    <textarea  class="form-control" name="introduction" id="introduction" rows="3">{{old('introduction',$news->introduction)}}</textarea>
                                 </div>
 
                                 <div class="form-group mt-2 col-12">
                                     <label for="exampleFormControlTextarea1">Acerca de...</label>
-                                    <textarea  class="form-control" name="about" id="about" rows="3">{{$news->about}}</textarea>
+                                    <textarea  class="form-control" name="about" id="about" rows="3">{{old('about',$news->about)}}</textarea>
                                 </div>
 
                                 <div class="col-12">
@@ -53,7 +60,8 @@
                                     <select class="form-control selectpicker" name="category">
                                         <option selected>{{$news->category->name}}</option>
                                         @foreach($categorySelected as $category)
-                                            <option>{{$category}}</option>
+
+                                            <option value="{{$category}}" {{ old('category') == $category ? 'selected' : '' }}>{{$category}}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -63,7 +71,7 @@
                                         <option>Seleccione una Clasificación</option>
                                         <option selected>{{$news->clasification->name}}</option>
                                         @foreach($clasificationSelected as $clasification)
-                                            <option>{{$clasification}}</option>
+                                            <option value="{{$clasification}}" {{ old('clasification') == $clasification ? 'selected' : '' }}>{{$clasification}}</option>
                                         @endforeach
                                     </select>
                                 </div>
@@ -85,12 +93,12 @@
                                 </div>
 
                                 <div class="col-12 mt-4  calification-content">
-                                    <input type="text" name="calification" value="{{$news->calification}}" class="calification" id="calification">
+                                    <input type="text" name="calification" class="calification" id="calification" value="{{old('calification',$news->calification)}}">
                                 </div>
 
 
                                 <div class="form-group col-12">
-                                    <input type="text" class="form-control" name="font" id="font" placeholder="Fuente de la Noticia" value="{{$news->font}}">
+                                    <input type="text" class="form-control" name="font" id="font" placeholder="Fuente de la Noticia" value="{{'font',$news->font}}">
                                 </div>
 
                             </div>

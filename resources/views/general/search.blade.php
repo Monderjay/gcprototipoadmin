@@ -39,7 +39,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-6 text-center align-self-center">
-                                    <a href="{{url('/news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->id)}}" class="btn btn-primary col-12 col-xl-8 readnews">Leer <i class="fas fa-plus"></i></a>
+                                    <a href="{{url($item->category->name.'/'.$item->clasification->name.'/'.$item->slug)}}" class="btn btn-primary col-12 col-xl-8 readnews">Leer <i class="fas fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>

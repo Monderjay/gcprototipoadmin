@@ -20,7 +20,7 @@
                     {{$active= "active"}}
                 @endif
                 <div class="carousel-item carousel-item-principal {{$active}}">
-                    <a href="{{url('/news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->id)}}">
+                    <a href="{{url($item->category->name.'/'.$item->clasification->name.'/'.$item->slug)}}">
                         <img class="d-block " src="{{$item->news_image_featured}}" alt="First slide">
                         <div class="description-slider">
                             <div class="carousel-caption">
@@ -59,7 +59,7 @@
                                 @foreach($reviewSection as $review)
                                     <li class="list-group-item d-flex align-items-center pr-0">
                                         <img src="{{$review->news_image_featured}}" class="img-fluid" alt="{{$review->title}}">
-                                        <a href="{{url('/news/'.$review->category->name.'/'.$review->clasification->name.'/'.$review->id)}}">
+                                        <a href="{{url($review->category->name.'/'.$review->clasification->name.'/'.$review->slug)}}">
                                             {{$review->title}}
                                         </a>
                                         <div class="col text-right p-0">
@@ -88,7 +88,7 @@
                                 @foreach($mobileSection as $mobile)
                                     <li class="list-group-item d-flex justify-content-start align-items-center ">
                                         <img src="{{$mobile->news_image_featured}}" class="img-fluid" alt="{{$mobile->title}}">
-                                        <a class="text-justify" href="{{url('/news/'.$mobile->category->name.'/'.$mobile->clasification->name.'/'.$mobile->id)}}">
+                                        <a class="text-justify" href="{{url($mobile->category->name.'/'.$mobile->clasification->name.'/'.$mobile->slug)}}">
                                             {{$mobile->mobile_introduction}}
                                         </a>
                                     </li>
@@ -118,7 +118,7 @@
                                     {{$active= "active"}}
                                 @endif
                                 <div class="carousel-item carousel-item-principal {{$active}}">
-                                    <a href="{{url('/news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->id)}}">
+                                    <a href="{{url($item->category->name.'/'.$item->clasification->name.'/'.$item->slug)}}">
                                         <img class="d-block w-100" src="{{$item->news_image_featured}}" alt="First slide">
 
                                         <div class="carousel-caption">
@@ -171,7 +171,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-6 text-center align-self-center">
-                                    <a href="{{url('/news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->id)}}" class="btn btn-primary col-12 col-xl-8 readnews">Leer <i class="fas fa-plus"></i></a>
+                                    <a href="{{url($item->category->name.'/'.$item->clasification->name.'/'.$item->slug)}}" class="btn btn-primary col-12 col-xl-8 readnews">Leer <i class="fas fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>

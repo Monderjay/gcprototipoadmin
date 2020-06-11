@@ -92,25 +92,25 @@
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         @foreach($categories as $category)
-                            <a class="dropdown-item" href="{{url('/news/'.$category->name)}}"><i class="{{$category->icon}}"></i>
+                            <a class="dropdown-item" href="{{url($category->name)}}"><i class="{{$category->icon}}"></i>
                                 {{$category->name}}</a>
                         @endforeach
                     </div>
                 </li>
                 @foreach($clasifications as $clasification)
                     <li class="nav-item">
-                        <a class="nav-link" href="{{url('/news/'.$clasification->name)}}"><i class="{{$clasification->icon}}"></i> {{$clasification->name}}</a>
+                        <a class="nav-link" href="{{url($clasification->name)}}"><i class="{{$clasification->icon}}"></i> {{$clasification->name}}</a>
                     </li>
                 @endforeach
             </ul>
-            <form method="POST" action="{{url('/news/search')}}" class="d-block d-xl-none form-inline has-search">
+            <form method="POST" action="{{url('/search')}}" class="d-block d-xl-none form-inline has-search">
                 @csrf
                 <span class="fa fa-search form-control-feedback"></span>
                 <input type="text" class="form-control" name="search" placeholder="Buscar...">
             </form>
         </div>
 
-        <form method="POST" action="{{url('/news/search')}}" class="d-none d-xl-block ml-3 form-inline has-search">
+        <form method="POST" action="{{url('/search')}}" class="d-none d-xl-block ml-3 form-inline has-search">
             @csrf
             <span class="fa fa-search form-control-feedback"></span>
             <input type="text" class="form-control" name="search" placeholder="Buscar...">
@@ -136,22 +136,6 @@
         </ul>
     </section>
 
-
-    {{--<section id="search">
-        <ul>
-            <li class="fb wow slideInLeft" data-wow-delay="0s">
-                <div class="wrapper justify-content-center text-center">
-                    <div class="search-container">
-                        <form method="POST" action="">
-                            <input type="text" class="input" placeholder="Search">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </form>
-
-                    </div>
-                </div>
-            </li>
-        </ul>
-    </section>--}}
 
     @yield('content')
 
