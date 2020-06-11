@@ -4,7 +4,7 @@
 @section('page-author',$news->user->username)
 @section('page-description',$news->introduction)
 @section('page-image','https://www.gamecore.com.mx'.$news->news_image_featured)
-@section('url','https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)
+@section('url','https://www.gamecore.com.mx/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)
 
 @section('content')
     <div class="float-left col-12 news-item-container">
