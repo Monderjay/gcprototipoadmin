@@ -22,10 +22,10 @@ class NewsController extends Controller
 
         foreach ($news as $new) {
 
-            $cadena = $this->eliminar_tildes($new->title);
+            $cadena = strtolower($this->eliminar_tildes($new->title));
 
             $new->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
-
+            dd($new);
             $new->save();
         }
 
@@ -234,7 +234,7 @@ class NewsController extends Controller
 
         $news->font = $request->input('font');
 
-        $cadena = $this->eliminar_tildes($news->title);
+        $cadena = strtolower($this->eliminar_tildes($news->title));
 
         $news->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
 
@@ -395,7 +395,7 @@ class NewsController extends Controller
         $news->description = $request->input('description');
         $news->font  = $request->input('font');
 
-        $cadena = $this->eliminar_tildes($news->title);
+        $cadena = strtolower($this->eliminar_tildes($news->title));
 
         $news->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
 
