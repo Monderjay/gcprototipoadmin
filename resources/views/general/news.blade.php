@@ -21,8 +21,8 @@
                         <p class="blog-post-meta">{{$news->date}} por<a href="{{url('/author/'.$news->user->username)}}"> {{$news->user->username}} </p>
 
                         <div class="col-12 mb-2 text-left align-self-center row">
-                            <div class="col-auto pr-0 pl-1"><a href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
-                            <div class="col-auto fb-like pl-1" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+                            <div class="col-auto pr-0 pl-1"><a href="{{url('https://www.gamecore.com.mx/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
+                            <div class="col-auto fb-like pl-1" data-href="{{url('https://www.gamecore.com.mx/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
                         </div>
 
                         <p class="text-justify">{{$news->introduction}}</p>
@@ -73,7 +73,7 @@
                                 @foreach($related as $item)
                                     <li class="list-group-item d-flex justify-content-start align-items-center ">
                                         <img src="{{$item->news_image_featured}}" class="img-fluid" alt="{{$item->title}}">
-                                        <a class="text-justify" href="{{url('/news/'.$item->category->name.'/'.$item->clasification->name.'/'.$item->slug)}}">
+                                        <a class="text-justify" href="{{url($item->category->name.'/'.$item->clasification->name.'/'.$item->slug)}}">
                                             {{$item->title}}
                                         </a>
                                     </li>
@@ -86,11 +86,11 @@
 
             </div><!-- /.row -->
             <div class="col-12 mb-2 text-left align-self-center row">
-                <div class="col-auto pr-0 pl-1"><a href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
-                <div class="col-auto fb-like pl-1" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+                <div class="col-auto pr-0 pl-1"><a href="{{url('https://www.gamecore.com.mx/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
+                <div class="col-auto fb-like pl-1" data-href="{{url('https://www.gamecore.com.mx/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)}}" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
             </div>
 
-            <div class="fb-comments mb-2" data-href="{{url('https://www.gamecore.com.mx/news/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)}}" data-numposts="10" data-width="100%"></div>
+            <div class="fb-comments mb-2" data-href="{{url('https://www.gamecore.com.mx/'.$news->category->name.'/'.$news->clasification->name.'/'.$news->slug)}}" data-numposts="10" data-width="100%"></div>
 
         </div><!-- /.container -->
 
