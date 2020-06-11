@@ -25,7 +25,6 @@ class NewsController extends Controller
             $cadena = strtolower($this->eliminar_tildes($new->title));
 
             $new->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
-            dd($new);
             $new->save();
         }
 
