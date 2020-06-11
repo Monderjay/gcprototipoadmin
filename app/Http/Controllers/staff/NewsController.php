@@ -22,7 +22,9 @@ class NewsController extends Controller
 
         foreach ($news as $new) {
 
-            $new->slug = preg_replace("/[^a-z0-9]+/i",'-', trim(strtolower($new->title)));
+            $cadena = $this->eliminar_tildes($new->title);
+
+            $new->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
 
             $new->save();
         }
@@ -31,7 +33,53 @@ class NewsController extends Controller
 
 
     public function eliminar_tildes($cadena){
+        //Codificamos la cadena en formato utf8 en caso de que nos de errores
+        $cadena = str_replace(
+            array("´", "'"),
+            array('', ''),
+            $cadena
+        );
 
+        //Ahora reemplazamos las letras
+        $cadena = str_replace(
+            array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä'),
+            array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'),
+            $cadena
+        );
+
+        $cadena = str_replace(
+            array('é', 'è', 'ë', 'ê', 'É', 'È', 'Ê', 'Ë'),
+            array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'),
+            $cadena );
+
+        $cadena = str_replace(
+            array('í', 'ì', 'ï', 'î', 'Í', 'Ì', 'Ï', 'Î'),
+            array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'),
+            $cadena );
+
+        $cadena = str_replace(
+            array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô'),
+            array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'),
+            $cadena );
+
+        $cadena = str_replace(
+            array('ú', 'ù', 'ü', 'û', 'Ú', 'Ù', 'Û', 'Ü'),
+            array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'),
+            $cadena );
+
+        $cadena = str_replace(
+            array('ñ', 'Ñ', 'ç', 'Ç'),
+            array('n', 'N', 'c', 'C'),
+            $cadena
+        );
+
+        $cadena = str_replace(
+            array(' '),
+            array('-'),
+            $cadena
+        );
+
+        return $cadena;
     }
 
     public function upload(Request $request)
@@ -186,8 +234,10 @@ class NewsController extends Controller
 
         $news->font = $request->input('font');
 
+        $cadena = $this->eliminar_tildes($news->title);
 
-            $news->slug = $this->eliminar_tildes($news->title);
+        $news->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
+
 
 
 
@@ -345,7 +395,10 @@ class NewsController extends Controller
         $news->description = $request->input('description');
         $news->font  = $request->input('font');
 
-        $news->slug = $this->eliminar_tildes($news->title);
+        $cadena = $this->eliminar_tildes($news->title);
+
+        $news->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
+
 
         if($request->hasFile('featured_image')) {
 
