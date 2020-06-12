@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@section('title','GameCore | Contacto')
+@section('page-title', ' | Contacto')
 @section('content')
     <div class="row text-justify mr-auto ml-auto justify-content-center" style="padding-top: 130px; margin-bottom: 40px; font-size: 16px;">
 

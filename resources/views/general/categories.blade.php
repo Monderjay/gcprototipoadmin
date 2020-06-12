@@ -1,5 +1,6 @@
 @extends('layouts.app')
-@section('title', 'Bienvenido a '.config('app.name'))
+@section('title','GameCore | '.$section)
+@section('page-title',$section)
 
 
 @section('content')

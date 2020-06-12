@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('title', 'Bienvenido a '.config('app.name'))
+@section('title','GameCore | Resultados')
+@section('page-title', ' | Resultados')
 
 @section('content')
-
 
     <!--section-->
     <div class="row principal-container padding-top">

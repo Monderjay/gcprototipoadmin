@@ -111,7 +111,6 @@ class WelcomeController extends Controller
 
     public function showCategories($section)
     {
-
         //
         $news = null;
         $newsCategory = News::with('category')
@@ -126,8 +125,6 @@ class WelcomeController extends Controller
             })->orderBy('created_at', 'desc')->paginate(10);
 
 
-
-
         $sectionFeatured = collect();
         if (count($newsCategory)>0){
             $news = $newsCategory;
@@ -137,7 +134,7 @@ class WelcomeController extends Controller
                 }
             }
             $sectionFeatured = $sectionFeatured->forPage(0,8);
-            return view('general.categories')->with(compact('news','sectionFeatured'));
+            return view('general.categories')->with(compact('news','sectionFeatured','section'));
 
         }elseif (count($newsClasification)>0) {
             $podcast=false;
@@ -158,7 +155,7 @@ class WelcomeController extends Controller
                     }
                 }
                 $sectionFeatured = $sectionFeatured->forPage(0,8);
-                return view('general.categories')->with(compact('news','sectionFeatured'));
+                return view('general.categories')->with(compact('news','sectionFeatured','section'));
             }
 
         }else{
@@ -169,6 +166,8 @@ class WelcomeController extends Controller
 
     public function showCategoryClasification($category, $clasification)
     {
+
+        $section =$category.' | '.$clasification;
 
         //
         $news=News::with('category')
@@ -190,7 +189,7 @@ class WelcomeController extends Controller
                 }
             }
             $sectionFeatured = $sectionFeatured->forPage(0,8);
-            return view('general.categories')->with(compact('news','sectionFeatured'));
+            return view('general.categories')->with(compact('news','sectionFeatured','section'));
 
         }else{
             return back();
