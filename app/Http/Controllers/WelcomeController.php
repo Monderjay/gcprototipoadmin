@@ -128,7 +128,7 @@ class WelcomeController extends Controller
             $firstWord = $title[0];
             $archives=collect();
             for ($i=0;$i<count($title); $i++){
-                $archives->push(News::where('title', 'like', "%$firstWord%")->orderBy('created_at','desc')->get());
+                $archives->push(News::where('title', 'like', "%$title[$i]%")->orderBy('created_at','desc')->get());
             }
 
             $all = collect();
