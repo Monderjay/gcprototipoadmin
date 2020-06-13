@@ -18,7 +18,7 @@
                     </div>
 
                     <div class="blog-post">
-                        <p class="blog-post-meta">{{$news->date}} por<a href="{{url('/author/'.$news->user->username)}}"> {{$news->user->username}} </p>
+                        <p class="blog-post-meta">{{$news->date}} por<a href="{{url('/Autor/'.$news->user->username)}}"> {{$news->user->username}} </p>
 
                         <div class="col-12 mb-2 text-left align-self-center row">
                             <div class="col-auto pr-0 pl-1"><a href="{{url('https://www.gamecore.com.mx/'.$news->slug)}}" class="twitter-share-button" data-size="large" data-show-count="false">Tweet</a></div>
@@ -62,8 +62,7 @@
                 <div class="col-lg-3 offset-sm-1 blog-sidebar">
                     @if($news->about!= null)
                         <div class="sidebar-module sidebar-module-inset">
-                            <h4>Acerca de</h4>
-                            <p class="text-justify">{{$news->about}}</p>
+                            <p class="text-justify frase">"{{$news->about}}"</p>
                         </div>
                     @endif
                     @if(count($related) > 0)

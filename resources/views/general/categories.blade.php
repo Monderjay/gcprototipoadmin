@@ -71,7 +71,7 @@
                                 <div class="col-6 news-date p-0">
                                     <ul>
                                         <li class="author">
-                                            <small><a href="{{url('/author/'.$item->user->username)}}">{{$item->user->username}} </a> <i class="fas fa-user-tie"></i></small>
+                                            <small><a href="{{url('/Autor/'.$item->user->username)}}">{{$item->user->username}} </a> <i class="fas fa-user-tie"></i></small>
                                         </li>
                                         <li>
                                             <small>{{substr($item->date,0,10)}} <i class="fas fa-calendar-alt"></i></small> |  <small>

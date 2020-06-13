@@ -63,6 +63,15 @@
     border: none;
 }
 
+.frase{
+    color: red;
+    font-size: 16px;
+}
+
+.blog-post{
+    font-size: 16px;
+}
+
 .principal-container{
     width: 93%;
     margin: auto;

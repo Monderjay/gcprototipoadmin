@@ -18,14 +18,17 @@ class WelcomeController extends Controller
         $news = News::with('user')->orderBy('created_at','desc')->get();
         $featuredNews = collect();
         foreach ($newsFeatured as $item) {
-            if ($item->category->name == "Playstation" && $item->clasification->name == "Noticias" ||
+            if ($item->category->name == "PlayStation" && $item->clasification->name == "Noticias" ||
                 $item->category->name == "Xbox" && $item->clasification->name == "Noticias" ||
                 $item->category->name == "Nintendo" && $item->clasification->name == "Noticias" ||
-                $item->category->name == "Multi Consola" && $item->clasification->name == "Noticias"){
+                $item->category->name == "Multi Consola" && $item->clasification->name == "Noticias" ||
+                $item->category->name == "PC" && $item->clasification->name == "Noticias" ||
+                $item->category->name == "Movil" && $item->clasification->name == "Noticias" ||
+                $item->category->name == "Reseñas" && $item->clasification->name == "Noticias"){
                 $featuredNews->push($item);
             }
         }
-        $featuredNews = $featuredNews->forPage(0,8);
+        $featuredNews = $featuredNews->forPage(0,10);
 
 
         $mobileSection=collect();
@@ -124,12 +127,14 @@ class WelcomeController extends Controller
             $firstWord = $title[0];
             $archives = News::where('title', 'like', "%$firstWord%")->orderBy('created_at','desc')->get();
             $related = collect();
+
             foreach ($archives as $archive) {
                 if ($archive->title != $news->title && $archive->category->name == $category) {
                     $related->push($archive);
                 }
             }
             $related = $related;
+
             return view('general.news')->with(compact('news', 'related'));
         }elseif ($category != null){
             $newsCategory = News::with('category')
@@ -170,7 +175,7 @@ class WelcomeController extends Controller
 
 
 
-    public function showCategories($section)
+    /*public function showCategories($section)
     {
         //
         $news = null;
@@ -223,6 +228,7 @@ class WelcomeController extends Controller
         return back();
         }
     }
+    */
 
 
     public function showCategoryClasification($category, $clasification)
