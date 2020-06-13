@@ -124,16 +124,30 @@ class WelcomeController extends Controller
         if ($news!=null){
             $category = $news->category->name;
             $title = explode(' ', $news->title);
-            $firstWord = $title[0];
-            $archives = News::where('title', 'like', "%$firstWord%")->orderBy('created_at','desc')->get();
-            $related = collect();
 
-            foreach ($archives as $archive) {
-                if ($archive->title != $news->title && $archive->category->name == $category) {
-                    $related->push($archive);
+            $firstWord = $title[0];
+            $archives=collect();
+            for ($i=0;$i<count($title); $i++){
+                $archives->push(News::where('title', 'like', "%$firstWord%")->orderBy('created_at','desc')->get());
+            }
+
+            $all = collect();
+            foreach ($archives as $archive){
+                foreach ($archive  as $item) {
+                    $all->push($item);
                 }
             }
-            $related = $related;
+
+            //$c = $all->groupBy('title');
+            $related = collect();
+            foreach ($all  as $item) {
+                if ($item->title != $news->title && $item->category->name == $category){
+                   $related->push($item);
+                }
+            }
+
+            $related = $related->unique();
+
 
             return view('general.news')->with(compact('news', 'related'));
         }elseif ($category != null){
