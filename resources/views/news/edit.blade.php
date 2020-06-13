@@ -98,7 +98,7 @@
 
 
                                 <div class="form-group col-12">
-                                    <input type="text" class="form-control" name="font" id="font" placeholder="Fuente de la Noticia" value="{{'font',$news->font}}">
+                                    <input type="text" class="form-control" name="font" id="font" placeholder="Fuente de la Noticia" value="{{old('font',$news->font)}}">
                                 </div>
 
                             </div>

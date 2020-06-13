@@ -15,7 +15,7 @@ use File;
 class NewsController extends Controller
 {
 
-    public function __construct()
+    /*public function __construct()
     {
 
         $news = News::where('slug','')->get();
@@ -28,7 +28,7 @@ class NewsController extends Controller
             $new->save();
         }
 
-    }
+    }*/
 
 
     public function eliminar_tildes($cadena){
