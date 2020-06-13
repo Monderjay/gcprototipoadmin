@@ -42,7 +42,7 @@ class WelcomeController extends Controller
 
         $reviewSection= collect();
         foreach ($news as $item) {
-            if ($item->category->name == "Playstation" && $item->clasification->name == "Reseñas" ||
+            if ($item->category->name == "PlayStation" && $item->clasification->name == "Reseñas" ||
                 $item->category->name == "Xbox" && $item->clasification->name == "Reseñas" ||
                 $item->category->name == "Nintendo" && $item->clasification->name == "Reseñas" ||
                 $item->category->name == "Multi Consola" && $item->clasification->name == "Reseñas" ||
