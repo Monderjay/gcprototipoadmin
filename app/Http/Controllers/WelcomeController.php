@@ -141,7 +141,7 @@ class WelcomeController extends Controller
             //$c = $all->groupBy('title');
             $related = collect();
             foreach ($all  as $item) {
-                if ($item->title != $news->title && $item->category->name == $category){
+                if ($item->title != $news->title && $item->category->name == $category && $item->Clasification->name == $news->clasification->name){
                    $related->push($item);
                 }
             }
