@@ -22,7 +22,7 @@ Route::get('/politicas', 'WelcomeController@showPolitics');
 Route::get('/informacion', 'WelcomeController@showInformation');
 Route::get('/contacto', 'WelcomeController@showContact');
 
-Route::post('/search', 'WelcomeController@search');
+Route::post('/Resultados', 'WelcomeController@search');
 
 Auth::routes();
 
@@ -74,9 +74,11 @@ Route::get('/author/{username}','AuthorController@show'); //Perfil del Autor
 Route::get('/porfile/{id}','HomeController@show'); //Formulario para Perfil
 Route::post('/porfile/{id}/edit/','HomeController@update'); //Editar Perfil
 
-Route::get('/{category}/{clasification}/{slug}','WelcomeController@show'); //Noticia
-Route::get('/{category}/{clasification}','WelcomeController@showCategoryClasification'); //Noticia
+Route::get('/{slug}','WelcomeController@show'); //Noticia
 Route::get('/{category}','WelcomeController@showCategories'); //Noticia por Categoria
+Route::get('/{category}/{clasification}','WelcomeController@showCategoryClasification'); //Noticia
+
+
 
 
 

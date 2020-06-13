@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
+use App\Clasification;
 use App\News;
 use App\Podcast;
 use Illuminate\Http\Request;
@@ -76,7 +78,7 @@ class WelcomeController extends Controller
     }
 
 
-    public function show($category,$clasification,$slug)
+    /*public function show($category,$clasification,$slug)
     {
         //
         $news=News::with('category')
@@ -105,6 +107,65 @@ class WelcomeController extends Controller
             return back();
         }
 
+    }*/
+
+
+    public function show($arg)
+    {
+        //
+        $news = News::where('slug',$arg)->first();
+        $category = Category::where('name',$arg)->first();
+        $clasification = Clasification::where('name',$arg)->first();
+        $sectionFeatured = collect();
+
+        if ($news!=null){
+            $category = $news->category->name;
+            $title = explode(' ', $news->title);
+            $firstWord = $title[0];
+            $archives = News::where('title', 'like', "%$firstWord%")->orderBy('created_at','desc')->get();
+            $related = collect();
+            foreach ($archives as $archive) {
+                if ($archive->title != $news->title && $archive->category->name == $category) {
+                    $related->push($archive);
+                }
+            }
+            $related = $related;
+            return view('general.news')->with(compact('news', 'related'));
+        }elseif ($category != null){
+            $newsCategory = News::with('category')
+                ->whereHas('category', function ($query) use ($arg) {
+                    $query->where('categories.name', '=', $arg);
+                })->orderBy('created_at', 'desc')->paginate(10);
+
+
+            $news = $newsCategory;
+            foreach ($newsCategory as $featured){
+                if($featured->featured == true && $featured->category->name == $arg){
+                    $sectionFeatured->push($featured);
+                }
+            }
+            $sectionFeatured = $sectionFeatured->forPage(0,8);
+            $section = $arg;
+            return view('general.categories')->with(compact('news','sectionFeatured','section'));
+        }elseif ($clasification != null){
+
+            $newsClasification = News::with('clasification')
+                ->whereHas('clasification', function ($query) use ($arg) {
+                    $query->where('clasifications.name', '=', $arg);
+                })->orderBy('created_at', 'desc')->paginate(10);
+
+            $news = $newsClasification;
+            foreach ($newsClasification as $featured){
+                if($featured->featured == true && $featured->clasification->name == $arg){
+                    $sectionFeatured->push($featured);
+                }
+            }
+            $sectionFeatured = $sectionFeatured->forPage(0,8);
+            $section = $arg;
+            return view('general.categories')->with(compact('news','sectionFeatured','section'));
+        }else{
+            return back();
+        }
     }
 
 

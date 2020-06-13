@@ -103,14 +103,14 @@
                     </li>
                 @endforeach
             </ul>
-            <form method="POST" action="{{url('/search')}}" class="d-block d-xl-none form-inline has-search">
+            <form method="POST" action="{{url('/Resultados')}}" class="d-block d-xl-none form-inline has-search">
                 @csrf
                 <span class="fa fa-search form-control-feedback"></span>
                 <input type="text" class="form-control" name="search" placeholder="Buscar...">
             </form>
         </div>
 
-        <form method="POST" action="{{url('/search')}}" class="d-none d-xl-block ml-3 form-inline has-search">
+        <form method="POST" action="{{url('/Resultados')}}" class="d-none d-xl-block ml-3 form-inline has-search">
             @csrf
             <span class="fa fa-search form-control-feedback"></span>
             <input type="text" class="form-control" name="search" placeholder="Buscar...">

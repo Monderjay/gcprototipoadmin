@@ -5,7 +5,6 @@
 
 @section('content')
 
-
     <!--section-->
     <div class="row principal-container padding-top">
 
@@ -30,7 +29,7 @@
                                     {{$active= "active"}}
                                 @endif
                                 <div class="carousel-item carousel-item-principal {{$active}}">
-                                    <a href="{{url($item->category->name.'/'.$item->clasification->name.'/'.$item->slug)}}">
+                                    <a href="{{url($item->slug)}}">
                                         <img class="d-block w-100" src="{{$item->news_image_featured}}" alt="First slide">
 
                                         <div class="carousel-caption">
@@ -82,7 +81,7 @@
                                     </ul>
                                 </div>
                                 <div class="col-6 text-center align-self-center">
-                                    <a href="{{url($item->category->name.'/'.$item->clasification->name.'/'.$item->slug)}}" class="btn btn-primary col-12 col-xl-8 readnews">Leer <i class="fas fa-plus"></i></a>
+                                    <a href="{{url($item->slug)}}" class="btn btn-primary col-12 col-xl-8 readnews">Leer <i class="fas fa-plus"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -35,7 +35,7 @@
                         <li class="list-group-items d-flex justify-content-start align-items-center">
                             <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
                             <div class="text-justify">
-                                <a href="{{url($article->category->name.'/'.$article->clasification->name.'/'.$article->slug)}}">
+                                <a href="{{url($article->slug)}}">
                                 {{$article->title}}<br>
                                 </a>
                                 <a href="{{url($article->category->name)}}"><small>{{$article->category->name}}</small></a> /
@@ -65,7 +65,7 @@
                             <li class="list-group-items d-flex justify-content-start align-items-center">
                                 <img src="{{$article->news_image_featured}}" class="img-fluid" alt="{{$article->title}}">
                                 <div class="text-justify">
-                                    <a href="{{url($article->category->name.'/'.$article->clasification->name.'/'.$article->slug)}}">
+                                    <a href="{{url($article->slug)}}">
                                         {{$article->title}}<br>
                                     </a>
                                     <a href="{{url($article->category->name)}}"><small>{{$article->category->name}}</small></a> /
