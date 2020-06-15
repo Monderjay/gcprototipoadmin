@@ -51,19 +51,19 @@ class WelcomeController extends Controller
                 $reviewSection->push($item);
             }
         }
-        $reviewSection= $reviewSection->forPage(0,20);
+        $reviewSection= $reviewSection->forPage(0,6);
 
 
-        $featuredPcMovil = collect();
+        $moreContent = collect();
         foreach ($newsFeatured as $item) {
             if ($item->category->name == "PC" && $item->clasification->name == "Noticias" ||
                 $item->category->name == "Movil" && $item->clasification->name == "Noticias" ||
-                $item->clasification->name == "Reseñas"
+                $item->clasification->name == "Retro"
             ){
-                $featuredPcMovil->push($item);
+                $moreContent->push($item);
             }
         }
-        $featuredPcMovil = $featuredPcMovil->forPage(0,8);
+        $moreContent = $moreContent->forPage(0,8);
 
 
         $featuredReviews=collect();
@@ -77,7 +77,7 @@ class WelcomeController extends Controller
 
         $news = News::with('user')->orderBy('id','desc')->paginate(10);
 
-        return view('welcome')->with(compact('news','featuredNews','mobileSection','reviewSection','featuredPcMovil'));
+        return view('welcome')->with(compact('news','featuredNews','mobileSection','reviewSection','moreContent'));
     }
 
 

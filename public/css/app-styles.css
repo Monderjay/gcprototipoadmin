@@ -105,10 +105,10 @@
 
 #aside-content{
     width: 100%;
-    margin: 0px auto 0px 0px;
+    margin: 40px auto 0px 0px;
 }
 
-#aside-content img{
+#aside-content add img{
     max-height: 350px;
     width: 100%;
 }
@@ -122,9 +122,10 @@
     box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 0px 1px #ffffff inset, 0px -3px 2px rgba(0, 0, 0, 0.25) inset;
 }
 
-.list{
-    overflow-y: scroll;
-    height: 300px;
+
+
+.list-review li, .list-header-review{
+    border-bottom-color: white;
 }
 
 .list-related{
@@ -162,8 +163,27 @@
     margin-right: 15px;
 }
 
+
+.list-aside a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.list-aside a:hover{
+    cursor: pointer;
+    color: #00a5bb;
+}
+
+.list-aside img{
+    width: 35px;
+    height: 35px !important;
+    margin-right: 15px;
+}
+
+
 @supports(object-fit: cover){
-    .list img, .list-news-author img, .list-related img{
+    .list img, .list-aside img, .list-news-author img, .list-related img{
         height: 100%;
         object-fit: cover;
         object-position: center center;
