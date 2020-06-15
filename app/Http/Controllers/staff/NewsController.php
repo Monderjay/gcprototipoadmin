@@ -605,7 +605,7 @@ class NewsController extends Controller
                         $path = public_path('images/news_images/'. $fileName);
 
                         $imageSave = Image::make($file->getRealPath())
-                            ->resize(1280, null, function ($constraint) {
+                            ->resize(1280, 720, function ($constraint) {
                                 $constraint->aspectRatio();
                             })->sharpen();
 
