@@ -33,11 +33,11 @@
             @endforeach
         </div>
         <a class="carousel-control-prev carousel1" href="#carousel1" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next zindex" href="#carousel1" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <a class="carousel-control-next" href="#carousel1" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
             <span class="sr-only">Next</span>
         </a>
     </div>
@@ -48,7 +48,6 @@
         <div class="mt-3 col-12 col-xl-9 p-0">
 
             {{--<div class="row justify-content-center mr-xl-0 ml-xl-0 mb-5 text-center principal-sections">
-
                 <div class="col-12 col-xl-5 mr-xl-auto ml-xl-auto  p-0 m-xl-0">
                     <div class="card card-border">
                         <div class="card-header text-center">
@@ -77,7 +76,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-xl-5 ml-xl-auto mr-xl-auto p-0 mt-5 mt-xl-0">
                     <div class="card card-border">
                         <div class="card-header text-center">
@@ -98,7 +96,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="carousel2-section">
                 <div id="carousel2" class="carousel slide slider-border carousel-width mr-auto ml-auto mr-xl-0 ml-xl-0" data-ride="carousel">
                     <div id="carousel2" class="carousel slide" data-ride="carousel2">
@@ -120,12 +117,10 @@
                                 <div class="carousel-item carousel-item-principal {{$active}}">
                                     <a href="{{url($item->slug)}}">
                                         <img class="d-block w-100" src="{{$item->news_image_featured}}" alt="First slide">
-
                                         <div class="carousel-caption">
                                             <div class="title">{{$item->title}}</div>
                                             <p>{{$item->mobile_introduction}}</p>
                                         </div>
-
                                     </a>
                                 </div>
                             @endforeach
@@ -143,48 +138,58 @@
             </div>--}}
 
             <div class="news-container-general row col-12 p-0">
-                @foreach($news as $item)
-                    <!-- Card Dark -->
-                        <div class="card card-container mr-auto ml-auto mt-4 ">
-                            <!-- Card image -->
-                            <div class="view overlay">
-                                <img class="card-img-top" src="{{$item->news_image_featured}}"
-                                     alt="Card image cap">
-                                <a href="{{url($item->slug)}}">
-                                    <div class="mask rgba-white-slight"></div>
-                                </a>
+            @foreach($news as $item)
+                <!-- Card Dark -->
+                    <div class="card card-container mr-auto ml-auto mt-4 ">
+                        <!-- Card image -->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="{{$item->news_image_featured}}"
+                                 alt="Card image cap">
+                            <a href="{{url($item->slug)}}">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body elegant-color white-text rounded-bottom">
+
+                            <!-- Social shares button -->
+
+                            <!-- Title -->
+                            <h4 class="card-title">{{$item->news_title}}</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <small><i class="fas fa-user-tie"></i>&nbsp; <a class="text-light" href="{{url('/Autor/'.$item->user->username)}}"> {{$item->user->username}} </a></small>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <small>
+                                        <i class="fas fa-calendar-alt"></i>&nbsp; {{substr($item->date,0,10)}} </small>
+                                </div>
                             </div>
+                            <hr class="hr-light">
+                            <!-- Text -->
+                            <p class="card-text white-text mb-5 text-justify">{!!$item->news_introduction!!}</p>
+                            <!-- Link -->
 
-                            <!-- Card content -->
-                            <div class="card-body elegant-color white-text rounded-bottom">
-
-                                <!-- Social shares button -->
-
-                                <!-- Title -->
-                                <h4 class="card-title">{{$item->news_title}}</h4>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <small><i class="fas fa-user-tie"></i>&nbsp; <a class="text-light" href="{{url('/Autor/'.$item->user->username)}}"> {{$item->user->username}} </a></small>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <small>
-                                            <i class="fas fa-calendar-alt"></i>&nbsp; {{substr($item->date,0,10)}} </small>
+                            <div class="row social-buttons-container">
+                                <div class="col-6 row">
+                                    <div class="col-12">
+                                        <div class="fb-share-button share-buttons" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large"><a target="_blank" href="{{url('https://www.gamecore.com.mx/'.$item->slug)}}" class="fb-xfbml-parse-ignore">Compartir</a></div>
                                     </div>
                                 </div>
-                                <hr class="hr-light">
-                                <!-- Text -->
-                                <p class="card-text white-text mb-4 text-justify">{!!$item->news_introduction!!}</p>
-                                <!-- Link -->
-                                <a href="{{url($item->slug)}}" class="white-text d-flex justify-content-end align-text-bottom">
-                                    <h5>Leer más <i class="fas fa-angle-double-right"></i></h5>
-                                </a>
+
+                                <div class="col-6 text-right">
+                                    <a href="{{url($item->slug)}}" class="white-text d-flex justify-content-end align-bottom read-more">
+                                        <h5 class="m-auto">Leer más <i class="fas fa-angle-double-right"></i></h5>
+                                    </a>
+                                </div>
 
                             </div>
 
                         </div>
-                        <!-- Card Dark -->
 
-
+                    </div>
+                    <!-- Card Dark -->
 
 
                     {{--<div class="row news-container mt-4">
@@ -199,7 +204,6 @@
                             <div class="news-description text-justify">
                                 {!!$item->news_introduction!!}
                             </div>
-
                             <div class="justify-content-center col-xl-12 row p-0 m-0 mt-3 mb-0">
                                 <div class="col-6 news-date p-0">
                                     <ul>
@@ -235,3 +239,4 @@
     </div>
     @include('includes.footer')
 @endsection
+
