@@ -143,7 +143,7 @@
 </div>
 
 <!-- Scripts -->
-<script type="text/javascript" src="{{ asset('js/app.js') }}" ></script>
+
 <script type="text/javascript" src="{{ asset('js/styles.js') }}" ></script>
 <script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}" ></script>
 <script type="text/javascript" src="{{ asset('js/Knob/config.js')}}"></script>
