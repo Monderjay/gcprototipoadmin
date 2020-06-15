@@ -180,6 +180,7 @@
 
                                 <div class="col-6 text-right">
                                     <a href="{{url($item->slug)}}" class="white-text d-flex justify-content-end align-bottom read-more">
+                                        @section('page-image','https://www.gamecore.com.mx'.$item->news_image_featured)
                                         <h5 class="m-auto">Leer más <i class="fas fa-angle-double-right"></i></h5>
                                     </a>
                                 </div>
