@@ -174,7 +174,7 @@
                             <div class="row social-buttons-container">
                                 <div class="col-6 row">
                                     <div class="col-12">
-                                        <div class="fb-share-button share-buttons" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button" data-size="large"><a target="_blank" href="{{url('https://www.gamecore.com.mx/'.$item->slug)}}" class="fb-xfbml-parse-ignore">Compartir</a></div>
+                                        <div class="fb-share-button share-buttons" data-href="{{url('https://www.gamecore.com.mx/'.$item->slug)}}" data-layout="button" data-size="large"><a target="_blank" href="{{url('https://www.gamecore.com.mx/'.$item->slug)}}" class="fb-xfbml-parse-ignore">Compartir</a></div>
                                     </div>
                                 </div>
 
