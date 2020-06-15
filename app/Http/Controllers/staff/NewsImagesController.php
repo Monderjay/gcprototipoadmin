@@ -50,14 +50,15 @@ class NewsImagesController extends Controller
 
             $image = new NewsImage();
             $file = $request->file('featured-image');
-            $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
+            $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+            $fileName = uniqid() . '-'.$originalName.'.jpg'; //Renombrar la Imagen
             $path = public_path('images/news_images/'. $fileName);
 
             $imageSave = Image::make($file->getRealPath())
                 ->resize(1280, 720)->sharpen();
 
             //Crear 1 registro en la tabla de users
-            if ($imageSave->save($path,72)) {
+            if ($imageSave->save($path,72,'jpg')) {
                 $image->image = $fileName;
                 $image->news_id = $id;
                 NewsImage::where('news_id',$id)->update([

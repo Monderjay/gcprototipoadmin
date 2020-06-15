@@ -45,9 +45,9 @@
     <!--section-->
     <div class="row principal-container p-0">
 
-        <div class="mt-5 col-12 col-xl-9 p-0">
+        <div class="mt-3 col-12 col-xl-9 p-0">
 
-            <div class="row justify-content-center mr-xl-0 ml-xl-0 mb-5 text-center principal-sections">
+            {{--<div class="row justify-content-center mr-xl-0 ml-xl-0 mb-5 text-center principal-sections">
 
                 <div class="col-12 col-xl-5 mr-xl-auto ml-xl-auto  p-0 m-xl-0">
                     <div class="card card-border">
@@ -140,11 +140,54 @@
                         </a>
                     </div>
                 </div>
-            </div>
+            </div>--}}
 
-            <div class="news-container-general mt-5">
+            <div class="news-container-general row col-12 p-0">
                 @foreach($news as $item)
-                    <div class="row news-container mt-4">
+                    <!-- Card Dark -->
+                        <div class="card card-container mr-auto ml-auto mt-4 ">
+                            <!-- Card image -->
+                            <div class="view overlay">
+                                <img class="card-img-top" src="{{$item->news_image_featured}}"
+                                     alt="Card image cap">
+                                <a href="{{url($item->slug)}}">
+                                    <div class="mask rgba-white-slight"></div>
+                                </a>
+                            </div>
+
+                            <!-- Card content -->
+                            <div class="card-body elegant-color white-text rounded-bottom">
+
+                                <!-- Social shares button -->
+
+                                <!-- Title -->
+                                <h4 class="card-title">{{$item->news_title}}</h4>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <small><i class="fas fa-user-tie"></i>&nbsp; <a class="text-light" href="{{url('/Autor/'.$item->user->username)}}"> {{$item->user->username}} </a></small>
+                                    </div>
+                                    <div class="col-6 text-right">
+                                        <small>
+                                            <i class="fas fa-calendar-alt"></i>&nbsp; {{substr($item->date,0,10)}} </small>
+                                    </div>
+                                </div>
+                                <hr class="hr-light">
+                                <!-- Text -->
+                                <p class="card-text white-text mb-4 text-justify">{!!$item->news_introduction!!}</p>
+                                <!-- Link -->
+                                <a href="{{url($item->slug)}}" class="white-text d-flex justify-content-end align-text-bottom">
+                                    <h5>Leer más <i class="fas fa-angle-double-right"></i></h5>
+                                </a>
+
+                            </div>
+
+                        </div>
+                        <!-- Card Dark -->
+
+
+
+
+                    {{--<div class="row news-container mt-4">
                         <div class="col-xl-5 align-self-center p-0">
                             <img src="{{$item->news_image_featured}}">
                         </div>
@@ -175,7 +218,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                 @endforeach
             </div>
 

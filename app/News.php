@@ -36,8 +36,21 @@ class News extends Model
             $introduction .= $words[$i].' ';
         }*/
         $description = $this->introduction;
-        $introduction = substr($description,0,230).'...';
+        $introduction = substr($description,0,200).' ...';
         return $introduction;
+    }
+
+    public function getNewsTitleAttribute(){
+        $title = $this->title;
+        $title = $this->title;
+        if (strlen($title) > 70){
+            $title = substr($title,0,70).' ...';
+        }else{
+            $title = substr($title,0,70);
+        }
+
+
+        return $title;
     }
 
     public function getMobileIntroductionAttribute(){

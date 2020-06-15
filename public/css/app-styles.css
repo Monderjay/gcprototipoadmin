@@ -512,3 +512,21 @@
     color: #aaa;
 }
 
+
+
+
+
+
+.card-container{
+    width: 48%;
+}
+
+@media screen and (max-width: 1200px) {
+    .card-container{
+        width: 100%;
+    }
+    .news-container-general{
+        margin: auto;
+    }
+}
+

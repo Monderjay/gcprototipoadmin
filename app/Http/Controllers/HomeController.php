@@ -174,7 +174,8 @@ class HomeController extends Controller
                     if ($deleted) {
                         //Guardar la imagen en nuestro Proyecto
                         $file = $request->file('cover_image');
-                        $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
+                        $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+                        $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
                         $path = public_path('images/cover_images/'. $fileName);
 
                         $imageSave = Image::make($file->getRealPath())
@@ -184,7 +185,7 @@ class HomeController extends Controller
 
 
                         //Crear 1 registro en la tabla de users
-                        if ($imageSave->save($path,72)) {
+                        if ($imageSave->save($path,72,'webp')) {
                             $user->cover_image = $fileName;
                         }
                     }
@@ -192,7 +193,8 @@ class HomeController extends Controller
             }else{
                 //Guardar la imagen en nuestro Proyecto
                 $file = $request->file('cover_image');
-                $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
+                $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+                $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
                 $path = public_path('images/cover_images/'. $fileName);
 
                 $imageSave = Image::make($file->getRealPath())
@@ -202,7 +204,7 @@ class HomeController extends Controller
 
 
                 //Crear 1 registro en la tabla de users
-                if ($imageSave->save($path,72)) {
+                if ($imageSave->save($path,72,'webp')) {
                     $user->cover_image = $fileName;
                 }
             }
@@ -229,7 +231,8 @@ class HomeController extends Controller
                         //Guardar la imagen en nuestro Proyecto
                         $file = $request->file('porfile_image');
 
-                        $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
+                        $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+                        $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
                         $path = public_path('images/porfile_images/'. $fileName);
 
                         $imageSave = Image::make($file->getRealPath())
@@ -239,7 +242,7 @@ class HomeController extends Controller
 
 
                         //Crear 1 registro en la tabla de users
-                        if ($imageSave->save($path,72)) {
+                        if ($imageSave->save($path,72,'webp')) {
                             $user->porfile_image = $fileName;
                         }
                     }
@@ -249,7 +252,8 @@ class HomeController extends Controller
 
 
                 $file = $request->file('porfile_image');
-                $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
+                $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+                $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
                 $path = public_path('images/porfile_images/'. $fileName);
 
                 $imageSave = Image::make($file->getRealPath())
@@ -259,7 +263,7 @@ class HomeController extends Controller
 
 
                 //Crear 1 registro en la tabla de users
-                if ($imageSave->save($path,72)) {
+                if ($imageSave->save($path,72,'webp')) {
                     $user->porfile_image = $fileName;
                 }
             }

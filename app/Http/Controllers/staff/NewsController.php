@@ -30,6 +30,37 @@ class NewsController extends Controller
 
     }*/
 
+    /*public function __construct()
+    {
+        //dd($imagesDataBase[0]->image);
+        $images = File::files(public_path(). '/images/news_images');
+        //$fullPath = public_path() . '/images/news_images/' . $image;
+
+        foreach ($images as $img){
+            $dataBseName = $img->getFileName();
+            $imageDataBase = NewsImage::where('image',$img->getFileName())->first();
+            if ($imageDataBase !=null){
+                $originalName = pathinfo($img->getFileName(),PATHINFO_FILENAME);
+                $fileName = $originalName.'.webp'; //Cambiar formato
+                $path = public_path('images/news_images/'. $fileName);
+
+                $imageSave = Image::make($img->getRealPath())
+                    ->resize(1280, null, function ($constraint) {
+                        $constraint->aspectRatio();
+                    })->sharpen();
+
+                //Crear 1 registro en la tabla de users
+                if ($imageSave->save($path,72,'webp')) {
+                    $imageDataBase->image = $fileName;
+                    $imageDataBase->save();
+
+                    File::delete(public_path(). '/images/news_images'.$img->getFileName());
+                }
+            }
+
+        }
+    }*/
+
 
     public function eliminar_tildes($cadena){
         //Codificamos la cadena en formato utf8 en caso de que nos de errores
@@ -94,12 +125,12 @@ class NewsController extends Controller
 
             $image = new NewsImage();
             $file = $request->file('upload');
-            $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
+            $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+            $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
             $path = public_path('images/news_images/'. $fileName);
 
             $ext = explode('.',$file->getClientOriginalName());
             $ext=$ext[count($ext)-1];
-
 
 
             if ($ext == "jpg" || $ext == "png" || $ext == "jpeg"){
@@ -109,7 +140,7 @@ class NewsController extends Controller
                     })->sharpen();
 
                 //Crear 1 registro en la tabla de users
-                if ($imageSave->save($path,72)) {
+                if ($imageSave->save($path,72,'webp')) {
                     $image->image = $fileName;
                     $image->news_id = null;
                     $image->save();
@@ -146,12 +177,12 @@ class NewsController extends Controller
                     echo $re;
                 }
             }else{
-                    $CKEditorFuncNum = $request->input('CKEditorFuncNum');
-                    $msg = 'Formato no valido';
-                    $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '', '$msg')</script>";
-                    // Render HTML output
-                    @header('Content-type: text/html; charset=utf-8');
-                    echo $re;
+                $CKEditorFuncNum = $request->input('CKEditorFuncNum');
+                $msg = 'Formato no valido';
+                $re = "<script>window.parent.CKEDITOR.tools.callFunction($CKEditorFuncNum, '', '$msg')</script>";
+                // Render HTML output
+                @header('Content-type: text/html; charset=utf-8');
+                echo $re;
             }
 
 
@@ -250,36 +281,37 @@ class NewsController extends Controller
 
             $image = new NewsImage();
             $file = $request->file('featured_image');
-            $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
+            $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+            $fileName = uniqid() . '-'.$originalName.'.jpg'; //Renombrar la Imagen
 
 
-                $path = public_path('images/news_images/'. $fileName);
-                $imageSave = Image::make($file->getRealPath())
-                    ->resize(1280, 720)->sharpen();
-                //Crear 1 registro en la tabla de users
-                if ($imageSave->save($path,72)) {
-                    $image->image = $fileName;
-                    $image->news_id = $id;
-                    NewsImage::where('news_id',$id)->update([
-                        'featured' => false
-                    ]);
-                    $image->featured = true;
-                }
-
-                /*$path = public_path().'/images/news_images';
-
-                $moved = $file->move($path,$fileName);
-                //dd($moved);
-                //Crear 1 registro en la tabla de product_images
-                if ($moved){
-                    $image -> image = $fileName;
-                    $image->news_id = $id;
-                    NewsImage::where('news_id',$id)->update([
-                        'featured' => false
-                    ]);
-                    $image->featured = true;
-                }*/
+            $path = public_path('images/news_images/'. $fileName);
+            $imageSave = Image::make($file->getRealPath())
+                ->resize(1280, 720)->sharpen();
+            //Crear 1 registro en la tabla de users
+            if ($imageSave->save($path,72,'jpg')) {
+                $image->image = $fileName;
+                $image->news_id = $id;
+                NewsImage::where('news_id',$id)->update([
+                    'featured' => false
+                ]);
+                $image->featured = true;
             }
+
+            /*$path = public_path().'/images/news_images';
+
+            $moved = $file->move($path,$fileName);
+            //dd($moved);
+            //Crear 1 registro en la tabla de product_images
+            if ($moved){
+                $image -> image = $fileName;
+                $image->news_id = $id;
+                NewsImage::where('news_id',$id)->update([
+                    'featured' => false
+                ]);
+                $image->featured = true;
+            }*/
+        }
 
 
 
@@ -339,7 +371,7 @@ class NewsController extends Controller
     }
 
 
-    public function update(Request $request, $id)
+    /*public function update(Request $request, $id)
     {
         $rules = [
             'title' => 'unique:news,title,'.$id,
@@ -348,9 +380,6 @@ class NewsController extends Controller
         $messages = [
             'title.unique' => 'El título ingresado ya existe.',
         ];
-
-
-
 
 
         $this->validate($request, $rules, $messages);
@@ -421,7 +450,8 @@ class NewsController extends Controller
                     if ($deleted) {
                         //Guardar la imagen en nuestro Proyecto
                         $file = $request->file('featured_image');
-                        $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
+                        $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+                        $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
                         $path = public_path('images/news_images/'. $fileName);
 
                         $imageSave = Image::make($file->getRealPath())
@@ -431,7 +461,7 @@ class NewsController extends Controller
 
 
                         //Crear 1 registro en la tabla de users
-                        if ($imageSave->save($path,72)) {
+                        if ($imageSave->save($path,72,'webp')) {
 
                             NewsImage::where('news_id',$id)->update([
                                 'featured' => false
@@ -446,7 +476,8 @@ class NewsController extends Controller
             }else{
                 //Guardar la imagen en nuestro Proyecto
                 $file = $request->file('featured_image');
-                $fileName = uniqid() . '-' . $file->getClientOriginalName(); //Renombrar la Imagen
+                $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+                $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
                 $path = public_path('images/news_images/'. $fileName);
 
                 $imageSave = Image::make($file->getRealPath())
@@ -485,6 +516,188 @@ class NewsController extends Controller
             return redirect('/staff/news')->with(compact('notificationFaill'));
 
         }
+    }*/
+
+
+    public function update(Request $request, $id)
+    {
+        $rules = [
+            'title' => 'unique:news,title,'.$id,
+        ];
+
+        $messages = [
+            'title.unique' => 'El título ingresado ya existe.',
+        ];
+
+
+        $this->validate($request, $rules, $messages);
+        //
+        $news = News::find($id);
+        $category = Category::where('name', $request->input('category'))->first();
+        $clasification = Clasification::where('name', $request->input('clasification'))->first();
+
+        if ($request->input('clasification') == "Noticias" || $request->input('clasification') == "Retro") {
+            $news->calification = null;
+            $news->about = $request->input('about');
+            if ($request->input('featured') != null) {
+                $news->featured = true;
+            } else {
+                $news->featured = false;
+            }
+        } else if ($request->input('clasification') == "Reseñas") {
+            $news->about = $request->input('about');
+            if ($request->input('featured') != null) {
+                $news->featured = true;
+            } else {
+                $news->featured = false;
+            }
+            $news->calification = $request->input('calification');
+        } else {
+            $news->featured = false;
+            $news->calification = null;
+        }
+
+        if ($request->input('clasification') == "Reseñas") {
+            $news->calification = $request->input('calification');
+        } else {
+            $news->calification = null;
+        }
+
+        $news->title = $request->input('title');
+        $news->introduction = $request->input('introduction');
+        $news->about = $request->input('about');
+        $news->category_id = $category->id;
+        $news->clasification_id = $clasification->id;
+        $news->description = $request->input('description');
+        $news->font  = $request->input('font');
+
+        $cadena = strtolower($this->eliminar_tildes($news->title));
+
+        $news->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
+
+
+        if($request->hasFile('featured_image')) {
+
+            $image = NewsImage::where('news_id',$id)->where('featured',true)->first();
+
+            if ($image != null){
+
+                if (substr($image,0,4)=="http"){
+                    $deleted = true;
+                } else {
+                    $images = File::files(public_path(). '/images/news_images');
+                    $fullPath = public_path() . '/images/news_images/' . $image->image;
+                    foreach ($images as $img){
+
+                        if ($image->image == pathinfo($img)['basename']){
+
+                            $deleted = File::delete($fullPath);
+                        }else{
+                            $deleted = true;
+                        }
+                    }
+
+                    if ($deleted) {
+                        //Guardar la imagen en nuestro Proyecto
+                        $file = $request->file('featured_image');
+                        $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+                        $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
+                        $path = public_path('images/news_images/'. $fileName);
+
+                        $imageSave = Image::make($file->getRealPath())
+                            ->resize(1280, null, function ($constraint) {
+                                $constraint->aspectRatio();
+                            })->sharpen();
+
+
+                        //Crear 1 registro en la tabla de users
+                        if ($imageSave->save($path,72,'webp')) {
+
+                            NewsImage::where('news_id',$id)->update([
+                                'featured' => false
+                            ]);
+
+                            $image->featured = true;
+                            $image->image = $fileName;
+                            $image->save();
+                        }
+                    }
+                }
+            }else{
+                //Guardar la imagen en nuestro Proyecto
+                $file = $request->file('featured_image');
+                $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+                $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
+                $path = public_path('images/news_images/'. $fileName);
+
+                $imageSave = Image::make($file->getRealPath())
+                    ->resize(1280, null, function ($constraint) {
+                        $constraint->aspectRatio();
+                    })->sharpen();
+                //->resize(1280,720)->fill();
+
+
+                //Crear 1 registro en la tabla de users
+                if ($imageSave->save($path,72)) {
+                    $image = new NewsImage();
+                    $image->image = $fileName;
+                    $image->featured = true;
+                    $image->news_id=$id;
+                    $image->save();
+                }
+            }
+        }
+
+        $emailAuthor = auth()->user()->email;
+        if (session($emailAuthor)){
+            foreach (session($emailAuthor) as $item) {
+                $images = NewsImage::find($item->id);
+                $images->news_id = $news->id;
+                $images->save();
+            }
+            Session::forget($emailAuthor);
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////
+        //Temporal para actualizar las imagenes
+        $images = File::files(public_path(). '/images/news_images'); //Carpeta
+        $imagesDataBase = NewsImage::where('news_id',$id)->get(); //Base
+
+        foreach ($imagesDataBase as $imageDatabase){
+            $featured = $imageDatabase->featured;
+                foreach ($images as $img){
+                    if ($img->getFileName() == $imageDatabase->image && $featured == false){
+
+
+                        $originalName = pathinfo($img->getFileName(),PATHINFO_FILENAME);
+                        $fileName = $originalName.'.webp'; //Cambiar formato
+                        $path = public_path('images/news_images/'. $fileName);
+
+                        $imageSave = Image::make($img->getRealPath());
+
+
+                        if ($imageSave->save($path,72,'webp')) {
+                            $imageDatabase->image = $fileName;
+                            $imageDatabase->save();
+
+                            File::delete(public_path(). '/images/news_images/'.$img->getFileName());
+                        }
+                    }
+                }
+            }
+
+        ///////////////////////////////////////////////////////////////////////////////////////
+        //--------------Temporal para actualizar las imagenes-----------------------------------
+
+        if ($news->save() || $images){
+            $notification ="Noticia Modificada con Exito, Ahora puede Verificar sus Imagenes";
+            return redirect('/staff/news')->with(compact('notification'));
+        }else{
+            $notificationFaill ="La Noticia no pudo Modificarse :(";
+            return redirect('/staff/news')->with(compact('notificationFaill'));
+
+        }
+
     }
 
 

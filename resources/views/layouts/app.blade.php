@@ -38,6 +38,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app-styles.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet">
 
 
     <!-- Facebook -->
@@ -83,7 +84,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
             <ul class="navbar-nav ">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="{{url('/')}}"><i class="fas fa-home"></i> INICIO <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
