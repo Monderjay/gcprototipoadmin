@@ -658,36 +658,6 @@ class NewsController extends Controller
             Session::forget($emailAuthor);
         }
 
-        ///////////////////////////////////////////////////////////////////////////////////////
-        //Temporal para actualizar las imagenes
-        $images = File::files(public_path(). '/images/news_images'); //Carpeta
-        $imagesDataBase = NewsImage::where('news_id',$id)->get(); //Base
-
-        foreach ($imagesDataBase as $imageDatabase){
-            $featured = $imageDatabase->featured;
-                foreach ($images as $img){
-                    if ($img->getFileName() == $imageDatabase->image && $featured == false){
-
-
-                        $originalName = pathinfo($img->getFileName(),PATHINFO_FILENAME);
-                        $fileName = $originalName.'.webp'; //Cambiar formato
-                        $path = public_path('images/news_images/'. $fileName);
-
-                        $imageSave = Image::make($img->getRealPath());
-
-
-                        if ($imageSave->save($path,72,'webp')) {
-                            $imageDatabase->image = $fileName;
-                            $imageDatabase->save();
-
-                            File::delete(public_path(). '/images/news_images/'.$img->getFileName());
-                        }
-                    }
-                }
-            }
-
-        ///////////////////////////////////////////////////////////////////////////////////////
-        //--------------Temporal para actualizar las imagenes-----------------------------------
 
         if ($news->save() || $images){
             $notification ="Noticia Modificada con Exito, Ahora puede Verificar sus Imagenes";
