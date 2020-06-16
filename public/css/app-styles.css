@@ -118,11 +118,6 @@
     padding: 0px;
 }
 
-.card-border{
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 0px 1px #ffffff inset, 0px -3px 2px rgba(0, 0, 0, 0.25) inset;
-}
-
-
 
 .list-review li, .list-header-review{
     border-bottom-color: white;
@@ -191,67 +186,13 @@
 }
 
 
-
-.slider-border{
-    /*padding: 15px;
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 0px 1px #ffffff inset, 0px -3px 2px rgba(0, 0, 0, 0.25) inset;*/
-}
-
-.slider-border img{
-    /*max-height: 600px;*/
-}
-
-.news-container{
-    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.3), 0px 3px 7px rgba(0, 0, 0, 0.3), 0px 0px 1px #ffffff inset, 0px -3px 2px rgba(0, 0, 0, 0.25) inset;
-    margin: 0px 0px 30px 0px;
-    font-family: "fajala", Helvetica;
-    width: 95%;
-    padding: 10px;
-}
-
 .carousel-clasifications{
     width: 95%;
     margin-top: 50px;
 }
 
-.news-info{
-    letter-spacing: 1px;
-}
-
 .carousel-width{
     width: 98%;
-}
-
-
-@supports(object-fit: cover){
-    .news-container img{
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-    }
-}
-
-
-.news-container img {
-    width: 100%;
-    max-height:300px;
-    padding: 10px;
-}
-
-.news-title{;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.news-description{
-    font-family: "fajala", Helvetica;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
-.news-date ul{
-    list-style: none;
-    padding: 0px;
 }
 
 .news-date >ul> li{
@@ -347,11 +288,21 @@
     line-height: 25px;
 }
 
+
+@media screen and (max-width: 400px) {
+
+    .padding-top{
+        padding-top: 0px !important;
+    }
+}
+
 @media screen and (max-width: 767px) {
     #footer-container {
         text-align: center;
     }
+
 }
+
 
 #footer-container {
     flex: 0 0 auto;
@@ -377,7 +328,7 @@
 
 
 .padding-top{
-    padding-top: 60px !important;
+    padding-top: 50px !important;
 }
 
 /*--------------------------------------------------------------
@@ -438,9 +389,6 @@
     width: 130%;
 }
 
-.carousel1{
-    z-index: 999;
-}
 
 .fb-page,
 .fb-page span,
@@ -463,6 +411,7 @@
     .carousel-caption {
         font-size: 8px;
     }
+
 
     .title {
         font-size: 11px;
