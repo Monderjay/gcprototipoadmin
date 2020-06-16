@@ -115,6 +115,35 @@ class WelcomeController extends Controller
 
     public function show($arg)
     {
+        $newsFeatured = News::where('featured',true)->orderBy('created_at','desc')->get();
+        $news = News::with('user')->orderBy('created_at','desc')->get();
+        $featuredNews = collect();
+        $reviewSection= collect();
+        foreach ($news as $item) {
+            if ($item->category->name == "PlayStation" && $item->clasification->name == "Reseñas" ||
+                $item->category->name == "Xbox" && $item->clasification->name == "Reseñas" ||
+                $item->category->name == "Nintendo" && $item->clasification->name == "Reseñas" ||
+                $item->category->name == "Multi Consola" && $item->clasification->name == "Reseñas" ||
+                $item->category->name == "PC" && $item->clasification->name == "Reseñas"||
+                $item->category->name == "Movil" && $item->clasification->name == "Reseñas"){
+                $reviewSection->push($item);
+            }
+        }
+        $reviewSection= $reviewSection->forPage(0,6);
+
+
+        $moreContent = collect();
+        foreach ($newsFeatured as $item) {
+            if ($item->category->name == "PC" && $item->clasification->name == "Noticias" ||
+                $item->category->name == "Movil" && $item->clasification->name == "Noticias" ||
+                $item->clasification->name == "Retro"
+            ){
+                $moreContent->push($item);
+            }
+        }
+        $moreContent = $moreContent->forPage(0,8);
+
+
         //
         $news = News::where('slug',$arg)->first();
         $category = Category::where('name',$arg)->first();
@@ -165,7 +194,7 @@ class WelcomeController extends Controller
             }
             $sectionFeatured = $sectionFeatured->forPage(0,8);
             $section = $arg;
-            return view('general.categories')->with(compact('news','sectionFeatured','section'));
+            return view('general.categories')->with(compact('news','sectionFeatured','section','reviewSection', 'moreContent'));
         }elseif ($clasification != null){
 
             $newsClasification = News::with('clasification')
@@ -181,7 +210,7 @@ class WelcomeController extends Controller
             }
             $sectionFeatured = $sectionFeatured->forPage(0,8);
             $section = $arg;
-            return view('general.categories')->with(compact('news','sectionFeatured','section'));
+            return view('general.categories')->with(compact('news','sectionFeatured','section','reviewSection', 'moreContent'));
         }else{
             return back();
         }

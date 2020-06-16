@@ -21,9 +21,6 @@
 
     <link rel="shortcut icon" href="{{asset('img/coreblack.png')}}">
 
-    <!-- google -->
-    <script data-ad-client="ca-pub-5455720448748407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    <script type="javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <!-- Facebook -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1"></script>
@@ -144,6 +141,7 @@
 
 <!-- Scripts -->
 
+<script type="text/javascript" src="{{ asset('js/app.js') }}" ></script>
 <script type="text/javascript" src="{{ asset('js/styles.js') }}" ></script>
 <script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}" ></script>
 <script type="text/javascript" src="{{ asset('js/Knob/config.js')}}"></script>

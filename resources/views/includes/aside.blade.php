@@ -15,8 +15,6 @@
             </div>
         </div>
 
-        <script type="javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-
 
         <div class="col-12 mr-xl-auto ml-xl-auto  p-0 m-xl-0">
             <div class="card">

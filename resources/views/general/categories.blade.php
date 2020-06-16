@@ -52,9 +52,62 @@
                 </div>
             </div>
 
-            <div class="news-container-general mt-xl-5 mt-4">
-                @foreach($news as $item)
-                    <div class="row news-container mt-4">
+            <div class="news-container-general row col-12 p-0">
+            @foreach($news as $item)
+                <!-- Card Dark -->
+                    <div class="card card-container mr-auto ml-auto mt-4 ">
+                        <!-- Card image -->
+                        <div class="view overlay">
+                            <img class="card-img-top" src="{{$item->news_image_featured}}"
+                                 alt="Card image cap">
+                            <a href="{{url($item->slug)}}">
+                                <div class="mask rgba-white-slight"></div>
+                            </a>
+                        </div>
+
+                        <!-- Card content -->
+                        <div class="card-body elegant-color white-text rounded-bottom">
+
+                            <!-- Social shares button -->
+
+                            <!-- Title -->
+                            <h4 class="card-title">{{$item->news_title}}</h4>
+                            <div class="row">
+                                <div class="col-6">
+                                    <small><i class="fas fa-user-tie"></i>&nbsp; <a class="text-light" href="{{url('/Autor/'.$item->user->username)}}"> {{$item->user->username}} </a></small>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <small>
+                                        <i class="fas fa-calendar-alt"></i>&nbsp; {{substr($item->date,0,10)}} </small>
+                                </div>
+                            </div>
+                            <hr class="hr-light">
+                            <!-- Text -->
+                            <p class="card-text white-text mb-5 text-justify">{!!$item->news_introduction!!}</p>
+                            <!-- Link -->
+
+                            <div class="row social-buttons-container">
+                                <div class="col-6 row">
+                                    <div class="col-12">
+                                        <div class="fb-share-button share-buttons" data-href="{{url('https://www.gamecore.com.mx/'.$item->slug)}}" data-layout="button" data-size="large"><a target="_blank" href="{{url('https://www.gamecore.com.mx/'.$item->slug)}}" class="fb-xfbml-parse-ignore">Compartir</a></div>
+                                    </div>
+                                </div>
+
+                                <div class="col-6 text-right">
+                                    <a href="{{url($item->slug)}}" class="white-text d-flex justify-content-end align-bottom read-more">
+                                        <h5 class="m-auto">Leer más <i class="fas fa-angle-double-right"></i></h5>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Card Dark -->
+
+
+                    {{--<div class="row news-container mt-4">
                         <div class="col-xl-5 align-self-center p-0">
                             <img src="{{$item->news_image_featured}}">
                         </div>
@@ -66,12 +119,11 @@
                             <div class="news-description text-justify">
                                 {!!$item->news_introduction!!}
                             </div>
-
                             <div class="justify-content-center col-xl-12 row p-0 m-0 mt-3 mb-0">
                                 <div class="col-6 news-date p-0">
                                     <ul>
                                         <li class="author">
-                                            <small><a href="{{url('/Autor/'.$item->user->username)}}">{{$item->user->username}} </a> <i class="fas fa-user-tie"></i></small>
+                                            <small><a href="{{url('/Autor/'.$item->user->username)}}"> {{$item->user->username}} </a> <i class="fas fa-user-tie"></i></small>
                                         </li>
                                         <li>
                                             <small>{{substr($item->date,0,10)}} <i class="fas fa-calendar-alt"></i></small> |  <small>
@@ -85,7 +137,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div>--}}
                 @endforeach
             </div>
 
