@@ -147,5 +147,6 @@
 <script type="text/javascript" src="{{ asset('js/Knob/config.js')}}"></script>
 <script type="text/javascript" src="https://www.powr.io/powr.js?platform=jquery"></script>
 
+
 </body>
 </html>

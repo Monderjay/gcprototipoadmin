@@ -41,11 +41,11 @@
                             @endforeach
                         </div>
                         <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <i class="fas fa-arrow-circle-left" style="font-size: 30px"></i>
                             <span class="sr-only">Previous</span>
                         </a>
                         <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <i class="fas fa-arrow-circle-right" style="font-size: 30px"></i>
                             <span class="sr-only">Next</span>
                         </a>
                     </div>
