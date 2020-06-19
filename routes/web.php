@@ -70,7 +70,7 @@ Route::middleware(['auth','staff','username'])->prefix('staff/editor')->group(fu
     Route::delete('/{id}/delete','Staff\EditorController@destroy'); //Eliminar Editor
 });
 
-Route::get('/Autor/{username}','AuthorController@show'); //Perfil del Autor
+Route::get('/autor/{username}','AuthorController@show'); //Perfil del Autor
 Route::get('/porfile/{id}','HomeController@show'); //Formulario para Perfil
 Route::post('/porfile/{id}/edit/','HomeController@update'); //Editar Perfil
 

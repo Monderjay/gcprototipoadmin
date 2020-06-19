@@ -14,54 +14,6 @@ use Intervention\Image\ImageManagerStatic as Image;
 use File;
 class NewsController extends Controller
 {
-
-    /*public function __construct()
-    {
-
-        $news = News::where('slug','')->get();
-
-        foreach ($news as $new) {
-
-            $cadena = strtolower($this->eliminar_tildes($new->title));
-
-            $new->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
-            $new->save();
-        }
-
-    }*/
-
-    /*public function __construct()
-    {
-        //dd($imagesDataBase[0]->image);
-        $images = File::files(public_path(). '/images/news_images');
-        //$fullPath = public_path() . '/images/news_images/' . $image;
-
-        foreach ($images as $img){
-            $dataBseName = $img->getFileName();
-            $imageDataBase = NewsImage::where('image',$img->getFileName())->first();
-            if ($imageDataBase !=null){
-                $originalName = pathinfo($img->getFileName(),PATHINFO_FILENAME);
-                $fileName = $originalName.'.webp'; //Cambiar formato
-                $path = public_path('images/news_images/'. $fileName);
-
-                $imageSave = Image::make($img->getRealPath())
-                    ->resize(1280, null, function ($constraint) {
-                        $constraint->aspectRatio();
-                    })->sharpen();
-
-                //Crear 1 registro en la tabla de users
-                if ($imageSave->save($path,72,'webp')) {
-                    $imageDataBase->image = $fileName;
-                    $imageDataBase->save();
-
-                    File::delete(public_path(). '/images/news_images'.$img->getFileName());
-                }
-            }
-
-        }
-    }*/
-
-
     public function eliminar_tildes($cadena){
         //Codificamos la cadena en formato utf8 en caso de que nos de errores
         $cadena = str_replace(
@@ -185,14 +137,11 @@ class NewsController extends Controller
                 echo $re;
             }
 
-
-
         }
     }
 
     public function index()
     {
-        //
         $news = News::with('user')->orderBy('id','desc')->paginate(10);
         $totalNews = News::with('user')->count();
         return view('news.index')->with(compact('news','totalNews'));
@@ -200,7 +149,6 @@ class NewsController extends Controller
 
     public function create()
     {
-        //
         $now = Carbon::now();
         $date = $now->format('Y-m-d\TH:i');
         $categories = Category::all();
@@ -270,7 +218,6 @@ class NewsController extends Controller
 
 
 
-
         $news->user_id = auth()->user()->id;
 
         $news->save();
@@ -282,14 +229,14 @@ class NewsController extends Controller
             $image = new NewsImage();
             $file = $request->file('featured_image');
             $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
-            $fileName = uniqid() . '-'.$originalName.'.jpg'; //Renombrar la Imagen
+            $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
 
 
             $path = public_path('images/news_images/'. $fileName);
             $imageSave = Image::make($file->getRealPath())
                 ->resize(1280, 720)->sharpen();
             //Crear 1 registro en la tabla de users
-            if ($imageSave->save($path,72,'jpg')) {
+            if ($imageSave->save($path,72,'webp')) {
                 $image->image = $fileName;
                 $image->news_id = $id;
                 NewsImage::where('news_id',$id)->update([
@@ -297,22 +244,7 @@ class NewsController extends Controller
                 ]);
                 $image->featured = true;
             }
-
-            /*$path = public_path().'/images/news_images';
-
-            $moved = $file->move($path,$fileName);
-            //dd($moved);
-            //Crear 1 registro en la tabla de product_images
-            if ($moved){
-                $image -> image = $fileName;
-                $image->news_id = $id;
-                NewsImage::where('news_id',$id)->update([
-                    'featured' => false
-                ]);
-                $image->featured = true;
-            }*/
         }
-
 
 
 
@@ -336,11 +268,6 @@ class NewsController extends Controller
 
     }
 
-
-    public function show($id)
-    {
-        //
-    }
 
 
     public function edit($id)
@@ -370,153 +297,6 @@ class NewsController extends Controller
         return view('news.edit')->with(compact('news','categories','clasifications','date','clasificationSelected','categorySelected'));
     }
 
-
-    /*public function update(Request $request, $id)
-    {
-        $rules = [
-            'title' => 'unique:news,title,'.$id,
-        ];
-
-        $messages = [
-            'title.unique' => 'El título ingresado ya existe.',
-        ];
-
-
-        $this->validate($request, $rules, $messages);
-        //
-        $news = News::find($id);
-        $category = Category::where('name', $request->input('category'))->first();
-        $clasification = Clasification::where('name', $request->input('clasification'))->first();
-
-        if ($request->input('clasification') == "Noticias" || $request->input('clasification') == "Retro") {
-            $news->calification = null;
-            $news->about = $request->input('about');
-            if ($request->input('featured') != null) {
-                $news->featured = true;
-            } else {
-                $news->featured = false;
-            }
-        } else if ($request->input('clasification') == "Reseñas") {
-            $news->about = $request->input('about');
-            if ($request->input('featured') != null) {
-                $news->featured = true;
-            } else {
-                $news->featured = false;
-            }
-            $news->calification = $request->input('calification');
-        } else {
-            $news->featured = false;
-            $news->calification = null;
-        }
-
-        if ($request->input('clasification') == "Reseñas") {
-            $news->calification = $request->input('calification');
-        } else {
-            $news->calification = null;
-        }
-
-        $news->title = $request->input('title');
-        $news->introduction = $request->input('introduction');
-        $news->about = $request->input('about');
-        $news->category_id = $category->id;
-        $news->clasification_id = $clasification->id;
-        $news->description = $request->input('description');
-        $news->font  = $request->input('font');
-
-        $cadena = strtolower($this->eliminar_tildes($news->title));
-
-        $news->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
-
-
-        if($request->hasFile('featured_image')) {
-
-            $image = NewsImage::where('news_id',$id)->where('featured',true)->first();
-
-            if ($image != null){
-
-                if (substr($image,0,4)=="http"){
-                    $deleted = true;
-                } else {
-                    $images = File::files(public_path(). '/images/news_images');
-                    $fullPath = public_path() . '/images/news_images/' . $image;
-                    foreach ($images as $img){
-                        if ($image->name == pathinfo($img)['basename']){
-                            $deleted = File::delete($fullPath);
-                        }else{
-                            $deleted = true;
-                        }
-                    }
-
-                    if ($deleted) {
-                        //Guardar la imagen en nuestro Proyecto
-                        $file = $request->file('featured_image');
-                        $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
-                        $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
-                        $path = public_path('images/news_images/'. $fileName);
-
-                        $imageSave = Image::make($file->getRealPath())
-                            ->resize(1280, null, function ($constraint) {
-                                $constraint->aspectRatio();
-                            })->sharpen();
-
-
-                        //Crear 1 registro en la tabla de users
-                        if ($imageSave->save($path,72,'webp')) {
-
-                            NewsImage::where('news_id',$id)->update([
-                                'featured' => false
-                            ]);
-
-                            $image->featured = true;
-                            $image->image = $fileName;
-                            $image->save();
-                        }
-                    }
-                }
-            }else{
-                //Guardar la imagen en nuestro Proyecto
-                $file = $request->file('featured_image');
-                $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
-                $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
-                $path = public_path('images/news_images/'. $fileName);
-
-                $imageSave = Image::make($file->getRealPath())
-                    ->resize(1280, null, function ($constraint) {
-                        $constraint->aspectRatio();
-                    })->sharpen();
-                //->resize(1280,720)->fill();
-
-
-                //Crear 1 registro en la tabla de users
-                if ($imageSave->save($path,72)) {
-                    $image = new NewsImage();
-                    $image->image = $fileName;
-                    $image->featured = true;
-                    $image->news_id=$id;
-                    $image->save();
-                }
-            }
-        }
-
-        $emailAuthor = auth()->user()->email;
-        if (session($emailAuthor)){
-            foreach (session($emailAuthor) as $item) {
-                $images = NewsImage::find($item->id);
-                $images->news_id = $news->id;
-                $images->save();
-            }
-            Session::forget($emailAuthor);
-        }
-
-        if ($news->save() || $images){
-            $notification ="Noticia Modificada con Exito, Ahora puede Verificar sus Imagenes";
-            return redirect('/staff/news')->with(compact('notification'));
-        }else{
-            $notificationFaill ="La Noticia no pudo Modificarse :(";
-            return redirect('/staff/news')->with(compact('notificationFaill'));
-
-        }
-    }*/
 
 
     public function update(Request $request, $id)
@@ -671,7 +451,6 @@ class NewsController extends Controller
 
     public function destroy($id)
     {
-        //
         $news = News::find($id);
         if ($news->delete()){
             $notification = "!La noticia se ha eliminado correctamente¡";

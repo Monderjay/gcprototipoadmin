@@ -5,9 +5,7 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Clasification;
 use App\News;
-use App\Podcast;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
 
 class WelcomeController extends Controller
 {
@@ -54,16 +52,24 @@ class WelcomeController extends Controller
         $reviewSection= $reviewSection->forPage(0,6);
 
 
+        $retroContent = collect();
+        foreach ($newsFeatured as $item) {
+            if ($item->clasification->name == "Retro"){
+                $retroContent->push($item);
+            }
+        }
+        $retroContent = $retroContent->forPage(0,6);
+
+
         $moreContent = collect();
         foreach ($newsFeatured as $item) {
             if ($item->category->name == "PC" && $item->clasification->name == "Noticias" ||
-                $item->category->name == "Movil" && $item->clasification->name == "Noticias" ||
-                $item->clasification->name == "Retro"
+                $item->category->name == "Movil" && $item->clasification->name == "Noticias"
             ){
                 $moreContent->push($item);
             }
         }
-        $moreContent = $moreContent->forPage(0,8);
+        $moreContent = $moreContent->forPage(0,6);
 
 
         $featuredReviews=collect();
@@ -72,45 +78,14 @@ class WelcomeController extends Controller
                 $featuredReviews->push($item);
             }
         }
-        $featuredReviews= $featuredReviews->forPage(0,8);
+        $featuredReviews= $featuredReviews->forPage(0,6);
 
 
-        $news = News::with('user')->orderBy('id','desc')->paginate(10);
+        $news = News::with('user')->orderBy('id','desc')->paginate(9);
 
-        return view('welcome')->with(compact('news','featuredNews','mobileSection','reviewSection','moreContent'));
+        return view('welcome')->with(compact('news','featuredNews','mobileSection','reviewSection','retroContent','moreContent'));
     }
 
-
-    /*public function show($category,$clasification,$slug)
-    {
-        //
-        $news=News::with('category')
-            ->whereHas('category', function ($query) use ($category) {
-                $query->where('categories.name', '=', $category);
-            })
-            ->whereHas('clasification', function ($query) use ($clasification) {
-                $query->where('clasifications.name', '=', $clasification);
-            })->where('slug',$slug)
-            ->first();
-
-        if ($news!=null) {
-            //$related = News::where('title','like',"%$news->title%")->paginate(10);
-            $title = explode(' ', $news->title);
-            $firstWord = $title[0];
-            $archives = News::where('title', 'like', "%$firstWord%")->orderBy('created_at','desc')->get();
-            $related = collect();
-            foreach ($archives as $archive) {
-                if ($archive->title != $news->title && $archive->category->name == $category) {
-                    $related->push($archive);
-                }
-            }
-            $related = $related;
-            return view('general.news')->with(compact('news', 'related'));
-        }else{
-            return back();
-        }
-
-    }*/
 
 
     public function show($arg)
@@ -119,6 +94,8 @@ class WelcomeController extends Controller
         $news = News::with('user')->orderBy('created_at','desc')->get();
         $featuredNews = collect();
         $reviewSection= collect();
+
+
         foreach ($news as $item) {
             if ($item->category->name == "PlayStation" && $item->clasification->name == "Reseñas" ||
                 $item->category->name == "Xbox" && $item->clasification->name == "Reseñas" ||
@@ -167,7 +144,7 @@ class WelcomeController extends Controller
                 }
             }
 
-            //$c = $all->groupBy('title');
+
             $related = collect();
             foreach ($all  as $item) {
                 if ($item->title != $news->title && $item->category->name == $category && $item->Clasification->name == $news->clasification->name){
@@ -175,15 +152,16 @@ class WelcomeController extends Controller
                 }
             }
 
-            $related = $related->unique()->forPage(0,15);
+            $related = $related->unique()->forPage(0,10);
 
 
-            return view('general.news')->with(compact('news', 'related'));
+            return view('general.news')->with(compact('news', 'related')); //Vista de cada noticia
+
         }elseif ($category != null){
             $newsCategory = News::with('category')
                 ->whereHas('category', function ($query) use ($arg) {
                     $query->where('categories.name', '=', $arg);
-                })->orderBy('created_at', 'desc')->paginate(10);
+                })->orderBy('created_at', 'desc')->paginate(9);
 
 
             $news = $newsCategory;
@@ -192,15 +170,48 @@ class WelcomeController extends Controller
                     $sectionFeatured->push($featured);
                 }
             }
-            $sectionFeatured = $sectionFeatured->forPage(0,8);
+            $featuredNews = $sectionFeatured->forPage(0,10);
             $section = $arg;
-            return view('general.categories')->with(compact('news','sectionFeatured','section','reviewSection', 'moreContent'));
+
+            if ($category ->name== "PlayStation"){
+                $category1 = "Xbox";
+                $category2 = "Nintendo";
+            }elseif ($category->name == "Xbox"){
+                $category1 = "PlayStation";
+                $category2 = "Nintendo";
+            }elseif ($category->name == "Nintendo"){
+                $category1 = "PlayStation";
+                $category2 = "Xbox";
+            }
+            elseif ($category->name == "Multi Consola"){
+                $category1 = "PC";
+                $category2 = "Movil";
+            }elseif ($category->name == "PC"){
+                $category1 = "Multi Consola";
+                $category2 = "Movil";
+            }elseif ($category->name == "Movil"){
+                $category1 = "PC";
+                $category2 = "Multi Consola";
+            }
+
+
+            $fanboySection = collect();
+            foreach ($newsFeatured as $item) {
+                if ($item->category->name == $category1 && $item->clasification->name == "Noticias" ||
+                    $item->category->name == $category2 && $item->clasification->name == "Noticias"
+                ){
+                    $fanboySection->push($item);
+                }
+            }
+            $fanboySection = $fanboySection->forPage(0,10);
+
+            return view('general.categories')->with(compact('news','sectionFeatured','section', 'fanboySection','featuredNews'));
         }elseif ($clasification != null){
 
             $newsClasification = News::with('clasification')
                 ->whereHas('clasification', function ($query) use ($arg) {
                     $query->where('clasifications.name', '=', $arg);
-                })->orderBy('created_at', 'desc')->paginate(10);
+                })->orderBy('created_at', 'desc')->paginate(9);
 
             $news = $newsClasification;
             foreach ($newsClasification as $featured){
@@ -208,70 +219,36 @@ class WelcomeController extends Controller
                     $sectionFeatured->push($featured);
                 }
             }
-            $sectionFeatured = $sectionFeatured->forPage(0,8);
+            $featuredNews = $sectionFeatured->forPage(0,8);
             $section = $arg;
-            return view('general.categories')->with(compact('news','sectionFeatured','section','reviewSection', 'moreContent'));
+
+
+
+            if ($clasification->name== "Noticias"){
+                $clasification1 = "Reseñas";
+                $clasification2 = "Retro";
+            }elseif ($clasification->name == "Reseñas"){
+                $clasification1 = "Noticias";
+                $clasification2 = "Retro";
+            }elseif ($clasification->name == "Retro"){
+                $clasification1 = "Reseñas";
+                $clasification2 = "Noticias";
+            }
+
+            $fanboySection = collect();
+            foreach ($newsFeatured as $item) {
+                if ($item->clasification->name == $clasification1 || $item->clasification->name == $clasification2){
+                    $fanboySection->push($item);
+                }
+            }
+            $fanboySection = $fanboySection->forPage(0,10);
+
+            return view('general.categories')->with(compact('news','sectionFeatured','section','reviewSection', 'fanboySection', 'featuredNews'));
         }else{
             return back();
         }
     }
 
-
-
-    /*public function showCategories($section)
-    {
-        //
-        $news = null;
-        $newsCategory = News::with('category')
-            ->whereHas('category', function ($query) use ($section) {
-                $query->where('categories.name', '=', $section);
-            })->orderBy('created_at', 'desc')->paginate(10);
-
-
-        $newsClasification = News::with('clasification')
-            ->whereHas('clasification', function ($query) use ($section) {
-                $query->where('clasifications.name', '=', $section);
-            })->orderBy('created_at', 'desc')->paginate(10);
-
-
-        $sectionFeatured = collect();
-        if (count($newsCategory)>0){
-            $news = $newsCategory;
-            foreach ($newsCategory as $featured){
-                if($featured->featured == true && $featured->category->name == $section){
-                    $sectionFeatured->push($featured);
-                }
-            }
-            $sectionFeatured = $sectionFeatured->forPage(0,8);
-            return view('general.categories')->with(compact('news','sectionFeatured','section'));
-
-        }elseif (count($newsClasification)>0) {
-            $podcast=false;
-            foreach ($newsClasification as $item){
-                if ($item->clasification->name == "Podcast"){
-                    $podcast = true;
-                }
-            }
-
-            if ($podcast){
-                $podcast =Podcast::all();
-                return view('general.podcast')->with(compact('podcast'));
-            }else{
-                $news = $newsClasification;
-                foreach ($newsClasification as $featured){
-                    if($featured->featured == true && $featured->clasification->name == $section){
-                        $sectionFeatured->push($featured);
-                    }
-                }
-                $sectionFeatured = $sectionFeatured->forPage(0,8);
-                return view('general.categories')->with(compact('news','sectionFeatured','section'));
-            }
-
-        }else{
-        return back();
-        }
-    }
-    */
 
 
     public function showCategoryClasification($category, $clasification)
@@ -331,7 +308,4 @@ class WelcomeController extends Controller
         return view('general.contact');
     }
 
-    public function showVisits(){
-
-    }
 }

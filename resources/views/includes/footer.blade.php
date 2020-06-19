@@ -1,43 +1,72 @@
-<footer class="col-12" id="footer-container">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <h2 class="logo"><a href="/"> <img id="footer-logo" src="{{asset('img/LogoClaro.png')}}" alt=""> </a></h2>
-            </div>
+<!-- Footer -->
+<footer class="page-footer font-small black pt-1">
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left mt-5">
 
-            <div class="col-sm-2">
-                <h5>Contacto</h5>
-                <ul>
-                    <li><a href="/contacto">Contáctanos</a></li>
-                </ul>
-            </div>
+        <!-- Grid row -->
+        <div class="row mt-3">
 
-            <div class="col-sm-2">
-                <h5>Nosotros</h5>
-                <ul>
-                    <li><a href="/informacion">Información</a></li>
-                </ul>
-            </div>
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
-            <div class="col-sm-2">
-                <h5>Legal</h5>
-                <ul>
-                    <li><a href="{{url('/politicas')}}">Políticas de Privacidad</a></li>
-                    <li></li>
-                </ul>
-            </div>
+                <!-- Content -->
+                <h6 class="text-uppercase font-weight-bold"><img class="img-fluid" src="img/LogoClaro.webp" width="160" alt=""></h6>
 
-            <div class="col-sm-3">
-                <div class="social-networks">
-                    <a href="https://twitter.com/GameCor16434918" class="twitter"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.facebook.com/GameCore-101570291364601/?modal=admin_todo_tour" class="facebook"><i class="fab fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/gamecoreoficial/" class="google"><i class="fab fa-instagram"></i></a>
-                </div>
             </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Nosotros</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="/informacion"> <i class="fas fa-question mr-1"></i> Información</a>
+                </p>
+                <p>
+                    <a href=""><i class="fas fa-sitemap mr-1"></i> Directorio</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Legal</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="/politicas"><i class="fas fa-balance-scale mr-1"></i> Políticas de Privacidad</a>
+                </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+                <!-- Links -->
+                <h6 class="text-uppercase font-weight-bold">Contacto</h6>
+                <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="/contacto"> <i class="fas fa-envelope mr-1"></i> Contactanos</a>
+                </p>
+
+            </div>
+            <!-- Grid column -->
 
         </div>
+        <!-- Grid row -->
+
     </div>
-    <div class="footer-copyright">
-        <p>Todos los derechor reservados © 2020 GameCore </p>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="https://gamecore.com.mx/"> GameCore.com.mx</a>
     </div>
+    <!-- Copyright -->
+
 </footer>
+<!-- Footer -->
+

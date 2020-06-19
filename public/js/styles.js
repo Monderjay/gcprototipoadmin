@@ -3,25 +3,16 @@ $(function () {
 });
 
 $(window).resize(function () {
-   menuResize();
+    menuResize();
 });
 
 function menuResize(){
     var width = $(window).width();
     if (width >= 1200) {
         //scrollXl();
-        $("#carousel1").css('margin-top','0px');
-        $("#carousel1").css('float','none');
-
-        $(".cover-author-content").css('margin-top','0px');
-        $(".cover-author-content").css('float','none');
+        $("#menu").css('background','rgba(0, 0, 0, 0.7)');
 
     } else if(width < 1200){
-        $("#carousel1").css('margin-top','74px');
-        $("#carousel1").css('float','left');
-
-        $(".cover-author-content").css('margin-top','74px');
-        $(".cover-author-content").css('float','left');
 
         $("#menu").css('background','#000000');
         //scrollSm();
@@ -61,10 +52,6 @@ $(window).scroll(function() {
                 queue: false,
             });
 
-            $("#carousel1").css('margin-top','60px');
-            $("#carousel1").css('float','left');
-            $(".cover-author-content").css('float','left');
-            $(".cover-author-content").css('margin-top','60px');
         }else {
 
 
@@ -79,7 +66,7 @@ $(window).scroll(function() {
                 marginTop: "74px",
                 float:"none"
 
-        },{
+            },{
                 queue: false,
             });
 
@@ -94,7 +81,11 @@ $(window).scroll(function() {
 
 });
 
-
-
-
+$(document).ready(function() {
+    $('.fb-share').click(function(e) {
+        e.preventDefault();
+        window.open($(this).attr('href'), 'fbShareWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
+        return false;
+    });
+});
 

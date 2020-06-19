@@ -36,7 +36,7 @@ class News extends Model
             $introduction .= $words[$i].' ';
         }*/
         $description = $this->introduction;
-        $introduction = substr($description,0,200).' ...';
+        $introduction = substr($description,0,130).' ...';
         return $introduction;
     }
 
