@@ -30,13 +30,13 @@
                         </div>
 
                         <div class="col-auto text-right p-0 m-auto">
-                            <div class="fb-like m-auto" data-href="https://www.facebook.com/GameCore.com.mx/?modal=admin_todo_tour" data-width="" data-layout="box_count" data-action="like" data-size="large" data-share="false"></div>
+                            <div class="fb-like m-auto" data-href="{{url('https://www.gamecore.com.mx/'.$news->slug)}}" data-width="" data-layout="box_count" data-action="like" data-size="large" data-share="false"></div>
 
                         </div>
 
                     </div>
 
-                    <div class="mt-4">
+                    <div class="col-12 p-0 mt-4">
                         {{$news->introduction}}
                         <hr class="hr-dark">
                     </div>
