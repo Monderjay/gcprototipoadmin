@@ -1,4 +1,14 @@
+/*.aside-list img{
+    width: 40px;
+    height: 40px;
+}
 
+@supports(object-fit: cover){
+    .aside-list img{
+        object-fit: cover;
+        object-position: center center;
+    }
+}*/
 
 .links :hover{
     color: lightblue;
@@ -37,7 +47,6 @@
 .links-author a{
     color: black;
 }
-
 
 
 

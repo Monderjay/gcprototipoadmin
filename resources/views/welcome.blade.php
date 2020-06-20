@@ -73,15 +73,15 @@
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-signature"></i> Ultimas Reseñas</h4></div>
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($reviewSection as $item)
-                            <li class="list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
-                                <div class="" style="width:50px; height: 50px">
+                            <li class="row list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
+                                <div class="col">
                                     <img class="img-fluid" src="{{$item->news_image_featured}}" alt="{{$item->title}}">
                                 </div>
 
-                                <div class="mr-2 ml-2 text-left">
+                                <div class="mr-2 ml-2 text-left col">
                                     <a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a>
                                 </div>
-                                <div class="col text-right p-0">
+                                <div class="col text-right p-0 col">
                                     @if($item->calification < 50)
                                         <div class="calification"><input type="text" value="{{$item->calification}}" class="dial" data-fgColor="#ed4757"></div>
                                     @elseif($item->calification < 80)
