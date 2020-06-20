@@ -17,6 +17,7 @@ class CreateNewsImagesTable extends Migration
             $table->id();
             $table->string('image');
             $table->boolean('featured')->default(false);
+            $table->String('size')->nullable();
             //FK
             $table->unsignedBigInteger('news_id')->nullable();
             $table->foreign('news_id')->references('id')->on('news');

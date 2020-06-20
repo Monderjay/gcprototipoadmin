@@ -1,4 +1,4 @@
-/*.aside-list img{
+.aside-list img{
     width: 40px;
     height: 40px;
 }
@@ -8,7 +8,7 @@
         object-fit: cover;
         object-position: center center;
     }
-}*/
+}
 
 .links :hover{
     color: lightblue;

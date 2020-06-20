@@ -227,25 +227,56 @@ class NewsController extends Controller
         if($request->hasFile('featured_image')) {
 
             $image = new NewsImage();
+            $imageMedium = new NewsImage();
+            $imageSmall = new NewsImage();
+
             $file = $request->file('featured_image');
             $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
-            $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
+            $fileName = uniqid() . '-'.$originalName; //Renombrar la Imagen
 
+            $fileNameLarge = $fileName.'.webp';
+            $fileNameMedium = $fileName.'_640x360.webp';
+            $fileNameSmall = $fileName.'_320x160.webp';
 
-            $path = public_path('images/news_images/'. $fileName);
+            $path = public_path('images/news_images/'. $fileNameLarge);
+            $pathMedium = public_path('images/news_images_medium/'. $fileNameMedium);
+            $pathSmall = public_path('images/news_images_small/'. $fileNameSmall);
+
             $imageSave = Image::make($file->getRealPath())
                 ->resize(1280, 720)->sharpen();
+
+            $imageMediumSave = Image::make($file->getRealPath())
+                ->resize(640, 360)->sharpen();
+
+            $imageSmallSave = Image::make($file->getRealPath())
+                ->resize(320, 160)->sharpen();
+
             //Crear 1 registro en la tabla de users
             if ($imageSave->save($path,72,'webp')) {
-                $image->image = $fileName;
+                $image->image = $fileNameLarge;
                 $image->news_id = $id;
+                $imageMedium->size = "large";
                 NewsImage::where('news_id',$id)->update([
                     'featured' => false
                 ]);
                 $image->featured = true;
             }
-        }
 
+
+            if ($imageMediumSave->save($pathMedium,72,'webp')) {
+                $imageMedium->image = $fileNameMedium;
+                $imageMedium->size = "medium";
+                $imageMedium->news_id = $id;
+                $imageMedium->save();
+            }
+
+            if ($imageSmallSave->save($pathSmall,72,'webp')) {
+                $imageSmall->image = $fileNameSmall;
+                $imageSmall->news_id = $id;
+                $imageSmall->size = "small";
+                $imageSmall->save();
+            }
+        }
 
 
         $emailAuthor = auth()->user()->email;
@@ -302,7 +333,7 @@ class NewsController extends Controller
     public function update(Request $request, $id)
     {
         $rules = [
-            'title' => 'unique:news,title,'.$id,
+            'title' => 'unique:news,title,' . $id,
         ];
 
         $messages = [
@@ -349,104 +380,143 @@ class NewsController extends Controller
         $news->category_id = $category->id;
         $news->clasification_id = $clasification->id;
         $news->description = $request->input('description');
-        $news->font  = $request->input('font');
+        $news->font = $request->input('font');
 
         $cadena = strtolower($this->eliminar_tildes($news->title));
 
         $news->slug = preg_replace("/[^a-zA-Z0-9\_\-]+/", "", $cadena);
 
 
-        if($request->hasFile('featured_image')) {
+        if ($request->hasFile('featured_image')) {
 
-            $image = NewsImage::where('news_id',$id)->where('featured',true)->first();
+            $image = NewsImage::where('news_id', $id)->where('featured', true)->first();
+            $imageMedium = NewsImage::where('news_id', $id)->where('size', 'medium')->first();
+            $imageSmall = NewsImage::where('news_id', $id)->where('size', 'small')->first();
 
-            if ($image != null){
+            $file = $request->file('featured_image');
+            $originalName = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+            $fileName = uniqid() . '-' . $originalName; //Renombrar la Imagen
 
-                if (substr($image,0,4)=="http"){
-                    $deleted = true;
-                } else {
-                    $images = File::files(public_path(). '/images/news_images');
-                    $fullPath = public_path() . '/images/news_images/' . $image->image;
-                    foreach ($images as $img){
+            $fileNameLarge = $fileName . '.webp';
+            $fileNameMedium = $fileName . '_640x360.webp';
+            $fileNameSmall = $fileName . '_320x160.webp';
 
-                        if ($image->image == pathinfo($img)['basename']){
-
-                            $deleted = File::delete($fullPath);
-                        }else{
-                            $deleted = true;
-                        }
-                    }
-
-                    if ($deleted) {
-                        //Guardar la imagen en nuestro Proyecto
-                        $file = $request->file('featured_image');
-                        $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
-                        $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
-                        $path = public_path('images/news_images/'. $fileName);
-
-                        $imageSave = Image::make($file->getRealPath())
-                            ->resize(1280, 720)->sharpen();
+            $path = public_path('images/news_images/' . $fileNameLarge);
+            $pathMedium = public_path('images/news_images_medium/' . $fileNameMedium);
+            $pathSmall = public_path('images/news_images_small/' . $fileNameSmall);
 
 
-                        //Crear 1 registro en la tabla de users
-                        if ($imageSave->save($path,50,'webp')) {
+            if ($image != null) {
 
-                            NewsImage::where('news_id',$id)->update([
-                                'featured' => false
-                            ]);
+                $images = File::files(public_path() . '/images/news_images');
 
-                            $image->featured = true;
-                            $image->image = $fileName;
-                            $image->save();
-                        }
+                $fullPath = public_path() . '/images/news_images/' . $image->image;
+
+
+                foreach ($images as $img) {
+
+                    if ($image->image == pathinfo($img)['basename']) {
+                        $deleted = File::delete($fullPath);
                     }
                 }
-            }else{
-                //Guardar la imagen en nuestro Proyecto
-                $file = $request->file('featured_image');
-                $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
-                $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
-                $path = public_path('images/news_images/'. $fileName);
 
                 $imageSave = Image::make($file->getRealPath())
-                    ->resize(1280, 720, function ($constraint) {
-                        $constraint->aspectRatio();
-                    })->sharpen();
-                //->resize(1280,720)->fill();
-
+                    ->resize(1280, 720)->sharpen();
 
                 //Crear 1 registro en la tabla de users
-                if ($imageSave->save($path,50,'webp')) {
-                    $image = new NewsImage();
-                    $image->image = $fileName;
+                if ($imageSave->save($path, 72, 'webp')) {
+
+                    NewsImage::where('news_id', $id)->update([
+                        'featured' => false
+                    ]);
+
                     $image->featured = true;
-                    $image->news_id=$id;
+                    $image->image = $fileNameLarge;
                     $image->save();
                 }
             }
-        }
 
-        $emailAuthor = auth()->user()->email;
-        if (session($emailAuthor)){
-            foreach (session($emailAuthor) as $item) {
-                $images = NewsImage::find($item->id);
-                $images->news_id = $news->id;
-                $images->save();
+
+            if ($imageMedium != null) {
+
+                $images = File::files(public_path() . '/images/news_images_medium');
+                $fullPath = public_path() . '/images/news_images_medium/' . $imageMedium->image;
+
+                foreach ($images as $img) {
+
+                    if ($imageMedium->image == pathinfo($img)['basename']) {
+                        $deleted = File::delete($fullPath);
+                    }
+                }
+
+            } else {
+                $imageMedium = new NewsImage();
             }
-            Session::forget($emailAuthor);
+
+
+            $imageMediumSave = Image::make($file->getRealPath())
+                ->resize(640, 360)->sharpen();
+
+            if ($imageMediumSave->save($pathMedium, 72, 'webp')) {
+                $imageMedium->image = $fileNameMedium;
+                $imageMedium->size = "medium";
+                $imageMedium->news_id = $id;
+                $imageMedium->save();
+            }
+
+
+            if ($imageSmall != null) {
+                $images = File::files(public_path() . '/images/news_images_small');
+                $fullPath = public_path() . '/images/news_images_small/' . $imageSmall->image;
+
+                foreach ($images as $img) {
+
+                    if ($imageSmall->image == pathinfo($img)['basename']) {
+
+                        $deleted = File::delete($fullPath);
+                    } else {
+                        $deleted = true;
+                    }
+                }
+            } else {
+                $imageSmall = new NewsImage();
+            }
+
+            $imageSmallSave = Image::make($file->getRealPath())
+                ->resize(320, 160)->sharpen();
+
+            if ($imageSmallSave->save($pathSmall, 72, 'webp')) {
+                $imageSmall->image = $fileNameSmall;
+                $imageSmall->size = "small";
+                $imageSmall->news_id = $id;
+                $imageSmall->save();
+            }
         }
 
 
-        if ($news->save() || $images){
-            $notification ="Noticia Modificada con Exito, Ahora puede Verificar sus Imagenes";
-            return redirect('/staff/news')->with(compact('notification'));
-        }else{
-            $notificationFaill ="La Noticia no pudo Modificarse :(";
-            return redirect('/staff/news')->with(compact('notificationFaill'));
+            $emailAuthor = auth()->user()->email;
+            if (session($emailAuthor)) {
+                foreach (session($emailAuthor) as $item) {
+                    $images = NewsImage::find($item->id);
+                    $images->news_id = $news->id;
+                    $images->save();
+                }
+                Session::forget($emailAuthor);
+            }
 
-        }
+
+            if ($news->save() || $images) {
+                $notification = "Noticia Modificada con Exito, Ahora puede Verificar sus Imagenes";
+                return redirect('/staff/news')->with(compact('notification'));
+            } else {
+                $notificationFaill = "La Noticia no pudo Modificarse :(";
+                return redirect('/staff/news')->with(compact('notificationFaill'));
+
+            }
 
     }
+
+
 
 
     public function destroy($id)

@@ -108,4 +108,52 @@ class News extends Model
         }
     }
 
+
+
+    public function getNewsImageFeaturedMediumAttribute(){
+        $featuredImageMedium = $this->images()->where('size','medium')->first();
+
+        if (!$featuredImageMedium){
+            $featuredImageMedium = $this->images()->first();
+            if ($featuredImageMedium == null){
+                return '/images/news_images/default.jpeg';
+            }else{
+                if (substr($featuredImageMedium->image,0,4)==="http"){
+                    return $featuredImageMedium->image;
+                }else{
+                    return '/images/news_images_medium/'.$featuredImageMedium->image;
+                }
+            }
+        }else{
+            if (substr($featuredImageMedium->image,0,4) === "http"){
+                return $featuredImageMedium->image;
+            }else{
+                return '/images/news_images_medium/'.$featuredImageMedium->image;
+            }
+        }
+    }
+
+    public function getNewsImageFeaturedSmallAttribute(){
+        $featuredImageSmall = $this->images()->where('size','small')->first();
+
+        if (!$featuredImageSmall){
+            $featuredImageSmall = $this->images()->first();
+            if ($featuredImageSmall == null){
+                return '/images/news_images/default.jpeg';
+            }else{
+                if (substr($featuredImageSmall->image,0,4)==="http"){
+                    return $featuredImageSmall->image;
+                }else{
+                    return '/images/news_images_small/'.$featuredImageSmall->image;
+                }
+            }
+        }else{
+            if (substr($featuredImageSmall->image,0,4) === "http"){
+                return $featuredImageSmall->image;
+            }else{
+                return '/images/news_images_small/'.$featuredImageSmall->image;
+            }
+        }
+    }
+
 }
