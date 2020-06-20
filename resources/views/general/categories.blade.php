@@ -41,7 +41,7 @@
                                     </div>
                                     <hr class="hr-light">
                                     <!-- Text -->
-                                    <p class="card-text text-justify white-text">{{$item->news_introduction}}</p>
+                                    <p class="card-text text-justify white-text mb-5">{{$item->news_introduction}}</p>
                                     <!-- Link -->
                                     <div class="row col-11 p-0 ml-auto mr-auto mb-2 position-absolute" style="bottom: 12px">
                                         <div class="col-auto text-left justify-content-start p-0">
