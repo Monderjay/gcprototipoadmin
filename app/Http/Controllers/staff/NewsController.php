@@ -389,7 +389,7 @@ class NewsController extends Controller
 
 
                         //Crear 1 registro en la tabla de users
-                        if ($imageSave->save($path,50,'webp')) {
+                        if ($imageSave->save($path,30,'webp')) {
 
                             NewsImage::where('news_id',$id)->update([
                                 'featured' => false
@@ -416,7 +416,7 @@ class NewsController extends Controller
 
 
                 //Crear 1 registro en la tabla de users
-                if ($imageSave->save($path,50,'webp')) {
+                if ($imageSave->save($path,30,'webp')) {
                     $image = new NewsImage();
                     $image->image = $fileName;
                     $image->featured = true;
