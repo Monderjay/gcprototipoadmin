@@ -1,14 +1,4 @@
-.aside-list img{
-    max-width: 40px;
-    max-height: 40px;
-}
 
-@supports(object-fit: cover){
-    .aside-list img{
-        object-fit: cover;
-        object-position: center center;
-    }
-}
 
 .links :hover{
     color: lightblue;
@@ -48,9 +38,6 @@
     color: black;
 }
 
-.image-list-container{
-    max-width: 40px;
-    max-height: 40px;
-}
+
 
 
