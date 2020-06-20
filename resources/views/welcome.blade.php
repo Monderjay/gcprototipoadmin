@@ -78,10 +78,10 @@
                                     <img class="img-fluid" src="{{$item->news_image_featured}}" alt="{{$item->title}}">
                                 </div>
 
-                                <div class="mr-2 ml-2 text-left col">
+                                <div class="mr-2 ml-2 text-left col-auto">
                                     <a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a>
                                 </div>
-                                <div class="col text-right p-0 col">
+                                <div class="col text-right p-0 col-auto">
                                     @if($item->calification < 50)
                                         <div class="calification"><input type="text" value="{{$item->calification}}" class="dial" data-fgColor="#ed4757"></div>
                                     @elseif($item->calification < 80)
