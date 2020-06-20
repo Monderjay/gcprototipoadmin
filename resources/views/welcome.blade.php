@@ -67,7 +67,7 @@
             </div>
 
 
-            <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4">
+            <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4 d-none">
 
                 <div class="pt-4 pb-4 elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-signature"></i> Ultimas Reseñas</h4></div>
