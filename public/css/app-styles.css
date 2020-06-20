@@ -1,6 +1,6 @@
 .aside-list img{
-    width: 40px;
-    height: 40px;
+    max-width: 40px;
+    max-height: 40px;
 }
 
 @supports(object-fit: cover){
@@ -46,6 +46,11 @@
 
 .links-author a{
     color: black;
+}
+
+.image-list-container{
+    max-width: 40px;
+    max-height: 40px;
 }
 
 
