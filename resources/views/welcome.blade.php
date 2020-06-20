@@ -75,7 +75,7 @@
                         @foreach($reviewSection as $item)
                             <li class="row list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
                                 <div class="col">
-                                    <img class="img-fluid" src="{{$item->news_image_featured}}" alt="{{$item->title}}">
+                                    <img class="w-100" src="{{$item->news_image_featured}}" width="100%" alt="{{$item->title}}">
                                 </div>
 
                                 <div class="mr-2 ml-2 text-left col-auto">
