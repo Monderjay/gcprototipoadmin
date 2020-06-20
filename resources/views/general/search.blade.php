@@ -9,8 +9,7 @@
         <div class="row">
             <div class="col-12 p-0">
 
-
-                <div class="col-12 row p-0 ml-auto mr-auto mt-4  mb-4">
+                <div class="col-12 row p-0 ml-auto mr-auto mt-1  mb-4">
 
                     @foreach($news as $item)
                         <div class="col-12 col-xl-3 pl-0 pr-0 pl-xl-2 pr-xl-2 mb-4">

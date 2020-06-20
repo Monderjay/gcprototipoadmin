@@ -25,7 +25,7 @@
                     <a href="/informacion"> <i class="fas fa-question mr-1"></i> Información</a>
                 </p>
                 <p>
-                    <a href=""><i class="fas fa-sitemap mr-1"></i> Directorio</a>
+                    {{--<a href=""><i class="fas fa-sitemap mr-1"></i> Directorio</a>--}}
                 </p>
             </div>
             <!-- Grid column -->

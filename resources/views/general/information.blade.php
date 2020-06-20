@@ -4,7 +4,7 @@
 @section('content')
 <div class="row text-justify mr-auto ml-auto justify-content-center" style="padding-top: 130px; margin-bottom: 40px; font-size: 16px;">
 
-    <div class="col-11 col-xl-9" style="margin-bottom: 30px">
+    <div class="col-11 col-xl-3">
         <h4><b>Misión</b></h4>
 
         <p>
@@ -30,9 +30,6 @@
 </div>
 
 
-
-<div class="politics-footer" style="bottom: 0; position: fixed; width: 100%;">
     @include('includes.footer')
-</div>
 
 @endsection
