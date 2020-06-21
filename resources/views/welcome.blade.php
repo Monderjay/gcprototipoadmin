@@ -100,8 +100,7 @@
                     <ul class="list-group list-group-flush aside-list">
                         @foreach($moreContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <img class="img-fluid" src="{{$item->news_image_featured_small}}"
-                                     sizes="50vw" alt="{{$item->title}}">
+                                <div class="rounded-circle col-auto" style="background-image: url('{{$item->news_image_featured_small}}'); background-position: center; background-size: cover; width: 50px; height: 50px"></div>
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
                         @endforeach
@@ -113,8 +112,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($retroContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <img class="img-fluid" src="{{$item->news_image_featured_small}}"
-                                     sizes="40px" alt="{{$item->title}}">
+                                <div class="rounded-circle col-auto" style="background-image: url('{{$item->news_image_featured_small}}'); background-position: center; background-size: cover; width: 50px; height: 50px"></div>
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
                         @endforeach
