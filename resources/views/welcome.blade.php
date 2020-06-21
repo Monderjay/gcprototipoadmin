@@ -17,7 +17,7 @@
                             <div class="card" style="min-height: 520px">
                                 <!-- Card image -->
                                 <div class="view overlay view zoom">
-                                    <img class=" w-100" src="{{$item->news_image_featured}}"  srcset="{{$item->news_image_featured}} 900w, {{$item->news_image_featured_medium}} 500w , {{$item->news_image_featured_small}} 300w" sizes="40px" alt="{{$item->title}}">
+                                    <img class="w-100" src="{{$item->news_image_featured}}"  srcset="{{$item->news_image_featured}} 1080 ,{{$item->news_image_featured_medium}} 1000 , {{$item->news_image_featured_small}} 600" sizes="50vw" alt="{{$item->title}}">
                                     <a href="{{$item->slug}}">
                                         <div class="mask flex-center waves-effect rgba-black-light">
 
@@ -73,7 +73,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($reviewSection as $item)
                             <li class="list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
-                                <img class="" src="{{$item->news_image_featured}}"  srcset="{{$item->news_image_featured}} 900w , {{$item->news_image_featured_medium}} 500w , {{$item->news_image_featured_small}} 300w" sizes="40px" alt="{{$item->title}}">
+                                <img class="" src="{{$item->news_image_featured}}"  srcset="{{$item->news_image_featured}} 1080 ,{{$item->news_image_featured_medium}} 1000 , {{$item->news_image_featured_small}} 600" sizes="50vw" alt="{{$item->title}}">
                                 <div class="mr-2 ml-2 text-left">
                                     <a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a>
                                 </div>
@@ -96,7 +96,7 @@
                     <ul class="list-group list-group-flush aside-list">
                         @foreach($moreContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <img class="" src="{{$item->news_image_featured}}"  srcset="{{$item->news_image_featured}} 900w , {{$item->news_image_featured_medium}} 500w , {{$item->news_image_featured_small}} 300w" sizes="40px" alt="{{$item->title}}">
+                                <img class="" src="{{$item->news_image_featured}}"  srcset="{{$item->news_image_featured}} 1080 ,{{$item->news_image_featured_medium}} 1000 , {{$item->news_image_featured_small}} 600" sizes="50vw" alt="{{$item->title}}">
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
                         @endforeach
