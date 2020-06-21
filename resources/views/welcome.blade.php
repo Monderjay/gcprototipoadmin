@@ -17,7 +17,9 @@
                             <div class="card" style="min-height: 520px">
                                 <!-- Card image -->
                                 <div class="view overlay view zoom">
-                                    <img class="w-100" src="{{$item->news_image_featured}}"  srcset="{{$item->news_image_featured_small}} 480, {{$item->news_image_featured_medium}} 780 , {{$item->news_image_featured}} 1080" sizes="50vw" alt="{{$item->title}}">
+                                    <img class="w-100" src="{{$item->news_image_featured}}" srcset="{{$item->news_image_featured_small}} 480w ,{{$item->news_image_featured_medium}} 800w ,{{$item->news_image_featured}} 1200w"
+                                        sizes="50vw"
+                                         alt="{{$item->title}}">
                                     <a href="{{$item->slug}}">
                                         <div class="mask flex-center waves-effect rgba-black-light">
 
