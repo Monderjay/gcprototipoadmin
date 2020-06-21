@@ -75,7 +75,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($reviewSection as $item)
                             <li class="list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
-                                <img class="" src="{{$item->news_image_featured_small}}"
+                                <img class="img-fluid" src="{{$item->news_image_featured_small}}"
                                      sizes="50vw" alt="{{$item->title}}">
                                 <div class="mr-2 ml-2 text-left">
                                     <a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a>
