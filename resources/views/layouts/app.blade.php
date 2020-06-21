@@ -24,17 +24,10 @@
     <!-- Facebook -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1"></script>
 
-    <!-- twitter -->
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app-styles.css') }}" rel="stylesheet">
-    {{--<link href="{{ asset('css/app-styles.css') }}" rel="stylesheet">--}}
     <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet">
 
 
