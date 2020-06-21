@@ -22,7 +22,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/app-styles.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app-styles.css') }}" rel="stylesheet" defer>
     <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet">
 
     <!-- Google -->
