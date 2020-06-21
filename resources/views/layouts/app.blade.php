@@ -46,6 +46,13 @@
     <meta property="fb:app_id" content="278534710203686" />
     <meta property="og:type" content="article" />
 
+
+    <script type="text/javascript" src="{{ asset('js/app.js') }}" ></script>
+    <script type="text/javascript" src="{{ asset('js/styles.js') }}" ></script>
+    <script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('js/Knob/config.js')}}"></script>
+    <script type="text/javascript" src="https://www.powr.io/powr.js?platform=jquery"></script>
+
 </head>
 
 <body class="p-0 m-0">
@@ -141,11 +148,7 @@
 
 <!-- Scripts -->
 
-<script type="text/javascript" src="{{ asset('js/app.js') }}" ></script>
-<script type="text/javascript" src="{{ asset('js/styles.js') }}" ></script>
-<script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}" ></script>
-<script type="text/javascript" src="{{ asset('js/Knob/config.js')}}"></script>
-<script type="text/javascript" src="https://www.powr.io/powr.js?platform=jquery"></script>
+
 
 
 </body>
