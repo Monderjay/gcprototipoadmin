@@ -1,11 +1,9 @@
 {{--@include('cookieConsent::index')--}}
-<!doctype html>
+    <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-    <meta name="google-site-verification" content="ZPwFaoBJbJDZczfpo4Nlj52IXf40sJlsg3QSoyngE-A">
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -17,21 +15,23 @@
     <meta name="keywords" content="game, core, gamers, playstation, xbox, nintendo,
     pc, móvil, videojuegos, noticas, reseñas, podcast, pank9605, unboxings"/>
     <meta name="author" content="@yield('page-author','Eduardo Chávez Zúñiga')" />
-    <meta name="copyright" content="Game-Core" />
+    <meta name="copyright" content="Game-Core"/>
 
+    <!-- Icono -->
     <link rel="shortcut icon" href="{{asset('img/coreblack.webp')}}">
-
-    <!-- Facebook -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1"></script>
-
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/app-styles.css') }}" rel="stylesheet">
     <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet">
 
+    <!-- Google -->
+    <meta name="google-site-verification" content="ZPwFaoBJbJDZczfpo4Nlj52IXf40sJlsg3QSoyngE-A">
 
     <!-- Facebook -->
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1"></script>
+
+    <!-- Facebook API-->
     <meta property="og:title" content="@yield('page-title','GameCore')" />
     <meta property="og:description" content="@yield('page-description','Entérate de las más recientes novedades sobre el mundo de los Videojuegos con nuestras noticias, reseñas, podcast, unboxings, especiales y mucho más. ¡Solo en Game-Core!')" />
     <meta property="og:image" content="@yield('page-image','https://www.gamecore.com.mx/img/core.webp')" />
@@ -39,7 +39,7 @@
     <meta property="fb:app_id" content="278534710203686" />
     <meta property="og:type" content="article" />
 
-
+    <!-- Acriopts-->
     <script type="text/javascript" src="{{ asset('js/app.js') }}" defer></script>
     <script type="text/javascript" src="{{ asset('js/styles.js') }}" defer></script>
     <script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}"defer></script>
@@ -48,7 +48,7 @@
 
 </head>
 
-<body class="p-0 m-0">
+<body class="p-0 m-auto">
 
 <script>
     window.fbAsyncInit = function() {
@@ -140,8 +140,6 @@
 
 
 <!-- Scripts -->
-
-
 
 
 </body>
