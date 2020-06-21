@@ -40,11 +40,11 @@
     <meta property="og:type" content="article" />
 
 
-    <script type="text/javascript" src="{{ asset('js/app.js') }}" ></script>
-    <script type="text/javascript" src="{{ asset('js/styles.js') }}" ></script>
-    <script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('js/Knob/config.js')}}"></script>
-    <script type="text/javascript" src="https://www.powr.io/powr.js?platform=jquery"></script>
+    <script type="text/javascript" src="{{ asset('js/app.js') }}" defer></script>
+    <script type="text/javascript" src="{{ asset('js/styles.js') }}" defer></script>
+    <script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}"defer></script>
+    <script type="text/javascript" src="{{ asset('js/Knob/config.js')}}" defer></script>
+    <script type="text/javascript" src="https://www.powr.io/powr.js?platform=jquery" defer></script>
 
 </head>
 
