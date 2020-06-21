@@ -75,7 +75,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($reviewSection as $item)
                             <li class="list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
-                                <img class="img-fluid" src="{{$item->news_image_featured}}" srcset="{{$item->news_image_featured_small}} 320w ,{{$item->news_image_featured_medium}} 640w ,{{$item->news_image_featured}} 1280w"
+                                <img class="img-fluid" src="{{$item->news_image_featured_small}}"
                                      sizes="50vw" alt="{{$item->title}}">
                                 <div class="mr-2 ml-2 text-left">
                                     <a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a>
@@ -99,7 +99,7 @@
                     <ul class="list-group list-group-flush aside-list">
                         @foreach($moreContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <img class="img-fluid" src="{{$item->news_image_featured}}" srcset="{{$item->news_image_featured_small}} 320w ,{{$item->news_image_featured_medium}} 640w ,{{$item->news_image_featured}} 1280w"
+                                <img class="img-fluid" src="{{$item->news_image_featured_small}}"
                                      sizes="50vw" alt="{{$item->title}}">
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
@@ -112,7 +112,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($retroContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <img class="img-fluid" src="{{$item->news_image_featured}}" srcset="{{$item->news_image_featured_small}} 320w ,{{$item->news_image_featured_medium}} 640w ,{{$item->news_image_featured}} 1280w"
+                                <img class="img-fluid" src="{{$item->news_image_featured_small}}"
                                      sizes="40px" alt="{{$item->title}}">
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
