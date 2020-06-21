@@ -75,7 +75,8 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($reviewSection as $item)
                             <li class="list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
-                                <img class="" src="{{$item->news_image_featured}}"  srcset="{{$item->news_image_featured}} 1000 ,{{$item->news_image_featured_medium}} 600 , {{$item->news_image_featured_small}} 400" sizes="50vw" alt="{{$item->title}}">
+                                <img class="" src="{{$item->news_image_featured}}" srcset="{{$item->news_image_featured_small}} 480w ,{{$item->news_image_featured_medium}} 800w ,{{$item->news_image_featured}} 1200w"
+                                     sizes="50vw" alt="{{$item->title}}">
                                 <div class="mr-2 ml-2 text-left">
                                     <a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a>
                                 </div>
@@ -98,7 +99,8 @@
                     <ul class="list-group list-group-flush aside-list">
                         @foreach($moreContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <img class="" src="{{$item->news_image_featured}}"  srcset="{{$item->news_image_featured}} 1000 ,{{$item->news_image_featured_medium}} 600 , {{$item->news_image_featured_small}} 400" sizes="50vw" alt="{{$item->title}}">
+                                <img class="" src="{{$item->news_image_featured}}" srcset="{{$item->news_image_featured_small}} 480w ,{{$item->news_image_featured_medium}} 800w ,{{$item->news_image_featured}} 1200w"
+                                     sizes="50vw" alt="{{$item->title}}">
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
                         @endforeach
