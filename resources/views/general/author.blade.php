@@ -36,7 +36,7 @@
                                 <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                                     @foreach($collection1 as $item)
                                         <li class="list-group-item d-flex justify-content-start align-items-center">
-                                            <img src="{{$item->news_image_featured}}" alt="{{$item->title}}">
+                                            <div class="rounded-circle col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                             <div class="mr-2 ml-2 text-left">
                                                 <div class="links-author">
                                                     <a href="{{$item->slug}}" class="links-author"><div style="font-size: 15px; font-weight: bold">{{$item->title}}</div></a>
@@ -68,7 +68,7 @@
                                 <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                                     @foreach($collection2 as $item)
                                         <li class="list-group-item d-flex justify-content-start align-items-center">
-                                            <img src="{{$item->news_image_featured}}" alt="{{$item->title}}">
+                                            <div class="rounded-circle col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                             <div class="mr-2 ml-2 text-left">
                                                 <div class="links-author">
                                                     <a href="{{$item->slug}}" class="links-author"><div style="font-size: 15px; font-weight: bold">{{$item->title}}</div></a>
