@@ -8,11 +8,11 @@
 
 @section('content')
 
-    <div class="container col-11 col-xl-10 text-justify" style="margin-top: 90px; font-size: 18px; font-family: Helvetica">
+    <div class="container col-11 col-xl-10 text-justify" style="margin-top: 90px; font-family: Helvetica">
         <div class="row">
-            <div class="col-12 col-xl-9 p-0">
+            <div class="col-12 col-xl-9 p-0" style="font-size: 18px;">
 
-                <div class="col-12 row p-0 ml-auto mr-auto mt-4  mb-0">
+                <div class="col-12 row p-0 ml-auto mr-auto mt-4 mb-0">
 
                     <h2 class="font-weight-bold col-12 p-0">{{$news->title}}</h2>
 
@@ -74,7 +74,7 @@
                         <ul class="list-group list-group-flush aside-list">
                             @foreach($related as $item)
                                 <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                    <img src="{{$item->news_image_featured}}" alt="{{$item->title}}">
+                                    <div class="rounded-circle col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                     <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                                 </li>
                             @endforeach

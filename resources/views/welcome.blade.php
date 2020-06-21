@@ -75,9 +75,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($reviewSection as $item)
                             <li class="list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
-                                <div class="rounded-circle col-auto" style="background-image: url('{{$item->news_image_featured_small}}'); background-position: center; background-size: cover; width: 50px; height: 50px"></div>
-                                {{--<img class="img-fluid z-depth-1 rounded-circle" src="{{$item->news_image_featured_small}}"
-                                     sizes="50vw" alt="{{$item->title}}">--}}
+                                <div class="rounded-circle col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                 <div class="mr-2 ml-2 text-left">
                                     <a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a>
                                 </div>
@@ -100,7 +98,7 @@
                     <ul class="list-group list-group-flush aside-list">
                         @foreach($moreContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <div class="rounded-circle col-auto" style="background-image: url('{{$item->news_image_featured_small}}'); background-position: center; background-size: cover; width: 50px; height: 50px"></div>
+                                <div class="rounded-circle col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
                         @endforeach
@@ -112,7 +110,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($retroContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <div class="rounded-circle col-auto" style="background-image: url('{{$item->news_image_featured_small}}'); background-position: center; background-size: cover; width: 50px; height: 50px"></div>
+                                <div class="rounded-circle col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
                         @endforeach
@@ -130,7 +128,7 @@
             $forwardPage = $currentPage-1; //Página anterior
             $news->setPath('');
             ?>
-            <nav aria-label="Page navigation example" class="m-auto col-12 col-md-auto">
+            <nav aria-label="Page navigation example" class="m-auto col-md-auto">
             <ul class="pagination pg-blue">
                 <!-- Botón para navegar a la primera página -->
                 <li class="page-item @if($currentPage==$firstPage){{'disabled'}}@endif">
