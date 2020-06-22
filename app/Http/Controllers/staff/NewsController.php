@@ -231,7 +231,7 @@ class NewsController extends Controller
             $imageSmall = new NewsImage();
 
             $file = $request->file('featured_image');
-            $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+            $originalName = str_replace(' ','',pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME));
             $fileName = uniqid() . '-'.$originalName; //Renombrar la Imagen
 
             $fileNameLarge = $fileName.'.webp';
@@ -394,7 +394,7 @@ class NewsController extends Controller
             $imageSmall = NewsImage::where('news_id', $id)->where('size', 'small')->first();
 
             $file = $request->file('featured_image');
-            $originalName = pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME);
+            $originalName = str_replace(' ','',pathinfo($file->getClientOriginalName(), PATHINFO_FILENAME));
             $fileName = uniqid() . '-' . $originalName; //Renombrar la Imagen
 
             $fileNameLarge = $fileName . '.webp';
