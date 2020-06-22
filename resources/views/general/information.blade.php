@@ -1,6 +1,9 @@
 @extends('layouts.app')
 @section('title', config('app.name').' | Informacion')
-@section('page-title', ' | Informacion')
+@section('page-title', 'Informacion')
+@section('keywords','gamecore misión, gamecore visión, gamecore información')
+@section('page-author','GameCore')
+
 @section('content')
 <div class="row text-justify mr-auto ml-auto justify-content-center" style="padding-top: 130px; margin-bottom: 40px; font-size: 16px;">
 

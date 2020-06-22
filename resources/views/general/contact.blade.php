@@ -1,6 +1,10 @@
 @extends('layouts.app')
 @section('title',config('app.name').' | Contacto')
-@section('page-title', ' | Contacto')
+@section('page-title', 'Contacto')
+@section('page-description', 'Contacta con el equipo de GameCore')
+@section('keywords','gamecore contacto, gamecore telefono, gamecore correo')
+@section('page-author','GameCore')
+
 @section('content')
     <div class="row text-justify mr-auto ml-auto justify-content-center" style="padding-top: 130px; margin-bottom: 40px; font-size: 16px;">
 

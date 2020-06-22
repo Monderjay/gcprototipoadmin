@@ -10,12 +10,11 @@
 
     <!-- General Tags -->
     <title>@yield('title',config('app.name'))</title>
-    <meta name="tittle" content="@yield('page-title') | GameCore">
+    <meta name="tittle" content="GameCore | @yield('page-title')">
     <meta name="description" content="@yield('page-description','Entérate de las más recientes novedades sobre el mundo de los Videojuegos con nuestras noticias, reseñas, podcast, unboxings, especiales y mucho más. ¡Solo en GameCore!')"/>
-    <meta name="keywords" content="game, core, gamers, playstation, xbox, nintendo,
-    pc, móvil, videojuegos, noticas, reseñas, podcast, pank9605, unboxings"/>
-    <meta name="author" content="@yield('page-author','Eduardo Chávez Zúñiga')" />
-    <meta name="copyright" content="Game-Core"/>
+    <meta name="author" content="@yield('page-author','Eduardo Chávez (pank9605)')" />
+    <meta name="keywords" content="@yield('keywords','game, core, gamers, playstation, xbox, nintendo,pc, móvil, videojuegos, noticas, reseñas, podcast, unboxings')"/>
+    <meta name="copyright" content="GameCore"/>
 
     <!-- Icono -->
     <link rel="shortcut icon" href="{{asset('img/coreblack.webp')}}">

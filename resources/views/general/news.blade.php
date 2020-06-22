@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title',$news->title.' | '.config('app.name'))
 @section('page-title',$news->title)
-@section('page-author',$news->user->username)
+@section('page-author',$news->user->name .' '. $news->user->first_name .' ('.$news->user->username.')')
 @section('page-description',$news->introduction)
 @section('page-image','https://www.gamecore.com.mx/'.$news->news_image_featured)
 @section('url','https://www.gamecore.com.mx/'.$news->slug)

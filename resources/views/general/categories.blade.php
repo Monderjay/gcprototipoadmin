@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('title',config('app.name').' | '.$section)
 @section('page-title',$section)
-
+@section('page-description', 'Disfruta de la sección de '.$section)
+@section('keywords','gamecore, '.$section)
 
 @section('content')
     <!--section-->

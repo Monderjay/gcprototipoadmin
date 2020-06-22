@@ -1,7 +1,9 @@
 @extends('layouts.app')
-@section('title', config('app.name').' | Autor')
-@section('page-title', ' | Autor')
-
+@section('title', config('app.name').' | '.$author->username)
+@section('page-title', $author->username)
+@section('page-description', 'Articulos publicados por '.$author->name .' '. $author->first_name .' ('.$author->username.')')
+@section('page-author',$author->name .' '. $author->first_name .' ('.$author->username.')')
+@section('keywords','gamecore, autor, '.$author->name.', '.$author->username)
 
 @section('content')
 
