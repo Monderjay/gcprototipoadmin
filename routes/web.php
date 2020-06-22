@@ -80,9 +80,6 @@ Route::get('/{category}/{clasification}','WelcomeController@showCategoryClasific
 
 
 
-
-
-
 Route::get('/porfile',function (){
-    return view('porfile    ');
+    return view('porfile');
 });
