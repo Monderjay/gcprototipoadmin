@@ -6,6 +6,7 @@
 @section('page-image','https://www.gamecore.com.mx/'.$news->news_image_featured)
 @section('url','https://www.gamecore.com.mx/'.$news->slug)
 
+
 @section('content')
 
     <div class="container col-11 col-xl-10 text-justify" style="margin-top: 90px; font-family: Helvetica">
@@ -58,7 +59,7 @@
                     </div>
 
                 </div>
-                <div class="fb-comments mb-3" data-href="https://www.facebook.com/GameCore.com.mx/?modal=admin_todo_tour" data-numposts="100" data-width="100%"></div>
+                <div class="fb-comments mb-3" data-href="{{url('https://www.gamecore.com.mx/'.$news->slug)}}" data-numposts="100" data-width="100%"></div>
             </div>
 
 
