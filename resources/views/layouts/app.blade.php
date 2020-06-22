@@ -13,7 +13,7 @@
     <meta name="tittle" content="GameCore | @yield('page-title')">
     <meta name="description" content="@yield('page-description','Entérate de las más recientes novedades sobre el mundo de los Videojuegos con nuestras noticias, reseñas, podcast, unboxings, especiales y mucho más. ¡Solo en GameCore!')"/>
     <meta name="author" content="@yield('page-author','Eduardo Chávez (pank9605)')" />
-    <meta name="keywords" content="@yield('keywords','game, core, gamers, playstation, xbox, nintendo,pc, móvil, videojuegos, noticas, reseñas, podcast, unboxings')"/>
+    <meta name="keywords" content="@yield('keywords')"/>
     <meta name="copyright" content="GameCore"/>
 
     <!-- Icono -->
