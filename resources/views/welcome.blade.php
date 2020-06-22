@@ -32,7 +32,7 @@
                                     <h4 class="card-title text-center">{{$item->news_title}}</h4>
                                     <div class="row">
                                         <div class="col-6">
-                                             <a href="{{url('/autor/'.$item->user->username)}}" class="white-text links"><small><i class="fas fa-user-tie"></i>&nbsp; {{$item->user->username}}</small></a>
+                                            <a href="{{url('/autor/'.$item->user->username)}}" class="white-text links"><small><i class="fas fa-user-tie"></i>&nbsp; {{$item->user->username}}</small></a>
                                         </div>
                                         <div class="col-6 text-right">
                                             <small><i class="fas fa-calendar-alt"></i>&nbsp; {{substr($item->date,0,10)}} </small>
@@ -129,32 +129,32 @@
             $news->setPath('');
             ?>
             <nav aria-label="Page navigation example" class="m-auto col-md-auto">
-            <ul class="pagination pg-blue">
-                <!-- Botón para navegar a la primera página -->
-                <li class="page-item @if($currentPage==$firstPage){{'disabled'}}@endif">
-                    <a href="@if($currentPage>1){{$news->url($firstPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-double-left"></i></a>
-                </li>
-                <!-- Botón para navegar a la página anterior -->
-                <li class="page-item @if($currentPage==$firstPage){{'disabled'}}@endif">
-                    <a href="@if($currentPage>1){{$news->url($forwardPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-left"></i></a>
-                </li>
-                <!-- Mostrar la numeración de páginas, partiendo de la página actual hasta el máximo definido en $maxPages -->
-                @for($x=$currentPage;$x<$maxPages;$x++)
-                    @if($x <= $lastPage)
-                        <li class="page-item @if($x==$currentPage){{'active'}}@endif">
-                            <a href="{{$news->url($x)}}" class='page-link'>{{$x}}</a>
-                        </li>
-                @endif
-            @endfor
-            <!-- Botón para navegar a la pagina siguiente -->
-                <li class="page-item @if($currentPage==$lastPage){{'disabled'}}@endif">
-                    <a href="@if($currentPage<$lastPage){{$news->url($nextPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-right"></i></a>
-                </li>
-                <!-- Botón para navegar a la última página -->
-                <li class="page-item @if($currentPage==$lastPage){{'disabled'}}@endif">
-                    <a href="@if($currentPage<$lastPage){{$news->url($lastPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-double-right"></i></a>
-                </li>
-            </ul>
+                <ul class="pagination pg-dark">
+                    <!-- Botón para navegar a la primera página -->
+                    <li class="page-item @if($currentPage==$firstPage){{'disabled'}}@endif">
+                        <a href="@if($currentPage>1){{$news->url($firstPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-double-left"></i></a>
+                    </li>
+                    <!-- Botón para navegar a la página anterior -->
+                    <li class="page-item @if($currentPage==$firstPage){{'disabled'}}@endif">
+                        <a href="@if($currentPage>1){{$news->url($forwardPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-left"></i></a>
+                    </li>
+                    <!-- Mostrar la numeración de páginas, partiendo de la página actual hasta el máximo definido en $maxPages -->
+                    @for($x=$currentPage;$x<$maxPages;$x++)
+                        @if($x <= $lastPage)
+                            <li class="page-item @if($x==$currentPage){{'active'}}@endif">
+                                <a href="{{$news->url($x)}}" class='page-link'>{{$x}}</a>
+                            </li>
+                    @endif
+                @endfor
+                <!-- Botón para navegar a la pagina siguiente -->
+                    <li class="page-item @if($currentPage==$lastPage){{'disabled'}}@endif">
+                        <a href="@if($currentPage<$lastPage){{$news->url($nextPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-right"></i></a>
+                    </li>
+                    <!-- Botón para navegar a la última página -->
+                    <li class="page-item @if($currentPage==$lastPage){{'disabled'}}@endif">
+                        <a href="@if($currentPage<$lastPage){{$news->url($lastPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-double-right"></i></a>
+                    </li>
+                </ul>
             </nav>
 
 

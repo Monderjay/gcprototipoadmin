@@ -101,9 +101,41 @@
                         </div>
 
                 </div>
-                <nav aria-label="Page navigation example" class="m-auto">
-                    <ul class="pagination pagination-circle pg-blue">
-                        {{$news->links()}}
+                <?php
+                $currentPage = $news->currentPage(); //Página actual
+                $maxPages = $currentPage + 5; //Máxima numeración de páginas
+                $firstPage = 1; //primera página
+                $lastPage = $news->lastPage(); //última página
+                $nextPage = $currentPage+1; //Siguiente página
+                $forwardPage = $currentPage-1; //Página anterior
+                $news->setPath('');
+                ?>
+                <nav aria-label="Page navigation example" class="m-auto col-md-auto">
+                    <ul class="pagination pg-dark">
+                        <!-- Botón para navegar a la primera página -->
+                        <li class="page-item @if($currentPage==$firstPage){{'disabled'}}@endif">
+                            <a href="@if($currentPage>1){{$news->url($firstPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-double-left"></i></a>
+                        </li>
+                        <!-- Botón para navegar a la página anterior -->
+                        <li class="page-item @if($currentPage==$firstPage){{'disabled'}}@endif">
+                            <a href="@if($currentPage>1){{$news->url($forwardPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-left"></i></a>
+                        </li>
+                        <!-- Mostrar la numeración de páginas, partiendo de la página actual hasta el máximo definido en $maxPages -->
+                        @for($x=$currentPage;$x<$maxPages;$x++)
+                            @if($x <= $lastPage)
+                                <li class="page-item @if($x==$currentPage){{'active'}}@endif">
+                                    <a href="{{$news->url($x)}}" class='page-link'>{{$x}}</a>
+                                </li>
+                        @endif
+                    @endfor
+                    <!-- Botón para navegar a la pagina siguiente -->
+                        <li class="page-item @if($currentPage==$lastPage){{'disabled'}}@endif">
+                            <a href="@if($currentPage<$lastPage){{$news->url($nextPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-right"></i></a>
+                        </li>
+                        <!-- Botón para navegar a la última página -->
+                        <li class="page-item @if($currentPage==$lastPage){{'disabled'}}@endif">
+                            <a href="@if($currentPage<$lastPage){{$news->url($lastPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-double-right"></i></a>
+                        </li>
                     </ul>
                 </nav>
         </div>
