@@ -26,6 +26,7 @@
 
     <!-- Google -->
     <meta name="google-site-verification" content="ZPwFaoBJbJDZczfpo4Nlj52IXf40sJlsg3QSoyngE-A">
+    <script data-ad-client="ca-pub-5455720448748407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
     <!-- Facebook -->
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1"></script>
@@ -38,7 +39,7 @@
     <meta property="fb:app_id" content="278534710203686" />
     <meta property="og:type" content="article" />
 
-    <!-- Acriopts-->
+    <!-- Scriopts-->
     <script type="text/javascript" src="{{ asset('js/app.js') }}" defer></script>
     <script type="text/javascript" src="{{ asset('js/styles.js') }}" defer></script>
     <script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}"defer></script>
