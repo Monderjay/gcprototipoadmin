@@ -18,9 +18,7 @@
                                 <!-- Card image -->
                                 <div class="view overlay view zoom">
                                     <img class="w-100" src="{{$item->news_image_featured}}"
-                                         srcset="{{$item->news_image_featured_small}}400w,{{$item->news_image_featured_medium}}1280w"
-                                         sizes="50vw"
-                                         alt="{{$item->title}}">
+                                         srcset="{{$item->news_image_featured_small}} 400w,{{$item->news_image_featured_medium}} 1280w" sizes="50vw" alt="{{$item->title}}"/>
                                     <a href="{{$item->slug}}">
                                         <div class="mask flex-center waves-effect rgba-black-light">
 
