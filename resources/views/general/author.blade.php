@@ -8,7 +8,7 @@
 @section('content')
 
     <div class="cover-author-content ">
-        <div class="col-12 p-0" style="background-image: url('{{$author->cover_image_url}}'); background-size: cover; width: 100%; height: 450px;"></div>
+        <div class="col-12 p-0" style="background-image: url('{{$author->cover_image_url}}'); background-size: cover; width: 100%; height: 400px;"></div>
     </div>
 
     <div class="card col-11 mx-auto my-5">
