@@ -26,7 +26,7 @@
                             <a href="{{url('https://www.facebook.com/sharer/sharer.php?u=https://www.gamecore.com.mx/'.$news->slug)}}" target="_blank" type="button" class="btn btn-fb fb-share elegant-color white-text m-auto"><i class="fab fa-facebook-f pr-1"></i> Facebook</a>
 
                             <!--Twitter-->
-                            <a href="{{url('http://twitter.com/share?text=@GameCore Informa&url=https://www.gamecore.com.mx/'.$news->slug.'&hashtags=GameCore,videojuegos,noticias,consolas,entretenimiento')}}" target="_blank" type="button" class="btn btn-tw elegant-color white-text m-auto fb-share"><i class="fab fa-twitter pr-1"></i> Twitter</a>
+                            <a href="{{url('http://twitter.com/share?text=@GameCore Informa&url=https://www.gamecore.com.mx/'.$news->slug.'&hashtags=GameCore,videojuegos,noticias,consolas,entretenimiento')}}" target="_blank" type="button" class="btn btn-tw elegant-color white-text mx-auto my-3 my-xl-0 fb-share"><i class="fab fa-twitter pr-1"></i> Twitter</a>
                         </div>
 
                         <div class="col-auto text-right p-0 m-auto">
