@@ -9,9 +9,9 @@
 
 @section('content')
 
-    <div class="container col-11 col-xl-10 text-justify" style="margin-top: 90px; font-family: Helvetica">
+    <div class="container col-11 col-xl-10 text-justify" style="margin-top: 90px;">
         <div class="row">
-            <div class="col-12 col-xl-9 p-0" style="font-size: 18px;">
+            <div class="col-12 col-xl-9 p-0" style="font-size: 18px; font-family: Helvetica">
 
                 <div class="col-12 row p-0 ml-auto mr-auto mt-4 mb-0">
 

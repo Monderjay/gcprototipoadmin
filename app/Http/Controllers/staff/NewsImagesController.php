@@ -102,9 +102,16 @@ class NewsImagesController extends Controller
     {
         //
         $image = NewsImage::find($id);
+        $images = File::files(public_path() . '/images/news_images');
+        $fullPath = public_path() . '/images/news_images/' . $image->image;
+        $imagesSmall = File::files(public_path() . '/images/news_images_small');
+        $fullPathSmall = public_path() . '/images/news_images_small/' . $image->image;
+        $imagesMedium = File::files(public_path() . '/images/news_images_medium');
+        $fullPathMedium = public_path() . '/images/news_images_medium/' . $image->image;
 
         if ($image->image != null) {
             if ($image->featured){
+
 
             }
 
