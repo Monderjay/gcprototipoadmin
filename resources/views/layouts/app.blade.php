@@ -140,7 +140,7 @@
 
 
 <!-- Scripts -->
-<script type="text/javascript" src="lazysizes.min.js" defer></script>
+<script type="text/javascript" src="{{asset('js/lazysizes/lazysizes.min.js')}}" defer></script>
 <!-- Images End -->
 
 </body>
