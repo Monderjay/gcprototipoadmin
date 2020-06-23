@@ -21,7 +21,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/app-styles.css') }}" rel="stylesheet" defer>
+    <link href="{{ asset('css/app-styles.css') }}" rel="stylesheet">
     <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet">
 
     <!-- Google -->
@@ -38,14 +38,6 @@
     <meta property="og:url" content="@yield('url','https://www.gamecore.com.mx/')" />
     <meta property="fb:app_id" content="278534710203686" />
     <meta property="og:type" content="article" />
-
-    <!-- Scriopts-->
-    <script type="text/javascript" src="{{ asset('js/app.js') }}" defer></script>
-    <script type="text/javascript" src="{{ asset('js/styles.js') }}" defer></script>
-    <script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}"defer></script>
-    <script type="text/javascript" src="{{ asset('js/Knob/config.js')}}" defer></script>
-    <script type="text/javascript" src="https://www.powr.io/powr.js?platform=jquery" defer></script>
-
 </head>
 
 <body class="p-0 m-auto">
@@ -139,7 +131,12 @@
 </div>
 
 
-<!-- Scripts -->
+<!-- Scriopts-->
+<script type="text/javascript" src="{{ asset('js/app.js') }}" defer></script>
+<script type="text/javascript" src="{{ asset('js/styles.js') }}" defer></script>
+<script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}"defer></script>
+<script type="text/javascript" src="{{ asset('js/Knob/config.js')}}" defer></script>
+<script type="text/javascript" src="https://www.powr.io/powr.js?platform=jquery" defer></script>
 
 
 </body>
