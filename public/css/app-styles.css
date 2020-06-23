@@ -9,6 +9,18 @@
     height: 50px;
 }
 
+.image-principal-list{
+    width: 100px;
+    height: 65px;
+}
+
+@supports(object-fit: cover){
+    .image-principal-list{
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
 
 .carousel-caption {
     background: rgba(0, 0, 0, 0.9);

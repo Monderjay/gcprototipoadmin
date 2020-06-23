@@ -73,7 +73,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($reviewSection as $item)
                             <li class="list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
-                                <div class="rounded-circle col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
+                                <img data-src="{{$item->news_image_featured_small}}" class="rounded-circle col-auto image-principal-list lazyload"/>
                                 <div class="mr-2 ml-2 text-left">
                                     <a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a>
                                 </div>
@@ -96,7 +96,7 @@
                     <ul class="list-group list-group-flush aside-list">
                         @foreach($moreContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <div class="rounded-circle lazyload col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
+                                <img data-src="{{$item->news_image_featured_small}}" class="rounded-circle col-auto image-principal-list lazyload"/>
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
                         @endforeach
@@ -108,7 +108,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($retroContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <div class="rounded-circle lazyload col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
+                                <img data-src="{{$item->news_image_featured_small}}" class="rounded-circle col-auto image-principal-list lazyload"/>
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
                         @endforeach
