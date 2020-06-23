@@ -21,7 +21,7 @@
             <div class="carousel-item {{$active}}">
                 <a href="{{url($item->slug)}}">
                     <div class="zoom">
-                        <img class="d-block w-100" src="{{$item->news_image_featured}}"
+                        <img class="d-block w-100 lazyload" dta-src="{{$item->news_image_featured}}"
                              alt="{{$item->title}}">
                     </div>
                     <div class="carousel-caption pb-5">
