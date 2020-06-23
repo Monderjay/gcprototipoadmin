@@ -140,7 +140,7 @@
 
 
 <!-- Scripts -->
-<script src="lazysizes.min.js" async></script>
+<script src="{{asset('js/lazysizes/lazysizes.min.js')}}async></script>
 <!-- Images End -->
 
 </body>
