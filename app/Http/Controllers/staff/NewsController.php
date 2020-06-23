@@ -254,7 +254,9 @@ class NewsController extends Controller
             //Crear 1 registro en la tabla de users
             if ($imageSave->save($path,72,'webp')) {
                 $image->image = $fileNameLarge;
+                $image->size = "large";
                 $image->news_id = $id;
+
                 $imageMedium->size = "large";
                 NewsImage::where('news_id',$id)->update([
                     'featured' => false
@@ -432,6 +434,7 @@ class NewsController extends Controller
 
                     $image->featured = true;
                     $image->image = $fileNameLarge;
+                    $image->size = "large";
                     $image->save();
                 }
             }
@@ -494,26 +497,25 @@ class NewsController extends Controller
         }
 
 
-            $emailAuthor = auth()->user()->email;
-            if (session($emailAuthor)) {
-                foreach (session($emailAuthor) as $item) {
-                    $images = NewsImage::find($item->id);
-                    $images->news_id = $news->id;
-                    $images->save();
-                }
-                Session::forget($emailAuthor);
+        $emailAuthor = auth()->user()->email;
+        if (session($emailAuthor)) {
+            foreach (session($emailAuthor) as $item) {
+                $images = NewsImage::find($item->id);
+                $images->news_id = $news->id;
+                $images->save();
             }
+            Session::forget($emailAuthor);
+        }
 
 
-            if ($news->save() || $images) {
-                $notification = "Noticia Modificada con Exito, Ahora puede Verificar sus Imagenes";
-                return redirect('/staff/news')->with(compact('notification'));
-            } else {
-                $notificationFaill = "La Noticia no pudo Modificarse :(";
-                return redirect('/staff/news')->with(compact('notificationFaill'));
+        if ($news->save() || $images) {
+            $notification = "Noticia Modificada con Exito, Ahora puede Verificar sus Imagenes";
+            return redirect('/staff/news')->with(compact('notification'));
+        } else {
+            $notificationFaill = "La Noticia no pudo Modificarse :(";
+            return redirect('/staff/news')->with(compact('notificationFaill'));
 
-            }
-
+        }
     }
 
 

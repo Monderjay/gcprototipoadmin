@@ -42,19 +42,21 @@
                     @foreach($images as $image )
                     <div class="col-12 col-lg-4 col-xl-4">
                         <div class="card justify-content-center">
+                            @if($image->featured)
+                            <div class="card-header">
+                                    <h4>Imagen destacada</h4>
+                            </div>
+                            @endif
 
                             <div class="card-body">
                                     <img class="news-image mt-2" src="{{$image->news_image}}">
+                                @if($image->featured == false && $image->size !="small" && $image->size !="medium")
                                 <form method="POST" action="{{url('staff/news/images/'.$image->id.'/delete')}}" onsubmit="return validateDelete(this)";>
                                     @csrf
                                     {{method_field('DELETE')}}
                                     <button class="btn rounded-pill btn-danger" type="submit"><i class="fas fa-trash-alt"></i> Eliminar Imagen</button>
-                                    @if($image->featured)
-                                        <button type="button" class="btn btn-info btn-fab btn-fab-mini btn-round" rel="tooltip" title="Imagen destacada actualmente">
-                                            <i class="material-icons">favorite</i>
-                                        </button>
-                                    @endif
                                 </form>
+                                @endif
                             </div>
                         </div>
                     </div>
