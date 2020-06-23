@@ -20,9 +20,9 @@
     <link rel="shortcut icon" href="{{asset('img/coreblack.webp')}}">
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/app-styles.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/mdb.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app-styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}" type="text/css">
 
     <!-- Google -->
     <meta name="google-site-verification" content="ZPwFaoBJbJDZczfpo4Nlj52IXf40sJlsg3QSoyngE-A">
