@@ -10,8 +10,8 @@
 }
 
 .image-principal-list{
-    width: 100px;
-    height: 65px;
+    width: 80px;
+    height: 45px;
 }
 
 @supports(object-fit: cover){
