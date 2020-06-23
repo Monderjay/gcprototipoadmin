@@ -1,5 +1,5 @@
 <!--Carousel Wrapper-->
-<div id="carousel" class="carousel slide carousel-fade d-none d-md-block" data-ride="carousel">
+<div id="carousel" class="carousel lazyload slide carousel-fade d-none d-md-block" data-ride="carousel">
     <!--Indicators-->
     <ol class="carousel-indicators">
         @for($i=0; $i < $featuredNews->count(); $i++)
@@ -21,7 +21,7 @@
             <div class="carousel-item {{$active}}">
                 <a href="{{url($item->slug)}}">
                     <div class="zoom">
-                        <img class="d-block w-100 lazyload" src="{{$item->news_image_featured}}"
+                        <img class="d-block w-100" src="{{$item->news_image_featured}}"
                              alt="{{$item->title}}">
                     </div>
                     <div class="carousel-caption pb-5">
