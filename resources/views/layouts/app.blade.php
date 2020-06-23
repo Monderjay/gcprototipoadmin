@@ -140,7 +140,8 @@
 
 
 <!-- Scripts -->
-
+<script src="lazysizes.min.js" async></script>
+<!-- Images End -->
 
 </body>
 </html>
