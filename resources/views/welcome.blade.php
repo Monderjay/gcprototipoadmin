@@ -17,7 +17,7 @@
                             <div class="card" style="min-height: 520px">
                                 <!-- Card image -->
                                 <div class="view overlay view zoom">
-                                    <img class="w-100 lazy" src="{{$item->news_image_featured}}" srcset="{{$item->news_image_featured_small}} 400w,{{$item->news_image_featured_medium}} 1280w" sizes="50vw" alt="{{$item->title}}"/>
+                                    <img src="{{$item->news_image_featured}}" srcset="{{$item->news_image_featured_small}} 400w,{{$item->news_image_featured_medium}} 1280w" sizes="50vw" alt="{{$item->title}}" class="w-100 lazyload"/>
                                     <a href="{{$item->slug}}">
                                         <div class="mask flex-center waves-effect rgba-black-light">
 
@@ -73,7 +73,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($reviewSection as $item)
                             <li class="list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
-                                <div class="rounded-circle lazy col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
+                                <div class="rounded-circle lazyload col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                 <div class="mr-2 ml-2 text-left">
                                     <a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a>
                                 </div>
@@ -96,7 +96,7 @@
                     <ul class="list-group list-group-flush aside-list">
                         @foreach($moreContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <div class="rounded-circle lazy col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
+                                <div class="rounded-circle lazyload col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
                         @endforeach
@@ -108,7 +108,7 @@
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($retroContent as $item)
                             <li class="list-group-item d-flex justify-content-start align-items-center elegant-color border-light">
-                                <div class="rounded-circle lazy col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
+                                <div class="rounded-circle lazyload col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                 <div class="mr-2 ml-2 text-left"><a href="{{$item->slug}}" class="white-text links"><div>{{$item->title}}</div></a></div>
                             </li>
                         @endforeach
