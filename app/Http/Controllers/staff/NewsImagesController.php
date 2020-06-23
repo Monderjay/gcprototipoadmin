@@ -104,13 +104,20 @@ class NewsImagesController extends Controller
         $image = NewsImage::find($id);
 
         if ($image->image != null) {
+            if ($image->featured){
 
-            if (substr($image->image, 0, 4) == "http") {
-                $deleted = true;
-            } else {
-                $images = File::files(public_path() . '/images/news_images');
+            }
 
-                $fullPath = public_path() . '/images/news_images/' . $image->image;
+                if ($image->size == "small"){
+                    $images = File::files(public_path() . '/images/news_images_small');
+                    $fullPath = public_path() . '/images/news_images_small/' . $image->image;
+                }elseif ($image->size == "medium"){
+                    $images = File::files(public_path() . '/images/news_images_medium');
+                    $fullPath = public_path() . '/images/news_images_medium/' . $image->image;
+                }else{
+                    $images = File::files(public_path() . '/images/news_images');
+                    $fullPath = public_path() . '/images/news_images/' . $image->image;
+                }
                 foreach ($images as $key => $img) {
                     if ($image->image == pathinfo($img)['basename']) {
                         $deleted = File::delete($fullPath);
@@ -118,7 +125,7 @@ class NewsImagesController extends Controller
                         $deleted = true;
                     }
                 }
-            }
+
             //Eliminar el registro
             if ($deleted) {
                 $image->delete();

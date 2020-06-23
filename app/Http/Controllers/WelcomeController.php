@@ -19,7 +19,7 @@ class WelcomeController extends Controller
             if ($item->category->name == "PlayStation" && $item->clasification->name == "Noticias" ||
                 $item->category->name == "Xbox" && $item->clasification->name == "Noticias" ||
                 $item->category->name == "Nintendo" && $item->clasification->name == "Noticias" ||
-                $item->category->name == "Multi Consola" && $item->clasification->name == "Noticias" ||
+                $item->category->name == "Multiplataforma" && $item->clasification->name == "Noticias" ||
                 $item->category->name == "PC" && $item->clasification->name == "Noticias" ||
                 $item->category->name == "Movil" && $item->clasification->name == "Noticias" ||
                 $item->category->name == "Reseñas" && $item->clasification->name == "Noticias"){
@@ -43,7 +43,7 @@ class WelcomeController extends Controller
             if ($item->category->name == "PlayStation" && $item->clasification->name == "Reseñas" ||
                 $item->category->name == "Xbox" && $item->clasification->name == "Reseñas" ||
                 $item->category->name == "Nintendo" && $item->clasification->name == "Reseñas" ||
-                $item->category->name == "Multi Consola" && $item->clasification->name == "Reseñas" ||
+                $item->category->name == "Multiplataforma" && $item->clasification->name == "Reseñas" ||
                 $item->category->name == "PC" && $item->clasification->name == "Reseñas"||
                 $item->category->name == "Movil" && $item->clasification->name == "Reseñas"){
                 $reviewSection->push($item);
@@ -100,7 +100,7 @@ class WelcomeController extends Controller
             if ($item->category->name == "PlayStation" && $item->clasification->name == "Reseñas" ||
                 $item->category->name == "Xbox" && $item->clasification->name == "Reseñas" ||
                 $item->category->name == "Nintendo" && $item->clasification->name == "Reseñas" ||
-                $item->category->name == "Multi Consola" && $item->clasification->name == "Reseñas" ||
+                $item->category->name == "Multiplataforma" && $item->clasification->name == "Reseñas" ||
                 $item->category->name == "PC" && $item->clasification->name == "Reseñas"||
                 $item->category->name == "Movil" && $item->clasification->name == "Reseñas"){
                 $reviewSection->push($item);
@@ -183,15 +183,15 @@ class WelcomeController extends Controller
                 $category1 = "PlayStation";
                 $category2 = "Xbox";
             }
-            elseif ($category->name == "Multi Consola"){
+            elseif ($category->name == "Multiplataforma"){
                 $category1 = "PC";
                 $category2 = "Movil";
             }elseif ($category->name == "PC"){
-                $category1 = "Multi Consola";
+                $category1 = "Multiplataforma";
                 $category2 = "Movil";
             }elseif ($category->name == "Movil"){
                 $category1 = "PC";
-                $category2 = "Multi Consola";
+                $category2 = "Multiplataforma";
             }
 
 

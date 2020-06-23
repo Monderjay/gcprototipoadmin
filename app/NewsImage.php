@@ -12,14 +12,23 @@ class NewsImage extends Model
     }
 
     public function getNewsImageAttribute(){
+        $path="";
         if ($this->image != null) {
             if (substr($this->image, 0, 4) === "http") {
                 return $this->image;
             } else {
-                return '/images/news_images/' . $this->image;
+                if ($this->size == "medium"){
+                    $path = '/images/news_images_medium/' . $this->image;
+                }elseif ($this->size == "small"){
+                    $path = '/images/news_images_small/' . $this->image;
+                }else{
+                    $path = '/images/news_images/' . $this->image;
+                }
+
             }
         }else{
-            return '/images/news_images/default.jpg';
+            $path = '/images/news_images/default.jpg';
         }
+        return $path;
     }
 }

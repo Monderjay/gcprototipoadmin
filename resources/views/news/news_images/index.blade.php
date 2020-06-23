@@ -53,10 +53,6 @@
                                         <button type="button" class="btn btn-info btn-fab btn-fab-mini btn-round" rel="tooltip" title="Imagen destacada actualmente">
                                             <i class="material-icons">favorite</i>
                                         </button>
-                                    @else
-                                        <a href="{{url('staff/news/'.$news->id.'/images/'.$image->id.'/featured')}}" class="btn btn-primary btn-fab btn-fab-mini btn-round">
-                                            <i class="material-icons">favorite</i>
-                                        </a>
                                     @endif
                                 </form>
                             </div>

@@ -77,7 +77,7 @@ class NewsController extends Controller
 
             $image = new NewsImage();
             $file = $request->file('upload');
-            $originalName = pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME);
+            $originalName = str_replace(' ','',pathinfo($file->getClientOriginalName(),PATHINFO_FILENAME));
             $fileName = uniqid() . '-'.$originalName.'.webp'; //Renombrar la Imagen
             $path = public_path('images/news_images/'. $fileName);
 
