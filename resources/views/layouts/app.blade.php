@@ -20,8 +20,8 @@
     <link rel="shortcut icon" href="{{asset('img/coreblack.webp')}}">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/app-styles.css') }}">
+    <link rel="stylesheet" href="{{mix('css/app.css')}}">
+    {{--<link rel="stylesheet" href="{{ asset('css/app-styles.css') }}">--}}
     <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}">
 
     <!--  -->
@@ -131,17 +131,19 @@
 
 
 <!-- Scripts -->
-<script type="text/javascript" src="{{ asset('js/app.js') }}" defer></script>
-<script type="text/javascript" src="{{ asset('js/styles.js') }}" defer></script>
+<script type="text/javascript" src="{{ mix('js/app.js') }}" defer></script>
 <script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}"defer></script>
 <script type="text/javascript" src="{{ asset('js/Knob/config.js')}}" defer></script>
 <script type="text/javascript" src="https://www.powr.io/powr.js?platform=jquery" defer></script>
 <script type="text/javascript" src="{{asset('js/lazysizes/lazysizes.min.js')}}" defer></script>
+
+
+
 <!-- Google-->
 <script data-ad-client="ca-pub-5455720448748407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
 
 <!-- Facebook -->
-<script defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1"></script>
+<script crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1" defer></script>
 <!-- Images End -->
 
 </body>

@@ -15,5 +15,50 @@ $fa-font-path: "../webfonts";
 @import '~@fortawesome/fontawesome-free/scss/brands.scss';
 @import '~@fortawesome/fontawesome-free/scss/regular.scss';
 
+.links :hover{
+    color: lightblue;
+}
+
+.image-list{
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+/*-----Author styles-----*/
+
+.cover-author-content img{
+    max-height: 600px;
+    width: 100%;
+}
+
+.img-author-info img{
+    max-height: 200px;
+    width: 200px;
+}
+
+@supports(object-fit: cover){
+    .cover-author-content img, .img-author-info img{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+.links-author a{
+    color: black;
+}
+
 
 
