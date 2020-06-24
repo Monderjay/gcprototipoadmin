@@ -22,7 +22,7 @@ class WelcomeController extends Controller
                 $item->category->name == "Multiplataforma" && $item->clasification->name == "Noticias" ||
                 $item->category->name == "PC" && $item->clasification->name == "Noticias" ||
                 $item->category->name == "Movil" && $item->clasification->name == "Noticias" ||
-                $item->category->name == "Reseñas" && $item->clasification->name == "Noticias"){
+                $item->clasification->name == "Reseñas"){
                 $featuredNews->push($item);
             }
         }
