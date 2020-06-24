@@ -12,6 +12,8 @@ CKEDITOR.editorConfig = function( config ) {
     config.extraPlugins = 'youtube';
 
     CKEDITOR.addCss(".cke_editable{font-size: 18px; font-family: Helvetica;}");
+    config.forcePasteAsPlainText = true;
+
 
 
     config.font_names = 'Helvetica;'+
