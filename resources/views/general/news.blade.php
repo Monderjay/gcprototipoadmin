@@ -52,6 +52,15 @@
                         <hr class="hr-dark">
                     </div>
 
+                    @if($news->calification != null)
+                        <div class="col-12 mt-4 mb-5 calification-content text-right">
+                            <li class="row  justify-content-center text-sm-right text-center">
+                                <label class="col align-self-center"><h1>Puntuación</h1></label>
+                                <input type="text" name="calification" value="{{$news->calification}}" class="show-calification">
+                            </li>
+                        </div>
+                    @endif
+
                     <div class="mt-2 mb-2">
                         @if($news->font)
                             Fuente: {{$news->font}}
