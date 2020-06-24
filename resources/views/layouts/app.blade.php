@@ -24,12 +24,9 @@
     <link rel="stylesheet" href="{{ asset('css/app-styles.css') }}">
     <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}">
 
-    <!-- Google -->
+    <!--  -->
     <meta name="google-site-verification" content="ZPwFaoBJbJDZczfpo4Nlj52IXf40sJlsg3QSoyngE-A">
 
-
-    <!-- Facebook -->
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1"></script>
 
     <!-- Facebook API-->
     <meta property="og:title" content="@yield('page-title','GameCore')" />
@@ -142,6 +139,9 @@
 <script type="text/javascript" src="{{asset('js/lazysizes/lazysizes.min.js')}}" defer></script>
 <!-- Google-->
 <script data-ad-client="ca-pub-5455720448748407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" defer></script>
+
+<!-- Facebook -->
+<script defer crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1"></script>
 <!-- Images End -->
 
 </body>
