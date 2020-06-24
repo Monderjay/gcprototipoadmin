@@ -50,7 +50,7 @@
 
 <body class="p-0 m-auto">
 
-<script>
+<script defer>
     window.fbAsyncInit = function() {
         FB.init({
             appId      : '278534710203686',
