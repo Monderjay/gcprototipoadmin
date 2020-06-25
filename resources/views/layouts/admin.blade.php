@@ -11,9 +11,9 @@
     <title>@yield('title',config('app.name'))</title>
 
     <!-- Scripts -->
-    <script src="{{ asset('vendors/ckeditor/ckeditor.js') }}" defer></script>
-    <script src="{{ asset('js/Knob/js/jquery.knob.js') }}" defer></script>
-    <script src="{{ asset('js/Knob/configStaff.js') }}" defer></script>
+    <script src="{{ asset('/vendors/ckeditor/ckeditor.js') }}" defer></script>
+    <script src="{{ asset('/js/Knob/js/jquery.knob.js') }}" defer></script>
+    <script src="{{ asset('/js/Knob/configStaff.js') }}" defer></script>
     <script src="{{ asset('js/adminFunctions.js') }}" defer></script>
 
     <!-- Fonts -->
@@ -26,7 +26,7 @@
     <link href="{{ asset('css/prueba.css') }}" rel="stylesheet">
 
 
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     <!--Material Kit by Creative Tim-->
 
@@ -107,25 +107,25 @@
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-pager"></i> Paginas</a>
                             <ul class="collapse list-unstyled" id="pageSubmenu">
                                 @if(auth()->user()->role->name == "Fundador" || auth()->user()->role->name == "Administrador" || auth()->user()->role->name == "Editor")
-                                <li>
-                                    <a href="{{url('staff/news')}}"><i class="fas fa-newspaper"></i> Noticias</a>
-                                </li>
+                                    <li>
+                                        <a href="{{url('staff/news')}}"><i class="fas fa-newspaper"></i> Noticias</a>
+                                    </li>
                                 @endif
                                 @if(auth()->user()->role->name == "Fundador" || auth()->user()->role->name == "Administrador")
-                                {{--<li>
-                                    <a href="#"><i class="fas fa-list"></i> Categorias</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-tasks"></i> Clasificaciones</a>
-                                </li>--}}
+                                    {{--<li>
+                                        <a href="#"><i class="fas fa-list"></i> Categorias</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-tasks"></i> Clasificaciones</a>
+                                    </li>--}}
                                 @endif
                                 @if(auth()->user()->role->name == "Fundador")
-                                <li>
-                                    <a href="#"><i class="fas fa-user-tag"></i> Roles</a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fas fa-ad"></i> Ads</a>
-                                </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-user-tag"></i> Roles</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><i class="fas fa-ad"></i> Ads</a>
+                                    </li>
                                 @endif
                             </ul>
                         </li>
@@ -215,7 +215,7 @@
 <script src="{{asset('material-kit/js/material-kit.js')}}?v=2.0.7" type="text/javascript"></script>
 
 
-
+<script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}" ></script>
 <script type="text/javascript" src="{{ asset('js/Knob/config.js')}}"></script>
 
 
