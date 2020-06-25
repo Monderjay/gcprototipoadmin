@@ -10,7 +10,7 @@
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
                 <!-- Content -->
-                <h6 class="text-uppercase font-weight-bold"><img class="img-fluid" src="img/LogoClaro.webp" width="160" alt=""></h6>
+                <h6 class="text-uppercase font-weight-bold"><img class="img-fluid lazyload" data-src="img/LogoClaroSmall.webp" width="160" alt=""></h6>
 
             </div>
             <!-- Grid column -->

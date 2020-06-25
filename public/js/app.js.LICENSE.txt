@@ -29,6 +29,8 @@
  * Date: 2019-05-01T21:04Z
  */
 
+/*!jQuery Knob*/
+
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.
  * @version 1.16.1

@@ -67,7 +67,7 @@
         <header>
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark menu-container" id="menu" style="background-color: rgba(0, 0, 0, 0.7); z-index: 9999">
                 <a class="navbar-brand" href="{{url('/')}}">
-                    <img id="logo" src="{{asset('img/corewhite.webp')}}" height="40" alt="GameCore">
+                    <img id="logo" src="{{asset('img/corewhite.png')}}" height="40" alt="GameCore">
                     <b>GameCore</b>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -132,11 +132,8 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="{{ mix('js/app.js') }}" defer></script>
-<script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}"defer></script>
-<script type="text/javascript" src="{{ asset('js/Knob/config.js')}}" defer></script>
 <script type="text/javascript" src="https://www.powr.io/powr.js?platform=jquery" defer></script>
 <script type="text/javascript" src="{{asset('js/lazysizes/lazysizes.min.js')}}" defer></script>
-
 
 
 <!-- Google-->
