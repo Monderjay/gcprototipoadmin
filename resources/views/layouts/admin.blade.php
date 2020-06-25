@@ -22,7 +22,7 @@
 
 
     <!-- Styles -->
-    <link href="{{ asset('vendors/fontawesome/css/all.css') }}" rel="stylesheet">
+
     <link href="{{ asset('css/prueba.css') }}" rel="stylesheet">
 
 
@@ -215,8 +215,6 @@
 <script src="{{asset('material-kit/js/material-kit.js')}}?v=2.0.7" type="text/javascript"></script>
 
 
-<script type="text/javascript" src="{{asset('js/Knob/js/jquery.knob.js')}}" ></script>
-<script type="text/javascript" src="{{ asset('js/Knob/config.js')}}"></script>
 
 
 </body>
