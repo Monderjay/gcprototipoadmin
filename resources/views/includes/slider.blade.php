@@ -21,8 +21,8 @@
             <div class="carousel-item {{$active}}">
                 <a href="{{url($item->slug)}}">
                     <div class="zoom">
-                        <img src="{{$item->news_image_featured}}"
-                             alt="{{$item->title}}" style="width: 100%; display: block">
+                        <img Loading="lazy" src="{{$item->news_image_featured}}"
+                             alt="{{$item->title}}" class="" style="width: 100%; display: block">
                     </div>
                     <div class="carousel-caption pb-5">
                         <h3 class="h3-responsive">{{$item->title}}</h3>

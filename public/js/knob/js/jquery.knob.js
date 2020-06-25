@@ -1,171 +1,3 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
-require('./bootstrap');
-
-//window.Vue = require('vue');
-
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
-
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-
-//Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-/*const app = new Vue({
-    el: '#app',
-});*/
-
-
-//Menu
-
-$(function () {
-    menuResize();
-});
-
-$(window).resize(function () {
-    menuResize();
-});
-
-function menuResize(){
-    var width = $(window).width();
-    if (width >= 1200) {
-        //scrollXl();
-        $("#menu").css('background','rgba(0, 0, 0, 0.7)');
-
-    } else if(width < 1200){
-
-        $("#menu").css('background','#000000');
-        //scrollSm();
-    }
-}
-
-
-//------------------Menu Scroll--------------------------------
-$(window).scroll(function() {
-    var width = $(window).width();
-    if (width >= 1200){
-        if ($("#menu").offset().top > 70) {
-            $("#menu").css('background','rgba(0, 0, 0, 0.9)');
-            $("#menu").animate({
-                paddingTop: "5px",
-                paddingBottom: "5px",
-            },{
-                queue: false,
-            });
-        } else {
-            $("#menu").css('background','rgba(0, 0, 0, 0.7)');
-            $("#menu").animate({
-                paddingTop: "12px",
-                paddingBottom: "12px",
-            },{
-                queue: false,
-            });
-
-        }
-    }else if (width < 1200){
-        if ($("#menu").offset().top > 70) {
-
-
-            $("#menu").animate({
-                paddingTop: "5px",
-                paddingBottom: "5px",
-
-            },{
-                queue: false,
-            });
-
-        }else {
-
-
-            $("#menu").animate({
-                paddingTop: "12px",
-                paddingBottom: "12px",
-            },{
-                queue: false,
-            });
-
-            $("#carousel1").animate({
-                marginTop: "74px",
-                float:"none"
-
-            },{
-                queue: false,
-            });
-
-            $(".cover-author-content").animate({
-                marginTop: "74px",
-                float:"none"
-            }, {
-                queue: false,
-            });
-        }
-    }
-
-});
-
-$(document).ready(function() {
-    $('.fb-share').click(function(e) {
-        e.preventDefault();
-        window.open($(this).attr('href'), 'fbShareWindow', 'height=450, width=550, top=' + ($(window).height() / 2 - 275) + ', left=' + ($(window).width() / 2 - 225) + ', toolbar=0, location=0, menubar=0, directories=0, scrollbars=0');
-        return false;
-    });
-});
-
-
-
-
-
-
-
-
-
-
-//---------------------Knob----------------------------------
-$(function() {
-    $(".dial").knob({
-        'min':0,
-        'max':100,
-        'width':43,
-        'height':43,
-        'readOnly':true,
-    });
-
-    var showCalification = $(".show-calification").val();
-    var color ="";
-    if (showCalification < 50 ){
-        color="#ed4757";
-    }else if (showCalification < 80){
-        color="#fdc51b";
-    }else{
-        color="#87ceeb";
-    }
-
-    $(".show-calification").knob({
-        'width':180,
-        'height':180,
-        'readOnly':true,
-        'fgColor':color
-    });
-});
-
-
-
 /*!jQuery Knob*/
 /**
  * Downward compatible, touchable dial
@@ -256,7 +88,7 @@ $(function() {
                 }
                 s._carve().init();
                 s._configure()
-                    ._draw();
+                 ._draw();
             };
 
             if (this.$.data('kontroled')) return;
@@ -272,10 +104,10 @@ $(function() {
 
                     // UI
                     cursor: this.$.data('cursor') === true && 30
-                        || this.$.data('cursor') || 0,
+                            || this.$.data('cursor') || 0,
                     thickness: this.$.data('thickness')
-                        && Math.max(Math.min(this.$.data('thickness'), 1), 0.01)
-                        || 0.35,
+                               && Math.max(Math.min(this.$.data('thickness'), 1), 0.01)
+                               || 0.35,
                     lineCap: this.$.data('linecap') || 'butt',
                     width: this.$.data('width') || 200,
                     height: this.$.data('height') || 200,
@@ -381,18 +213,18 @@ $(function() {
 
             // hdpi support
             this.scale = (window.devicePixelRatio || 1) / (
-                this.c.webkitBackingStorePixelRatio ||
-                this.c.mozBackingStorePixelRatio ||
-                this.c.msBackingStorePixelRatio ||
-                this.c.oBackingStorePixelRatio ||
-                this.c.backingStorePixelRatio || 1
-            );
+                            this.c.webkitBackingStorePixelRatio ||
+                            this.c.mozBackingStorePixelRatio ||
+                            this.c.msBackingStorePixelRatio ||
+                            this.c.oBackingStorePixelRatio ||
+                            this.c.backingStorePixelRatio || 1
+                         );
 
             // detects relative width / height
             this.relativeWidth =  this.o.width % 1 !== 0
-                && this.o.width.indexOf('%');
+                                  && this.o.width.indexOf('%');
             this.relativeHeight = this.o.height % 1 !== 0
-                && this.o.height.indexOf('%');
+                                  && this.o.height.indexOf('%');
             this.relative = this.relativeWidth || this.relativeHeight;
 
             // computes size and carves the component
@@ -429,9 +261,9 @@ $(function() {
         this._carve = function() {
             if (this.relative) {
                 var w = this.relativeWidth ?
-                    this.$div.parent().width() *
-                    parseInt(this.o.width) / 100
-                    : this.$div.parent().width(),
+                        this.$div.parent().width() *
+                        parseInt(this.o.width) / 100
+                        : this.$div.parent().width(),
                     h = this.relativeHeight ?
                         this.$div.parent().height() *
                         parseInt(this.o.height) / 100
@@ -484,9 +316,9 @@ $(function() {
         this._touch = function (e) {
             var touchMove = function (e) {
                 var v = s.xy2val(
-                    e.originalEvent.touches[s.t].pageX,
-                    e.originalEvent.touches[s.t].pageY
-                );
+                            e.originalEvent.touches[s.t].pageX,
+                            e.originalEvent.touches[s.t].pageY
+                        );
 
                 if (v == s.cv) return;
 
@@ -705,9 +537,9 @@ $(function() {
             var a, ret;
 
             a = Math.atan2(
-                x - (this.x + this.w2),
-                - (y - this.y - this.w2)
-            ) - this.angleOffset;
+                        x - (this.x + this.w2),
+                        - (y - this.y - this.w2)
+                    ) - this.angleOffset;
 
             if (this.o.flip) {
                 a = this.angleArc - a - this.PI2;
@@ -742,9 +574,9 @@ $(function() {
                         v = s._validate(s.o.parse(s.$.val()))
                             + (
                                 deltaX > 0 || deltaY > 0
-                                    ? s.o.step
-                                    : deltaX < 0 || deltaY < 0 ? -s.o.step : 0
-                            );
+                                ? s.o.step
+                                : deltaX < 0 || deltaY < 0 ? -s.o.step : 0
+                              );
 
                     v = max(min(v, s.o.max), s.o.min);
 
@@ -873,24 +705,24 @@ $(function() {
             ) + 2;
 
             this.o.displayInput
-            && this.i.css({
-                'width' : ((this.w / 2 + 4) >> 0) + 'px',
-                'height' : ((this.w / 3) >> 0) + 'px',
-                'position' : 'absolute',
-                'vertical-align' : 'middle',
-                'margin-top' : ((this.w / 3) >> 0) + 'px',
-                'margin-left' : '-' + ((this.w * 3 / 4 + 2) >> 0) + 'px',
-                'border' : 0,
-                'background' : 'none',
-                'font' : this.o.fontWeight + ' ' + ((this.w / s) >> 0) + 'px ' + this.o.font,
-                'text-align' : 'center',
-                'color' : this.o.inputColor || this.o.fgColor,
-                'padding' : '0px',
-                '-webkit-appearance': 'none'
-            }) || this.i.css({
-                'width': '0px',
-                'visibility': 'hidden'
-            });
+                && this.i.css({
+                        'width' : ((this.w / 2 + 4) >> 0) + 'px',
+                        'height' : ((this.w / 3) >> 0) + 'px',
+                        'position' : 'absolute',
+                        'vertical-align' : 'middle',
+                        'margin-top' : ((this.w / 3) >> 0) + 'px',
+                        'margin-left' : '-' + ((this.w * 3 / 4 + 2) >> 0) + 'px',
+                        'border' : 0,
+                        'background' : 'none',
+                        'font' : this.o.fontWeight + ' ' + ((this.w / s) >> 0) + 'px ' + this.o.font,
+                        'text-align' : 'center',
+                        'color' : this.o.inputColor || this.o.fgColor,
+                        'padding' : '0px',
+                        '-webkit-appearance': 'none'
+                        }) || this.i.css({
+                            'width': '0px',
+                            'visibility': 'hidden'
+                        });
         };
 
         this.change = function (v) {
@@ -903,24 +735,24 @@ $(function() {
         };
 
         this.arc = function (v) {
-            var sa, ea;
-            v = this.angle(v);
-            if (this.o.flip) {
-                sa = this.endAngle + 0.00001;
-                ea = sa - v - 0.00001;
-            } else {
-                sa = this.startAngle - 0.00001;
-                ea = sa + v + 0.00001;
-            }
-            this.o.cursor
-            && (sa = ea - this.cursorExt)
-            && (ea = ea + this.cursorExt);
+          var sa, ea;
+          v = this.angle(v);
+          if (this.o.flip) {
+              sa = this.endAngle + 0.00001;
+              ea = sa - v - 0.00001;
+          } else {
+              sa = this.startAngle - 0.00001;
+              ea = sa + v + 0.00001;
+          }
+          this.o.cursor
+              && (sa = ea - this.cursorExt)
+              && (ea = ea + this.cursorExt);
 
-            return {
-                s: sa,
-                e: ea,
-                d: this.o.flip && !this.o.cursor
-            };
+          return {
+              s: sa,
+              e: ea,
+              d: this.o.flip && !this.o.cursor
+          };
         };
 
         this.draw = function () {
@@ -934,8 +766,8 @@ $(function() {
 
             if (this.o.bgColor !== "none") {
                 c.beginPath();
-                c.strokeStyle = this.o.bgColor;
-                c.arc(this.xy, this.xy, this.radius, this.endAngle - 0.00001, this.startAngle + 0.00001, true);
+                    c.strokeStyle = this.o.bgColor;
+                    c.arc(this.xy, this.xy, this.radius, this.endAngle - 0.00001, this.startAngle + 0.00001, true);
                 c.stroke();
             }
 
@@ -971,6 +803,3 @@ $(function() {
     };
 
 }));
-
-
-

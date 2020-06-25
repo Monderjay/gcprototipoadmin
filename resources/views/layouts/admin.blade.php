@@ -26,7 +26,7 @@
     <link href="{{ asset('css/prueba.css') }}" rel="stylesheet">
 
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
     <!--Material Kit by Creative Tim-->
 
