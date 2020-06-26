@@ -43,7 +43,7 @@
                     </div>
 
                     <!-- In news 1 -->
-                    <ins class="adsbygoogle bg-warning"
+                    <ins class="adsbygoogle"
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="8648743762"></ins>
@@ -57,7 +57,7 @@
                     </div>
 
                     <!-- in news 2 -->
-                    <ins class="adsbygoogle bg-warning"
+                    <ins class="adsbygoogle"
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="6022580421"></ins>
@@ -71,7 +71,7 @@
                     </div>
 
                     <!-- in news 3 -->
-                    <ins class="adsbygoogle bg-warning"
+                    <ins class="adsbygoogle"
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="3396417081"></ins>
@@ -99,14 +99,14 @@
             </div>
 
 
-            <div class="col-12 col-xl-3 pl-0  pr-0 pt-0 pb-4 text-center">
+            <div class="col-12 col-xl-3 pl-0 pr-0 pt-0 pb-4 text-center">
 
                 <div class="pt-4 px-3 text-justify" style="font-size: 18px">
                     <p>{{$news->about}}</p>
                 </div>
 
                 <!-- in news aside 1 -->
-                <ins class="adsbygoogle bg-warning"
+                <ins class="adsbygoogle"
                      style="display:inline-block;width:310px;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="4872030724"></ins>
@@ -130,7 +130,7 @@
 
 
             <!-- in news aside 2 -->
-                <ins class="adsbygoogle mt-2 bg-warning"
+                <ins class="adsbygoogle"
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="4360894838"
