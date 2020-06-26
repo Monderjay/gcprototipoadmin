@@ -65,8 +65,19 @@
 
             </div>
 
-
+            <!--Aside-->
             <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4">
+
+                <!-- Aside 1 -->
+                <ins class="adsbygoogle"
+                     style="display:block"
+                     data-ad-client="ca-pub-5455720448748407"
+                     data-ad-slot="8509430972"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
+                <script defer>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
 
                 <div class="pt-4 pb-4 elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-signature"></i> Ultimas Reseñas</h4></div>
