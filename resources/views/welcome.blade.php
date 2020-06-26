@@ -23,7 +23,7 @@
                     @foreach($news as $i=>$item)
                         @if($i ==6)
                             <!-- news Ad 2 -->
-                                <ins class="adsbygoogle mt-0 mb-3"
+                                <ins class="adsbygoogle mt-0 mb-3 col-12 p-0"
                                      style="display:inline-block;width:100%;height:90px"
                                      data-ad-client="ca-pub-5455720448748407"
                                      data-ad-slot="2309446563"></ins>
