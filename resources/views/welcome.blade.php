@@ -70,7 +70,7 @@
 
                 <!-- Aside 1 -->
                 <ins class="adsbygoogle"
-                     style="display:inline-block;width:300px;height:250px"
+                     style="display:inline-block;width:288px;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="8509430972"></ins>
                 <script>
@@ -102,7 +102,7 @@
 
                 <!-- Aside 1 -->
                 <ins class="adsbygoogle"
-                     style="display:inline-block;width:300px;height:250px"
+                     style="display:inline-block;width:288px;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="8509430972"></ins>
                 <script>
@@ -110,7 +110,7 @@
                 </script>
 
 
-                <div class="mt-4 pt-4 pb-4 elegant-color">
+                <div class="mt-2 mb-2 pt-4 pb-4 elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-plus-square"></i> Más Contenido</h4></div>
                     <ul class="list-group list-group-flush aside-list">
                         @foreach($moreContent as $item)
@@ -124,14 +124,14 @@
 
                 <!-- Aside 1 -->
                 <ins class="adsbygoogle"
-                     style="display:inline-block;width:300px;height:250px"
+                     style="display:inline-block;width:288px;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="8509430972"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
 
-                <div class="mt-4 pt-4 pb-4 elegant-color">
+                <div class="mt-2 pt-4 pb-4 elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-rocket"></i> Retro</h4></div>
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($retroContent as $item)

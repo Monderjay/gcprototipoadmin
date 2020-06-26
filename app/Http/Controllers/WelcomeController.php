@@ -49,7 +49,7 @@ class WelcomeController extends Controller
                 $reviewSection->push($item);
             }
         }
-        $reviewSection= $reviewSection->forPage(0,6);
+        $reviewSection= $reviewSection->forPage(0,5);
 
 
         $retroContent = collect();
@@ -58,7 +58,7 @@ class WelcomeController extends Controller
                 $retroContent->push($item);
             }
         }
-        $retroContent = $retroContent->forPage(0,6);
+        $retroContent = $retroContent->forPage(0,5);
 
 
         $moreContent = collect();
@@ -69,7 +69,7 @@ class WelcomeController extends Controller
                 $moreContent->push($item);
             }
         }
-        $moreContent = $moreContent->forPage(0,6);
+        $moreContent = $moreContent->forPage(0,5);
 
 
         $featuredReviews=collect();
@@ -78,10 +78,10 @@ class WelcomeController extends Controller
                 $featuredReviews->push($item);
             }
         }
-        $featuredReviews= $featuredReviews->forPage(0,6);
+        $featuredReviews= $featuredReviews->forPage(0,5);
 
 
-        $news = News::with('user')->orderBy('id','desc')->paginate(9);
+        $news = News::with('user')->orderBy('id','desc')->paginate(12);
 
         return view('welcome')->with(compact('news','featuredNews','mobileSection','reviewSection','retroContent','moreContent'));
     }
