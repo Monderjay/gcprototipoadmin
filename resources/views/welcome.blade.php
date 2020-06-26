@@ -10,12 +10,10 @@
                 @include('includes.slider')
 
                 <!-- news Ad 1 -->
-                    <ins class="adsbygoogle bg-warning mt-2 mx-auto p-0"
-                         style="display:block"
+                    <ins class="adsbygoogle bg-warning"
+                         style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
-                         data-ad-slot="9897412100"
-                         data-ad-format="auto"
-                         data-full-width-responsive="true"></ins>
+                         data-ad-slot="9897412100"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
