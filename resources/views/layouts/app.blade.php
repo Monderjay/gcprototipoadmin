@@ -39,7 +39,7 @@
 
 <body class="p-0 m-auto">
 
-<script type="text/javascript" defer>
+{{--<script type="text/javascript" defer>
     window.fbAsyncInit = function() {
         FB.init({
             appId      : '278534710203686',
@@ -56,7 +56,7 @@
         js.src = "https://connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
-</script>
+</script>--}}
 
 <div id="app">
     <!-- Start your project here-->
