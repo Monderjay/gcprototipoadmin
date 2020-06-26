@@ -69,12 +69,11 @@
             <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4">
 
                 <!-- Aside 1 -->
+                <!-- Aside 1 -->
                 <ins class="adsbygoogle"
-                     style="display:block; height: 300px"
+                     style="display:inline-block;width:100%;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="8509430972"
-                     data-ad-format="auto"
-                     data-full-width-responsive="true"></ins>
+                     data-ad-slot="8509430972"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
