@@ -28,7 +28,6 @@ CKEDITOR.editorConfig = function( config ) {
         'Verdana/Verdana, Geneva, sans-serif;'
 
 
-
 };
 
 

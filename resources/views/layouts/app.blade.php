@@ -11,7 +11,7 @@
     <!-- General Tags -->
     <title>@yield('title',config('app.name'))</title>
     <meta name="tittle" content="GameCore | @yield('page-title')">
-    <meta name="description" content="@yield('page-description','Entérate de las más recientes novedades sobre el mundo de los Videojuegos con nuestras noticias, reseñas, podcast, unboxings, especiales y mucho más. ¡Solo en GameCore!')"/>
+    <meta name="description" content="@yield('page-description','Entérate de las más recientes novedades sobre el mundo de los Videojuegos con nuestras noticias, reseñas, podcast, especiales y mucho más. ¡Solo en GameCore!')"/>
     <meta name="author" content="@yield('page-author','Eduardo Chávez (pank9605)')" />
     <meta name="keywords" content="@yield('keywords','game, core, gamers, playstation, xbox, nintendo,pc, móvil, videojuegos, noticas, reseñas')"/>
     <meta name="copyright" content="GameCore"/>
@@ -20,13 +20,12 @@
     <link rel="shortcut icon" href="{{asset('img/coreblack.webp')}}">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{mix('css/app.css')}}">
+    <link rel="stylesheet" href="{{mix('css/app.css')}}" async>
     {{--<link rel="stylesheet" href="{{ asset('css/app-styles.css') }}">--}}
-    <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/mdb.min.css') }}" async>
 
     <!--Google -->
     <meta name="google-site-verification" content="ZPwFaoBJbJDZczfpo4Nlj52IXf40sJlsg3QSoyngE-A">
-
 
     <!-- Facebook API-->
     <meta property="og:title" content="@yield('page-title','GameCore')" />
@@ -35,7 +34,6 @@
     <meta property="og:url" content="@yield('url','https://www.gamecore.com.mx/')" />
     <meta property="fb:app_id" content="278534710203686" />
     <meta property="og:type" content="article" />
-
 
 </head>
 
