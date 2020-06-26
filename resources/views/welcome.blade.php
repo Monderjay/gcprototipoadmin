@@ -68,6 +68,7 @@
             <!--Aside-->
             <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4">
 
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
                 <!-- Aside 1 -->
                 <ins class="adsbygoogle"
                      style="display:block"
@@ -75,7 +76,7 @@
                      data-ad-slot="8509430972"
                      data-ad-format="auto"
                      data-full-width-responsive="true"></ins>
-                <script defer>
+                <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
 
