@@ -10,7 +10,7 @@
                 @include('includes.slider')
 
                 <!-- news Ad 1 -->
-                    <ins class="adsbygoogle bg-warning mt-3"
+                    <ins class="adsbygoogle mt-3"
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="9897412100"></ins>
@@ -23,7 +23,7 @@
                     @foreach($news as $i=>$item)
                         @if($i ==6)
                             <!-- news Ad 1 -->
-                                <ins class="adsbygoogle bg-warning mt-0 mb-3"
+                                <ins class="adsbygoogle mt-0 mb-3"
                                      style="display:inline-block;width:100%;height:90px"
                                      data-ad-client="ca-pub-5455720448748407"
                                      data-ad-slot="9897412100"></ins>
@@ -82,7 +82,7 @@
                     @endforeach
 
                     <!-- news Ad 1 -->
-                        <ins class="adsbygoogle bg-warning mt-0 mb-3"
+                        <ins class="adsbygoogle mt-0 mb-3"
                              style="display:inline-block;width:100%;height:90px"
                              data-ad-client="ca-pub-5455720448748407"
                              data-ad-slot="9897412100"></ins>
@@ -171,6 +171,15 @@
                         @endforeach
                     </ul>
                 </div>
+
+                <!-- Aside 1 -->
+                <ins class="adsbygoogle mt-2"
+                     style="display:inline-block;width:292px;height:250px"
+                     data-ad-client="ca-pub-5455720448748407"
+                     data-ad-slot="8509430972"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
 
             </div>
 
