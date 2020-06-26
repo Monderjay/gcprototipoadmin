@@ -173,10 +173,12 @@
                 </div>
 
                 <!-- Aside 4 -->
-                <ins class="adsbygoogle mt-2"
-                     style="display:inline-block;width:292px;height:250px"
+                <ins class="adsbygoogle"
+                     style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="7004777612"></ins>
+                     data-ad-slot="7004777612"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
