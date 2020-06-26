@@ -129,11 +129,11 @@
                 @endif
 
 
-            <!-- in news aside 2 -->
+            <!-- baner aside large -->
                 <ins class="adsbygoogle mt-2"
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="4360894838"
+                     data-ad-slot="3643829092"
                      data-ad-format="auto"
                      data-full-width-responsive="true"></ins>
                 <script>

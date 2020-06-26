@@ -173,7 +173,7 @@
                 </div>
 
                 <!-- Aside 4 -->
-                <ins class="adsbygoogle"
+                <ins class="adsbygoogle mt-2"
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="7004777612"
