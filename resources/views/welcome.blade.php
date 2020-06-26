@@ -14,7 +14,7 @@
                     @foreach($news as $item)
                         <div class="col-12 col-xl-4 pl-0 pr-0 pl-xl-2 pr-xl-2 mb-4">
                             <!-- Card Light -->
-                            <div class="card" style="height: 520px;">
+                            <div class="card" style="min-height: 520px; max-height: 520px">
                                 <!-- Card image -->
                                 <div class="view overlay view zoom">
                                     <img src="{{$item->news_image_featured_medium}}" srcset="{{$item->news_image_featured_small}} 400w,{{$item->news_image_featured_medium}} 1280w" sizes="50vw" alt="{{$item->title}}" class="w-100" Loading="lazy"/>
