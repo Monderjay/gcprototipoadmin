@@ -152,7 +152,7 @@ class WelcomeController extends Controller
                 }
             }
 
-            $related = $related->unique()->forPage(0,10);
+            $related = $related->unique()->forPage(0,6);
 
 
             return view('general.news')->with(compact('news', 'related')); //Vista de cada noticia
