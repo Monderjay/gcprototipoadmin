@@ -118,7 +118,7 @@
         <!--Main Navigation-->
 
         <!--Main Layout-->
-        <main>
+        <main style="overflow-x:hidden;">
 
             @yield('content')
 

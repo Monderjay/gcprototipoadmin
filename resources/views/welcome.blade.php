@@ -5,12 +5,12 @@
     <!--section-->
     <div class="container col-11" style="margin-top: 90px">
         <div class="row">
-            <div class="col-12 col-xl-9 p-0 justify-content-center">
+            <div class="col-12 col-xl-9 p-0 text-center">
 
                 @include('includes.slider')
 
                 <!-- news Ad 1 -->
-                    <ins class="adsbygoogle bg-warning"
+                    <ins class="adsbygoogle bg-warning mt-3"
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="9897412100"></ins>
@@ -20,7 +20,17 @@
 
                 <div class="col-12 row p-0 ml-auto mr-auto mt-0 mt-md-0  mb-4">
 
-                    @foreach($news as $item)
+                    @foreach($news as $i=>$item)
+                        @if($i ==6)
+                            <!-- news Ad 1 -->
+                                <ins class="adsbygoogle bg-warning mt-0 mb-3"
+                                     style="display:inline-block;width:100%;height:90px"
+                                     data-ad-client="ca-pub-5455720448748407"
+                                     data-ad-slot="9897412100"></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                        @endif
                         <div class="col-12 col-xl-4 pl-0 pr-0 pl-xl-2 pr-xl-2 mb-4">
                             <!-- Card Light -->
                             <div class="card" style="min-height: 520px; max-height: 520px">
@@ -70,6 +80,16 @@
                             <!-- Card Light -->
                         </div>
                     @endforeach
+
+                    <!-- news Ad 1 -->
+                        <ins class="adsbygoogle bg-warning mt-0 mb-3"
+                             style="display:inline-block;width:100%;height:90px"
+                             data-ad-client="ca-pub-5455720448748407"
+                             data-ad-slot="9897412100"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+
                 </div>
 
             </div>
