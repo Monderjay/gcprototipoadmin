@@ -161,7 +161,7 @@ class WelcomeController extends Controller
             $newsCategory = News::with('category')
                 ->whereHas('category', function ($query) use ($arg) {
                     $query->where('categories.name', '=', $arg);
-                })->orderBy('created_at', 'desc')->paginate(9);
+                })->orderBy('created_at', 'desc')->paginate(12);
 
 
             $news = $newsCategory;
