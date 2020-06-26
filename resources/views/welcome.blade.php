@@ -9,6 +9,17 @@
 
                 @include('includes.slider')
 
+                <!-- news Ad 1 -->
+                    <ins class="adsbygoogle bg-warning mt-2"
+                         style="display:block"
+                         data-ad-client="ca-pub-5455720448748407"
+                         data-ad-slot="9897412100"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+
                 <div class="col-12 row p-0 ml-auto mr-auto mt-0 mt-md-0  mb-4">
 
                     @foreach($news as $item)
@@ -66,7 +77,7 @@
             </div>
 
             <!--Aside-->
-            <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4">
+            <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4 text-center">
 
                 <!-- Aside 1 -->
                 <ins class="adsbygoogle bg-danger"
@@ -77,7 +88,7 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
 
-                <div class="mt-1 mb-2 elegant-color">
+                <div class="mt-1 mb-2 pt-4 mx-auto elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-signature"></i> Ultimas Reseñas</h4></div>
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($reviewSection as $item)
@@ -123,7 +134,7 @@
                 </div>
 
                 <!-- Aside 1 -->
-                <ins class="adsbygoogle bg-danger"
+                <ins class="adsbygoogle"
                      style="display:inline-block;width:292px;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="8509430972"></ins>
@@ -155,7 +166,7 @@
             $news->setPath('');
             ?>
             <nav aria-label="Page navigation example" class="m-auto col-md-auto">
-                <ul class="pagination pg-dark">
+                <ul class="pagination pg-dark justify-content-center">
                     <!-- Botón para navegar a la primera página -->
                     <li class="page-item @if($currentPage==$firstPage){{'disabled'}}@endif">
                         <a href="@if($currentPage>1){{$news->url($firstPage)}}@else{{'#'}}@endif" class='page-link'><i class="fas fa-angle-double-left"></i></a>
