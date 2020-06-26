@@ -5,12 +5,12 @@
     <!--section-->
     <div class="container col-11" style="margin-top: 90px">
         <div class="row">
-            <div class="col-12 col-xl-9 p-0">
+            <div class="col-12 col-xl-9 p-0 justify-content-center">
 
                 @include('includes.slider')
 
                 <!-- news Ad 1 -->
-                    <ins class="adsbygoogle bg-warning mt-2"
+                    <ins class="adsbygoogle bg-warning mt-2 mx-auto p-0"
                          style="display:block"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="9897412100"
@@ -80,7 +80,7 @@
             <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4 text-center">
 
                 <!-- Aside 1 -->
-                <ins class="adsbygoogle bg-danger"
+                <ins class="adsbygoogle"
                      style="display:inline-block;width:292px;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="8509430972"></ins>
@@ -112,7 +112,7 @@
                 </div>
 
                 <!-- Aside 1 -->
-                <ins class="adsbygoogle bg-danger"
+                <ins class="adsbygoogle"
                      style="display:inline-block;width:292px;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="8509430972"></ins>
