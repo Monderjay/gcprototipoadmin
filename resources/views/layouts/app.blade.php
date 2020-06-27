@@ -16,6 +16,19 @@
     <meta name="keywords" content="@yield('keywords','game, core, gamers, playstation, xbox, nintendo,pc, móvil, videojuegos, noticas, reseñas')"/>
     <meta name="copyright" content="GameCore"/>
 
+
+    <!-- Google Analytics -->
+    <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-148884127-1', 'auto');
+        ga('send', {
+            'hitType': 'pageview',
+            'page': '/'
+        });
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+
     <!-- Icono -->
     <link rel="shortcut icon" href="{{asset('img/coreblack.webp')}}">
 
