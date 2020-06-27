@@ -18,7 +18,7 @@
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
 
-                <div class="col-12 row p-0 ml-auto mr-auto mt-0 mt-md-0  mb-4">
+                <div class="col-12 row p-0 ml-auto mr-auto mt-0 mt-md-0  mb-0">
 
                     @foreach($news as $i=>$item)
                         @if($i ==6)
@@ -81,16 +81,16 @@
                         </div>
                     @endforeach
 
-                        <!-- news Ad 3 -->
-                        <ins class="adsbygoogle"
-                             style="display:inline-block;width:100%;height:90px"
-                             data-ad-client="ca-pub-5455720448748407"
-                             data-ad-slot="4220938819"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-
                 </div>
+
+                    <!-- news Ad 3 -->
+                    <ins class="adsbygoogle bg-warning"
+                         style="display:inline-block;width:100%;height:90px"
+                         data-ad-client="ca-pub-5455720448748407"
+                         data-ad-slot="4220938819"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
 
             </div>
 
@@ -98,15 +98,18 @@
             <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4 text-center">
 
                 <!-- Aside 1 -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:292px;height:250px"
+                <!-- Aside 3 -->
+                <ins class="adsbygoogle bg-warning"
+                     style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="8509430972"></ins>
+                     data-ad-slot="3449989060"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
 
-                <div class="mt-1 mb-2 pt-4 mx-auto elegant-color">
+                <div class="mt-2 mb-2 pt-4 mx-auto elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-signature"></i> Ultimas Reseñas</h4></div>
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($reviewSection as $item)
@@ -129,17 +132,19 @@
                     </ul>
                 </div>
 
-                <!-- Aside 2 -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:292px;height:250px"
+                <!-- Aside 3 -->
+                <ins class="adsbygoogle bg-warning"
+                     style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="4505030376"></ins>
+                     data-ad-slot="3449989060"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
 
 
-                <div class="mt-0 mb-2 pt-4 pb-4 elegant-color">
+                <div class="mt-2 mb-2 pt-4 pb-4 elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-plus-square"></i> Más Contenido</h4></div>
                     <ul class="list-group list-group-flush aside-list">
                         @foreach($moreContent as $item)
@@ -152,15 +157,17 @@
                 </div>
 
                 <!-- Aside 3 -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:292px;height:250px"
+                <ins class="adsbygoogle bg-warning"
+                     style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="3449989060"></ins>
+                     data-ad-slot="3449989060"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
 
-                <div class="mt-0 pt-4 pb-4 elegant-color">
+                <div class="mt-2 pt-4 pb-4 elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-rocket"></i> Retro</h4></div>
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
                         @foreach($retroContent as $item)
@@ -173,7 +180,7 @@
                 </div>
 
                 <!-- Aside 4 -->
-                <ins class="adsbygoogle mt-2"
+                <ins class="adsbygoogle mt-2 bg-warning"
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="7004777612"
@@ -194,7 +201,7 @@
             $forwardPage = $currentPage-1; //Página anterior
             $news->setPath('');
             ?>
-            <nav aria-label="Page navigation example" class="m-auto col-md-auto">
+            <nav aria-label="Page navigation example" class="mx-auto col-md-auto mt-4">
                 <ul class="pagination pg-dark justify-content-center">
                     <!-- Botón para navegar a la primera página -->
                     <li class="page-item @if($currentPage==$firstPage){{'disabled'}}@endif">
