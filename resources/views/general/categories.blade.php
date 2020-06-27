@@ -111,6 +111,7 @@
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
 
+
                 <div class="pt-4 pb-4 elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-fist-raised"></i> No seas Fanboy</h4></div>
                     <ul class="list-group list-group-flush aside-list">
