@@ -8,7 +8,7 @@
     <!--section-->
     <div class="container col-11" style="margin-top: 90px">
         <div class="row">
-            <div class="col-12 col-xl-9 p-0">
+            <div class="col-12 col-xl-9 p-0 text-center">
 
                 @include('includes.slider')
 
@@ -21,12 +21,12 @@
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
 
-                <div class="col-12 row p-0 ml-auto mr-auto mt-1 mt-md-4 mb-4">
+                <div class="col-12 row p-0 ml-auto mr-auto mt-1 mt-md-4 mb-0">
 
                     @foreach($news as $i=>$item)
                         @if($i ==6)
                             <!-- news Ad 2 -->
-                                <ins class="adsbygoogle mt-0 mb-3 col-12 p-0"
+                                <ins class="adsbygoogle col-12 mt-0 mb-3 p-0 mx-auto text-center"
                                      style="display:inline-block;width:100%;height:90px"
                                      data-ad-client="ca-pub-5455720448748407"
                                      data-ad-slot="2309446563"></ins>
@@ -85,15 +85,16 @@
                         </div>
                     @endforeach
 
-                        <ins class="adsbygoogle"
-                             style="display:inline-block;width:100%;height:90px"
-                             data-ad-client="ca-pub-5455720448748407"
-                             data-ad-slot="4220938819"></ins>
-                        <script>
-                            (adsbygoogle = window.adsbygoogle || []).push({});
-                        </script>
-
                 </div>
+
+                    <!-- news Ad 3 -->
+                    <ins class="adsbygoogle mx-auto"
+                         style="display:inline-block;width:100%;height:90px"
+                         data-ad-client="ca-pub-5455720448748407"
+                         data-ad-slot="4220938819"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
 
             </div>
 
