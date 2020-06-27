@@ -130,7 +130,7 @@
                     </div>
                 @endif
 
-            <!-- baner aside large -->
+            <!-- baner large -->
                 <ins class="adsbygoogle mt-2"
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"

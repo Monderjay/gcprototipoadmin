@@ -9,9 +9,9 @@
 
                 @include('includes.slider')
 
-                <!-- news Ad 1 -->
+                <!-- Simple Baner -->
                     <ins class="adsbygoogle mt-3"
-                         style="display:inline-block;width:100%;height:250px"
+                         style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="9897412100"></ins>
                     <script>
@@ -22,11 +22,11 @@
 
                     @foreach($news as $i=>$item)
                         @if($i ==6)
-                            <!-- news Ad 2 -->
-                                <ins class="adsbygoogle col-12 mt-0 mb-3 p-0 mx-auto text-center"
+                            <!-- Simple Baner -->
+                                <ins class="adsbygoogle mt-3"
                                      style="display:inline-block;width:100%;height:90px"
                                      data-ad-client="ca-pub-5455720448748407"
-                                     data-ad-slot="2309446563"></ins>
+                                     data-ad-slot="9897412100"></ins>
                                 <script>
                                     (adsbygoogle = window.adsbygoogle || []).push({});
                                 </script>
@@ -83,15 +83,14 @@
 
                 </div>
 
-                    <!-- news Ad 3 -->
-                    <ins class="adsbygoogle mx-auto"
+                    <!-- Simple Baner -->
+                    <ins class="adsbygoogle mt-3"
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
-                         data-ad-slot="4220938819"></ins>
+                         data-ad-slot="9897412100"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
-
             </div>
 
             <!--Aside-->
@@ -151,11 +150,13 @@
                     </ul>
                 </div>
 
-                <!-- Aside 3 -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:100%;height:250px"
+                <!-- baner large -->
+                <ins class="adsbygoogle mt-2"
+                     style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="3449989060"></ins>
+                     data-ad-slot="3643829092"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
