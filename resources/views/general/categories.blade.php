@@ -112,6 +112,16 @@
                 </script>
 
 
+                <ins class="adsbygoogle bg-warning"
+                     style="display:block"
+                     data-ad-format="fluid"
+                     data-ad-layout-key="-hn+e-x-3t+ad"
+                     data-ad-client="ca-pub-5455720448748407"
+                     data-ad-slot="9457061425"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+
                 <div class="pt-4 pb-4 elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-fist-raised"></i> No seas Fanboy</h4></div>
                     <ul class="list-group list-group-flush aside-list">

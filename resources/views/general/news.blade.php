@@ -44,7 +44,7 @@
 
                     <!-- In news 1 -->
                     <ins class="adsbygoogle"
-                         style="display:inline-block;width:100%;height:90px"
+                         style="display:inline-block;width:100%;height:150px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="8648743762"></ins>
                     <script>
@@ -99,17 +99,19 @@
             </div>
 
 
-            <div class="col-12 col-xl-3 pl-0 pr-0 pt-0 pb-4 text-center">
+            <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4 text-center">
 
                 <div class="pt-4 px-3 text-justify" style="font-size: 18px">
                     <p>{{$news->about}}</p>
                 </div>
 
-                <!-- in news aside 1 -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:310px;height:250px"
+                <!-- baner aside large -->
+                <ins class="adsbygoogle mt-2 mb-2"
+                     style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="4872030724"></ins>
+                     data-ad-slot="3643829092"
+                     data-ad-format="auto"
+                     data-full-width-responsive="true"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
@@ -127,7 +129,6 @@
                         </ul>
                     </div>
                 @endif
-
 
             <!-- baner aside large -->
                 <ins class="adsbygoogle mt-2"
