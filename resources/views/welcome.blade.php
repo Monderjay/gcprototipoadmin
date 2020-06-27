@@ -108,17 +108,16 @@
 
                 <div class="mt-1 mb-2 pt-4 mx-auto elegant-color">
                     <div class="title white-text text-center mb-3"><h4><i class="fas fa-signature"></i> Ultimas Reseñas</h4></div>
-
-                    <ins class="adsbygoogle"
-                         style="display:block"
-                         data-ad-format="fluid"
-                         data-ad-layout-key="-hn+e-x-3t+ad"
-                         data-ad-client="ca-pub-5455720448748407"
-                         data-ad-slot="9457061425"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
                     <ul class="list-group list-group-flush aside-list pr-3 pl-3">
+                        <ins class="adsbygoogle"
+                             style="display:block"
+                             data-ad-format="fluid"
+                             data-ad-layout-key="-hn+e-x-3t+ad"
+                             data-ad-client="ca-pub-5455720448748407"
+                             data-ad-slot="9457061425"></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
                         @foreach($reviewSection as $item)
                             <li class="list-group-item d-flex justify-content-between align-items-center elegant-color border-light">
                                 <div class="rounded-circle col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
