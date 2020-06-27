@@ -100,7 +100,7 @@
 
             <!--Aside-->
 
-            <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4">
+            <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4 text-center">
 
                 <!-- Aside 1 -->
                 <ins class="adsbygoogle"
