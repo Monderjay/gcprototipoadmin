@@ -57,7 +57,7 @@
                     </div>
 
                     <!-- Simple Baner -->
-                    <ins class="adsbygoogle mx-auto bg-warning"
+                    <ins class="adsbygoogle mx-auto "
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="9897412100"></ins>
@@ -71,7 +71,7 @@
                     </div>
 
                     <!-- Simple Baner -->
-                    <ins class="adsbygoogle mx-auto bg-warning"
+                    <ins class="adsbygoogle mx-auto "
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="9897412100"></ins>
@@ -106,7 +106,7 @@
                 </div>
 
                 <!-- Large Baner Aside -->
-                <ins class="adsbygoogle my-2 bg-warning"
+                <ins class="adsbygoogle my-2 "
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="3643829092"
@@ -131,7 +131,7 @@
                 @endif
 
             <!-- Large Baner Aside -->
-                <ins class="adsbygoogle mt-2 bg-warning"
+                <ins class="adsbygoogle mt-2 "
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="3643829092"
