@@ -12,8 +12,8 @@
 
                 @include('includes.slider')
 
-                <!-- news Ad 1 -->
-                    <ins class="adsbygoogle mt-3"
+                <!-- Simple Baner -->
+                    <ins class="adsbygoogle mt-3 mx-auto  "
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="9897412100"></ins>
@@ -21,15 +21,15 @@
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
 
-                <div class="col-12 row p-0 ml-auto mr-auto mt-1 mt-md-4 mb-0">
+                <div class="col-12 row p-0 ml-auto mr-auto mt-1 mb-0">
 
                     @foreach($news as $i=>$item)
                         @if($i ==6)
-                            <!-- news Ad 2 -->
-                                <ins class="adsbygoogle col-12 mt-0 mb-3 p-0 mx-auto text-center"
+                            <!-- Simple Baner -->
+                                <ins class="adsbygoogle col-12 mt-0 mb-3 p-0 mx-auto text-center "
                                      style="display:inline-block;width:100%;height:90px"
                                      data-ad-client="ca-pub-5455720448748407"
-                                     data-ad-slot="2309446563"></ins>
+                                     data-ad-slot="9897412100"></ins>
                                 <script>
                                     (adsbygoogle = window.adsbygoogle || []).push({});
                                 </script>
@@ -87,11 +87,11 @@
 
                 </div>
 
-                    <!-- news Ad 3 -->
-                    <ins class="adsbygoogle mx-auto"
+                    <!-- Simple Baner -->
+                    <ins class="adsbygoogle mt-0 mx-auto"
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
-                         data-ad-slot="4220938819"></ins>
+                         data-ad-slot="9897412100"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
@@ -102,22 +102,11 @@
 
             <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4 text-center">
 
-                <!-- Aside 1 -->
-                <ins class="adsbygoogle"
-                     style="display:inline-block;width:292px;height:250px"
+                <!-- Simple Banner Aside -->
+                <ins class="adsbygoogle "
+                     style="display:inline-block;width:100%;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="8509430972"></ins>
-                <script>
-                    (adsbygoogle = window.adsbygoogle || []).push({});
-                </script>
-
-
-                <ins class="adsbygoogle bg-warning"
-                     style="display:block"
-                     data-ad-format="fluid"
-                     data-ad-layout-key="-hn+e-x-3t+ad"
-                     data-ad-client="ca-pub-5455720448748407"
-                     data-ad-slot="9457061425"></ins>
                 <script>
                     (adsbygoogle = window.adsbygoogle || []).push({});
                 </script>
@@ -134,8 +123,8 @@
                     </ul>
                 </div>
 
-                <!-- baner aside large -->
-                <ins class="adsbygoogle mt-2"
+                <!-- Large Baner Aside -->
+                <ins class="adsbygoogle mt-2 "
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="3643829092"
