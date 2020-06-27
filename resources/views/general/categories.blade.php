@@ -145,7 +145,7 @@
             $forwardPage = $currentPage-1; //Página anterior
             $news->setPath('');
             ?>
-            <nav aria-label="Page navigation example" class="m-auto">
+            <nav aria-label="Page navigation example" class="mx-auto col-md-auto mt-4">
                 <ul class="pagination pg-dark">
                     <!-- Botón para navegar a la primera página -->
                     <li class="page-item @if($currentPage==$firstPage){{'disabled'}}@endif">

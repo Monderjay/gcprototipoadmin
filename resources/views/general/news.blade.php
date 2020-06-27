@@ -56,11 +56,11 @@
                         <hr class="hr-dark">
                     </div>
 
-                    <!-- in news 2 -->
-                    <ins class="adsbygoogle"
+                    <!-- Simple Baner -->
+                    <ins class="adsbygoogle mx-auto bg-warning"
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
-                         data-ad-slot="6022580421"></ins>
+                         data-ad-slot="9897412100"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
@@ -70,11 +70,11 @@
                         <hr class="hr-dark">
                     </div>
 
-                    <!-- in news 3 -->
-                    <ins class="adsbygoogle"
+                    <!-- Simple Baner -->
+                    <ins class="adsbygoogle mx-auto bg-warning"
                          style="display:inline-block;width:100%;height:90px"
                          data-ad-client="ca-pub-5455720448748407"
-                         data-ad-slot="3396417081"></ins>
+                         data-ad-slot="9897412100"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
@@ -101,12 +101,12 @@
 
             <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4 text-center">
 
-                <div class="pt-4 px-3 text-justify" style="font-size: 18px">
+                <div class="pt-4 text-justify" style="font-size: 18px">
                     <p>{{$news->about}}</p>
                 </div>
 
-                <!-- baner aside large -->
-                <ins class="adsbygoogle mt-2 mb-2"
+                <!-- Large Baner Aside -->
+                <ins class="adsbygoogle my-2 bg-warning"
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="3643829092"
@@ -130,8 +130,8 @@
                     </div>
                 @endif
 
-            <!-- baner large -->
-                <ins class="adsbygoogle mt-2"
+            <!-- Large Baner Aside -->
+                <ins class="adsbygoogle mt-2 bg-warning"
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="3643829092"
