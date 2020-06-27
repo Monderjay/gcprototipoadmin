@@ -19,7 +19,7 @@
 
                     <div class="mt-1">{{substr($news->date,0,10)}} Por: <a class="mr-1" href="{{url('/autor/'.$news->user->username)}}">{{$news->user->username}}</a></div>
 
-                    <div class="mt-3 col-12 p-0 row p-0 text-center text-sm-left">
+                    <div class="mt-3 col-12 p-0 row p-0 text-center text-sm-left m-auto">
 
 
                         <div class="col-12 col-sm p-2">
@@ -44,7 +44,7 @@
 
                     <!-- In news 1 -->
                     <ins class="adsbygoogle"
-                         style="display:inline-block;width:100%;height:150px"
+                         style="display:inline-block;width:100%;height:250px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="8648743762"></ins>
                     <script>
