@@ -99,7 +99,7 @@
 
                 <!-- Aside 1 -->
                 <ins class="adsbygoogle"
-                     style="display:inline-block;width:292px;height:250px"
+                     style="display:inline-block;width:100%;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="8509430972"></ins>
                 <script>
@@ -131,7 +131,7 @@
 
                 <!-- Aside 2 -->
                 <ins class="adsbygoogle"
-                     style="display:inline-block;width:292px;height:250px"
+                     style="display:inline-block;width:100%;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="4505030376"></ins>
                 <script>
@@ -153,7 +153,7 @@
 
                 <!-- Aside 3 -->
                 <ins class="adsbygoogle"
-                     style="display:inline-block;width:292px;height:250px"
+                     style="display:inline-block;width:100%;height:250px"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="3449989060"></ins>
                 <script>
