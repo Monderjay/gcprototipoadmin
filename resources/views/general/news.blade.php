@@ -93,7 +93,10 @@
                     </div>
 
                 </div>
-                <div class="fb-comments mb-3" data-href="{{url('https://www.gamecore.com.mx/'.$news->slug)}}" data-numposts="100" data-width="100%"></div>
+                <div class="col-12 p-0 mt-3">
+                    <div class="fb-comments mb-3" data-href="{{url('https://www.gamecore.com.mx/'.$news->slug)}}" data-numposts="100" data-width="100%" data-colorscheme="dark" data-mobile="true"></div>
+                </div>
+
             </div>
 
 
