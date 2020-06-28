@@ -39,11 +39,6 @@
 
 <body class="p-0 m-auto">
 
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KJW82NQ"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 {{--<script type="text/javascript" defer>
     window.fbAsyncInit = function() {
         FB.init({
@@ -62,6 +57,19 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>--}}
+
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId            : '278534710203686',
+            autoLogAppEvents : true,
+            xfbml            : true,
+            version          : 'v7.0'
+        });
+    };
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
 
 <div id="app">
     <!-- Start your project here-->
@@ -143,8 +151,7 @@
 <script data-ad-client="ca-pub-5455720448748407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script>
 
 <!-- Facebook -->
-<script crossorigin="anonymous" src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1" defer></script>
-<!-- Images End -->
+<script crossorigin="anonymous" async src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1"></script>
 
 </body>
 </html>

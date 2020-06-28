@@ -11,7 +11,7 @@
 
     <div class="container col-11 text-justif" style="margin-top: 90px; font-family: Helvetica">
         <div class="row">
-            <div class="col-12 col-xl-9 mr-0" style="font-size: 18px;">
+            <div class="col-12 col-xl-9 mr-0 mb-3" style="font-size: 18px;">
 
                 <div class="col-12 row p-0 ml-auto mr-auto mt-4 mb-0">
 
@@ -93,10 +93,7 @@
                     </div>
 
                 </div>
-                <div class="col-12 p-0 mt-3">
-                    <div class="fb-comments mb-3" data-href="{{url('https://www.gamecore.com.mx/'.$news->slug)}}" data-numposts="100" data-width="100%" data-colorscheme="dark" data-mobile="true"></div>
-                </div>
-
+                <div class="fb-comments" data-href="{{url('https://www.gamecore.com.mx/'.$news->slug)}}" data-numposts="100" data-width="100%" data-colorscheme="dark"></div>
             </div>
 
 
