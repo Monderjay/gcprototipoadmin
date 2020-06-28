@@ -135,7 +135,7 @@
 
 <!-- Scripts -->
 <script type="text/javascript" src="{{ mix('js/app.js') }}" defer></script>
-<script type="text/javascript" src="https://www.powr.io/powr.js?platform=jquery" defer></script>
+
 {{--<script type="text/javascript" src="{{asset('js/lazysizes/lazysizes.min.js')}}" defer></script>--}}
 
 

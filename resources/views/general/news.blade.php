@@ -9,9 +9,9 @@
 
 @section('content')
 
-    <div class="container col-11 text-justify" style="margin-top: 90px; font-family: Helvetica">
+    <div class="container col-11 text-justif" style="margin-top: 90px; font-family: Helvetica">
         <div class="row">
-            <div class="col-12 col-xl-8 p-0 mr-0 mr-xl-4" style="font-size: 18px;">
+            <div class="col-12 col-xl-9 mr-0" style="font-size: 18px;">
 
                 <div class="col-12 row p-0 ml-auto mr-auto mt-4 mb-0">
 
@@ -19,12 +19,11 @@
 
                     <div class="mt-1">{{substr($news->date,0,10)}} Por: <a class="mr-1" href="{{url('/autor/'.$news->user->username)}}">{{$news->user->username}}</a></div>
 
-                    <div class="mt-3 col-12 p-0 row p-0 text-center text-sm-left m-auto">
+                    <div class="mt-3 col-12 p-0 row text-center mt-3 text-sm-left mx-auto">
 
-
-                        <div class="col-12 col-sm p-2">
+                        <div class="col-12 col-sm py-2 px-0">
                             <!--Facebook-->
-                            <a href="{{url('https://www.facebook.com/sharer/sharer.php?u=https://www.gamecore.com.mx/'.$news->slug)}}" target="_blank" type="button" class="btn btn-fb fb-share elegant-color white-text m-auto"><i class="fab fa-facebook-f pr-1"></i> Facebook</a>
+                            <a href="{{url('https://www.facebook.com/sharer/sharer.php?u=https://www.gamecore.com.mx/'.$news->slug)}}" target="_blank" type="button" class="btn btn-fb fb-share elegant-color white-text m-auto"><i class="fab fa-facebook-f"></i> Facebook</a>
 
                             <!--Twitter-->
                             <a href="{{url('http://twitter.com/share?text=@GameCore Informa&url=https://www.gamecore.com.mx/'.$news->slug.'&hashtags=GameCore,videojuegos,noticias,consolas,entretenimiento')}}" target="_blank" type="button" class="btn btn-tw elegant-color white-text mx-auto my-3 my-xl-0 fb-share"><i class="fab fa-twitter pr-1"></i> Twitter</a>
@@ -32,18 +31,17 @@
 
                         <div class="col-auto text-right p-0 m-auto">
                             <div class="fb-like m-auto" data-href="{{url('https://www.gamecore.com.mx/'.$news->slug)}}" data-width="" data-layout="box_count" data-action="like" data-size="large" data-share="false"></div>
-
                         </div>
 
                     </div>
 
-                    <div class="col-12 p-0 mt-4">
+                    <div class="col-12 p-0 mt-3">
                         {{$news->introduction}}
                         <hr class="hr-dark">
                     </div>
 
                     <!-- In news 1 -->
-                    <ins class="adsbygoogle"
+                    <ins class="adsbygoogle m-auto"
                          style="display:inline-block;width:100%;height:250px"
                          data-ad-client="ca-pub-5455720448748407"
                          data-ad-slot="8648743762"></ins>
@@ -99,14 +97,14 @@
             </div>
 
 
-            <div class="col-12 col-xl-3 pl-0 pl-xl-3 pr-0 pt-0 mb-4 text-center">
+            <div class="col-12 col-xl-3 mb-4 text-center">
 
                 <div class="pt-4 text-justify" style="font-size: 18px">
                     <p>{{$news->about}}</p>
                 </div>
 
                 <!-- Large Baner Aside -->
-                <ins class="adsbygoogle my-2 "
+                <ins class="adsbygoogle my-2"
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="3643829092"
