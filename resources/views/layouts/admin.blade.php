@@ -16,6 +16,12 @@
     <script src="{{ asset('/js/Knob/configStaff.js') }}" defer></script>
     <script src="{{ asset('js/adminFunctions.js') }}" defer></script>
 
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.css"/>
+
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.21/datatables.min.js"></script>
+
+
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
@@ -46,6 +52,7 @@
 
 </head>
 <body class="profile-page sidebar-collapse">
+
 
 <div id="app">
     <div class="wrapper d-flex align-items-stretch">

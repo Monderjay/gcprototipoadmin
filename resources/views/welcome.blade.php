@@ -171,7 +171,7 @@
                 </div>
 
                 <!-- Large Baner Aside -->
-                <ins class="adsbygoogle mt-2 "
+                <ins class="adsbygoogle mt-2 bg-warning"
                      style="display:block"
                      data-ad-client="ca-pub-5455720448748407"
                      data-ad-slot="3643829092"

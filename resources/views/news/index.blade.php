@@ -4,6 +4,12 @@
 @endsection
 @section('content')
 
+    <script type="text/javascript">
+        $(document).ready( function () {
+            $('#news-table').DataTable();
+        } );
+    </script>
+
     <div class="col-md-12">
         <div class="card">
             <div class="card-header card-header-primary">
@@ -23,7 +29,7 @@
                         </div>
                 @endif
 
-                <table class="table text-center table-bordered table-responsive-md table-responsive-xl table-responsive-lg">
+                <table id="news-table" class="table text-center table-bordered table-responsive-md table-responsive-xl table-responsive-lg">
                     <thead>
                     <tr>
                         <th scope="col">#</th>

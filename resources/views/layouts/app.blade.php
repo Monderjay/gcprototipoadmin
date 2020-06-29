@@ -71,62 +71,63 @@
 <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 
-<div id="app">
+<div id="app" class="m-auto" style="max-width: 1366px;">
     <!-- Start your project here-->
-    <div style="height: 100vh">
+
         <!--Main Navigation-->
         <header>
-            <nav class="navbar fixed-top navbar-expand-lg navbar-dark menu-container" id="menu" style="background-color: rgba(0, 0, 0, 0.7); z-index: 9999">
-                <a class="navbar-brand" href="{{url('/')}}">
-                    <img id="logo" src="{{asset('img/corewhite.png')}}" height="40" alt="GameCore">
-                    <b>GameCore</b>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav m-xl-auto col-9 justify-content-xl-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{url('/')}}"><i class="fas fa-home"></i> INICIO <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="fas fa-list"></i> CATEGORIAS
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                @foreach($categories as $category)
-                                    <a class="dropdown-item" href="{{url($category->name)}}"><i class="{{$category->icon}}"></i>
-                                        {{$category->name}}</a>
-                                @endforeach
-                            </div>
-                        </li>
-                        @foreach($clasifications as $clasification)
+                <nav class="navbar m-auto fixed-top navbar-expand-lg navbar-dark menu-container" id="menu" style="background-color: rgba(0, 0, 0, 0.7); z-index: 9999; max-width: 1366px;">
+                    <a class="navbar-brand" href="{{url('/')}}">
+                        <img id="logo" src="{{asset('img/corewhite.png')}}" height="40" alt="GameCore">
+                        <b>GameCore</b>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav m-xl-auto col-9 justify-content-xl-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="{{url($clasification->name)}}"><i class="{{$clasification->icon}}"></i> {{$clasification->name}}</a>
+                                <a class="nav-link" href="{{url('/')}}"><i class="fas fa-home"></i> INICIO <span class="sr-only">(current)</span></a>
                             </li>
-                        @endforeach
-                    </ul>
-                    <ul class="navbar-nav nav-flex-icons mr-3">
-                        <li class="nav-item">
-                            <a href="https://www.facebook.com/GameCore.com.mx/" target="_blank" class="nav-link"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://twitter.com/GameCoreOficial" target="_blank" class="nav-link"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://www.instagram.com/GameCore.com.mx/" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-list"></i> CATEGORIAS
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    @foreach($categories as $category)
+                                        <a class="dropdown-item" href="{{url($category->name)}}"><i class="{{$category->icon}}"></i>
+                                            {{$category->name}}</a>
+                                    @endforeach
+                                </div>
+                            </li>
+                            @foreach($clasifications as $clasification)
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{url($clasification->name)}}"><i class="{{$clasification->icon}}"></i> {{$clasification->name}}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                        <ul class="navbar-nav nav-flex-icons mr-3">
+                            <li class="nav-item">
+                                <a href="https://www.facebook.com/GameCore.com.mx/" target="_blank" class="nav-link"><i class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://twitter.com/GameCoreOficial" target="_blank" class="nav-link"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://www.instagram.com/GameCore.com.mx/" target="_blank" class="nav-link"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
 
-                    <form method="POST" action="{{url('/Resultados')}}" class="form-inline">
-                        @csrf
-                        <div class="md-form my-0">
-                            <input class="form-control mr-sm-2" type="text" name="search" placeholder="Buscar..." aria-label="Search">
-                        </div>
-                    </form>
+                        <form method="POST" action="{{url('/Resultados')}}" class="form-inline">
+                            @csrf
+                            <div class="md-form my-0">
+                                <input class="form-control mr-sm-2" type="text" name="search" placeholder="Buscar..." aria-label="Search">
+                            </div>
+                        </form>
 
-                </div>
-            </nav>
+                    </div>
+                </nav>
+
         </header>
         <!--Main Navigation-->
 
@@ -138,7 +139,7 @@
         </main>
         <!--Main Layout-->
     </div>
-</div>
+
 
 
 <!-- Scripts -->
