@@ -71,7 +71,7 @@
 <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 
-<div id="app" class="m-auto" style="max-width: 13800px;">
+<div id="app" class="m-auto" style="max-width: 1380px;">
     <!-- Start your project here-->
 
         <!--Main Navigation-->
