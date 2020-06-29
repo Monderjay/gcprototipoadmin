@@ -140,6 +140,4 @@
                 </nav>
         </div>
 
-
-    @include('includes.footer')
 @endsection

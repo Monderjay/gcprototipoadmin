@@ -1,5 +1,5 @@
 <!-- Footer -->
-<footer class="page-footer font-small black pt-1">
+<footer class="page-footer font-small black pt-1" style="display: block; float: left; width: 100%">
     <!-- Footer Links -->
     <div class="container text-center text-md-left mt-5">
 

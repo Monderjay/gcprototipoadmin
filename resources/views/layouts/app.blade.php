@@ -71,12 +71,12 @@
 <script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 
-<div id="app" class="m-auto" style="max-width: 1366px;">
+<div id="app" class="m-auto" style="max-width: 13800px;">
     <!-- Start your project here-->
 
         <!--Main Navigation-->
         <header>
-                <nav class="navbar m-auto fixed-top navbar-expand-lg navbar-dark menu-container" id="menu" style="background-color: rgba(0, 0, 0, 0.7); z-index: 9999; max-width: 1366px;">
+                <nav class="navbar m-auto fixed-top navbar-expand-lg navbar-dark menu-container" id="menu" style="background-color: rgba(0, 0, 0, 0.7); z-index: 9999;">
                     <a class="navbar-brand" href="{{url('/')}}">
                         <img id="logo" src="{{asset('img/corewhite.png')}}" height="40" alt="GameCore">
                         <b>GameCore</b>
@@ -137,8 +137,11 @@
             @yield('content')
 
         </main>
+
         <!--Main Layout-->
     </div>
+
+@include('includes.footer')
 
 
 
