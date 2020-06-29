@@ -142,7 +142,7 @@ class NewsController extends Controller
 
     public function index()
     {
-        $news = News::with('user')->orderBy('id','desc')->paginate(10);
+        $news = News::with('user')->orderBy('id','desc')->paginate(40);
         $totalNews = News::with('user')->count();
         return view('news.index')->with(compact('news','totalNews'));
     }

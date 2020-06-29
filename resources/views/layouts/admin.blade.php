@@ -46,6 +46,7 @@
 </head>
 <body class="profile-page sidebar-collapse">
 
+
 <div id="app">
     <div class="wrapper d-flex align-items-stretch">
 

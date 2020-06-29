@@ -4,10 +4,17 @@
 @endsection
 @section('content')
 
-    <script type="text/javascript">
-        $(document).ready( function () {
-            $('#news-table').DataTable();
-        } );
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#myInput").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("#myTable tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
     </script>
 
     <div class="col-md-12">
@@ -30,6 +37,7 @@
                 @endif
 
                 <table id="news-table" class="table text-center table-bordered table-responsive-md table-responsive-xl table-responsive-lg">
+                    <input class="form-control col-5 my-3 mx-auto" id="myInput" type="text" placeholder="Buscar...">
                     <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -46,7 +54,7 @@
                         <th scope="col"><i class="fas fa-trash-alt"></i> <!--<img src="">--> Eliminar</th>
                     </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="myTable">
                     @foreach($news as $note)
                         <tr>
                             <th>{{$note->id}}</th>
