@@ -100,7 +100,7 @@
             <div class="col-12 col-xl-3 mb-4 text-center">
 
                 <div class="pt-4 text-justify" style="font-size: 18px">
-                    <p>{{$news->about}}</p>
+                    <strong><p>{{$news->about}}</p></strong>
                 </div>
 
                 <!-- Large Baner Aside -->
