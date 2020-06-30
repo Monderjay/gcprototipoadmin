@@ -9,7 +9,7 @@
 
 @section('content')
 
-    <div class="container col-11 text-justif" style="margin-top: 90px; font-family: Helvetica">
+    <div class="container col-11 text-justify" style="margin-top: 90px; font-family: Helvetica">
         <div class="row">
             <div class="col-12 col-xl-9 mr-0 mb-3" style="font-size: 18px;">
 
