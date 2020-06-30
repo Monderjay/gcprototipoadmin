@@ -35,6 +35,11 @@
     <meta property="fb:app_id" content="278534710203686" />
     <meta property="og:type" content="article" />
 
+
+    <!-- Google-->
+    <script data-ad-client="ca-pub-5455720448748407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
 </head>
 
 <body class="p-0 m-auto">
@@ -151,8 +156,7 @@
 {{--<script type="text/javascript" src="{{asset('js/lazysizes/lazysizes.min.js')}}" defer></script>--}}
 
 
-<!-- Google-->
-<script data-ad-client="ca-pub-5455720448748407" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script>
+
 
 <!-- Facebook -->
 <script crossorigin="anonymous" async src="https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v7.0&appId=260127125344466&autoLogAppEvents=1"></script>
