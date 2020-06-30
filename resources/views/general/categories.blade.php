@@ -34,7 +34,7 @@
                                     (adsbygoogle = window.adsbygoogle || []).push({});
                                 </script>
                             @endif
-                        <div class="col-12 col-xl-4 pl-0 pr-0 pl-xl-2 pr-xl-2 mb-4">
+                            <div class="col-12 col-md-4 pl-0 pr-0 pl-md-2 pr-md-2 mb-4">
                             <!-- Card Light -->
                             <div class="card" style="min-height: 520px">
                                 <!-- Card image -->
@@ -65,11 +65,11 @@
                                     <div class="row col-11 p-0 ml-auto mr-auto mb-2 position-absolute" style="bottom: 12px">
                                         <div class="col-auto text-left justify-content-start p-0">
                                             <!--Facebook-->
-                                            <a href="{{url('https://www.facebook.com/sharer/sharer.php?u=https://www.gamecore.com.mx/'.$item->slug)}}" target="_blank" type="button" class="btn btn-fb py-2 px-3 m-0 fb-share" style="background: #3b5998;"><i class="fab fa-facebook-f"></i></a>
+                                            <a href="{{url('https://www.facebook.com/sharer/sharer.php?u=https://www.gamecore.com.mx/'.$item->slug)}}" target="_blank" type="button" class="btn btn-fb py-lg-2 px-lg-3 py-1 px-2 m-0 fb-share" style="background: #3b5998;"><i class="fab fa-facebook-f"></i></a>
                                         </div>
                                         <div class="col-auto p-0">
                                             <!--Twitter-->
-                                            <a href="{{url('http://twitter.com/share?text=@GameCore Informa&url=https://www.gamecore.com.mx/'.$item->slug.'&hashtags=GameCore')}}" target="_blank" type="button" class="btn btn-tw py-2 px-3 my-0 mx-1 fb-share" style="background: #55acee;"><i class="fab fa-twitter"></i></a>
+                                            <a href="{{url('http://twitter.com/share?text=@GameCore Informa&url=https://www.gamecore.com.mx/'.$item->slug.'&hashtags=GameCore')}}" target="_blank" type="button" class="btn btn-tw py-lg-2 px-lg-3 py-1 px-2 my-0 mx-1 fb-share" style="background: #55acee;"><i class="fab fa-twitter"></i></a>
                                         </div>
                                         <div class="col-auto my-auto mr-0 ml-auto text-right">
                                             <a href="{{$item->slug}}" class="white-text d-flex justify-content-end links">
