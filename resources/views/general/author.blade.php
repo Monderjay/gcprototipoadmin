@@ -41,9 +41,9 @@
                                             <div class="rounded-circle col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                             <div class="mr-2 ml-2 text-left">
                                                 <div class="links-author">
-                                                    <a href="{{$item->slug}}" class="links-author"><div style="font-size: 15px; font-weight: bold">{{$item->title}}</div></a>
+                                                    <a href="{{url($item->slug)}}" class="links-author"><div style="font-size: 15px; font-weight: bold">{{$item->title}}</div></a>
                                                     <a href="{{url($item->category->name)}}">{{$item->category->name}}</a> /
-                                                    <a href="{{url($item->clasification->name)}}"><small>{{$item->clasification->name}}</small></a><br>
+                                                    <a href="{{url($item->clasification->name)}}">{{$item->clasification->name}}</a><br>
                                                 </div>
                                                 <small>{{$item->date}}</small>
                                             </div>
@@ -73,9 +73,9 @@
                                             <div class="rounded-circle col-auto image-list" style="background-image: url('{{$item->news_image_featured_small}}');"></div>
                                             <div class="mr-2 ml-2 text-left">
                                                 <div class="links-author">
-                                                    <a href="{{$item->slug}}" class="links-author"><div style="font-size: 15px; font-weight: bold">{{$item->title}}</div></a>
+                                                    <a href="{{url($item->slug)}}" class="links-author"><div style="font-size: 15px; font-weight: bold">{{$item->title}}</div></a>
                                                     <a href="{{url($item->category->name)}}">{{$item->category->name}}</a> /
-                                                    <a href="{{url($item->clasification->name)}}"><small>{{$item->clasification->name}}</small></a><br>
+                                                    <a href="{{url($item->clasification->name)}}">{{$item->clasification->name}}    </a><br>
                                                 </div>
                                                 <small>{{$item->date}}</small>
                                             </div>

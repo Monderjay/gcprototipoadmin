@@ -10,7 +10,7 @@
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 
                 <!-- Content -->
-                <h6 class="text-uppercase font-weight-bold"><img class="img-fluid" src="img/LogoClaroSmall.webp" width="160" alt="GameCore" Loading="lazy"></h6>
+                <h6 class="text-uppercase font-weight-bold"><img class="img-fluid" src="{{asset('img/LogoClaroSmall.png')}}" width="160" alt="GameCore" Loading="lazy"></h6>
 
             </div>
             <!-- Grid column -->
