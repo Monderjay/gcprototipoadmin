@@ -48,7 +48,7 @@
                                     <!-- Title -->
                                     <h4 class="card-title text-center">{{$item->news_title}}</h4>
                                     <div class="row">
-                                        <div class="col-6">
+                                        <div class="col-6 text-left">
                                             <a href="{{url('/autor/'.$item->user->username)}}" class="white-text links"><small><i class="fas fa-user-tie"></i>&nbsp; {{$item->user->username}}</small></a>
                                         </div>
                                         <div class="col-6 text-right">

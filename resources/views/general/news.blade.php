@@ -54,15 +54,6 @@
                         <hr class="hr-dark">
                     </div>
 
-                    <!-- Simple Baner -->
-                    <ins class="adsbygoogle mx-auto "
-                         style="display:inline-block;width:100%;height:90px"
-                         data-ad-client="ca-pub-5455720448748407"
-                         data-ad-slot="9897412100"></ins>
-                    <script>
-                        (adsbygoogle = window.adsbygoogle || []).push({});
-                    </script>
-
                     <div class="mt-2">
                         {!! $news->description !!}
                         <hr class="hr-dark">
