@@ -59,11 +59,11 @@
                         <hr class="hr-dark">
                     </div>
 
-                    <!-- Simple Baner -->
-                    <ins class="adsbygoogle mx-auto "
-                         style="display:inline-block;width:100%;height:90px"
+                    <!-- In news 1 -->
+                    <ins class="adsbygoogle m-auto"
+                         style="display:inline-block;width:100%;height:250px"
                          data-ad-client="ca-pub-5455720448748407"
-                         data-ad-slot="9897412100"></ins>
+                         data-ad-slot="8648743762"></ins>
                     <script>
                         (adsbygoogle = window.adsbygoogle || []).push({});
                     </script>
