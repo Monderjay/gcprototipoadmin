@@ -2,1105 +2,619 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://gamecore.com.mx</loc>
-        <lastmod>2020-09-16T04:04:10-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:05-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/</loc>
-        <lastmod>2020-09-16T04:04:08-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:02-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/?page=1</loc>
-        <lastmod>2020-09-16T04:04:22-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:27-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/?page=2</loc>
-        <lastmod>2020-09-16T04:04:22-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:27-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/?page=3</loc>
-        <lastmod>2020-09-16T04:04:22-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:28-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/?page=4</loc>
-        <lastmod>2020-09-16T04:04:22-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:29-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/?page=5</loc>
-        <lastmod>2020-09-16T04:04:24-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/?page=6</loc>
-        <lastmod>2020-09-16T04:04:56-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/?page=7</loc>
-        <lastmod>2020-09-16T04:04:57-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/?page=8</loc>
-        <lastmod>2020-09-16T04:04:58-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:32-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/?page=9</loc>
-        <lastmod>2020-09-16T04:04:24-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:33-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Movil</loc>
-        <lastmod>2020-09-16T04:04:12-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Movil?page=1</loc>
-        <lastmod>2020-09-16T04:04:31-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:47-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Multiplataforma</loc>
-        <lastmod>2020-09-16T04:04:12-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Multiplataforma?page=1</loc>
-        <lastmod>2020-09-16T04:04:43-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Multiplataforma?page=2</loc>
-        <lastmod>2020-09-16T04:04:43-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Multiplataforma?page=3</loc>
-        <lastmod>2020-09-16T04:04:43-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Nintendo</loc>
-        <lastmod>2020-09-16T04:04:12-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Nintendo?page=1</loc>
-        <lastmod>2020-09-16T04:04:37-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:04-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Nintendo?page=2</loc>
-        <lastmod>2020-09-16T04:04:37-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:04-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Noticias</loc>
-        <lastmod>2020-09-16T04:04:12-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Noticias?page=1</loc>
-        <lastmod>2020-09-16T04:04:46-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=10</loc>
-        <lastmod>2020-09-16T04:05:04-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:49-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Noticias?page=11</loc>
-        <lastmod>2020-09-16T04:04:49-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:52-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Noticias?page=2</loc>
-        <lastmod>2020-09-16T04:04:46-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:49-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Noticias?page=3</loc>
-        <lastmod>2020-09-16T04:04:46-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:51-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Noticias?page=4</loc>
-        <lastmod>2020-09-16T04:04:47-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:53-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Noticias?page=5</loc>
-        <lastmod>2020-09-16T04:04:48-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=6</loc>
-        <lastmod>2020-09-16T04:05:04-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=7</loc>
-        <lastmod>2020-09-16T04:05:04-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=8</loc>
-        <lastmod>2020-09-16T04:05:04-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=9</loc>
-        <lastmod>2020-09-16T04:05:04-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:52-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/PC</loc>
-        <lastmod>2020-09-16T04:04:11-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:05-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/PC?page=1</loc>
-        <lastmod>2020-09-16T04:04:28-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:41-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/PlayStation</loc>
-        <lastmod>2020-09-16T04:04:12-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/PlayStation?page=1</loc>
-        <lastmod>2020-09-16T04:04:40-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:12-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/PlayStation?page=2</loc>
-        <lastmod>2020-09-16T04:04:40-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:12-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/PlayStation?page=3</loc>
-        <lastmod>2020-09-16T04:04:40-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:14-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Rese%C3%B1as</loc>
-        <lastmod>2020-09-16T04:04:12-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Rese%C3%B1as?page=1</loc>
-        <lastmod>2020-09-16T04:04:31-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:48-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Retro</loc>
-        <lastmod>2020-09-16T04:04:12-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:05-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Retro?page=1</loc>
-        <lastmod>2020-09-16T04:04:28-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:33-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/Xbox</loc>
-        <lastmod>2020-09-16T04:04:12-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Xbox?page=1</loc>
-        <lastmod>2020-09-16T04:04:46-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Xbox?page=2</loc>
-        <lastmod>2020-09-16T04:04:46-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/actualizan-la-fecha-del-evento-de-presentacion-de-la-nueva-ps5</loc>
-        <lastmod>2020-09-16T04:04:55-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/alan-wake-se-estrena-en-game-pass-en-su-decimo-aniversario</loc>
-        <lastmod>2020-09-16T04:04:59-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/anuncian-nuevo-juego-de-pokemon-para-moviles-y-nintendo-switch</loc>
-        <lastmod>2020-09-16T04:04:51-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/anuncian-paper-mario-the-origami-king-para-switch</loc>
-        <lastmod>2020-09-16T04:04:58-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/anuncian-precio-y-fecha-de-lanzamiento-de-la-xbox-series-s-xbox-series-x-y-otras-sorpresas</loc>
-        <lastmod>2020-09-16T04:04:16-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/anuncian-ratchet--clank-rift-apart-para-ps5</loc>
-        <lastmod>2020-09-16T04:04:51-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/asi-afecta-el-nuevo-impuesto-a-los-videojuegos</loc>
-        <lastmod>2020-09-16T04:04:52-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/asi-reacciono-la-comunidad-ante-el-retraso-de-halo-infinite</loc>
-        <lastmod>2020-09-16T04:04:35-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:01-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/autor/Bpando</loc>
-        <lastmod>2020-09-16T04:04:25-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Bpando?page=1</loc>
-        <lastmod>2020-09-16T04:04:56-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Bpando?page=2</loc>
-        <lastmod>2020-09-16T04:04:56-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:28-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/autor/Lezeroth</loc>
-        <lastmod>2020-09-16T04:04:43-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Lezeroth?page=1</loc>
-        <lastmod>2020-09-16T04:05:00-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:21-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/autor/Monderjay</loc>
-        <lastmod>2020-09-16T04:04:14-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Monderjay?page=1</loc>
-        <lastmod>2020-09-16T04:04:47-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Monderjay?page=2</loc>
-        <lastmod>2020-09-16T04:04:47-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Monderjay?page=3</loc>
-        <lastmod>2020-09-16T04:04:47-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:13-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/autor/Shinji_Dada</loc>
-        <lastmod>2020-09-16T04:04:16-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Shinji_Dada?page=1</loc>
-        <lastmod>2020-09-16T04:04:50-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Soft_Ion</loc>
-        <lastmod>2020-09-16T04:04:59-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Soft_Ion?page=1</loc>
-        <lastmod>2020-09-16T04:05:04-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:14-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/autor/Virusan</loc>
-        <lastmod>2020-09-16T04:04:31-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Virusan?page=1</loc>
-        <lastmod>2020-09-16T04:04:58-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:50-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/autor/metalfreaksolid</loc>
-        <lastmod>2020-09-16T04:04:15-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/metalfreaksolid?page=1</loc>
-        <lastmod>2020-09-16T04:04:48-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/metalfreaksolid?page=2</loc>
-        <lastmod>2020-09-16T04:04:49-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:14-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/autor/pank9605</loc>
-        <lastmod>2020-09-16T04:04:13-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/pank9605?page=1</loc>
-        <lastmod>2020-09-16T04:04:47-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/pank9605?page=2</loc>
-        <lastmod>2020-09-16T04:04:47-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/pank9605?page=3</loc>
-        <lastmod>2020-09-16T04:04:47-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/pank9605?page=4</loc>
-        <lastmod>2020-09-16T04:04:47-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:13-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/black-myth-wu-kong-el-impactante-juego-chino-de-proxima-generacion</loc>
-        <lastmod>2020-09-16T04:04:16-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:13-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/bloodborne-podria-llegar-a-pc</loc>
-        <lastmod>2020-09-16T04:04:25-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:39-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/brawhalla-mobile-esta-mas-cerca-que-nunca</loc>
-        <lastmod>2020-09-16T04:04:21-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/cancelan-la-presentacion-de-ps5</loc>
-        <lastmod>2020-09-16T04:04:55-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:25-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/clash-royale-implementa-una-nueva-carta-para-la-temporada-12</loc>
-        <lastmod>2020-09-16T04:04:28-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:42-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/clash-royale-league-se-retrasa-por-inconvenientes-con-ogn-america</loc>
-        <lastmod>2020-09-16T04:04:28-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:42-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/contacto</loc>
-        <lastmod>2020-09-16T04:04:22-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/crash-bandicoot-esta-de-regreso</loc>
-        <lastmod>2020-09-16T04:04:50-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:27-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/cuphead-disponible-para-playstation</loc>
-        <lastmod>2020-09-16T04:04:35-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:02-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/cyberpunk-edgerunners-la-nueva-serie-animada-de-cd-projekt-red-studio-trigger-y-netflix</loc>
-        <lastmod>2020-09-16T04:04:32-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:48-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/de-lo-divertido-a-lo-infame-qbert</loc>
-        <lastmod>2020-09-16T04:04:23-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:29-05:00</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/demons-souls-ps5-un-gran-salto-por-parte-de-bluepoint</loc>
+        <lastmod>2020-09-16T17:09:12-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/detroit-become-human-review</loc>
-        <lastmod>2020-09-16T04:04:19-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/digital-direct-la-iniciativa-de-microsoft-contra-la-reventa-de-codigos-digitales-en-xbox</loc>
-        <lastmod>2020-09-16T04:04:45-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:20-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/dominos-pizza-se-une-al-bullying-contra-halo-infinite</loc>
-        <lastmod>2020-09-16T04:04:35-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:01-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/el-29-de-mayo-llega-xenoblade-chronicles-definitive-edition-a-switch</loc>
-        <lastmod>2020-09-16T04:04:34-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/el-capitan-america-llega-a-la-isla-de-fortnite</loc>
-        <lastmod>2020-09-16T04:04:43-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/el-nuevo-spider-man-miles-morales-se-aproxima</loc>
-        <lastmod>2020-09-16T04:04:38-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:57-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/el-primer-comercial-oficial-de-playstation-5-play-has-no-limits</loc>
-        <lastmod>2020-09-16T04:04:19-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/el-remake-de-demons-souls-es-oficial</loc>
-        <lastmod>2020-09-16T04:04:38-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/epic-games-regala-grand-theft-auto-v</loc>
-        <lastmod>2020-09-16T04:04:55-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/fall-guys-ultimate-knockout-el-battle-royale-que-desbanco-a-fortnite</loc>
-        <lastmod>2020-09-16T04:04:42-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/filtran-posible-fecha-de-lanzamiento-de-assasins-creed-valhalla</loc>
-        <lastmod>2020-09-16T04:05:04-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:22-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/final-fantasy-xv-review</loc>
-        <lastmod>2020-09-16T04:04:19-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/fortnite-retrasa-la-fecha-de-lanzamiento-de-su-nueva-temporada</loc>
-        <lastmod>2020-09-16T04:04:52-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:21-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/grand-theft-auto-v--review</loc>
-        <lastmod>2020-09-16T04:04:32-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:50-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/grand-theft-auto-vice-city</loc>
-        <lastmod>2020-09-16T04:04:22-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:26-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/habra-una-union-entre-xbox-y-sega</loc>
-        <lastmod>2020-09-16T04:04:40-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/halo-infinite-en-el-xbox-inside-de-julio</loc>
-        <lastmod>2020-09-16T04:04:55-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/halo-infinite-no-sufrira-retrasos</loc>
-        <lastmod>2020-09-16T04:04:54-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/hasta-16-mil-pesos-sera-el-precio-del-ps5</loc>
-        <lastmod>2020-09-16T04:04:46-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:10-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/hideki-kamiya-aclara-si-bayonetta-3-fue-cancelado</loc>
-        <lastmod>2020-09-16T04:04:34-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/horizon-forbidden-west-anuncia-su-llegada-a-ps5</loc>
-        <lastmod>2020-09-16T04:04:39-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:56-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/informacion</loc>
-        <lastmod>2020-09-16T04:04:22-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:26-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/its-me-mario-nintendo-anuncia-super-mario-3d-all-stars-para-nintendo-switch</loc>
-        <lastmod>2020-09-16T04:04:19-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:20-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/juegos-para-playstation-plus-agosto-2020</loc>
-        <lastmod>2020-09-16T04:04:38-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:08-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/juegos-para-playstation-plus-junio-2020-y-10-aniversario</loc>
-        <lastmod>2020-09-16T04:04:38-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:10-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/juegos-para-playstation-plus-septiembre-2020</loc>
-        <lastmod>2020-09-16T04:04:18-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/juegos-que-dejaran-xbox-game-pass-proximamente</loc>
-        <lastmod>2020-09-16T04:04:44-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:20-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/la-nueva-serie-30-de-graficas-nvidia-es-impresionante</loc>
-        <lastmod>2020-09-16T04:04:16-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/la-proxima-xbox-sera-compatible-con-todas-sus-generaciones-anteriores</loc>
-        <lastmod>2020-09-16T04:04:43-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/la-verdad-de-la-demo-de-unreal-engine-5-en-ps5</loc>
-        <lastmod>2020-09-16T04:05:03-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:13-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/los-mejores-juegos-con-los-mejores-descuentos-en-steam</loc>
-        <lastmod>2020-09-16T04:04:22-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/mario-kart-8-deluxe-el-juego-mas-vendido-de-nintendo-switch</loc>
-        <lastmod>2020-09-16T04:04:59-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:26-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/marvels-spider-man-review</loc>
-        <lastmod>2020-09-16T04:04:31-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/metal-slug-estara-de-vuelta-este-2020-con-2-titulos-nuevos</loc>
-        <lastmod>2020-09-16T04:04:51-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/microsoft-anuncia-el-cierre-de-mixer</loc>
-        <lastmod>2020-09-16T04:04:53-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/min-min-de-arms-es-el-nuevo-personaje-que-llega-a-super-smash-bros-ultimate-para-nintendo-switch</loc>
-        <lastmod>2020-09-16T04:04:36-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/minecraft-116-nether-update-ya-esta-disponible</loc>
-        <lastmod>2020-09-16T04:04:55-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:46-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/minecraft-dungeons---review</loc>
-        <lastmod>2020-09-16T04:04:19-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/minecraft-dungeons-ya-esta-a-la-venta</loc>
-        <lastmod>2020-09-16T04:05:01-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:20-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/minecraft-rtx-un-paso-hacia-el-futuro</loc>
-        <lastmod>2020-09-16T04:04:25-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:39-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/modo-multijugador-llega-a-ghost-of-tsushima</loc>
-        <lastmod>2020-09-16T04:04:19-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:09-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/new-pokemon-snap-llega-para-el-nintendo-switch</loc>
-        <lastmod>2020-09-16T04:04:32-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:55-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/nintendo-lo-hace-de-nuevo-y-nos-presenta-mario-kart-live-home-circuit</loc>
-        <lastmod>2020-09-16T04:04:18-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/nintendo-sufre-la-mayor-filtracion-de-su-historia</loc>
-        <lastmod>2020-09-16T04:04:56-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:21-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/nintendo-switch-online-sube-de-precio</loc>
-        <lastmod>2020-09-16T04:04:34-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/no-todo-esta-dicho-sobre-xbox-series-x</loc>
-        <lastmod>2020-09-16T04:04:54-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/noche-de-pelis-en-fortnite-temporada-3</loc>
-        <lastmod>2020-09-16T04:04:51-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:57-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/nueva-actualizacion-para-the-last-of-us-part-ii-grounded-update</loc>
-        <lastmod>2020-09-16T04:04:16-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:00-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/nueva-informacion-de-los-sets-de-lego-de-super-mario</loc>
-        <lastmod>2020-09-16T04:04:33-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:57-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/nueva-mega-actualizacion-en-clash-royale</loc>
-        <lastmod>2020-09-16T04:04:21-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/nuevo-comercial-the-last-of-us-part-ii</loc>
-        <lastmod>2020-09-16T04:05:03-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/nuevo-gameplay-de-the-last-of-us-part-ii</loc>
-        <lastmod>2020-09-16T04:05:03-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/nuevos-juegos-llegan-a-game-pass-en-junio</loc>
-        <lastmod>2020-09-16T04:04:39-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/opinion-mi-experiencia-al-volver-a-jugar-el-multijugador-de-halo-a-traves-de-master-chief-collection</loc>
-        <lastmod>2020-09-16T04:04:47-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/plantas-vs-zombies-3-esta-a-nada-de-salir-a-la-luz</loc>
-        <lastmod>2020-09-16T04:04:30-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/playstation-4-pro-the-last-of-us-edition</loc>
-        <lastmod>2020-09-16T04:05:02-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/playstation-plus-junio-2020</loc>
-        <lastmod>2020-09-16T04:05:01-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/playstation-presenta-el-segundo-detras-de-camaras-de-the-last-of-us-part-ii</loc>
-        <lastmod>2020-09-16T04:05:04-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:26-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/politicas</loc>
-        <lastmod>2020-09-16T04:04:22-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/presentacion-de-la-nueva-ps5</loc>
-        <lastmod>2020-09-16T04:04:54-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:27-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/prime-1-studio-prepara-2-figuras-de-horizon-zero-dawn</loc>
-        <lastmod>2020-09-16T04:04:37-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/primer-trailer-de-the-king-of-fighters-awaken-la-nueva-pelicula-animada-de-la-famosa-saga-de-snk</loc>
-        <lastmod>2020-09-16T04:04:43-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/que-tamano-tendran-las-consolas-de-proxima-generacion-xbox-series-x--playstation-5</loc>
-        <lastmod>2020-09-16T04:04:51-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:06-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/que-xbox-debo-comprar-precios-caracteristicas-y-mas</loc>
-        <lastmod>2020-09-16T04:04:12-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/revelan-el-diseno-de-la-nueva-ps5</loc>
-        <lastmod>2020-09-16T04:04:47-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:11-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/revelan-primer-trailer-de-metal-slug-code-j</loc>
-        <lastmod>2020-09-16T04:04:22-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:27-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/rocket-league-a-unos-dias-del-free-to-play</loc>
-        <lastmod>2020-09-16T04:04:15-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:13-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/rocket-league-se-volvera-free-to-play</loc>
-        <lastmod>2020-09-16T04:04:28-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/sabias-que-existe-un-salon-de-la-fama-del-videojuego</loc>
-        <lastmod>2020-09-16T04:04:43-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:40-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/se-confirma-el-multijugador-de-the-last-of-us-part-ii-</loc>
-        <lastmod>2020-09-16T04:04:16-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/se-filtra-codigo-fuente-de-la-primera-xbox</loc>
-        <lastmod>2020-09-16T04:05:02-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:15-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/se-filtra-posible-version-de-metroid-prime-trilogy-para-nintendo-switch</loc>
-        <lastmod>2020-09-16T04:04:35-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/sekiro-shadows-die-twice-recibe-actualizacion-en-octubre-con-nuevos-desafios-y-trajes-alternativos</loc>
-        <lastmod>2020-09-16T04:04:41-05:00</lastmod>
+        <lastmod>2020-09-16T17:10:00-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/sekiro-shadows-die-twice-review</loc>
-        <lastmod>2020-09-16T04:04:31-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/snk-nos-muestra-el-4-personaje-dlc-de-samurai-shodown</loc>
-        <lastmod>2020-09-16T04:04:58-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:48-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/spongebob-krusty-krab-cook-off-ya-disponible-en-la-play-store</loc>
-        <lastmod>2020-09-16T04:04:29-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:43-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/suda51-muestra-gameplay-de-no-more-heroes-3-protagonizado-por-su-cara</loc>
-        <lastmod>2020-09-16T04:04:34-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:56-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/supercell-cumple-10-anos</loc>
-        <lastmod>2020-09-16T04:04:30-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:44-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/te-consideras-un-maestro-pokemon-prueba-este-reto</loc>
-        <lastmod>2020-09-16T04:04:28-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:33-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/tenemos-nuevo-game-boy-y-es-mas-que-una-simple-portatil</loc>
-        <lastmod>2020-09-16T04:04:28-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:41-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/the-last-of-us-review</loc>
-        <lastmod>2020-09-16T04:04:19-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:21-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/the-witcher-3-wild-hunt-esta-de-regreso-para-la-siguiente-generacion-de-consolas</loc>
-        <lastmod>2020-09-16T04:04:16-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/todas-las-ediciones-de-the-last-of-us-part-ii</loc>
-        <lastmod>2020-09-16T04:04:59-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:15-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/todo-lo-que-sabemos-de-xbox-series-s</loc>
-        <lastmod>2020-09-16T04:04:16-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:14-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/tubbz-ducks-los-mejores-cosplay-interpretados-por-patos-</loc>
-        <lastmod>2020-09-16T04:04:15-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:11-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/untitled-goose-game-review</loc>
-        <lastmod>2020-09-16T04:04:19-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:21-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx/worms-esta-de-regreso-con-su-nueva-entrega-worms-rumble</loc>
-        <lastmod>2020-09-16T04:04:28-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:42-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://gamecore.com.mx/ya-tenemos-fecha-para-la-presentacion-de-juegos-exclusivos-de-xbox</loc>
-        <lastmod>2020-09-16T04:04:37-05:00</lastmod>
+        <loc>https://gamecore.com.mx/ya-tenemos-el-primer-trailer-con-gameplay-de-final-fantasy-xvi</loc>
+        <lastmod>2020-09-16T17:09:19-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx?page=1</loc>
-        <lastmod>2020-09-16T04:04:25-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:34-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx?page=2</loc>
-        <lastmod>2020-09-16T04:04:25-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:35-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx?page=3</loc>
-        <lastmod>2020-09-16T04:04:25-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:35-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx?page=4</loc>
-        <lastmod>2020-09-16T04:04:25-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:35-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx?page=5</loc>
-        <lastmod>2020-09-16T04:04:25-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx?page=6</loc>
-        <lastmod>2020-09-16T04:04:59-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx?page=7</loc>
-        <lastmod>2020-09-16T04:05:00-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx?page=8</loc>
-        <lastmod>2020-09-16T04:05:00-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:36-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
         <loc>https://gamecore.com.mx?page=9</loc>
-        <lastmod>2020-09-16T04:04:25-05:00</lastmod>
+        <lastmod>2020-09-16T17:09:36-05:00</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
