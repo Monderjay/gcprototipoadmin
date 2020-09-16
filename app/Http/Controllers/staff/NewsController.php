@@ -12,6 +12,8 @@ use Illuminate\Http\Request;
 use Session;
 use Intervention\Image\ImageManagerStatic as Image;
 use File;
+use Spatie\Sitemap\SitemapGenerator;
+
 class NewsController extends Controller
 {
     public function eliminar_tildes($cadena){
@@ -292,6 +294,7 @@ class NewsController extends Controller
         }
 
         if ($news && $image->save() || $images && $image->save()){
+
             $notification = "Noticia Registrada Correctamente :D";
             return redirect('/staff/news')->with(compact('notification'));
         }else{
