@@ -4,7 +4,8 @@
 /storage/*.key
 /vendor
 /public/images
-sitemap.xml
+public/sitemap.xml
+
 .env
 .env.backup
 .phpunit.result.cache
