@@ -1,621 +1,2224 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
     <url>
         <loc>https://gamecore.com.mx</loc>
-        <lastmod>2020-09-16T17:09:05-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/</loc>
-        <lastmod>2020-09-16T17:09:02-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/?page=1</loc>
-        <lastmod>2020-09-16T17:09:27-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/?page=2</loc>
-        <lastmod>2020-09-16T17:09:27-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/?page=3</loc>
-        <lastmod>2020-09-16T17:09:28-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/?page=4</loc>
-        <lastmod>2020-09-16T17:09:29-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/?page=5</loc>
-        <lastmod>2020-09-16T17:09:32-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/?page=9</loc>
-        <lastmod>2020-09-16T17:09:33-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Movil</loc>
-        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Movil?page=1</loc>
-        <lastmod>2020-09-16T17:09:47-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Multiplataforma</loc>
-        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Nintendo</loc>
-        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Nintendo?page=1</loc>
-        <lastmod>2020-09-16T17:10:04-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Nintendo?page=2</loc>
-        <lastmod>2020-09-16T17:10:04-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias</loc>
-        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=1</loc>
-        <lastmod>2020-09-16T17:09:49-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=11</loc>
-        <lastmod>2020-09-16T17:09:52-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=2</loc>
-        <lastmod>2020-09-16T17:09:49-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=3</loc>
-        <lastmod>2020-09-16T17:09:51-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=4</loc>
-        <lastmod>2020-09-16T17:09:53-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Noticias?page=5</loc>
-        <lastmod>2020-09-16T17:09:52-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/PC</loc>
-        <lastmod>2020-09-16T17:09:05-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/PC?page=1</loc>
-        <lastmod>2020-09-16T17:09:41-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/PlayStation</loc>
-        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/PlayStation?page=1</loc>
-        <lastmod>2020-09-16T17:10:12-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/PlayStation?page=2</loc>
-        <lastmod>2020-09-16T17:10:12-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/PlayStation?page=3</loc>
-        <lastmod>2020-09-16T17:10:14-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Rese%C3%B1as</loc>
-        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Rese%C3%B1as?page=1</loc>
-        <lastmod>2020-09-16T17:09:48-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Retro</loc>
-        <lastmod>2020-09-16T17:09:05-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Retro?page=1</loc>
-        <lastmod>2020-09-16T17:09:33-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/Xbox</loc>
-        <lastmod>2020-09-16T17:09:06-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/asi-reacciono-la-comunidad-ante-el-retraso-de-halo-infinite</loc>
-        <lastmod>2020-09-16T17:10:01-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Bpando</loc>
-        <lastmod>2020-09-16T17:09:28-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Lezeroth</loc>
-        <lastmod>2020-09-16T17:10:21-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Monderjay</loc>
-        <lastmod>2020-09-16T17:09:13-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Shinji_Dada</loc>
-        <lastmod>2020-09-16T17:09:14-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/Virusan</loc>
-        <lastmod>2020-09-16T17:09:50-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/metalfreaksolid</loc>
-        <lastmod>2020-09-16T17:09:14-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/autor/pank9605</loc>
-        <lastmod>2020-09-16T17:09:13-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/black-myth-wu-kong-el-impactante-juego-chino-de-proxima-generacion</loc>
-        <lastmod>2020-09-16T17:09:13-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/bloodborne-podria-llegar-a-pc</loc>
-        <lastmod>2020-09-16T17:09:39-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/brawhalla-mobile-esta-mas-cerca-que-nunca</loc>
-        <lastmod>2020-09-16T17:09:25-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/clash-royale-implementa-una-nueva-carta-para-la-temporada-12</loc>
-        <lastmod>2020-09-16T17:09:42-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/clash-royale-league-se-retrasa-por-inconvenientes-con-ogn-america</loc>
-        <lastmod>2020-09-16T17:09:42-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee9ef9cbea7-1366_2000.webp</image:loc>
+            <image:title>Nueva Información de los sets de Lego de Super Mario</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef070ccd17e-pokemon-snap-for-nintendo-switch.webp</image:loc>
+            <image:title>New Pokémon Snap llega para el Nintendo Switch</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef0ac7dd274-1366_2000.webp</image:loc>
+            <image:title>¿Qué tamaño tendrán las consolas de próxima generación? (Xbox Series X / PlayStation 5)</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee9d10ab85a-demons2.webp</image:loc>
+            <image:title>EL Remake de Demon’s Souls es Oficial</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef07a3ca962-spiderman-miles-morales-2020612121389_1.webp</image:loc>
+            <image:title>El nuevo Spider Man: Miles Morales se aproxima</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef07c1a5703-ps5%202.webp</image:loc>
+            <image:title>Revelan el diseño de la nueva PS5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefda3e3ef39-o97j37n6a6931.webp</image:loc>
+            <image:title>Nuevos juegos llegan a Game Pass en junio.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefda692c297-49747503557_fa12f113db_h.webp</image:loc>
+            <image:title>Hasta 16 mil pesos, sera el precio del PS5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef04aeb7af0-dark-souls-3-ohotnik-luk.webp</image:loc>
+            <image:title>Bloodborne podría llegar a PC.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdbb659131-xbox-sega.webp</image:loc>
+            <image:title>¿Habrá una unión entre Xbox y Sega?</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee9dc297e0f-UGk4Q9ywUqwxLoJEpHnFx3.webp</image:loc>
+            <image:title>HORIZON FORBIDDEN WEST ANUNCIA SU LLEGADA A PS5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee96761d0b7-BB8C96CA-9730-4D96-94F2-F1072A6E7D48.webp</image:loc>
+            <image:title>Anuncian Ratchet &amp;amp; Clank: Rift Apart para PS5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef0f4e47fcf-26312291165_45604d0cc4_b.webp</image:loc>
+            <image:title>The Last of Us Review</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
         <loc>https://gamecore.com.mx/contacto</loc>
-        <lastmod>2020-09-16T17:09:27-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/cuphead-disponible-para-playstation</loc>
-        <lastmod>2020-09-16T17:10:02-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/cyberpunk-edgerunners-la-nueva-serie-animada-de-cd-projekt-red-studio-trigger-y-netflix</loc>
-        <lastmod>2020-09-16T17:09:48-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/de-lo-divertido-a-lo-infame-qbert</loc>
-        <lastmod>2020-09-16T17:09:29-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/demons-souls-ps5-un-gran-salto-por-parte-de-bluepoint</loc>
-        <lastmod>2020-09-16T17:09:12-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/detroit-become-human-review</loc>
-        <lastmod>2020-09-16T17:09:20-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/dominos-pizza-se-une-al-bullying-contra-halo-infinite</loc>
-        <lastmod>2020-09-16T17:10:01-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/el-29-de-mayo-llega-xenoblade-chronicles-definitive-edition-a-switch</loc>
-        <lastmod>2020-09-16T17:09:57-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/el-primer-comercial-oficial-de-playstation-5-play-has-no-limits</loc>
-        <lastmod>2020-09-16T17:09:22-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/final-fantasy-xv-review</loc>
-        <lastmod>2020-09-16T17:09:21-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/grand-theft-auto-v--review</loc>
-        <lastmod>2020-09-16T17:09:50-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/grand-theft-auto-vice-city</loc>
-        <lastmod>2020-09-16T17:09:26-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/habra-una-union-entre-xbox-y-sega</loc>
-        <lastmod>2020-09-16T17:10:10-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/hideki-kamiya-aclara-si-bayonetta-3-fue-cancelado</loc>
-        <lastmod>2020-09-16T17:09:56-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
         <loc>https://gamecore.com.mx/informacion</loc>
-        <lastmod>2020-09-16T17:09:26-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/its-me-mario-nintendo-anuncia-super-mario-3d-all-stars-para-nintendo-switch</loc>
-        <lastmod>2020-09-16T17:09:20-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/juegos-para-playstation-plus-agosto-2020</loc>
-        <lastmod>2020-09-16T17:10:08-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/juegos-para-playstation-plus-junio-2020-y-10-aniversario</loc>
-        <lastmod>2020-09-16T17:10:10-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/juegos-para-playstation-plus-septiembre-2020</loc>
-        <lastmod>2020-09-16T17:09:20-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/la-nueva-serie-30-de-graficas-nvidia-es-impresionante</loc>
-        <lastmod>2020-09-16T17:09:13-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/los-mejores-juegos-con-los-mejores-descuentos-en-steam</loc>
-        <lastmod>2020-09-16T17:09:26-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/marvels-spider-man-review</loc>
-        <lastmod>2020-09-16T17:09:46-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/minecraft-dungeons---review</loc>
-        <lastmod>2020-09-16T17:09:20-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/minecraft-rtx-un-paso-hacia-el-futuro</loc>
-        <lastmod>2020-09-16T17:09:39-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/modo-multijugador-llega-a-ghost-of-tsushima</loc>
-        <lastmod>2020-09-16T17:10:09-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/new-pokemon-snap-llega-para-el-nintendo-switch</loc>
-        <lastmod>2020-09-16T17:09:55-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/nintendo-lo-hace-de-nuevo-y-nos-presenta-mario-kart-live-home-circuit</loc>
-        <lastmod>2020-09-16T17:09:21-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/nintendo-switch-online-sube-de-precio</loc>
-        <lastmod>2020-09-16T17:09:57-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/nueva-actualizacion-para-the-last-of-us-part-ii-grounded-update</loc>
-        <lastmod>2020-09-16T17:10:00-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/nueva-informacion-de-los-sets-de-lego-de-super-mario</loc>
-        <lastmod>2020-09-16T17:09:57-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/nueva-mega-actualizacion-en-clash-royale</loc>
-        <lastmod>2020-09-16T17:09:26-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
         <loc>https://gamecore.com.mx/politicas</loc>
-        <lastmod>2020-09-16T17:09:27-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx/prime-1-studio-prepara-2-figuras-de-horizon-zero-dawn</loc>
-        <lastmod>2020-09-16T17:10:06-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/minecraft-rtx-un-paso-hacia-el-futuro</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef068a2dca2-MINECRAFT.webp</image:loc>
+            <image:title>MINECRAFT RTX: UN PASO HACIA EL FUTURO</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ebf6c9a3255c-rendimiento-de-la-RTX-2080.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee932e0e824a-NVIDIA-presenta-un-adelanto-de-los-nuevos-mundos-en-Minecraft-con-Ray-Tracing-1280x720.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ebf708531e4e-minecraft-with-rtx-beta-color-light-and-shadow-001-rtx-on-850px.png</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx/que-xbox-debo-comprar-precios-caracteristicas-y-mas</loc>
-        <lastmod>2020-09-16T17:09:11-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/grand-theft-auto-vice-city</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef0467346b8-0def3c822ded0d2e20a7981a7bd8e664.webp</image:loc>
+            <image:title>Grand Theft Auto: Vice City</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec383fe5e8a1-Grand-Theft-Auto-VI.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec3818bdf136-grand-theft-auto-vice-city-screenshot_1024.0-770x513.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8ff02bbd02-vc.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8ff2ff25f1-grand-theft-auto-vice-city-03-artwork.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec3834bda880-avion.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec3824205993-zxc.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx/revelan-primer-trailer-de-metal-slug-code-j</loc>
-        <lastmod>2020-09-16T17:09:27-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/de-lo-divertido-a-lo-infame-qbert</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/rocket-league-a-unos-dias-del-free-to-play</loc>
-        <lastmod>2020-09-16T17:09:13-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/rocket-league-se-volvera-free-to-play</loc>
-        <lastmod>2020-09-16T17:09:40-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/se-confirma-el-multijugador-de-the-last-of-us-part-ii-</loc>
-        <lastmod>2020-09-16T17:09:15-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/se-filtra-posible-version-de-metroid-prime-trilogy-para-nintendo-switch</loc>
-        <lastmod>2020-09-16T17:10:00-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/sekiro-shadows-die-twice-review</loc>
-        <lastmod>2020-09-16T17:09:48-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee9cd7999b9-nes_qbert1.webp</image:loc>
+            <image:title>De lo divertido a lo infame: Q*BERT</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed9f3027ded7-3005658045_ec0db75856.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8ebdba92e5-maxresdefault.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed9f3ef8f041-q-bert-nes.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8ebf47dce5-images.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed9f45ed1254-NES--Qbert_Mar3%2016_51_30.png</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8ec10dbd40-x1080.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
         <loc>https://gamecore.com.mx/spongebob-krusty-krab-cook-off-ya-disponible-en-la-play-store</loc>
-        <lastmod>2020-09-16T17:09:43-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef0615aca1c-SKCO_Screen2.webp</image:loc>
+            <image:title>SpongeBob: Krusty Krab Cook-Off ya disponible en la Play Store.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec4ba1ed22ad-zzzzzzzzzzzzzzzzzzzzzz.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8fe6052e13-b46f109bdba1b7506a511475bebfc47e_screen.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec4ba5b644ba-zzzzzzz.png</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx/suda51-muestra-gameplay-de-no-more-heroes-3-protagonizado-por-su-cara</loc>
-        <lastmod>2020-09-16T17:09:56-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/clash-royale-league-se-retrasa-por-inconvenientes-con-ogn-america</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef04e81c7a9-Clash-Royale-League-y-la-posibilidad-de-convertirse-en-un-nuevo-e-sport.webp</image:loc>
+            <image:title>Clash Royale League se retrasa por inconvenientes con OGN América</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec32b69de905-crl-east-2020-sm.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx/supercell-cumple-10-anos</loc>
-        <lastmod>2020-09-16T17:09:44-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/marvels-spider-man-review</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef03e10a6b4-Marvel%E2%80%99s-Spider-Man-Wallpaper-1080p-HD-1920x1080.webp</image:loc>
+            <image:title>Marvel´s Spider Man Review</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec5cd3cc0cfa-wp2513466.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec5ce3d31c49-zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8f406b86a5-1366_2000.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec5ce8c7acb4-Spider-UK-Suit-in-Spider-Man-PS4-The-Heist-DLC-1620x800.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8f42d12d29-81PI8+pcLjL._SL1500_.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec5cf8411932-sbbofdeigve.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx/te-consideras-un-maestro-pokemon-prueba-este-reto</loc>
-        <lastmod>2020-09-16T17:09:33-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/plantas-vs-zombies-3-esta-a-nada-de-salir-a-la-luz</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef065ac15b2-maxresdefault%20(1).webp</image:loc>
+            <image:title>Plantas vs Zombies 3 está a nada de salir a la luz</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee930eea9742-webbanner-blank2.jpg.adapt.crop191x100.628p.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec3584930588-Plants_vs._Zombies_3_Soft_Launch_Icon.png</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec3580ff083b-581730-Plants-vs-Zombies-3.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx/tenemos-nuevo-game-boy-y-es-mas-que-una-simple-portatil</loc>
-        <lastmod>2020-09-16T17:09:41-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/clash-royale-implementa-una-nueva-carta-para-la-temporada-12</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef053182436-Dragon-Esqueleto-Clash-Royale.webp</image:loc>
+            <image:title>Clash Royale implementa una nueva carta para la Temporada 12</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed038d29eff9-Dragon-Esqueleto-Clash-Royale.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8fda10e199-maxresdefault.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/detroit-become-human-review</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef034ae3b86-8f86a45ea59a528b477c5d0b0d9e1cc3.webp</image:loc>
+            <image:title>Detroit: Become Human Review</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed8231de8e4d-Detroit-Become-Human-e1543665250422.png</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8ecbdcdadd-DetroitBecomeHuman.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed8234c9bccd-detroit-become-human-screen-17-ps4-us-13apr18.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8ece08980e-PIVSUIAMKJHUFFRUVRWHMUKJQA.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/grand-theft-auto-v--review</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef048468be6-78751a60d557dd5913cacdfd31447d6dc0cb844fr1-1920-1080v2_uhq.webp</image:loc>
+            <image:title>Grand Theft Auto V  Review</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec31b5097bb0-GolpePacificStandardMotos.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8ef5cdd21b-1589917833_790654_1589917932_noticia_normal.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec31a2448ad5-1379340000_340000_000001_album_normal.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8ef901678c-hipertextual-puedes-descargar-gta-v-gratis-pc-epic-games-store-volvio-vida-2020642415.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/final-fantasy-xv-review</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eeee9866f060-35-354125_hd-wallpaper-final-fantasy-xv-wallpaper-4k.webp</image:loc>
+            <image:title>Final Fantasy XV Review.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ecd6f337bb7b-final_fantasy_versus_xiii-3492214.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8f14e3def4-FINAL%20FANTASY%20XV%20WINDOWS%20EDITION%20(8).webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ecd6b460c236-35-354762_final-fantasy-xv-final-fantasy-xv-desktop.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8f1b111918-10671_03.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ecd6c03d49e4-ffxv-windows-edition-demo-screenshot-03.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8f1f79bda2-Final-Fantasy-XV-para-PS4-y-Xbox-a-precio-m%C3%ADnimo-tecnolocura-videojuego-2.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ecd6c63bfd92-FFXV_Accordo.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8f28c33fc6-jugue-final-fantasy-xv-y-fue-hermoso.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ecd6d313d85c-tumblr_om82y7FJBW1vvs6bio1_1280.png</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8f2b1e4ac9-final-fantasy-xv-3.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ecd6de4d08b6-FINAL%20FANTASY%20XV%20WINDOWS%20EDITION.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8f2f405615-540942_1191x670.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
         <loc>https://gamecore.com.mx/the-last-of-us-review</loc>
-        <lastmod>2020-09-16T17:09:21-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/the-witcher-3-wild-hunt-esta-de-regreso-para-la-siguiente-generacion-de-consolas</loc>
-        <lastmod>2020-09-16T17:09:15-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/todo-lo-que-sabemos-de-xbox-series-s</loc>
-        <lastmod>2020-09-16T17:09:14-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://gamecore.com.mx/tubbz-ducks-los-mejores-cosplay-interpretados-por-patos-</loc>
-        <lastmod>2020-09-16T17:09:11-05:00</lastmod>
-        <changefreq>daily</changefreq>
-        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef0f4e47fcf-26312291165_45604d0cc4_b.webp</image:loc>
+            <image:title>The Last of Us Review</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee1c561a3800-the-last-sarah-770x433.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee714e9bc060-The-Last-of-Us-2-1.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee1c72407186-1952404-652686_20120604_008.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71517c32e3-the-last-of-us-ellie-and-joel-looking-at-crumbled-city-uhd-4k-wallpaper.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee1c6cb39c47-ou2qg7ovkuzfyxs58fgs-700x300.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee7153739352-the-last-of-us.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee1c5e4f366a-the-last-of-us1-1560466337.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee715a76d034-tlou2.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
         <loc>https://gamecore.com.mx/untitled-goose-game-review</loc>
-        <lastmod>2020-09-16T17:09:21-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef03b308573-Untitled%20Goose.webp</image:loc>
+            <image:title>Untitled Goose Game Review</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ecdf8631856e-2NQY7EWNAJGOLGBA4JX4TJOG6E.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8f369b6b53-NSwitchDS_UntitledGooseGame_02.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx/worms-esta-de-regreso-con-su-nueva-entrega-worms-rumble</loc>
-        <lastmod>2020-09-16T17:09:42-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/anuncian-ratchet--clank-rift-apart-para-ps5</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee96761d0b7-BB8C96CA-9730-4D96-94F2-F1072A6E7D48.webp</image:loc>
+            <image:title>Anuncian Ratchet &amp;amp; Clank: Rift Apart para PS5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee2b8f888788-Ratchet-Clank-Rift-Apart-maxresdefault.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee7138fba023-ratchet-and-clank-rift-apart.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee2b9e1d7ba5-WhatsApp%20Image%202020-06-11%20at%2016.19.47.jpeg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee713b12386e-Ratchet-and-Clank-Rift-Apart-PS5-screenshots-capturas-im%C3%A1genes-1-scaled.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx/ya-tenemos-el-primer-trailer-con-gameplay-de-final-fantasy-xvi</loc>
-        <lastmod>2020-09-16T17:09:19-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/autor/sopa</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/5ede8a932b8db-Doom_eternal_fan_art-37945b65-b72f-46fb-a272-f77d89bc1a24.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/5ede8a93d9ab1-IMG_20200117_001340.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx?page=1</loc>
-        <lastmod>2020-09-16T17:09:34-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/autor/metalfreaksolid</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx?page=2</loc>
-        <lastmod>2020-09-16T17:09:35-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/autor/Virusan</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx?page=3</loc>
-        <lastmod>2020-09-16T17:09:35-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/horizon-forbidden-west-anuncia-su-llegada-a-ps5</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee9dc297e0f-UGk4Q9ywUqwxLoJEpHnFx3.webp</image:loc>
+            <image:title>HORIZON FORBIDDEN WEST ANUNCIA SU LLEGADA A PS5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee2d4b77e92e-WhatsApp%20Image%202020-06-11%20at%2016.19.18.jpeg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee7101ab6e35-07f1607d-27d5-42b2-b73d-de390c1b3069.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee2d514d6a67-WhatsApp%20Image%202020-06-11%20at%2016.19.17.jpeg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71039d9039-7f845f74-c0e4-412f-9462-2f727a618fe2.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee2d55e4079b-WhatsApp%20Image%202020-06-11%20at%2016.19.17%20(1).jpeg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee710744f147-2098c66c-05a6-487a-aae8-a3ac46722d5c.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx?page=4</loc>
-        <lastmod>2020-09-16T17:09:35-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/autor/Monderjay</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/5eed6b1c4b13f-c-o-champion-missfortune-captainfortune-splash.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/5eed6b1cc6b25-15589652_10207384687488381_1697734870056237224_n.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx?page=5</loc>
-        <lastmod>2020-09-16T17:09:36-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/autor/pank9605</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/5eef0b7e855dc-oug8q0c6ij451.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/5eef0b0b0847d-h.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
     <url>
-        <loc>https://gamecore.com.mx?page=9</loc>
-        <lastmod>2020-09-16T17:09:36-05:00</lastmod>
-        <changefreq>daily</changefreq>
+        <loc>https://gamecore.com.mx/hasta-16-mil-pesos-sera-el-precio-del-ps5</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
         <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefda692c297-49747503557_fa12f113db_h.webp</image:loc>
+            <image:title>Hasta 16 mil pesos, sera el precio del PS5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71780a8252-PS5-Logo-oficial.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/el-nuevo-spider-man-miles-morales-se-aproxima</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef07a3ca962-spiderman-miles-morales-2020612121389_1.webp</image:loc>
+            <image:title>El nuevo Spider Man: Miles Morales se aproxima</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee2c8f72010b-1591906623_231744_1591906701_noticia_normal_recorte1.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee711580923b-spiderman-miles-morales-202061211234772_1.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee2c9240430e-miles-morales_304503_3_5ee293933349d.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee7117888e9e-hipertextual-spider-man-miles-morales-que-anuncio-sony-ps5-no-es-juego-nuevo-2020121180.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee2c98022781-Marvels-Spider-Man-2_06-11-20.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71192d7749-hipertextual-sony-rectifica-spider-man-miles-morales-es-juego-completamente-nuevo-no-expansion-2020051836.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/bloodborne-podria-llegar-a-pc</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef04aeb7af0-dark-souls-3-ohotnik-luk.webp</image:loc>
+            <image:title>Bloodborne podría llegar a PC.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee107a6622e5-Bloodborne-PS4-Game-HD-Wallpaper.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee7186f45c19-portadasnotas10-1620x800.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee107c948b91-Cleric-Beast-Bloodborne-HD-Wallpaper.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee7189109daa-bloodborne-screen-03-ps4-us-10jun14.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/habra-una-union-entre-xbox-y-sega</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdbb659131-xbox-sega.webp</image:loc>
+            <image:title>¿Habrá una unión entre Xbox y Sega?</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed580bb87d42-Microsega.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71e952e21f-Microsega.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/new-pokemon-snap-llega-para-el-nintendo-switch</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef070ccd17e-pokemon-snap-for-nintendo-switch.webp</image:loc>
+            <image:title>New Pokémon Snap llega para el Nintendo Switch</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eea745bb153c-Eat2FZzUEAAtWWj.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/nuevos-juegos-llegan-a-game-pass-en-junio</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefda3e3ef39-o97j37n6a6931.webp</image:loc>
+            <image:title>Nuevos juegos llegan a Game Pass en junio.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee17ff5bb405-Xbox-Game-Pass-Junio-de-2020.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee7168240ac6-1591800488_630995_1591800560_noticia_normal.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/que-tamano-tendran-las-consolas-de-proxima-generacion-xbox-series-x--playstation-5</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef0ac7dd274-1366_2000.webp</image:loc>
+            <image:title>¿Qué tamaño tendrán las consolas de próxima generación? (Xbox Series X / PlayStation 5)</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee3ca445195b-1366_2000.jpeg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee70eb120af1-FAKxfj9.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee3ca89c6a34-EaREHicXYAAT62M.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee70ed1b8bb9-450_1000.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/el-remake-de-demons-souls-es-oficial</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee9d10ab85a-demons2.webp</image:loc>
+            <image:title>EL Remake de Demon’s Souls es Oficial</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee70cbf1548c-demons1.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee70cde594d4-demons3.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee2e1e271aa2-sitioblue.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee70d0c18d7f-sitioblue.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/PC</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef04aeb7af0-dark-souls-3-ohotnik-luk.webp</image:loc>
+            <image:title>Bloodborne podría llegar a PC.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef068a2dca2-MINECRAFT.webp</image:loc>
+            <image:title>MINECRAFT RTX: UN PASO HACIA EL FUTURO</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/Retro</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee9cd7999b9-nes_qbert1.webp</image:loc>
+            <image:title>De lo divertido a lo infame: Q*BERT</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef0467346b8-0def3c822ded0d2e20a7981a7bd8e664.webp</image:loc>
+            <image:title>Grand Theft Auto: Vice City</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/Xbox</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefda3e3ef39-o97j37n6a6931.webp</image:loc>
+            <image:title>Nuevos juegos llegan a Game Pass en junio.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdbb659131-xbox-sega.webp</image:loc>
+            <image:title>¿Habrá una unión entre Xbox y Sega?</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdc15a9f76-XboxSeriesX_01.webp</image:loc>
+            <image:title>La próxima Xbox será compatible con todas sus generaciones anteriores.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe34f1d4b2-XboxSeriesXHERO.webp</image:loc>
+            <image:title>No todo está dicho sobre Xbox Series X</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe56797cb0-5118ebed-e949-42e3-80de-37502cec73a4.webp</image:loc>
+            <image:title>Halo Infinite no sufrirá retrasos</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdad399608-20206815515376_1.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdc37e42b0-1575704355_007720_1575704604_noticia_normal.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe286f267c-hipertextual-halo-the-master-chief-collection-fin-llegara-pc-2019257339.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe2ad13095-Xbox-2001.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/nueva-informacion-de-los-sets-de-lego-de-super-mario</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee9ef9cbea7-1366_2000.webp</image:loc>
+            <image:title>Nueva Información de los sets de Lego de Super Mario</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/Nintendo</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee9ef9cbea7-1366_2000.webp</image:loc>
+            <image:title>Nueva Información de los sets de Lego de Super Mario</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eef070ccd17e-pokemon-snap-for-nintendo-switch.webp</image:loc>
+            <image:title>New Pokémon Snap llega para el Nintendo Switch</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eee9cd7999b9-nes_qbert1.webp</image:loc>
+            <image:title>De lo divertido a lo infame: Q*BERT</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe67e91325-1366_2000%20(1).webp</image:loc>
+            <image:title>EL 29 de Mayo Llega Xenoblade Chronicles Definitive Edition a Switch</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdb19c6ad1-OZ75feae_Clipboard04.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe1eb27e3a-Bayonetta-3.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe2065e459-Metroid-Prime-Trilogy.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe232cce7d-La-Nintendo-Switch-Pro-se-basar%C3%ADa-en-Volta-y-no-soportar%C3%ADa-4K.v1.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe43c19619-SNES-hero.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/se-filtra-posible-version-de-metroid-prime-trilogy-para-nintendo-switch</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe2065e459-Metroid-Prime-Trilogy.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ecf406c1bc0b-primeign1_k1f4.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/hideki-kamiya-aclara-si-bayonetta-3-fue-cancelado</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe1eb27e3a-Bayonetta-3.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/nuevo-gameplay-de-the-last-of-us-part-ii</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe190715be-descargar.webp</image:loc>
+            <image:title>Nuevo Gameplay de The Last of Us Part II</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/minecraft-dungeons-ya-esta-a-la-venta</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe1512deeb-fecha-de-lanzamiento-del-dlc-minecraft-dungeons.webp</image:loc>
+            <image:title>Minecraft Dungeons ya está a la venta.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ecff3d0b78b8-d2e746d8-4137-47e8-8700-14afefb4fba0.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee935ba61779-Minecraft_Dungeons_tips_and_tricks.0.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/playstation-plus-junio-2020</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdca9d7db1-1580815290_311422_1580815428_noticia_normal.webp</image:loc>
+            <image:title>Playstation Plus Junio 2020</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/playstation-4-pro-the-last-of-us-edition</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe31fcc928-1589893382_803527_1589893547_noticia_normal.webp</image:loc>
+            <image:title>Playstation 4 Pro The Last of Us Edition</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee860b42857e-EYYspPXVAAMmYqF.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec4c668e77cb-EYYspPXVAAMmYqF.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/la-verdad-de-la-demo-de-unreal-engine-5-en-ps5</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eed66311fdfb-Unreal-Engine-5-2.webp</image:loc>
+            <image:title>La Verdad de la Demo de Unreal Engine 5 en PS5.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec571017d48e-Unreal-Engine-5-2.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee940d373ed1-1366_2000%20(1).webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/Soft_Ion</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/5ec49dec378db-CYBERPUNK%20ART%20(6).jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/5ec49cdb57ef8-ION%20(3).jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/no-todo-esta-dicho-sobre-xbox-series-x</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe34f1d4b2-XboxSeriesXHERO.webp</image:loc>
+            <image:title>No todo está dicho sobre Xbox Series X</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec41b4d129eb-series-s-1922993.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee9418f572ce-3293672c-3566-4b2b-b33f-22dd8810b560.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/se-filtra-codigo-fuente-de-la-primera-xbox</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe2ad13095-Xbox-2001.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/Lezeroth</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/fortnite-retrasa-la-fecha-de-lanzamiento-de-su-nueva-temporada</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdc74d05b6-Fortnite_blog_lock-in-your-chapter-2-season-2-fortnite-agency-and-maya-choices_12BR_KeyArt_Social_BlogHeader-1920x1080-1eb9dac306de3d5c36182ddd79d6a114f8dccca8.webp</image:loc>
+            <image:title>Fortnite retrasa la fecha de lanzamiento de su nueva Temporada</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed0b7830bd4e-f.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed0b888cf59d-f34.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/presentacion-de-la-nueva-ps5</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdc5303f32-Los-mejores-memes-que-dejo%CC%81-la-presentacio%CC%81n-de-PS5-2.webp</image:loc>
+            <image:title>Presentación de la nueva PS5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/playstation-presenta-el-segundo-detras-de-camaras-de-the-last-of-us-part-ii</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe2db6483b-dgfghh.webp</image:loc>
+            <image:title>PlayStation presenta el segundo &amp;quot;Detrás de Camaras&amp;quot; de The Last Of Us Part II</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/new-resizer/GMO80ooMEYi6EBTdaqXxSAyNL8Q=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/LWIDSPJCFVBYVHXC2ZUW6WBEMM.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/t/ign_latam/screenshot/default/elultimodenosotrosdos_f1v4.1280.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/8747b1/201951314115963_1/1366_2000.jpeg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/juegos-que-dejaran-xbox-game-pass-proximamente</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdc37e42b0-1575704355_007720_1575704604_noticia_normal.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/nuevo-comercial-the-last-of-us-part-ii</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdb9d61779-naughty-dog-presento-un-nuevo-e.webp</image:loc>
+            <image:title>Nuevo Comercial The Last of Us Part II</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/la-proxima-xbox-sera-compatible-con-todas-sus-generaciones-anteriores</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdc15a9f76-XboxSeriesX_01.webp</image:loc>
+            <image:title>La próxima Xbox será compatible con todas sus generaciones anteriores.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed415c9bf214-93a3d49e93.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71fdf3d8a1-XBOX-RETROCOMPATIBILIDAD-WEB-1620x800.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/asi-afecta-el-nuevo-impuesto-a-los-videojuegos</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdb8170a9f-Nintendo-no-cree-que-la-PlayStation-5-y-la-Xbox-Series-X-impacten-significativamente-sobre-su-negocio-1280x720.webp</image:loc>
+            <image:title>Así afecta el nuevo impuesto a los videojuegos.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ed7ff2f99dcb-xbox_nintendo_playstation_contra_trump.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee8ed91a7986-ps4-vs-switch-vs-xbox-1-1620x800.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/cancelan-la-presentacion-de-ps5</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdbff6935e-sony-1-1.webp</image:loc>
+            <image:title>Cancelan la presentación de PS5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/opinion-mi-experiencia-al-volver-a-jugar-el-multijugador-de-halo-a-traves-de-master-chief-collection</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe286f267c-hipertextual-halo-the-master-chief-collection-fin-llegara-pc-2019257339.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/nintendo-switch-online-sube-de-precio</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdb19c6ad1-OZ75feae_Clipboard04.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5edabf567d835-H2x1_NSwitchDS_NintendoSwitchOnline_NESgames_image1600w.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/actualizan-la-fecha-del-evento-de-presentacion-de-la-nueva-ps5</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdb0241814-sony-ps5.webp</image:loc>
+            <image:title>Actualizan la fecha del evento de presentación de la nueva PS5</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/mario-kart-8-deluxe-el-juego-mas-vendido-de-nintendo-switch</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe50f60801-thumb-1920-821837.webp</image:loc>
+            <image:title>MARIO KART 8 DELUXE EL JUEGO MAS VENDIDO DE NINTENDO SWITCH</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ebf7ab201571-mario-kart-8-deluxe-switch-1200x675.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/anuncian-paper-mario-the-origami-king-para-switch</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe4ea650c9-1589480873231.webp</image:loc>
+            <image:title>ANUNCIAN PAPER MARIO: THE ORIGAMI KING PARA SWITCH</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ebf7d23b1d53-1589464678_937565_1589464771_noticia_normal_recorte1.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee943d57077f-paper_mario_the_origami_king-5155561.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ebf7bfe0a3c2-EX-vWuQX0AAHTpe.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/digital-direct-la-iniciativa-de-microsoft-contra-la-reventa-de-codigos-digitales-en-xbox</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdad399608-20206815515376_1.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ede9791d3ec6-1818b5a8-565a-4151-a46a-bfa7bab4f5b8.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71df74a070-9b19bbc7-1b80-496a-b919-ed567aeb5a1f.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ede97b38406c-xbox-digital-direct-que-es-2-1.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71e108ff6a-eedb32a0-731e-4e03-8514-f390c7ebfa2c.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/todas-las-ediciones-de-the-last-of-us-part-ii</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eeec6e84c14e-thelast%20elieedition.webp</image:loc>
+            <image:title>Todas las Ediciones de The Last of Us Part II</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71b37d2e6f-48789848481_5eb520ee80_k.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee03a25313b2-standard.png</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee03b748c675-the%20last%20deluxe.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71bfaef853-2020320133319_3.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee03df765c88-thelast%20especial.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71c6007cf8-815RJvr7PRL._AC_SX569_.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee03e7106343-the%20last%20collectors.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71c92ceec5-91s90aLzs4L._AC_SL1500_.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee03f2de4434-thelast%20elieedition.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee04102a3c51-thelast%20elieedition.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71cf9b7943-93fbc183fad62a6bcecb0790773f101f.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/metal-slug-estara-de-vuelta-este-2020-con-2-titulos-nuevos</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefdab3532b0-metal-slug-somosxbox.webp</image:loc>
+            <image:title>Metal Slug estará de vuelta este 2020 con 2 títulos nuevos.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee07d2bb3512-snkplaymore.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee71953aadd6-Metal_Slug-1620x800.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee0807a0b60e-234323_779750.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/sopa?page=2</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/5ede8a932b8db-Doom_eternal_fan_art-37945b65-b72f-46fb-a272-f77d89bc1a24.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/5ede8a93d9ab1-IMG_20200117_001340.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/alan-wake-se-estrena-en-game-pass-en-su-decimo-aniversario</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe5931e566-Alan-Wake-Remedy-Generacion-xbox.webp</image:loc>
+            <image:title>Alan Wake se estrena en Game Pass en su decimo aniversario.</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/sopa?page=1</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/5ede8a932b8db-Doom_eternal_fan_art-37945b65-b72f-46fb-a272-f77d89bc1a24.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/5ede8a93d9ab1-IMG_20200117_001340.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/halo-infinite-en-el-xbox-inside-de-julio</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe57e0f482-halo-infinite-1-somosxbox.webp</image:loc>
+            <image:title>Halo Infinite en el Xbox Inside de Julio</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/halo-infinite-no-sufrira-retrasos</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe56797cb0-5118ebed-e949-42e3-80de-37502cec73a4.webp</image:loc>
+            <image:title>Halo Infinite no sufrirá retrasos</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/supercell-cumple-10-anos</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe5403b9b6-1bc2pkls6py41.webp</image:loc>
+            <image:title>SUPERCELL CUMPLE 10 AÑOS</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ebf56e71f6b3-1366_2000.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee944bdc1dbd-supercell_10y_keyart_supercell_newsarticle_hero_1500x1130px.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ebf573a4ca43-bs.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/pank9605?page=1</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/5eef0b7e855dc-oug8q0c6ij451.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/5eef0b0b0847d-h.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/Monderjay?page=2</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/5eed6b1c4b13f-c-o-champion-missfortune-captainfortune-splash.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/5eed6b1cc6b25-15589652_10207384687488381_1697734870056237224_n.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/sekiro-shadows-die-twice-review</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe41705945-Sekiro-Shadows-Die-Twice-si-avvicina-ai-4-milioni-di-copie-vendute.webp</image:loc>
+            <image:title>Sekiro Shadows Die Twice Review</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec094ad3fbac-Dark_Souls_You_Died_Screen_-_Completely_Black_Screen_0-2_screenshot.png</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee85e8d39baf-5ec09351e3cc4-genichiro.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ee85ebb21a6c-5ec09814b3aae-sekiro-portada.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec09351e3cc4-genichiro.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec095b64c3b9-maxresdefault.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/nintendo-sufre-la-mayor-filtracion-de-su-historia</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe45638110-descargar.webp</image:loc>
+            <image:title>NINTENDO SUFRE LA MAYOR FILTRACIÓN DE SU HISTORIA</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ebf8ac0052a9-wii.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ebf8cdcdc2ea-1332747360_483570_1532637033_sumario_normal.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/llegan-mas-clasicos-a-nintendo-switch-online</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe43c19619-SNES-hero.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ebfa7d8d9ef1-n-1.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/metalfreaksolid?page=1</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/metalfreaksolid?page=2</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/pank9605?page=2</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/5eef0b7e855dc-oug8q0c6ij451.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/5eef0b0b0847d-h.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/Monderjay?page=1</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/5eed6b1c4b13f-c-o-champion-missfortune-captainfortune-splash.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/5eed6b1cc6b25-15589652_10207384687488381_1697734870056237224_n.webp</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/autor/Virusan?page=1</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/cover_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/porfile_images/default.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/autor/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gamecore.com.mx/filtran-posible-fecha-de-lanzamiento-de-assasins-creed-valhalla</loc>
+        <lastmod>2020-06-22</lastmod>
+        <changefreq>always</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/corewhite.webp</image:loc>
+            <image:title>GameCore</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5eefe382929da-1366_2000.webp</image:loc>
+            <image:title>Filtran posible fecha de lanzamiento de Assasin’s creed: Valhalla</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/images/news_images/5ec21fa607a36-assassins-creed-valhallas-male-and-female-protagonists-are-both-canon-says-narrative-director.jpg</image:loc>
+            <image:caption />
+        </image:image>
+        <image:image>
+            <image:loc>https://gamecore.com.mx/img/LogoClaro.webp</image:loc>
+            <image:caption />
+        </image:image>
     </url>
 </urlset>
+    <!--<guid value="039c9a1e-eaa8-4609-87e8-ee802f7cd6cc" />-->
+    <!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
