@@ -4,7 +4,7 @@
 /storage/*.key
 /vendor
 /public/images
-public/sitemap.xml
+
 
 .env
 .env.backup
