@@ -82,9 +82,9 @@
                                     <li>
                                         <a href="{{url('staff/founder/logs/users')}}"><i class="fas fa-users"></i> Usuarios</a>
                                     </li>
-                                    <li>
+                                    <!--<li>
                                         <a href="{{url('staff/founder/logs/news')}}"><i class="fas fa-archive"></i> Noticias</a>
-                                    </li>
+                                    </li>-->
                                 </ul>
                             </li>
 
@@ -94,16 +94,16 @@
                                     <li>
                                         <a href="{{url('staff/founder')}}"><i class="fas fa-user-tie"></i> Fundadores</a>
                                     </li>
-                                    <li>
+                                    <!--<li>
                                         <a href="#"><i class="fas fa-user"></i> Administradores</a>
-                                    </li>
+                                    --></li>
                                     <li>
                                         <a href="{{url('staff/editor')}}"><i class="fas fa-user-edit"></i> Editores</a>
                                     </li>
                                 </ul>
                             </li>
                         @endif
-                        <li>
+                       <!-- <li>
                             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fas fa-pager"></i> Paginas</a>
                             <ul class="collapse list-unstyled" id="pageSubmenu">
                                 @if(auth()->user()->role->name == "Fundador" || auth()->user()->role->name == "Administrador" || auth()->user()->role->name == "Editor")
@@ -129,7 +129,7 @@
                                 @endif
                             </ul>
                         </li>
-
+                        -->
                         <li>
                             <a href="{{url('/porfile/'.Auth::user()->id)}}"><i class="fas fa-user"></i> Perfil</a>
                         </li>
@@ -168,7 +168,7 @@
                     </div>
                     <div class="collapse navbar-collapse">
                         <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
+                            <!--<li class="nav-item">
                                 <a class="nav-link" href="https://www.creative-tim.com/product/material-kit-pro" target="_blank">
                                     <i class="fas fa-file-pdf"></i> PDF
                                 </a>
@@ -177,7 +177,7 @@
                                 <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank" data-original-title="Follow us on Twitter" rel="nofollow">
                                     <i class="fas fa-file-excel"></i> Excel
                                 </a>
-                            </li>
+                            --></li>
                         </ul>
                     </div>
                 </div>
