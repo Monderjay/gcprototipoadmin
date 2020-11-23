@@ -144,6 +144,7 @@ class EditorController extends Controller
         $editor = User::find($id);
         $address = $editor->address;
         return view('editor.edit')->with(compact('editor','address'));
+        //Corre pls :v 
     }
 
     /**
