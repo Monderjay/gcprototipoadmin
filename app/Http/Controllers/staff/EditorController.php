@@ -141,7 +141,9 @@ class EditorController extends Controller
      */
     public function edit($id)
     {
-        //
+        $editor = User::find($id);
+        $address = $editor->address;
+        return view('editor.edit')->with(compact('editor','address'));
     }
 
     /**
@@ -153,7 +155,35 @@ class EditorController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+         //
+         $editor = User::find($id);
+         $editor->name = $request->input('name');
+         $editor->first_name = $request->input('first_name');
+         $editor->last_name = $request->input('last_name');
+         $editor->birthdate = $request->input('birthdate');
+         $editor->gender = $request->input('gender');
+         $editor->email = $request->input('email');
+ 
+         if ($request->input('password') != null){
+             $editor->password = bcrypt($request->input('password')) ;
+         }
+ 
+         $editor->address->street = $request->input('street');
+         $editor->address->outdoor_number = $request->input('outdoor_number');
+         $editor->address->interior_number = $request->input('interior_number');
+         $editor->address->colony = $request->input('colony');
+         $editor->address->city = $request->input('city');
+         $editor->address->zip = $request->input('zip');
+         $editor->address->cellphone = $request->input('cellphone');
+         $editor->address->phone = $request->input('phone');
+ 
+         if($editor->save() && $editor->address->save()){
+             $notification = "!Cambios Guardados con exito¡";
+             return back()->with(compact('notification'));
+         }else{
+             $notificationFaill = "No se Han podido Guardar los Cambios :(";
+             return back()->with(compact('notificationFaill'));
+         }
     }
 
     /**
